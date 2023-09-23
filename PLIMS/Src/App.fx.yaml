@@ -1,0 +1,30 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =//Double forward slash for comment
+        Set(Var_Start,"Loading...");
+        
+        //Colours
+        Set(Colour_Viridor_Green,RGBA(0,154,68,100));Set(Colour_Viridor_White,RGBA(255,255,255,100));Set(Colour_Viridor_Purple,RGBA(135,24,157,100));Set(Colour_Viridor_Pink,RGBA(226,24,143,100));
+        //Set(Colour_Viridor_PurpleTint,RGBA(135,24,157,0.3));Set(Colour_Viridor_GreenTint,RGBA(0,154,68,0.3)); Transparent
+        Set(Colour_Viridor_PurpleTint,RGBA(219,186,226,255));Set(Colour_Viridor_GreenTint,RGBA(179,225,199,255));
+        Set(Colour_Viridor_PinkTint,RGBA(226,24,143,.3));Set(Colour_Viridor_Grey3,RGBA(84,86,90,100));Set(Colour_Main,Colour_Viridor_Green);Set(Colour_Text,Colour_Viridor_White);
+        
+        //Text size
+        Set(Text_size,18);Set(Text_size_2,13);Set(Text_size_Menu,20);Set(Text_size_Title,25);Set(Text_size_large,40);Set(Border_Thickness,1.2);Set(Text_size_CoA,9);
+        
+        Set(var_material_selected,"All");  //setting material selected to all for test screen
+        
+        //Loading Tables
+        //ClearCollect(Collection_Specifications,Table_Specifications);
+        
+        Set(Var_Start,"Loaded");
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
