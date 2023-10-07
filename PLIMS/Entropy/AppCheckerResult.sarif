@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 43,
-                  "charOffset": 229,
+                  "charOffset": 223,
                   "snippet": {
                     "text": "And(Sample_Point_Filter=\"Wash\",Complete=\"\")"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 48,
-                  "charOffset": 374,
+                  "charOffset": 366,
                   "snippet": {
                     "text": "And(Sample_Point_Filter=\"Flake Bag\",Complete=\"\")"
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 56,
-                  "charOffset": 532,
+                  "charOffset": 522,
                   "snippet": {
                     "text": "And(Sample_Point_Filter=\"Post Flake Sorter\",Complete=\"\")"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 52,
-                  "charOffset": 694,
+                  "charOffset": 682,
                   "snippet": {
                     "text": "And(Sample_Point_Filter=\"Post Extruder\",Complete=\"\")"
                   }
@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 42,
-                  "charOffset": 842,
+                  "charOffset": 828,
                   "snippet": {
                     "text": "And(Sample_Point_Filter=\"SSP\",Complete=\"\")"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 49,
-                  "charOffset": 987,
+                  "charOffset": 971,
                   "snippet": {
                     "text": "And(Sample_Point_Filter=\"Pellet Bag\",Complete=\"\")"
                   }
@@ -264,7 +264,7 @@
                 },
                 "region": {
                   "charLength": 52,
-                  "charOffset": 1142,
+                  "charOffset": 1124,
                   "snippet": {
                     "text": "And(Sample_Point_Filter=\"Sampling Silo\",Complete=\"\")"
                   }
@@ -304,7 +304,7 @@
                 },
                 "region": {
                   "charLength": 32,
-                  "charOffset": 1303,
+                  "charOffset": 1281,
                   "snippet": {
                     "text": "And(Material=\"PET\", Complete=\"\")"
                   }
@@ -344,7 +344,7 @@
                 },
                 "region": {
                   "charLength": 59,
-                  "charOffset": 1432,
+                  "charOffset": 1408,
                   "snippet": {
                     "text": "And(Material=\"PET\", Sample_Point_Filter=\"Wash\",Complete=\"\")"
                   }
@@ -384,7 +384,7 @@
                 },
                 "region": {
                   "charLength": 64,
-                  "charOffset": 1593,
+                  "charOffset": 1567,
                   "snippet": {
                     "text": "And(Material=\"PET\", Sample_Point_Filter=\"Flake Bag\",Complete=\"\")"
                   }
@@ -424,7 +424,7 @@
                 },
                 "region": {
                   "charLength": 72,
-                  "charOffset": 1767,
+                  "charOffset": 1739,
                   "snippet": {
                     "text": "And(Material=\"PET\", Sample_Point_Filter=\"Post Flake Sorter\",Complete=\"\")"
                   }
@@ -464,7 +464,7 @@
                 },
                 "region": {
                   "charLength": 68,
-                  "charOffset": 1945,
+                  "charOffset": 1915,
                   "snippet": {
                     "text": "And(Material=\"PET\", Sample_Point_Filter=\"Post Extruder\",Complete=\"\")"
                   }
@@ -504,7 +504,7 @@
                 },
                 "region": {
                   "charLength": 58,
-                  "charOffset": 2109,
+                  "charOffset": 2077,
                   "snippet": {
                     "text": "And(Material=\"PET\", Sample_Point_Filter=\"SSP\",Complete=\"\")"
                   }
@@ -544,7 +544,7 @@
                 },
                 "region": {
                   "charLength": 65,
-                  "charOffset": 2270,
+                  "charOffset": 2236,
                   "snippet": {
                     "text": "And(Material=\"PET\", Sample_Point_Filter=\"Pellet Bag\",Complete=\"\")"
                   }
@@ -584,7 +584,7 @@
                 },
                 "region": {
                   "charLength": 68,
-                  "charOffset": 2441,
+                  "charOffset": 2405,
                   "snippet": {
                     "text": "And(Material=\"PET\", Sample_Point_Filter=\"Sampling Silo\",Complete=\"\")"
                   }
@@ -624,7 +624,7 @@
                 },
                 "region": {
                   "charLength": 41,
-                  "charOffset": 2637,
+                  "charOffset": 2597,
                   "snippet": {
                     "text": "And(Material=\"HDPE Natural\", Complete=\"\")"
                   }
@@ -664,7 +664,7 @@
                 },
                 "region": {
                   "charLength": 69,
-                  "charOffset": 2785,
+                  "charOffset": 2743,
                   "snippet": {
                     "text": "And(Material=\"HDPE Natural\", Sample_Point_Filter=\"Wash\", Complete=\"\")"
                   }
@@ -704,7 +704,7 @@
                 },
                 "region": {
                   "charLength": 82,
-                  "charOffset": 2974,
+                  "charOffset": 2930,
                   "snippet": {
                     "text": "And(Material=\"HDPE Natural\", Sample_Point_Filter=\"Post Flake Sorter\", Complete=\"\")"
                   }
@@ -744,7 +744,7 @@
                 },
                 "region": {
                   "charLength": 78,
-                  "charOffset": 3172,
+                  "charOffset": 3126,
                   "snippet": {
                     "text": "And(Material=\"HDPE Natural\", Sample_Point_Filter=\"Post Extruder\", Complete=\"\")"
                   }
@@ -784,7 +784,7 @@
                 },
                 "region": {
                   "charLength": 74,
-                  "charOffset": 3363,
+                  "charOffset": 3315,
                   "snippet": {
                     "text": "And(Material=\"HDPE Natural\", Sample_Point_Filter=\"Pellet Bag\",Complete=\"\")"
                   }
@@ -824,7 +824,7 @@
                 },
                 "region": {
                   "charLength": 78,
-                  "charOffset": 3553,
+                  "charOffset": 3503,
                   "snippet": {
                     "text": "And(Material=\"HDPE Natural\", Sample_Point_Filter=\"Sampling Silo\", Complete=\"\")"
                   }
@@ -864,7 +864,7 @@
                 },
                 "region": {
                   "charLength": 47,
-                  "charOffset": 3774,
+                  "charOffset": 3720,
                   "snippet": {
                     "text": "And(Material=\"HDPE Self Coloured\", Complete=\"\")"
                   }
@@ -904,7 +904,7 @@
                 },
                 "region": {
                   "charLength": 75,
-                  "charOffset": 3937,
+                  "charOffset": 3881,
                   "snippet": {
                     "text": "And(Material=\"HDPE Self Coloured\", Sample_Point_Filter=\"Wash\", Complete=\"\")"
                   }
@@ -944,7 +944,7 @@
                 },
                 "region": {
                   "charLength": 88,
-                  "charOffset": 4141,
+                  "charOffset": 4083,
                   "snippet": {
                     "text": "And(Material=\"HDPE Self Coloured\", Sample_Point_Filter=\"Post Flake Sorter\", Complete=\"\")"
                   }
@@ -984,7 +984,7 @@
                 },
                 "region": {
                   "charLength": 84,
-                  "charOffset": 4354,
+                  "charOffset": 4294,
                   "snippet": {
                     "text": "And(Material=\"HDPE Self Coloured\", Sample_Point_Filter=\"Post Extruder\", Complete=\"\")"
                   }
@@ -1024,7 +1024,7 @@
                 },
                 "region": {
                   "charLength": 81,
-                  "charOffset": 4560,
+                  "charOffset": 4498,
                   "snippet": {
                     "text": "And(Material=\"HDPE Self Coloured\", Sample_Point_Filter=\"Pellet Bag\", Complete=\"\")"
                   }
@@ -1064,7 +1064,7 @@
                 },
                 "region": {
                   "charLength": 84,
-                  "charOffset": 4766,
+                  "charOffset": 4702,
                   "snippet": {
                     "text": "And(Material=\"HDPE Self Coloured\", Sample_Point_Filter=\"Sampling Silo\", Complete=\"\")"
                   }
@@ -1104,7 +1104,7 @@
                 },
                 "region": {
                   "charLength": 31,
-                  "charOffset": 4956,
+                  "charOffset": 4888,
                   "snippet": {
                     "text": "And(Material=\"PP\", Complete=\"\")"
                   }
@@ -1144,7 +1144,7 @@
                 },
                 "region": {
                   "charLength": 59,
-                  "charOffset": 5082,
+                  "charOffset": 5012,
                   "snippet": {
                     "text": "And(Material=\"PP\", Sample_Point_Filter=\"Wash\", Complete=\"\")"
                   }
@@ -1184,7 +1184,7 @@
                 },
                 "region": {
                   "charLength": 72,
-                  "charOffset": 5249,
+                  "charOffset": 5177,
                   "snippet": {
                     "text": "And(Material=\"PP\", Sample_Point_Filter=\"Post Flake Sorter\", Complete=\"\")"
                   }
@@ -1224,7 +1224,7 @@
                 },
                 "region": {
                   "charLength": 68,
-                  "charOffset": 5425,
+                  "charOffset": 5351,
                   "snippet": {
                     "text": "And(Material=\"PP\", Sample_Point_Filter=\"Post Extruder\", Complete=\"\")"
                   }
@@ -1264,7 +1264,7 @@
                 },
                 "region": {
                   "charLength": 65,
-                  "charOffset": 5594,
+                  "charOffset": 5518,
                   "snippet": {
                     "text": "And(Material=\"PP\", Sample_Point_Filter=\"Pellet Bag\", Complete=\"\")"
                   }
@@ -1304,7 +1304,7 @@
                 },
                 "region": {
                   "charLength": 68,
-                  "charOffset": 5763,
+                  "charOffset": 5685,
                   "snippet": {
                     "text": "And(Material=\"PP\", Sample_Point_Filter=\"Sampling Silo\", Complete=\"\")"
                   }
@@ -1328,306 +1328,6 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Button_Back_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Button_Back_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Button_Back_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Button_Back_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Selected_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Selected_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2397,6 +2097,306 @@
                 "member": "TabIndex",
                 "module": "Screen_Test_input",
                 "type": "Screen_Test_input.Gallery2.Gallery_Tests_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Button_Back_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Button_Back_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Button_Back_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Button_Back_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Selected_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Selected_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_2"
               }
             }
           ],
