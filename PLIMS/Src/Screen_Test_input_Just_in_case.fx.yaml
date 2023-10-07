@@ -1,7 +1,7 @@
-Screen_Test_input As screen:
+Screen_Test_input_Just_in_case As screen:
     Fill: =Colour_Viridor_White
 
-    Title_Select_CoA_21 As label:
+    Title_Select_CoA_24 As label:
         Align: =TextPosition.Left
         Color: =RGBA(255, 255, 255, 1)
         Fill: =Colour_Viridor_PurpleTint
@@ -14,7 +14,7 @@ Screen_Test_input As screen:
         Y: =51
         ZIndex: =1
 
-    Title_Select_CoA_20 As label:
+    Title_Select_CoA_25 As label:
         Align: =TextPosition.Left
         Color: =RGBA(255, 255, 255, 1)
         Fill: =Colour_Viridor_GreenTint
@@ -27,7 +27,7 @@ Screen_Test_input As screen:
         Y: =304
         ZIndex: =2
 
-    "Gallery_Select_Material As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
+    "Gallery_Select_Material_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Color.Transparent
         Height: =56
         Items: |+
@@ -64,7 +64,7 @@ Screen_Test_input As screen:
         Y: =50
         ZIndex: =3
 
-        Label1_5 As label:
+        Label1_6 As label:
             Align: =Align.Center
             Color: =If(ThisItem.Value=var_material_selected,Colour_Viridor_White,Color.Black)
             Fill: |-
@@ -92,7 +92,7 @@ Screen_Test_input As screen:
                 0))
             ZIndex: =1
 
-    "Gallery_Select_Sampling_Point As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
+    "Gallery_Select_Sampling_Point_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Color.Transparent
         Height: =54
         Items: |
@@ -131,9 +131,9 @@ Screen_Test_input As screen:
         Y: =106
         ZIndex: =4
 
-        Label_Sampling_Point As label:
+        Label_Sampling_Point_1 As label:
             Align: =Align.Center
-            Color: =If(Label_Sampling_Point.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
+            Color: =If(Label_Sampling_Point_1.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
             Fill: |-
                 =If(And(var_material_selected=Blank(),var_sample_point_selected=ThisItem.Value),Colour_Viridor_Purple,
                 
@@ -173,7 +173,7 @@ Screen_Test_input As screen:
                 0))
             ZIndex: =1
 
-    Title_Select_CoA_1 As label:
+    Title_Select_CoA_3 As label:
         Align: =TextPosition.Left
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 155, 62, 100)
@@ -185,25 +185,25 @@ Screen_Test_input As screen:
         Width: =1366
         ZIndex: =5
 
-    Gallery_Tests_4 As gallery.galleryHorizontal:
+    Gallery_Tests_13 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 0, 1)
         Height: =58/2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Tests_8.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_4.Width/Gallery_Tests_4.AllItemsCount
+        TemplateSize: =Gallery_Tests_13.Width/Gallery_Tests_13.AllItemsCount
         Width: =1366
         Y: =246
         ZIndex: =9
 
-        Label5_2 As label:
+        Label5_9 As label:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.Black
-            Height: =Gallery_Tests_4.TemplateHeight
+            Height: =Gallery_Tests_13.TemplateHeight
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -214,17 +214,17 @@ Screen_Test_input As screen:
             PressedFill: =Colour_Viridor_Purple
             Size: =16
             Text: =ThisItem.High_Spec
-            Width: =Gallery_Tests_4.TemplateWidth
+            Width: =Gallery_Tests_13.TemplateWidth
             ZIndex: =1
 
-    Buttons As group:
+    Buttons_2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =9
 
-        Button_Back_9 As icon.CancelBadge:
+        Button_Back_11 As icon.CancelBadge:
             Color: =Color.White
             Height: =38
             HoverColor: =Colour_Viridor_Purple
@@ -237,7 +237,7 @@ Screen_Test_input As screen:
             Y: =7
             ZIndex: =6
 
-        Button_Home_2 As icon.CancelBadge:
+        Button_Home_4 As icon.CancelBadge:
             Color: =Color.White
             Height: =38
             HoverColor: =Colour_Viridor_Purple
@@ -246,11 +246,11 @@ Screen_Test_input As screen:
             PressedColor: =Colour_Viridor_GreenTint
             Tooltip: ="Home"
             Width: =38
-            X: =Button_Back_9.X-50
-            Y: =Button_Back_9.Y
+            X: =Button_Back_11.X-50
+            Y: =Button_Back_11.Y
             ZIndex: =7
 
-        Refresh_Data_1 As icon.CancelBadge:
+        Refresh_Data_3 As icon.CancelBadge:
             Color: =Color.White
             Height: =34
             HoverColor: =Colour_Viridor_Purple
@@ -264,25 +264,25 @@ Screen_Test_input As screen:
             Y: =11
             ZIndex: =8
 
-    Gallery_Tests_5 As gallery.galleryHorizontal:
+    Gallery_Tests_15 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 0, 1)
         Height: =58/2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Tests_8.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_5.Width/Gallery_Tests_5.AllItemsCount
+        TemplateSize: =Gallery_Tests_15.Width/Gallery_Tests_15.AllItemsCount
         Width: =1366
         Y: =275
         ZIndex: =10
 
-        Label5_3 As label:
+        Label5_10 As label:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.Black
-            Height: =Gallery_Tests_5.TemplateHeight
+            Height: =Gallery_Tests_15.TemplateHeight
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -293,28 +293,28 @@ Screen_Test_input As screen:
             PressedFill: =Colour_Viridor_Purple
             Size: =16
             Text: =ThisItem.Low_Spec
-            Width: =Gallery_Tests_5.TemplateWidth
+            Width: =Gallery_Tests_15.TemplateWidth
             ZIndex: =1
 
-    Gallery_Tests_6 As gallery.galleryHorizontal:
+    Gallery_Tests_9 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_Green
         Height: =58
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Tests_8.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_6.Width/Gallery_Tests_6.AllItemsCount
+        TemplateSize: =Gallery_Tests_9.Width/Gallery_Tests_9.AllItemsCount
         Width: =1366
         Y: =160
         ZIndex: =11
 
-        Label5_4 As label:
+        Label5_7 As label:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.White
-            Height: =Gallery_Tests_6.TemplateHeight
+            Height: =Gallery_Tests_9.TemplateHeight
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -325,28 +325,28 @@ Screen_Test_input As screen:
             PressedFill: =Colour_Viridor_Purple
             Size: =18
             Text: =ThisItem.Test
-            Width: =Gallery_Tests_6.TemplateWidth
+            Width: =Gallery_Tests_9.TemplateWidth
             ZIndex: =1
 
-    Gallery_Tests_2 As gallery.galleryHorizontal:
+    Gallery_Tests_11 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_Green
         Height: =58*2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Tests_8.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_2.Width/Gallery_Tests_2.AllItemsCount
-        Visible: =If(Label_All_Test_Filter.Text="true",true,false)
+        TemplateSize: =Gallery_Tests_11.Width/Gallery_Tests_11.AllItemsCount
+        Visible: =If(Label_All_Test_Filter_1.Text="true",true,false)
         Width: =1366
         Y: =160
         ZIndex: =12
 
-        HtmlText1_1 As htmlViewer:
+        HtmlText1_3 As htmlViewer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =2
             Color: =Color.White
-            Height: =Gallery_Tests_2.TemplateHeight
+            Height: =Gallery_Tests_11.TemplateHeight
             HtmlText: |-
                 ="<div style='
                     writing-mode: vertical-rl;
@@ -366,18 +366,18 @@ Screen_Test_input As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =16
-            Width: =Gallery_Tests_2.TemplateWidth
+            Width: =Gallery_Tests_11.TemplateWidth
             ZIndex: =1
 
-        Label3 As label:
-            Height: =Gallery_Tests_2.TemplateHeight
+        Label3_2 As label:
+            Height: =Gallery_Tests_11.TemplateHeight
             OnSelect: =Select(Parent)
             PressedFill: =Colour_Viridor_Purple
             Text: =
-            Width: =Gallery_Tests_2.TemplateWidth
+            Width: =Gallery_Tests_11.TemplateWidth
             ZIndex: =2
 
-    Label_All_Test_Filter As label:
+    Label_All_Test_Filter_1 As label:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(246, 88, 16, 1)
         Height: =45
@@ -392,25 +392,25 @@ Screen_Test_input As screen:
         X: =172
         ZIndex: =13
 
-    Gallery_Tests_3 As gallery.galleryHorizontal:
+    Gallery_Tests_12 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =Color.AliceBlue
         Height: =58/2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Tests_8.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_3.Width/Gallery_Tests_3.AllItemsCount
+        TemplateSize: =Gallery_Tests_12.Width/Gallery_Tests_12.AllItemsCount
         Width: =1366
-        Y: =If(Label_All_Test_Filter.Text="true",275,217)
+        Y: =If(Label_All_Test_Filter_1.Text="true",275,217)
         ZIndex: =14
 
-        Label5_1 As label:
+        Label5_8 As label:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.Black
-            Height: =Gallery_Tests_3.TemplateHeight
+            Height: =Gallery_Tests_12.TemplateHeight
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -422,10 +422,10 @@ Screen_Test_input As screen:
             Size: =16
             Text: |
                 =ThisItem.Unit
-            Width: =Gallery_Tests_3.TemplateWidth
+            Width: =Gallery_Tests_12.TemplateWidth
             ZIndex: =1
 
-    Gallery2 As gallery.galleryVertical:
+    Gallery2_2 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =464
         Items: |-
@@ -532,7 +532,7 @@ Screen_Test_input As screen:
         Y: =304
         ZIndex: =15
 
-        Label_Material As label:
+        Label_Material_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Material
@@ -542,7 +542,7 @@ Screen_Test_input As screen:
             Y: =14
             ZIndex: =1
 
-        Label_Sample_Point As label:
+        Label_Sample_Point_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Sample_Point
@@ -552,7 +552,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =2
 
-        Label_Time As label:
+        Label_Time_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
@@ -562,7 +562,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =3
 
-        Label_Caustic As label:
+        Label_Caustic_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: |
@@ -573,7 +573,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =4
 
-        Label_Comment As label:
+        Label_Comment_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Comment
@@ -583,7 +583,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =5
 
-        Label_Date As label:
+        Label_Date_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =DateValue(ThisItem.'Date_&_Time',"en-GB")
@@ -593,7 +593,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =6
 
-        Label_Moisture As label:
+        Label_Moisture_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Moisture_Result
@@ -603,7 +603,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =7
 
-        Label_Bulk_Density As label:
+        Label_Bulk_Density_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Bulk_Density_Result
@@ -613,7 +613,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =8
 
-        Label_Metal As label:
+        Label_Metal_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Comp_Float_Sink_Metal_Result
@@ -622,7 +622,7 @@ Screen_Test_input As screen:
             X: =217
             ZIndex: =9
 
-        Label_Glass As label:
+        Label_Glass_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Comp_Float_Sink_Glass_Result
@@ -632,7 +632,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =10
 
-        Label_PET As label:
+        Label_PET_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Float_Sink_PET_Result
@@ -642,7 +642,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =11
 
-        Label_PVC As label:
+        Label_PVC_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Comp_Float_Sink_PVC_Result
@@ -652,7 +652,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =12
 
-        Label_pH As label:
+        Label_pH_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.pH_Result
@@ -662,7 +662,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =13
 
-        Label_MFI As label:
+        Label_MFI_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.MFI_Result
@@ -672,7 +672,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =14
 
-        Label_Material_Density As label:
+        Label_Material_Density_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Material_Density_Result
@@ -682,7 +682,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =15
 
-        Label_Pellet_Count As label:
+        Label_Pellet_Count_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Pellet_Count_Result
@@ -692,7 +692,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =16
 
-        Label_Visual_Inspection As label:
+        Label_Visual_Inspection_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Visual_Inspection_Result
@@ -702,7 +702,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =17
 
-        Label_Batch_Number As label:
+        Label_Batch_Number_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Batch_Number
@@ -712,7 +712,7 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =18
 
-        Label_Bag_Number As label:
+        Label_Bag_Number_2 As label:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Bag_Number
@@ -722,19 +722,19 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =19
 
-        Gallery_Tests_7 As gallery.galleryHorizontal:
+        Gallery_Tests_16 As gallery.galleryHorizontal:
             DelayItemLoading: =true
             Fill: =Color.Transparent
             Height: =Parent.TemplateHeight
             Items: |
-                =Gallery_Tests_1.AllItems
+                =Gallery_Tests_8.AllItems
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =Gallery_Tests_7.Width/Gallery_Tests_7.AllItemsCount
+            TemplateSize: =Gallery_Tests_16.Width/Gallery_Tests_16.AllItemsCount
             Width: =1366
             ZIndex: =20
 
-            Label_Data_1 As label:
+            Label_Data_3 As label:
                 Align: =Align.Center
                 BorderColor: =Color.Transparent
                 BorderThickness: =2
@@ -812,66 +812,66 @@ Screen_Test_input As screen:
                     //PP Wash
                     And(var_material_selected="PP",var_sample_point_selected_PP="Wash"),
                     If(
-                    And(ThisItem.Result="R_Caustic",Value(Label_Caustic.Text)=Blank()),RGBA(179,225,199,255),
-                    ThisItem.Result="R_Caustic",If(Or(Value(Label_Caustic.Text)<0.17,Value(Label_Caustic.Text)>0.35),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    And(ThisItem.Result="R_Caustic",Value(Label_Caustic_2.Text)=Blank()),RGBA(179,225,199,255),
+                    ThisItem.Result="R_Caustic",If(Or(Value(Label_Caustic_2.Text)<0.17,Value(Label_Caustic_2.Text)>0.35),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     RGBA(179,225,199,255)),
                     
                     //PP Post Flake Sorter
                     And(var_material_selected="PP",var_sample_point_selected_PP="Post Flake Sorter"),
                     If(
-                    And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density.Text)<200,Value(Label_Bulk_Density.Text)>300),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density_2.Text)=Blank()),RGBA(179,225,199,255),
+                    ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density_2.Text)<200,Value(Label_Bulk_Density_2.Text)>300),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     RGBA(179,225,199,255)),
                     
                     //PP Post Extruder
                     And(var_material_selected="PP",var_sample_point_selected_PP="Post Extruder"),
                     If(
-                    And(ThisItem.Result="R_MFI",Value(Label_MFI.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Moisture",Value(Label_Moisture.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Vis",Label_Visual_Inspection.Text=""),RGBA(179,225,199,255),
-                    ThisItem.Result="R_MFI",If(Or(Value(Label_MFI.Text)<12.5,Value(Label_MFI.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Moisture",If(Value(Label_Moisture.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density.Text)<912.5,Value(Label_Material_Density.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count.Text)<200,Value(Label_Pellet_Count.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Vis",If(Label_Visual_Inspection.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
+                    And(ThisItem.Result="R_MFI",Value(Label_MFI_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Moisture",Value(Label_Moisture_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Vis",Label_Visual_Inspection_2.Text=""),RGBA(179,225,199,255),
+                    ThisItem.Result="R_MFI",If(Or(Value(Label_MFI_2.Text)<12.5,Value(Label_MFI_2.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Moisture",If(Value(Label_Moisture_2.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density_2.Text)<450,Value(Label_Bulk_Density_2.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density_2.Text)<912.5,Value(Label_Material_Density_2.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count_2.Text)<200,Value(Label_Pellet_Count_2.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Vis",If(Label_Visual_Inspection_2.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
                     RGBA(179,225,199,255)),
                     
                     //PP Pellet bag
                     And(var_material_selected="PP",var_sample_point_selected_PP="Pellet Bag"),
                     If(
-                    And(ThisItem.Result="R_MFI",Value(Label_MFI.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Moisture",Value(Label_Moisture.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Vis",Label_Visual_Inspection.Text=""),RGBA(179,225,199,255),
-                    ThisItem.Result="R_MFI",If(Or(Value(Label_MFI.Text)<12.5,Value(Label_MFI.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Moisture",If(Value(Label_Moisture.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density.Text)<912.5,Value(Label_Material_Density.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count.Text)<200,Value(Label_Pellet_Count.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Vis",If(Label_Visual_Inspection.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
+                    And(ThisItem.Result="R_MFI",Value(Label_MFI_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Moisture",Value(Label_Moisture_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Vis",Label_Visual_Inspection_2.Text=""),RGBA(179,225,199,255),
+                    ThisItem.Result="R_MFI",If(Or(Value(Label_MFI_2.Text)<12.5,Value(Label_MFI_2.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Moisture",If(Value(Label_Moisture_2.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density_2.Text)<450,Value(Label_Bulk_Density_2.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density_2.Text)<912.5,Value(Label_Material_Density_2.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count_2.Text)<200,Value(Label_Pellet_Count_2.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Vis",If(Label_Visual_Inspection_2.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
                     RGBA(179,225,199,255)),
                     
                     //PP Sampling Silo
                     And(var_material_selected="PP",var_sample_point_selected_PP="Sampling Silo"),
                     If(
-                    And(ThisItem.Result="R_MFI",Value(Label_MFI.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Moisture",Value(Label_Moisture.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Vis",Label_Visual_Inspection.Text=""),RGBA(179,225,199,255),
-                    ThisItem.Result="R_MFI",If(Or(Value(Label_MFI.Text)<12.5,Value(Label_MFI.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Moisture",If(Value(Label_Moisture.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density.Text)<912.5,Value(Label_Material_Density.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count.Text)<200,Value(Label_Pellet_Count.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Vis",If(Label_Visual_Inspection.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
+                    And(ThisItem.Result="R_MFI",Value(Label_MFI_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Moisture",Value(Label_Moisture_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count_2.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Vis",Label_Visual_Inspection_2.Text=""),RGBA(179,225,199,255),
+                    ThisItem.Result="R_MFI",If(Or(Value(Label_MFI_2.Text)<12.5,Value(Label_MFI_2.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Moisture",If(Value(Label_Moisture_2.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density_2.Text)<450,Value(Label_Bulk_Density_2.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density_2.Text)<912.5,Value(Label_Material_Density_2.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count_2.Text)<200,Value(Label_Pellet_Count_2.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Vis",If(Label_Visual_Inspection_2.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
                     RGBA(179,225,199,255)),
                     
                     //Verification
@@ -885,7 +885,7 @@ Screen_Test_input As screen:
                     RGBA(179,225,199,255),
                     
                     Color.Red)
-                Height: =Gallery_Tests_7.TemplateHeight
+                Height: =Gallery_Tests_16.TemplateHeight
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -897,35 +897,35 @@ Screen_Test_input As screen:
                 Size: =18
                 Text: |-
                     =If(
-                    ThisItem.Result="R_Point",Label_Sample_Point.Text,
-                    ThisItem.Result="R_Material",Label_Material.Text,
-                    ThisItem.Result="R_Date",Label_Date.Text,
-                    ThisItem.Result="R_Time",Label_Time.Text,
-                    ThisItem.Result="R_Batch",Label_Batch_Number.Text,
-                    ThisItem.Result="R_Bag",Label_Bag_Number.Text,
+                    ThisItem.Result="R_Point",Label_Sample_Point_2.Text,
+                    ThisItem.Result="R_Material",Label_Material_2.Text,
+                    ThisItem.Result="R_Date",Label_Date_2.Text,
+                    ThisItem.Result="R_Time",Label_Time_2.Text,
+                    ThisItem.Result="R_Batch",Label_Batch_Number_2.Text,
+                    ThisItem.Result="R_Bag",Label_Bag_Number_2.Text,
                     
-                    ThisItem.Result="R_Caustic",Label_Caustic.Text,
-                    ThisItem.Result="R_Moisture",Label_Moisture.Text,
-                    ThisItem.Result="R_Bulk",Label_Bulk_Density.Text,
-                    ThisItem.Result="R_Metal",Label_Metal.Text,
-                    ThisItem.Result="R_Glass",Label_Glass.Text,
-                    ThisItem.Result="R_PET",Label_PET.Text,
-                    ThisItem.Result="R_PVC",Label_PVC.Text,
-                    ThisItem.Result="R_pH",Label_pH.Text,
-                    ThisItem.Result="R_MFI",Label_MFI.Text,
-                    ThisItem.Result="R_Mat_Den",Label_Material_Density.Text,
-                    ThisItem.Result="R_Count",Label_Pellet_Count.Text,
-                    ThisItem.Result="R_Vis",Label_Visual_Inspection.Text,
+                    ThisItem.Result="R_Caustic",Label_Caustic_2.Text,
+                    ThisItem.Result="R_Moisture",Label_Moisture_2.Text,
+                    ThisItem.Result="R_Bulk",Label_Bulk_Density_2.Text,
+                    ThisItem.Result="R_Metal",Label_Metal_2.Text,
+                    ThisItem.Result="R_Glass",Label_Glass_2.Text,
+                    ThisItem.Result="R_PET",Label_PET_2.Text,
+                    ThisItem.Result="R_PVC",Label_PVC_2.Text,
+                    ThisItem.Result="R_pH",Label_pH_2.Text,
+                    ThisItem.Result="R_MFI",Label_MFI_2.Text,
+                    ThisItem.Result="R_Mat_Den",Label_Material_Density_2.Text,
+                    ThisItem.Result="R_Count",Label_Pellet_Count_2.Text,
+                    ThisItem.Result="R_Vis",Label_Visual_Inspection_2.Text,
                     
-                    ThisItem.Result="R_Comment",Label_Comment.Text,
+                    ThisItem.Result="R_Comment",Label_Comment_2.Text,
                     
                     
                     ThisItem.Result)
                     //Label_Date&Time
-                Width: =Gallery_Tests_7.TemplateWidth
+                Width: =Gallery_Tests_16.TemplateWidth
                 ZIndex: =1
 
-    Gallery_Tests_1 As gallery.galleryHorizontal:
+    Gallery_Tests_8 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(246, 88, 16, 1)
         Height: =45
@@ -934,18 +934,17 @@ Screen_Test_input As screen:
             If(
             //All
             And(var_material_selected="All",var_sample_point_selected_All=Blank()),
-            [{Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material"},
-            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
-            {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"},
-            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
-            {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"},
-            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
-            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"},
-            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
+            [{Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material"}, 
+            {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"}, 
+            {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"}, 
+            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"}, 
+            {Test:"Batch Number", Unit:"U_Batch", Low_Spec:"", High_Spec:"", Result:"R_Batch"}, 
+            {Test:"Bag Number", Unit:"U_Bag", Low_Spec:"", High_Spec:"", Result:"R_Bag"}, 
             {Test:"Caustic Strength", Unit:"U_Caustic", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic"}, 
             {Test:"IV MFI", Unit:"U_IV", Low_Spec:"Low_IV", High_Spec:"High_IV", Result:"R_IV"}, 
             {Test:"Extruder IV", Unit:"U_Ext_IV", Low_Spec:"Low_Ext_IV", High_Spec:"High_Ext_IV", Result:"R_Ext_IV"}, 
-            {Test:"GC", Unit:"U_AA", Low_Spec:"Low_AA", High_Spec:"High_AA", Result:"R_AA"}, 
+            {Test:"AA", Unit:"U_AA", Low_Spec:"Low_AA", High_Spec:"High_AA", Result:"R_AA"}, 
+            {Test:"Limonene", Unit:"U_Limonene", Low_Spec:"Low_Limonene", High_Spec:"High_Limonene", Result:"R_Limonene"}, 
             {Test:"Fines", Unit:"U_Fines", Low_Spec:"Low_Fines", High_Spec:"High_Fines", Result:"R_Fines"}, 
             {Test:"Moisture", Unit:"U_Moisture", Low_Spec:"Low_Moisture", High_Spec:"High_Moisture", Result:"R_Moisture"}, 
             {Test:"Bulk Density", Unit:"U_Bulk", Low_Spec:"Low_Bulk", High_Spec:"High_Bulk", Result:"R_Bulk"}, 
@@ -953,12 +952,16 @@ Screen_Test_input As screen:
             {Test:"Float Sink", Unit:"U_Float", Low_Spec:"Low_Float", High_Spec:"High_Float", Result:"R_Float"}, 
             {Test:"Comp osition", Unit:"U_Comp", Low_Spec:"Low_Comp", High_Spec:"High_Comp", Result:"R_Comp"}, 
             {Test:"pH", Unit:"U_pH", Low_Spec:"Low_pH", High_Spec:"High_pH", Result:"R_pH"}, 
-            {Test:"Lab", Unit:"U_L", Low_Spec:"Low_L", High_Spec:"High_L", Result:"R_Lab"}, 
+            {Test:"L", Unit:"U_L", Low_Spec:"Low_L", High_Spec:"High_L", Result:"R_L"}, 
+            {Test:"a", Unit:"U_a", Low_Spec:"Low_a", High_Spec:"High_a", Result:"R_a"}, 
+            {Test:"b", Unit:"U_b", Low_Spec:"Low_b", High_Spec:"High_b", Result:"R_b"}, 
             {Test:"Extruder b*", Unit:"U_Ext_b*", Low_Spec:"Low_Ext_b*", High_Spec:"High_Ext_b*", Result:"R_Ext_b*"}, 
             {Test:"Pellet Count", Unit:"U_Count", Low_Spec:"Low_Count", High_Spec:"High_Count", Result:"R_Count"}, 
             {Test:"Visual Inspection", Unit:"U_Vis", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
-            {Test:"Inclusions", Unit:"U_Med_Inc", Low_Spec:"Low_Med_Inc", High_Spec:"High_Med_Inc", Result:"R_All_Inc"}, 
+            {Test:"Medium Inclusions", Unit:"U_Med_Inc", Low_Spec:"Low_Med_Inc", High_Spec:"High_Med_Inc", Result:"R_Med_Inc"}, 
+            {Test:"Large Inclusions", Unit:"U_Lar_Inc", Low_Spec:"Low_Lar_Inc", High_Spec:"High_Lar_Inc", Result:"R_Lar_Inc"}, 
             {Test:"Crystal isation", Unit:"U_Cryst", Low_Spec:"Low_Cryst", High_Spec:"High_Cryst", Result:"R_Cryst"},
+            //{Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment"},
             ],
             //All, Wash
             And(var_material_selected="All",var_sample_point_selected_All="Wash"),
@@ -1188,17 +1191,17 @@ Screen_Test_input As screen:
             )
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_1.Width/Gallery_Tests_1.AllItemsCount
+        TemplateSize: =Gallery_Tests_8.Width/Gallery_Tests_8.AllItemsCount
         Width: =262
         X: =292
         ZIndex: =16
 
-        Label5 As label:
+        Label5_6 As label:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.White
-            Height: =Gallery_Tests_1.TemplateHeight
+            Height: =Gallery_Tests_8.TemplateHeight
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -1209,23 +1212,23 @@ Screen_Test_input As screen:
             PressedFill: =Colour_Viridor_Purple
             Size: =18
             Text: =ThisItem.Test
-            Width: =Gallery_Tests_1.TemplateWidth
+            Width: =Gallery_Tests_8.TemplateWidth
             ZIndex: =1
 
-    Label4 As label:
+    Label4_2 As label:
         Fill: =RGBA(204, 231, 246, 1)
         Text: =LookUp(Table_Specifications,Unique_Number="PP_Post_Flake_Sorter",Spec_High_Bulk_Density)
         X: =578
         ZIndex: =17
 
-    Group2 As group:
+    Group2_1 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =20
 
-        Label2 As label:
+        Label2_8 As label:
             Fill: =RGBA(204, 231, 246, 1)
             Text: ="Material - "&var_material_selected
             Visible: =false
@@ -1234,7 +1237,7 @@ Screen_Test_input As screen:
             Y: =608
             ZIndex: =18
 
-        Label2_1 As label:
+        Label2_9 As label:
             Fill: =RGBA(204, 231, 246, 1)
             Text: ="Samp point - "&var_sample_point_selected
             Visible: =false
@@ -1243,7 +1246,7 @@ Screen_Test_input As screen:
             Y: =608
             ZIndex: =19
 
-        Label2_2 As label:
+        Label2_10 As label:
             Fill: =RGBA(204, 231, 246, 1)
             Text: ="All - "&var_sample_point_selected_All
             Visible: =false
@@ -1252,7 +1255,7 @@ Screen_Test_input As screen:
             Y: =648
             ZIndex: =20
 
-        Label2_3 As label:
+        Label2_12 As label:
             Fill: =RGBA(204, 231, 246, 1)
             Text: ="PET - "&var_sample_point_selected_PET
             Visible: =false
@@ -1261,7 +1264,7 @@ Screen_Test_input As screen:
             Y: =688
             ZIndex: =21
 
-        Label2_4 As label:
+        Label2_14 As label:
             Fill: =RGBA(204, 231, 246, 1)
             Text: ="HDPE - "&var_sample_point_selected_HDPE
             Visible: =false
@@ -1270,7 +1273,7 @@ Screen_Test_input As screen:
             Y: =728
             ZIndex: =22
 
-        Label2_5 As label:
+        Label2_11 As label:
             Fill: =RGBA(204, 231, 246, 1)
             Text: ="HDPE SC - "&var_sample_point_selected_HDPE_SC
             Visible: =false
@@ -1279,7 +1282,7 @@ Screen_Test_input As screen:
             Y: =648
             ZIndex: =23
 
-        Label2_6 As label:
+        Label2_13 As label:
             Fill: =RGBA(204, 231, 246, 1)
             Text: ="PP - "&var_sample_point_selected_PP
             Visible: =false
@@ -1288,7 +1291,7 @@ Screen_Test_input As screen:
             Y: =688
             ZIndex: =24
 
-        Label2_7 As label:
+        Label2_15 As label:
             Fill: =RGBA(204, 231, 246, 1)
             Text: ="Verif - "&var_sample_point_selected_Verification
             Visible: =false
