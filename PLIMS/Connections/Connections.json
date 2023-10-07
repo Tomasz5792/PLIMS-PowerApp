@@ -9,8 +9,18 @@
       "parameterHints": {},
       "parameterHintsV2": {}
     },
-    "datasets": {},
-    "dataSources": [],
+    "datasets": {
+      "https://viridor.sharepoint.com/sites/AvonmouthQualityTechs": {
+        "dataSources": {
+          "Test Results": {
+            "tableName": "c9c96267-d95b-4e9f-8efe-637f8da749fa"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Test Results"
+    ],
     "dependencies": {},
     "dependents": [
       "0963188c-daee-4a81-b927-839a72752c81",

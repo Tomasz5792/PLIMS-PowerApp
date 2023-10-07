@@ -133,6 +133,7 @@
   },
   "ScreenOrder": [
     "Screen_Start",
-    "Screen_Test_input"
+    "Screen_Test_input",
+    "Screen_Create_Sample"
   ]
 }
