@@ -11,9 +11,7 @@ Screen_Start As screen:
         Layout: =Layout.Vertical
         OnSelect: |+
             =Navigate(Screen_Test_input,ScreenTransition.None);
-            
             Set(var_add_sample_visible,false);
-            
             Set(var_menu_1_select,ThisItem.Value);
             
         TemplatePadding: =0
