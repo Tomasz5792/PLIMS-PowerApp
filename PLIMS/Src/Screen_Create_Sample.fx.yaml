@@ -602,3 +602,11 @@ Screen_Create_Sample As screen:
         X: =578
         ZIndex: =17
 
+    Button1 As button:
+        OnSelect: |-
+            =Patch('Test Results', Defaults('Test Results'), {Title: "New Item"})
+        Text: ="Button"
+        X: =105
+        Y: =213
+        ZIndex: =18
+
