@@ -77,7 +77,7 @@ Screen_Create_Sample As screen:
             Height: =34
             HoverColor: =Colour_Viridor_Purple
             Icon: =Icon.Reload
-            OnSelect: =Refresh(Table_Results)
+            OnSelect: =Refresh('Test Results')
             PressedColor: =Colour_Viridor_GreenTint
             Rotation: =90
             Tooltip: ="Dont press unless needed, will overload server with too many requests."
@@ -137,7 +137,7 @@ Screen_Create_Sample As screen:
     Gallery2_1 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =297
-        Items: =Table_Results
+        Items: ='Test Results'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
@@ -231,7 +231,7 @@ Screen_Create_Sample As screen:
         Label_Metal_1 As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Comp_Float_Sink_Metal_Result
+            Text: =ThisItem.Comp_Float_Sink_Metal_Result_ppm
             Visible: =false
             Width: =177
             X: =217
@@ -290,7 +290,7 @@ Screen_Create_Sample As screen:
         Label_Material_Density_1 As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Material_Density_Result
+            Text: =ThisItem.'Material_Density_Result_kg/m3'
             Visible: =false
             Width: =177
             X: =180
@@ -300,7 +300,7 @@ Screen_Create_Sample As screen:
         Label_Pellet_Count_1 As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Pellet_Count_Result
+            Text: =ThisItem.Pellet_Count_Result_5g
             Visible: =false
             Width: =177
             X: =200
@@ -310,7 +310,7 @@ Screen_Create_Sample As screen:
         Label_Visual_Inspection_1 As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Visual_Inspection_Result
+            Text: =ThisItem.Visual_Inspection_Result_Pass_Fail
             Visible: =false
             Width: =177
             X: =220
@@ -598,12 +598,11 @@ Screen_Create_Sample As screen:
 
     Label4_1 As label:
         Fill: =RGBA(204, 231, 246, 1)
-        Height: =49
+        Height: =51
         Text: |
-            =Text(Now(), "[$-en-GB]yyyy-mm-dd hh:mm:ss")  // Example for UTC (en-GB)
-        Width: =206
-        X: =386
-        Y: =83
+            =Text(Now(), "[$-en-GB]yyyy-mm-dd hh:mm:ss")
+        Width: =152
+        X: =649
         ZIndex: =17
 
     Button1 As button:
@@ -643,6 +642,8 @@ Screen_Create_Sample As screen:
                 'Lab_a_Result': "Not Tested",
                 'Lab_b_Result': "Not Tested",
                 'Lab_Result_Pass_Fail': "Not Tested",
+                'Pellet_Count_Result_1g': "Not Tested",
+                'Pellet_Count_Result_5g': "Not Tested",
                 'Black_Inclusions_Medium_Result_#': "Not Tested",
                 'Black_Inclusions_Large_Result_#': "Not Tested",
                 'Black_Inclusion_Pass_Fail': "Not Tested",

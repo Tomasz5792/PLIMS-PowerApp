@@ -100,10 +100,8 @@ Screen_Test_input As screen:
             ["Wash","Flake Bag","Post Flake Sorter","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
             )
         Layout: =Layout.Vertical
-        OnSelect: |-
-            =If(Or(var_material_selected<>"HDPE Self Coloured",And(var_material_selected="HDPE Self Coloured",Or(ThisItem.Value="Wash",ThisItem.Value="Flake Bag",ThisItem.Value="SSP"))), //remove to alow other than wash
-            
-            Set(var_sample_point_selected,ThisItem.Value);
+        OnSelect: |+
+            =Set(var_sample_point_selected,ThisItem.Value);
             
             If(And(ThisItem.Value<>"LMI",ThisItem.Value<>"GC",ThisItem.Value<>"Fimic"),
             Set(var_sample_point_selected_All,ThisItem.Value));
@@ -125,7 +123,6 @@ Screen_Test_input As screen:
             
             If(var_material_selected="PET",Set(var_sample_point_selected_PET,ThisItem.Value));
             
-            )
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =54
@@ -147,18 +144,12 @@ Screen_Test_input As screen:
                 And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC=ThisItem.Value),Colour_Viridor_Purple,
                 And(var_material_selected="PP",var_sample_point_selected_PP=ThisItem.Value),Colour_Viridor_Purple,
                 
-                And(var_material_selected="HDPE Self Coloured",And(ThisItem.Value<>"Wash",ThisItem.Value<>"Flake Bag",ThisItem.Value<>"SSP")),Color.Gray, //making not wash gray
-                
                 If(Or(ThisItem.Value="Flake Bag",ThisItem.Value="SSP"),Color.DarkGray,Color.Transparent)),
-                
-                
                 
                 If(
                 And(var_material_selected="All",var_sample_point_selected_All=ThisItem.Value),Colour_Viridor_Purple,
                 And(var_material_selected="PET",var_sample_point_selected_PET=ThisItem.Value),Colour_Viridor_Purple,
                 And(var_material_selected="Verification",var_sample_point_selected_Verification=ThisItem.Value),Colour_Viridor_Purple,
-                
-                
                 
                 Color.Transparent)))
             Height: =54
