@@ -255,7 +255,7 @@ Screen_Test_input As screen:
             Height: =34
             HoverColor: =Colour_Viridor_Purple
             Icon: =Icon.Reload
-            OnSelect: =Refresh(Table_Results)
+            OnSelect: =Refresh('Test Results')
             PressedColor: =Colour_Viridor_GreenTint
             Rotation: =90
             Tooltip: ="Dont press unless needed, will overload server with too many requests."
@@ -388,6 +388,7 @@ Screen_Test_input As screen:
             And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC=Blank()),
             And(var_material_selected="PP",var_sample_point_selected_PP=Blank())
             ),true,false)
+        Visible: =false
         Width: =60
         X: =172
         ZIndex: =13
@@ -472,7 +473,7 @@ Screen_Test_input As screen:
             Height: =30
             OnSelect: =Select(Parent)
             Text: |
-                =ThisItem.Caustic_Strength_Result
+                =ThisItem.'Caustic_Strength_Result_%'
             Visible: =false
             Width: =82
             X: =42
@@ -502,7 +503,7 @@ Screen_Test_input As screen:
         Label_Moisture As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Moisture_Result
+            Text: =ThisItem.'Moisture_Result_%'
             Visible: =false
             Width: =177
             X: =40
@@ -512,7 +513,7 @@ Screen_Test_input As screen:
         Label_Bulk_Density As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Bulk_Density_Result
+            Text: =ThisItem.'Bulk_Density_Result_kg/m3'
             Visible: =false
             Width: =177
             X: =60
@@ -522,7 +523,7 @@ Screen_Test_input As screen:
         Label_Metal As label:
             Height: =58
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Comp_Float_Sink_Metal_Result
+            Text: =ThisItem.Comp_Float_Sink_Metal_Result_ppm
             Visible: =false
             Width: =80
             ZIndex: =9
@@ -530,7 +531,7 @@ Screen_Test_input As screen:
         Label_Glass As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Comp_Float_Sink_Glass_Result
+            Text: =ThisItem.Comp_Float_Sink_Glass_Result_ppm
             Visible: =false
             Width: =177
             X: =80
@@ -540,7 +541,7 @@ Screen_Test_input As screen:
         Label_PET As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Float_Sink_PET_Result
+            Text: =ThisItem.Float_Sink_PET_Result_ppm
             Visible: =false
             Width: =177
             X: =100
@@ -550,7 +551,7 @@ Screen_Test_input As screen:
         Label_PVC As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Comp_Float_Sink_PVC_Result
+            Text: =ThisItem.Comp_Float_Sink_PVC_Result_ppm
             Visible: =false
             Width: =177
             X: =120
@@ -580,31 +581,27 @@ Screen_Test_input As screen:
         Label_Material_Density As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Material_Density_Result
+            Text: =ThisItem.'Material_Density_Result_kg/m3'
             Visible: =false
             Width: =177
             X: =180
             Y: =28
             ZIndex: =15
 
-        Label_Pellet_Count As label:
+        Label_Pellet_Count_5g As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Pellet_Count_Result
+            Text: =ThisItem.Pellet_Count_Result_5g
             Visible: =false
             Width: =177
-            X: =200
-            Y: =28
             ZIndex: =16
 
         Label_Visual_Inspection As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Visual_Inspection_Result
+            Text: =ThisItem.Visual_Inspection_Result_Pass_Fail
             Visible: =false
             Width: =177
-            X: =220
-            Y: =28
             ZIndex: =17
 
         Label_Batch_Number As label:
@@ -645,7 +642,6 @@ Screen_Test_input As screen:
                 BorderThickness: =2
                 Fill: |-
                     =If(
-                    
                     //All
                     And(var_material_selected="All",var_sample_point_selected_All=Blank()),
                     RGBA(179,225,199,255),
@@ -735,13 +731,13 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Moisture",Value(Label_Moisture.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count_5g.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Vis",Label_Visual_Inspection.Text=""),RGBA(179,225,199,255),
                     ThisItem.Result="R_MFI",If(Or(Value(Label_MFI.Text)<12.5,Value(Label_MFI.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Moisture",If(Value(Label_Moisture.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density.Text)<912.5,Value(Label_Material_Density.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count.Text)<200,Value(Label_Pellet_Count.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count_5g.Text)<200,Value(Label_Pellet_Count_5g.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Vis",If(Label_Visual_Inspection.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
                     RGBA(179,225,199,255)),
                     
@@ -752,13 +748,13 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Moisture",Value(Label_Moisture.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count_5g.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Vis",Label_Visual_Inspection.Text=""),RGBA(179,225,199,255),
                     ThisItem.Result="R_MFI",If(Or(Value(Label_MFI.Text)<12.5,Value(Label_MFI.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Moisture",If(Value(Label_Moisture.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density.Text)<912.5,Value(Label_Material_Density.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count.Text)<200,Value(Label_Pellet_Count.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count_5g.Text)<200,Value(Label_Pellet_Count_5g.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Vis",If(Label_Visual_Inspection.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
                     RGBA(179,225,199,255)),
                     
@@ -769,13 +765,13 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Moisture",Value(Label_Moisture.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Bulk",Value(Label_Bulk_Density.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Mat_Den",Value(Label_Material_Density.Text)=Blank()),RGBA(179,225,199,255),
-                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count.Text)=Blank()),RGBA(179,225,199,255),
+                    And(ThisItem.Result="R_Count",Value(Label_Pellet_Count_5g.Text)=Blank()),RGBA(179,225,199,255),
                     And(ThisItem.Result="R_Vis",Label_Visual_Inspection.Text=""),RGBA(179,225,199,255),
                     ThisItem.Result="R_MFI",If(Or(Value(Label_MFI.Text)<12.5,Value(Label_MFI.Text)>20.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Moisture",If(Value(Label_Moisture.Text)>0.54999,RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Bulk",If(Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Mat_Den",If(Or(Value(Label_Material_Density.Text)<912.5,Value(Label_Material_Density.Text)>930.4999),RGBA(255,153,153,255),RGBA(153,255,153,255)),
-                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count.Text)<200,Value(Label_Pellet_Count.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
+                    ThisItem.Result="R_Count",If(Or(Value(Label_Pellet_Count_5g.Text)<200,Value(Label_Pellet_Count_5g.Text)>250),RGBA(255,153,153,255),RGBA(153,255,153,255)),
                     ThisItem.Result="R_Vis",If(Label_Visual_Inspection.Text="Pass",RGBA(153,255,153,255),RGBA(255,153,153,255)),
                     RGBA(179,225,199,255)),
                     
@@ -819,7 +815,7 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_pH",Label_pH.Text,
                     ThisItem.Result="R_MFI",Label_MFI.Text,
                     ThisItem.Result="R_Mat_Den",Label_Material_Density.Text,
-                    ThisItem.Result="R_Count",Label_Pellet_Count.Text,
+                    ThisItem.Result="R_Count",Label_Pellet_Count_5g.Text,
                     ThisItem.Result="R_Vis",Label_Visual_Inspection.Text,
                     
                     ThisItem.Result="R_Comment",Label_Comment.Text,
