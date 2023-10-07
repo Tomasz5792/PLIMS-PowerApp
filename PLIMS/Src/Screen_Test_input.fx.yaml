@@ -49,7 +49,7 @@ Screen_Test_input As screen:
         Width: =1366
         WrapCount: =6
         Y: =50
-        ZIndex: =3
+        ZIndex: =2
 
         Label1_5 As label:
             Align: =Align.Center
@@ -116,7 +116,7 @@ Screen_Test_input As screen:
         Width: =1366
         WrapCount: =7
         Y: =106
-        ZIndex: =4
+        ZIndex: =3
 
         Label_Sampling_Point As label:
             Align: =Align.Center
@@ -170,7 +170,7 @@ Screen_Test_input As screen:
         Size: =Text_size_Title
         Text: ="Test Input"
         Width: =1366
-        ZIndex: =5
+        ZIndex: =4
 
     Gallery_Tests_4 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -183,7 +183,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Tests_4.Width/Gallery_Tests_4.AllItemsCount
         Width: =1366
         Y: =246
-        ZIndex: =9
+        ZIndex: =8
 
         Label5_2 As label:
             Align: =Align.Center
@@ -204,53 +204,6 @@ Screen_Test_input As screen:
             Width: =Gallery_Tests_4.TemplateWidth
             ZIndex: =1
 
-    Buttons As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =9
-
-        Button_Back_9 As icon.CancelBadge:
-            Color: =Color.White
-            Height: =38
-            HoverColor: =Colour_Viridor_Purple
-            Icon: =Icon.BackArrow
-            OnSelect: =Back()
-            PressedColor: =Colour_Viridor_GreenTint
-            Tooltip: ="Back"
-            Width: =38
-            X: =1322
-            Y: =7
-            ZIndex: =6
-
-        Button_Home_2 As icon.CancelBadge:
-            Color: =Color.White
-            Height: =38
-            HoverColor: =Colour_Viridor_Purple
-            Icon: =Icon.Home
-            OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
-            PressedColor: =Colour_Viridor_GreenTint
-            Tooltip: ="Home"
-            Width: =38
-            X: =Button_Back_9.X-50
-            Y: =Button_Back_9.Y
-            ZIndex: =7
-
-        Refresh_Data_1 As icon.CancelBadge:
-            Color: =Color.White
-            Height: =34
-            HoverColor: =Colour_Viridor_Purple
-            Icon: =Icon.Reload
-            OnSelect: =Refresh('Test Results')
-            PressedColor: =Colour_Viridor_GreenTint
-            Rotation: =90
-            Tooltip: ="Dont press unless needed, will overload server with too many requests."
-            Width: =34
-            X: =1173
-            Y: =11
-            ZIndex: =8
-
     Gallery_Tests_5 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 0, 1)
@@ -262,7 +215,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Tests_5.Width/Gallery_Tests_5.AllItemsCount
         Width: =1366
         Y: =275
-        ZIndex: =10
+        ZIndex: =9
 
         Label5_3 As label:
             Align: =Align.Center
@@ -294,7 +247,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Tests_6.Width/Gallery_Tests_6.AllItemsCount
         Width: =1366
         Y: =160
-        ZIndex: =11
+        ZIndex: =10
 
         Label5_4 As label:
             Align: =Align.Center
@@ -327,7 +280,7 @@ Screen_Test_input As screen:
         Visible: =If(Label_All_Test_Filter.Text="true",true,false)
         Width: =1366
         Y: =160
-        ZIndex: =12
+        ZIndex: =11
 
         HtmlText1_1 As htmlViewer:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -378,7 +331,7 @@ Screen_Test_input As screen:
         Visible: =false
         Width: =60
         X: =172
-        ZIndex: =13
+        ZIndex: =12
 
     Gallery_Tests_3 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -391,7 +344,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Tests_3.Width/Gallery_Tests_3.AllItemsCount
         Width: =1366
         Y: =If(Label_All_Test_Filter.Text="true",275,217)
-        ZIndex: =14
+        ZIndex: =13
 
         Label5_1 As label:
             Align: =Align.Center
@@ -415,7 +368,7 @@ Screen_Test_input As screen:
 
     Gallery2 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =278
+        Height: =464
         Items: ='Test Results'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -424,7 +377,7 @@ Screen_Test_input As screen:
         TemplateSize: =58
         Width: =1366
         Y: =304
-        ZIndex: =15
+        ZIndex: =14
 
         Label_Material As label:
             Height: =30
@@ -1079,7 +1032,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Tests_1.Width/Gallery_Tests_1.AllItemsCount
         Width: =262
         X: =292
-        ZIndex: =16
+        ZIndex: =15
 
         Label5 As label:
             Align: =Align.Center
@@ -1100,12 +1053,6 @@ Screen_Test_input As screen:
             Width: =Gallery_Tests_1.TemplateWidth
             ZIndex: =1
 
-    Label4 As label:
-        Fill: =RGBA(204, 231, 246, 1)
-        Text: =LookUp(Table_Specifications,Unique_Number="PP_Post_Flake_Sorter",Spec_High_Bulk_Density)
-        X: =578
-        ZIndex: =17
-
     Group2 As group:
         Height: =5
         Width: =5
@@ -1120,7 +1067,7 @@ Screen_Test_input As screen:
             Visible: =false
             Width: =41
             X: =172
-            ZIndex: =18
+            ZIndex: =16
 
         Label2_1 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1129,7 +1076,7 @@ Screen_Test_input As screen:
             Visible: =false
             Width: =41
             X: =213
-            ZIndex: =19
+            ZIndex: =17
 
         Label2_2 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1139,7 +1086,7 @@ Screen_Test_input As screen:
             Width: =41
             X: =172
             Y: =10
-            ZIndex: =20
+            ZIndex: =18
 
         Label2_3 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1149,7 +1096,7 @@ Screen_Test_input As screen:
             Width: =41
             X: =172
             Y: =20
-            ZIndex: =21
+            ZIndex: =19
 
         Label2_4 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1159,7 +1106,7 @@ Screen_Test_input As screen:
             Width: =41
             X: =172
             Y: =30
-            ZIndex: =22
+            ZIndex: =20
 
         Label2_5 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1169,7 +1116,7 @@ Screen_Test_input As screen:
             Width: =41
             X: =213
             Y: =10
-            ZIndex: =23
+            ZIndex: =21
 
         Label2_6 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1179,7 +1126,7 @@ Screen_Test_input As screen:
             Width: =41
             X: =213
             Y: =20
-            ZIndex: =24
+            ZIndex: =22
 
         Label2_7 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1189,80 +1136,58 @@ Screen_Test_input As screen:
             Width: =41
             X: =213
             Y: =30
-            ZIndex: =25
+            ZIndex: =23
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
-        Height: =408
+        Height: =370
         Items: |
             =["PET Wash","PET Flake Bag","PET Post Extruder","SSP 1","PET Pellet Bag","PET Sampling Silo","Full",
-            "","PET Post Flake Sorter","","SSP 2","","","Half",
-            "HDPE Natural Wash","Hopper 1","Extruder 1","Extruder 1
-            1/2 Test","HDPE Natural Pellet Bag","HDPE Natural Sampling Silo","SSP",
-            "","","","","","","Wash",
-            "","Hopper 2","Extruder 2","Extruder 2
-            1/2 Test","","","Add
-            Samples",
+            "","PET Post Flake Sorter","","SSP 2","","","",
+            "HDPE Natural Wash","Natural Hopper 1","Natural Extruder 1","Extruder 1 1/2 Test","HDPE Natural Pellet Bag","HDPE Natural Sampling Silo","Half",
             "","","","","","","",
-            "HDPE Self Coloured Wash","Hopper 3","Extruder 3","Extruder 3
-            1/2 Test","HDPE Self Coloured Pellet Bag","HDPE Self Coloured Sampling Silo","",
+            "","Natural
+            Hopper 2","Natural Extruder 2","Extruder 2 1/2 Test","","","Wash",
             "","","","","","","",
-            "PP Wash","Hopper 4","Extruder 4","Extruder 4
-            1/2 Test","PP Pellet Bag","PP Sampling Silo","",
-            ]
+            "HDPE Self Coloured Wash","Self Coloured Hopper 3","Self Coloured Extruder 3","Extruder 3 1/2 Test","HDPE Self Coloured Pellet Bag","HDPE Self Coloured Sampling Silo","Add Samples",
+            "","","","","","","",
+            "PP Wash","PP Hopper 4","PP Extruder 4","Extruder 4 1/2 Test","PP Pellet Bag","PP Sampling Silo","",]
         Layout: =Layout.Vertical
-        OnSelect: =
+        OnSelect: =Set(var_clicked,ThisItem.Value)
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Add_Samples.Height/10
         Width: =1366
         WrapCount: =7
-        Y: =350
-        ZIndex: =26
+        Y: =50
+        ZIndex: =24
 
         Label_Sampling_Point_2 As label:
             Align: =Align.Center
             Color: =If(Label_Sampling_Point_2.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
-            Fill: |-
-                =If(And(var_material_selected=Blank(),var_sample_point_selected=ThisItem.Value),Colour_Viridor_Purple,
+            Fill: |
+                =If(ThisItem.Value="Full",Colour_Viridor_GreenTint,
+                If(ThisItem.Value="Half",Colour_Viridor_GreenTint,
+                If(ThisItem.Value="Wash",Colour_Viridor_GreenTint,
                 
-                If(Or(var_material_selected="HDPE Natural",var_material_selected="HDPE Self Coloured",var_material_selected="PP"),
+                If(ThisItem.Value="Add Samples",Colour_Viridor_Purple,
                 
-                If(
-                And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=ThisItem.Value),Colour_Viridor_Purple,
-                And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC=ThisItem.Value),Colour_Viridor_Purple,
-                And(var_material_selected="PP",var_sample_point_selected_PP=ThisItem.Value),Colour_Viridor_Purple,
-                
-                If(Or(ThisItem.Value="Flake Bag",ThisItem.Value="SSP"),Color.DarkGray,Color.Transparent)),
-                
-                If(
-                And(var_material_selected="All",var_sample_point_selected_All=ThisItem.Value),Colour_Viridor_Purple,
-                And(var_material_selected="PET",var_sample_point_selected_PET=ThisItem.Value),Colour_Viridor_Purple,
-                And(var_material_selected="Verification",var_sample_point_selected_Verification=ThisItem.Value),Colour_Viridor_Purple,
-                
-                Color.Transparent)))
-            Height: |-
-                =If(ThisItem.Value="All",Parent.TemplateHeight*2,
-                If(ThisItem.Value="",0,
+                Color.Transparent))))
+            Height: |
+                =If(ThisItem.Value="",0,
                 If(ThisItem.Value="SSP 1",Parent.TemplateHeight,
                 If(ThisItem.Value="SSP 2",Parent.TemplateHeight,
                 If(ThisItem.Value="PET Post Flake Sorter",Parent.TemplateHeight,
                 If(ThisItem.Value="PET Flake Bag",Parent.TemplateHeight,
-                
                 If(ThisItem.Value="Hopper 1",Parent.TemplateHeight*2,
                 If(ThisItem.Value="Hopper 2",Parent.TemplateHeight*2,
+                If(ThisItem.Value="HDPE Natural Pellet Bag",Parent.TemplateHeight*4,
+                If(ThisItem.Value="HDPE Natural Sampling Silo",Parent.TemplateHeight*4,
                 If(ThisItem.Value="HDPE Natural Wash",Parent.TemplateHeight*4,
                 
-                Parent.TemplateHeight*2)))))))))
+                If(ThisItem.Value="Add Samples",Parent.TemplateHeight*4,
                 
-                //"PET Post Extruder"
-                
-                //If(ThisItem.Value="PET Pellet Bag x1",Parent.TemplateHeight,
-                //If(ThisItem.Value="PET Pellet Bag x3",Parent.TemplateHeight,
-                //If(ThisItem.Value="HDPE Jazz Bag x1",Parent.TemplateHeight,
-                //If(ThisItem.Value="HDPE Jazz Bag x3",Parent.TemplateHeight,
-                //If(ThisItem.Value="PP Pellet Bag x1",Parent.TemplateHeight,
-                //If(ThisItem.Value="PP Pellet Bag x3",Parent.TemplateHeight,
+                Parent.TemplateHeight*2)))))))))))
             HoverColor: =Colour_Viridor_White
             HoverFill: |
                 =If(ThisItem.Value="",Color.Transparent,Colour_Viridor_Green)
@@ -1274,7 +1199,7 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =If(ThisItem.Value="",Color.Transparent,Color.White)
             PressedFill: =If(ThisItem.Value="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =18
+            Size: =If(ThisItem.Value="PET Post Flake Sorter",16,18)
             Text: =ThisItem.Value
             Width: =Parent.TemplateWidth
             Y: |-
@@ -1282,4 +1207,82 @@ Screen_Test_input As screen:
                 If(ThisItem.Value="PET Std",-30,
                 0))
             ZIndex: =1
+
+    Label4 As label:
+        Fill: =RGBA(204, 231, 246, 1)
+        Height: =44
+        Text: =var_clicked
+        Width: =203
+        X: =578
+        ZIndex: =25
+
+    Label4_3 As label:
+        Fill: =RGBA(204, 231, 246, 1)
+        Height: =44
+        Text: =var_clicked
+        Width: =203
+        X: =811
+        Y: =1
+        ZIndex: =27
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =27
+
+        Button_Back_9 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.BackArrow
+            OnSelect: =Back()
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Back"
+            Width: =38
+            X: =1322
+            Y: =7
+            ZIndex: =5
+
+        Button_Home_2 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Home"
+            Width: =38
+            X: =Button_Back_9.X-50
+            Y: =Button_Back_9.Y
+            ZIndex: =6
+
+        Refresh_Data_1 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =34
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Reload
+            OnSelect: =Refresh('Test Results')
+            PressedColor: =Colour_Viridor_GreenTint
+            Rotation: =90
+            Tooltip: ="Dont press unless needed, will overload server with too many requests."
+            Width: =34
+            X: =Button_Back_9.X-50*2
+            Y: =10
+            ZIndex: =7
+
+        Refresh_Data_4 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =40
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Add
+            OnSelect: =If(var_add_sample_visible!=false,true,false)
+            PressedColor: =Colour_Viridor_GreenTint
+            Rotation: =90
+            Tooltip: ="Dont press unless needed, will overload server with too many requests."
+            Width: =40
+            X: =Button_Back_9.X-50*3
+            Y: =7
+            ZIndex: =26
 
