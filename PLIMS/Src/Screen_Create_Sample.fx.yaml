@@ -136,7 +136,7 @@ Screen_Create_Sample As screen:
 
     Gallery2_1 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =284
+        Height: =297
         Items: =Table_Results
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -144,7 +144,7 @@ Screen_Create_Sample As screen:
         TemplatePadding: =0
         TemplateSize: =58
         Width: =1366
-        Y: =484
+        Y: =471
         ZIndex: =15
 
         Label_Material_1 As label:
@@ -545,12 +545,14 @@ Screen_Create_Sample As screen:
         Fill: =RGBA(246, 88, 16, 1)
         Height: =45
         Items: |-
-            =[{Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material"}, 
-            {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"}, 
-            {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"}, 
-            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"}, 
-            {Test:"Batch Number", Unit:"U_Batch", Low_Spec:"", High_Spec:"", Result:"R_Batch"}, 
-            {Test:"Bag Number", Unit:"U_Bag", Low_Spec:"", High_Spec:"", Result:"R_Bag"}, 
+            =[{Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material"},
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
+            {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"},
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
+            {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"},
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
+            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"},
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
             {Test:"Caustic Strength", Unit:"U_Caustic", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic"}, 
             {Test:"IV MFI", Unit:"U_IV", Low_Spec:"Low_IV", High_Spec:"High_IV", Result:"R_IV"}, 
             {Test:"Extruder IV", Unit:"U_Ext_IV", Low_Spec:"Low_Ext_IV", High_Spec:"High_Ext_IV", Result:"R_Ext_IV"}, 
@@ -596,17 +598,59 @@ Screen_Create_Sample As screen:
 
     Label4_1 As label:
         Fill: =RGBA(204, 231, 246, 1)
-        Height: =45
-        Text: =Now()
-        Width: =168
-        X: =578
+        Height: =49
+        Text: |
+            =Text(Now(), "[$-en-GB]yyyy-mm-dd hh:mm:ss")  // Example for UTC (en-GB)
+        Width: =206
+        X: =386
+        Y: =83
         ZIndex: =17
 
     Button1 As button:
-        OnSelect: |-
-            =Patch('Test Results', Defaults('Test Results'), {Title: "New Item"})
+        OnSelect: |
+            =Patch('Test Results', Defaults('Test Results'), {
+                'Title': "Not Tested",
+                'Material': "Not Tested",
+                'Sample_Point': "Not Tested",
+                'Sample_Point_Filter': "Not Tested",
+                'Date_&_Time': Now(),
+                'Caustic_Strength_Result_%': "Not Tested",
+                'IV_Result': "Not Tested",
+                'MFI_Result': "Not Tested",
+                'Acetaldehyde_Result_ppm': "Not Tested",
+                'Limonene_Result_ppm': "Not Tested",
+                'Benzene_Result_ppm': "Not Tested",
+                'GC_Result_Pass_Fail': "Not Tested",
+                'Fines_Result_%': "Not Tested",
+                'Moisture_Result_%': "Not Tested",
+                'Bulk_Density_Result_kg/m3': "Not Tested",
+                'Material_Density_Result_kg/m3': "Not Tested",
+                'Comp_White_Result_ppm': "Not Tested",
+                'Comp_White_Result_%': "Not Tested",
+                'Comp_Colour_Result_ppm': "Not Tested",
+                'Comp_Colour_Result_%': "Not Tested",
+                'Comp_Colour+White_Result_ppm': "Not Tested",
+                'Comp_Float_Sink_Glass_Result_ppm': "Not Tested",
+                'Comp_Glass+Inorganic_Result_ppm': "Not Tested",
+                'Comp_Float_Sink_Metal_Result_ppm': "Not Tested",
+                'Comp_Float_Sink_PVC_Result_ppm': "Not Tested",
+                'Comp_PO_Result_ppm': "Not Tested",
+                'Comp_Glue_Result_ppm': "Not Tested",
+                'Float_Sink_Pass_Fail': "Not Tested",
+                'Comp_Pass_Fail': "Not Tested",
+                'pH_Result': "Not Tested",
+                'Lab_L_Result': "Not Tested",
+                'Lab_a_Result': "Not Tested",
+                'Lab_b_Result': "Not Tested",
+                'Lab_Result_Pass_Fail': "Not Tested",
+                'Black_Inclusions_Medium_Result_#': "Not Tested",
+                'Black_Inclusions_Large_Result_#': "Not Tested",
+                'Black_Inclusion_Pass_Fail': "Not Tested",
+                'Crystallisation_Result': "Not Tested",
+                'Visual_Inspection_Result_Pass_Fail': "Not Tested"
+            })
         Text: ="Button"
-        X: =105
-        Y: =213
+        X: =22
+        Y: =83
         ZIndex: =18
 

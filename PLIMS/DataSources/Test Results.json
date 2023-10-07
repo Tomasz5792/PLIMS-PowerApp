@@ -25,6 +25,7 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "Black_Inclusion_Pass_Fail": "Black_Inclusion_Pass_Fail",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "Editor": "Modified By",
@@ -136,7 +137,9 @@
       "field_97": "Visual_Inspection_Comment",
       "field_98": "Black_Inclusions_Small_#",
       "field_99": "Black_Inclusions_Medium_#",
+      "GC_Result_Pass_Fail": "GC_Result_Pass_Fail",
       "ID": "ID",
+      "Lab_Result_Pass_Fail": "Lab_Result_Pass_Fail",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Title": "Title"
