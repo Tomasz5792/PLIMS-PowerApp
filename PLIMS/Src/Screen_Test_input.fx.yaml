@@ -428,101 +428,7 @@ Screen_Test_input As screen:
     Gallery2 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =464
-        Items: |-
-            =//Main filter
-            If(
-            //All
-            And(var_material_selected="All",var_sample_point_selected_All=Blank()),
-            Filter(Table_Results,Complete=""),
-            And(var_material_selected="All",var_sample_point_selected_All="Wash"),
-            Filter(Table_Results,And(Sample_Point_Filter="Wash",Complete="")),
-            And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),
-            Filter(Table_Results,And(Sample_Point_Filter="Flake Bag",Complete="")),
-            And(var_material_selected="All",var_sample_point_selected_All="Post Flake Sorter"),
-            Filter(Table_Results,And(Sample_Point_Filter="Post Flake Sorter",Complete="")),
-            And(var_material_selected="All",var_sample_point_selected_All="Post Extruder"),
-            Filter(Table_Results,And(Sample_Point_Filter="Post Extruder",Complete="")),
-            And(var_material_selected="All",var_sample_point_selected_All="SSP"),
-            Filter(Table_Results,And(Sample_Point_Filter="SSP",Complete="")),
-            And(var_material_selected="All",var_sample_point_selected_All="Pellet Bag"),
-            Filter(Table_Results,And(Sample_Point_Filter="Pellet Bag",Complete="")),
-            And(var_material_selected="All",var_sample_point_selected_All="Sampling Silo"),
-            Filter(Table_Results,And(Sample_Point_Filter="Sampling Silo",Complete="")),
-            
-            //"PET"
-            And(var_material_selected="PET",var_sample_point_selected_PET=Blank()),
-            Filter(Table_Results,And(Material="PET", Complete="")),
-            And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),
-            Filter(Table_Results,And(Material="PET", Sample_Point_Filter="Wash",Complete="")),
-            And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),
-            Filter(Table_Results,And(Material="PET", Sample_Point_Filter="Flake Bag",Complete="")),
-            And(var_material_selected="PET",var_sample_point_selected_PET="Post Flake Sorter"),
-            Filter(Table_Results,And(Material="PET", Sample_Point_Filter="Post Flake Sorter",Complete="")),
-            And(var_material_selected="PET",var_sample_point_selected_PET="Post Extruder"),
-            Filter(Table_Results,And(Material="PET", Sample_Point_Filter="Post Extruder",Complete="")),
-            And(var_material_selected="PET",var_sample_point_selected_PET="SSP"),
-            Filter(Table_Results,And(Material="PET", Sample_Point_Filter="SSP",Complete="")),
-            And(var_material_selected="PET",var_sample_point_selected_PET="Pellet Bag"),
-            Filter(Table_Results,And(Material="PET", Sample_Point_Filter="Pellet Bag",Complete="")),
-            And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),
-            Filter(Table_Results,And(Material="PET", Sample_Point_Filter="Sampling Silo",Complete="")),
-            
-            //"HDPE Natural"
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),
-            Filter(Table_Results,And(Material="HDPE Natural", Complete="")),
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),
-            Filter(Table_Results,And(Material="HDPE Natural", Sample_Point_Filter="Wash", Complete="")),
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),
-            Filter(Table_Results,And(Material="HDPE Natural", Sample_Point_Filter="Post Flake Sorter", Complete="")),
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),
-            Filter(Table_Results,And(Material="HDPE Natural", Sample_Point_Filter="Post Extruder", Complete="")),
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Pellet Bag"),
-            Filter(Table_Results,And(Material="HDPE Natural", Sample_Point_Filter="Pellet Bag",Complete="")),
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Sampling Silo"),
-            Filter(Table_Results,And(Material="HDPE Natural", Sample_Point_Filter="Sampling Silo", Complete="")),
-            
-            //"HDPE Self Coloured"
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC=Blank()),
-            Filter(Table_Results,And(Material="HDPE Self Coloured", Complete="")),
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Wash"),
-            Filter(Table_Results,And(Material="HDPE Self Coloured", Sample_Point_Filter="Wash", Complete="")),
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Post Flake Sorter"),
-            Filter(Table_Results,And(Material="HDPE Self Coloured", Sample_Point_Filter="Post Flake Sorter", Complete="")),
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Post Extruder"),
-            Filter(Table_Results,And(Material="HDPE Self Coloured", Sample_Point_Filter="Post Extruder", Complete="")),
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Pellet Bag"),
-            Filter(Table_Results,And(Material="HDPE Self Coloured", Sample_Point_Filter="Pellet Bag", Complete="")),
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Sampling Silo"),
-            Filter(Table_Results,And(Material="HDPE Self Coloured", Sample_Point_Filter="Sampling Silo", Complete="")),
-            
-            //"PP"
-            And(var_material_selected="PP",var_sample_point_selected_PP=Blank()),
-            Filter(Table_Results,And(Material="PP", Complete="")),
-            And(var_material_selected="PP",var_sample_point_selected_PP="Wash"),
-            Filter(Table_Results,And(Material="PP", Sample_Point_Filter="Wash", Complete="")),
-            And(var_material_selected="PP",var_sample_point_selected_PP="Post Flake Sorter"),
-            Filter(Table_Results,And(Material="PP", Sample_Point_Filter="Post Flake Sorter", Complete="")),
-            And(var_material_selected="PP",var_sample_point_selected_PP="Post Extruder"),
-            Filter(Table_Results,And(Material="PP", Sample_Point_Filter="Post Extruder", Complete="")),
-            And(var_material_selected="PP",var_sample_point_selected_PP="Pellet Bag"),
-            Filter(Table_Results,And(Material="PP", Sample_Point_Filter="Pellet Bag", Complete="")),
-            And(var_material_selected="PP",var_sample_point_selected_PP="Sampling Silo"),
-            Filter(Table_Results,And(Material="PP", Sample_Point_Filter="Sampling Silo", Complete="")),
-            
-            //Verification
-            And(var_material_selected="Verification",var_sample_point_selected_Verification=Blank()),
-            Filter(Table_Results,Sample_Point_Filter="Wash"),
-            And(var_material_selected="Verification",var_sample_point_selected_Verification="LMI"),
-            Filter(Table_Results,Sample_Point_Filter="Wash"),
-            And(var_material_selected="Verification",var_sample_point_selected_Verification="GC"),
-            Filter(Table_Results,Sample_Point_Filter="Wash"),
-            And(var_material_selected="Verification",var_sample_point_selected_Verification="Fimic"),
-            Filter(Table_Results,Sample_Point_Filter="Wash"),
-            
-            //Error
-            Filter(Table_Results,Sample_Point_Filter="Wash")
-            
-            )
+        Items: ='Test Results'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
@@ -614,12 +520,11 @@ Screen_Test_input As screen:
             ZIndex: =8
 
         Label_Metal As label:
-            Height: =30
+            Height: =58
             OnSelect: =Select(Parent)
             Text: =ThisItem.Comp_Float_Sink_Metal_Result
             Visible: =false
-            Width: =177
-            X: =217
+            Width: =80
             ZIndex: =9
 
         Label_Glass As label:
