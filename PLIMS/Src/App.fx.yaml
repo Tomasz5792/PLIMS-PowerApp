@@ -9,6 +9,7 @@ App As appinfo:
         //Set(Colour_Viridor_PurpleTint,RGBA(135,24,157,0.3));Set(Colour_Viridor_GreenTint,RGBA(0,154,68,0.3)); Transparent
         Set(Colour_Viridor_PurpleTint,RGBA(219,186,226,255));Set(Colour_Viridor_GreenTint,RGBA(179,225,199,255));
         Set(Colour_Viridor_PinkTint,RGBA(226,24,143,.3));Set(Colour_Viridor_Grey3,RGBA(84,86,90,100));Set(Colour_Main,Colour_Viridor_Green);Set(Colour_Text,Colour_Viridor_White);
+        Set(Colour_Not_Tested,Color.Gray);Set(Colour_To_Test,RGBA(179,225,199,255));Set(Colour_Testing,RGBA(219,186,226,255));
         
         //Text size
         Set(Text_size,18);Set(Text_size_2,13);Set(Text_size_Menu,20);Set(Text_size_Title,25);Set(Text_size_large,40);Set(Border_Thickness,1.2);Set(Text_size_CoA,9);
