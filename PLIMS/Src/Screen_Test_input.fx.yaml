@@ -424,10 +424,14 @@ Screen_Test_input As screen:
                     ThisItem.Unit="U_Caustic","% w/w",
                     ThisItem.Unit="U_Caustic_Small","%
                 w/w",
+                    ThisItem.Unit="U_IV","dL/g",
+                    ThisItem.Unit="U_MFI","g/10min",
                     ThisItem.Unit="U_IV_MFI","dL/g g/10min",
                     ThisItem.Unit="U_Ext_IV","dL/g",
                     ThisItem.Unit="U_IV_MFI_Small","dL/g
                 g/10m",
+                    ThisItem.Unit="U_AA","ppm",
+                    ThisItem.Unit="U_Limonene","ppm",
                     ThisItem.Unit="U_GC","Pass/Fail",
                     ThisItem.Unit="U_GC_Small","Pass/
                 Fail",
@@ -446,6 +450,9 @@ Screen_Test_input As screen:
                     ThisItem.Unit="U_Comp","Pass/Fail",
                     ThisItem.Unit="U_Comp_Small","Pass/
                 Fail",
+                    ThisItem.Unit="U_L","L*",
+                    ThisItem.Unit="U_a","a*",
+                    ThisItem.Unit="U_b","b*",
                     ThisItem.Unit="U_Lab","Pass/Fail",
                     ThisItem.Unit="U_Lab_Small","Pass/
                 Fail",
