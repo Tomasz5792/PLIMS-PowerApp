@@ -491,6 +491,8 @@ Screen_Test_input As screen:
                 w/w",
                     ThisItem.Unit="U_IV","dL/g",
                     ThisItem.Unit="U_MFI","g/10min",
+                    ThisItem.Unit="U_MFI_Small","g/
+                10min",
                     ThisItem.Unit="U_IV_MFI","dL/g g/10min",
                     ThisItem.Unit="U_Ext_IV","dL/g",
                     ThisItem.Unit="U_IV_MFI_Small","dL/g
