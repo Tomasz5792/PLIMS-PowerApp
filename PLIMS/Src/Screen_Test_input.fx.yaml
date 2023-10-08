@@ -369,7 +369,7 @@ Screen_Test_input As screen:
     Gallery2 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: |
-            =If(var_add_sample_visible,348,464)
+            =If(var_add_sample_visible,272,464)
         Items: ='Test Results'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -377,7 +377,7 @@ Screen_Test_input As screen:
         TemplatePadding: =0
         TemplateSize: =58
         Width: =1366
-        Y: =If(var_add_sample_visible,420,304)
+        Y: =If(var_add_sample_visible,496,304)
         ZIndex: =14
 
         Label_Material As label:
@@ -1063,85 +1063,85 @@ Screen_Test_input As screen:
 
         Label2 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =10
+            Height: =13
             Text: ="Material - "&var_material_selected
             Visible: =false
-            Width: =41
-            X: =172
+            Width: =45
+            X: =184
             ZIndex: =16
 
         Label2_1 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =10
+            Height: =13
             Text: ="Samp point - "&var_sample_point_selected
             Visible: =false
-            Width: =41
-            X: =213
+            Width: =45
+            X: =229
             ZIndex: =17
 
         Label2_2 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =10
+            Height: =13
             Text: ="All - "&var_sample_point_selected_All
             Visible: =false
-            Width: =41
-            X: =172
-            Y: =10
+            Width: =45
+            X: =184
+            Y: =13
             ZIndex: =18
 
         Label2_3 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =10
+            Height: =13
             Text: ="PET - "&var_sample_point_selected_PET
             Visible: =false
-            Width: =41
-            X: =172
-            Y: =20
+            Width: =45
+            X: =184
+            Y: =26
             ZIndex: =19
 
         Label2_4 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =10
+            Height: =13
             Text: ="HDPE - "&var_sample_point_selected_HDPE
             Visible: =false
-            Width: =41
-            X: =172
-            Y: =30
+            Width: =45
+            X: =184
+            Y: =38
             ZIndex: =20
 
         Label2_5 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =10
+            Height: =13
             Text: ="HDPE SC - "&var_sample_point_selected_HDPE_SC
             Visible: =false
-            Width: =41
-            X: =213
-            Y: =10
+            Width: =45
+            X: =229
+            Y: =13
             ZIndex: =21
 
         Label2_6 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =10
+            Height: =13
             Text: ="PP - "&var_sample_point_selected_PP
             Visible: =false
-            Width: =41
-            X: =213
-            Y: =20
+            Width: =45
+            X: =229
+            Y: =26
             ZIndex: =22
 
         Label2_7 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =10
+            Height: =13
             Text: ="Verif - "&var_sample_point_selected_Verification
             Visible: =false
-            Width: =41
-            X: =213
-            Y: =30
+            Width: =45
+            X: =229
+            Y: =38
             ZIndex: =23
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
-        Height: =370
+        Height: =330
         Items: |
             =["PET Wash","PET Flake Bag","PET Post Extruder","SSP 1","PET Pellet Bag","PET Sampling Silo","Full",
             "","PET Post Flake Sorter","","SSP 2","","","",
@@ -1201,7 +1201,7 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =If(ThisItem.Value="",Color.Transparent,Color.White)
             PressedFill: =If(ThisItem.Value="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =If(ThisItem.Value="PET Post Flake Sorter",16,18)
+            Size: =If(ThisItem.Value="PET Post Flake Sorter",14,18)
             Text: =ThisItem.Value
             Width: =Parent.TemplateWidth
             Y: |-
@@ -1279,7 +1279,10 @@ Screen_Test_input As screen:
             Height: =40
             HoverColor: =Colour_Viridor_Purple
             Icon: =Icon.Add
-            OnSelect: =Set(var_add_sample_visible,true);
+            OnSelect: |
+                =Set(var_add_sample_visible,true);
+                Set(var_sample_point_selected_All,Blank());
+                Set(var_material_selected,"All");
             PressedColor: =Colour_Viridor_GreenTint
             Rotation: =90
             Tooltip: ="Dont press unless needed, will overload server with too many requests."
@@ -1301,4 +1304,53 @@ Screen_Test_input As screen:
         X: =1110
         Y: =7
         ZIndex: =28
+
+    Gallery_Tests_17 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_Green
+        Height: =58*2
+        Items: |
+            =Gallery_Tests_1.AllItems
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Tests_17.Width/Gallery_Tests_17.AllItemsCount
+        Visible: =var_add_sample_visible
+        Width: =1366
+        Y: =380
+        ZIndex: =29
+
+        HtmlText1_4 As htmlViewer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =Color.White
+            Height: =Gallery_Tests_17.TemplateHeight
+            HtmlText: |-
+                ="<div style='
+                    writing-mode: vertical-rl;
+                    transform: rotate(90deg);
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    line-height: 0.9;
+                '>
+                    "&ThisItem.Test&"
+                </div>"
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Width: =Gallery_Tests_17.TemplateWidth
+            ZIndex: =1
+
+        Label3_3 As label:
+            Height: =Gallery_Tests_17.TemplateHeight
+            OnSelect: =Select(Parent)
+            PressedFill: =Colour_Viridor_Purple
+            Text: =
+            Width: =Gallery_Tests_17.TemplateWidth
+            ZIndex: =2
 
