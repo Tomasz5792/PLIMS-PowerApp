@@ -142,6 +142,7 @@
       "Lab_Result_Pass_Fail": "Lab_Result_Pass_Fail",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
+      "Specification_Filter": "Specification_Filter",
       "Title": "Title"
     },
     "DatasetName": "https://viridor.sharepoint.com/sites/AvonmouthQualityTechs",
