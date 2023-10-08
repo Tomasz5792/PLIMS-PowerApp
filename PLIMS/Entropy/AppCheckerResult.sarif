@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3288,
+                  "charOffset": 3216,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3296,
+                  "charOffset": 3224,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -101,7 +101,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3303,
+                  "charOffset": 3231,
                   "snippet": {
                     "text": "="
                   }
@@ -142,7 +142,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3375,
+                  "charOffset": 3302,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -182,7 +182,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3383,
+                  "charOffset": 3310,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -219,7 +219,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3390,
+                  "charOffset": 3317,
                   "snippet": {
                     "text": "="
                   }
@@ -260,7 +260,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3662,
+                  "charOffset": 3583,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -300,7 +300,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3670,
+                  "charOffset": 3591,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -337,7 +337,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3677,
+                  "charOffset": 3598,
                   "snippet": {
                     "text": "="
                   }
@@ -378,7 +378,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3751,
+                  "charOffset": 3671,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -418,7 +418,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3759,
+                  "charOffset": 3679,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -455,7 +455,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3766,
+                  "charOffset": 3686,
                   "snippet": {
                     "text": "="
                   }
@@ -496,7 +496,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4035,
+                  "charOffset": 3949,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -536,7 +536,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4043,
+                  "charOffset": 3957,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -573,7 +573,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4050,
+                  "charOffset": 3964,
                   "snippet": {
                     "text": "="
                   }
@@ -614,7 +614,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4121,
+                  "charOffset": 4034,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -654,7 +654,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4129,
+                  "charOffset": 4042,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -691,7 +691,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4136,
+                  "charOffset": 4049,
                   "snippet": {
                     "text": "="
                   }
@@ -732,7 +732,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4214,
+                  "charOffset": 4126,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -772,7 +772,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4222,
+                  "charOffset": 4134,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -809,7 +809,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4229,
+                  "charOffset": 4141,
                   "snippet": {
                     "text": "="
                   }
@@ -850,7 +850,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4307,
+                  "charOffset": 4218,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -890,7 +890,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4315,
+                  "charOffset": 4226,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -927,7 +927,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4322,
+                  "charOffset": 4233,
                   "snippet": {
                     "text": "="
                   }
@@ -968,7 +968,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4407,
+                  "charOffset": 4317,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1008,7 +1008,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4415,
+                  "charOffset": 4325,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1045,7 +1045,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4422,
+                  "charOffset": 4332,
                   "snippet": {
                     "text": "="
                   }
@@ -1086,7 +1086,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4504,
+                  "charOffset": 4413,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1126,7 +1126,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4512,
+                  "charOffset": 4421,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1163,7 +1163,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4519,
+                  "charOffset": 4428,
                   "snippet": {
                     "text": "="
                   }
@@ -1204,7 +1204,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4585,
+                  "charOffset": 4493,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1244,7 +1244,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4593,
+                  "charOffset": 4501,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1281,7 +1281,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4600,
+                  "charOffset": 4508,
                   "snippet": {
                     "text": "="
                   }
@@ -1322,7 +1322,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4726,
+                  "charOffset": 4633,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1362,7 +1362,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4734,
+                  "charOffset": 4641,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1399,7 +1399,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4741,
+                  "charOffset": 4648,
                   "snippet": {
                     "text": "="
                   }
@@ -1440,7 +1440,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4840,
+                  "charOffset": 4746,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1480,7 +1480,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4848,
+                  "charOffset": 4754,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1517,7 +1517,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4855,
+                  "charOffset": 4761,
                   "snippet": {
                     "text": "="
                   }
@@ -1558,7 +1558,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4989,
+                  "charOffset": 4894,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1598,7 +1598,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4997,
+                  "charOffset": 4902,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1635,7 +1635,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 5004,
+                  "charOffset": 4909,
                   "snippet": {
                     "text": "="
                   }
@@ -1676,7 +1676,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 5156,
+                  "charOffset": 5060,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1716,7 +1716,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 5164,
+                  "charOffset": 5068,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1753,7 +1753,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 5171,
+                  "charOffset": 5075,
                   "snippet": {
                     "text": "="
                   }
@@ -1794,7 +1794,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 5312,
+                  "charOffset": 5215,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1834,7 +1834,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 5320,
+                  "charOffset": 5223,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1871,7 +1871,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 5327,
+                  "charOffset": 5230,
                   "snippet": {
                     "text": "="
                   }
@@ -1912,7 +1912,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 5551,
+                  "charOffset": 5448,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -1952,7 +1952,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 5559,
+                  "charOffset": 5456,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -1989,7 +1989,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 5566,
+                  "charOffset": 5463,
                   "snippet": {
                     "text": "="
                   }
@@ -2030,7 +2030,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 5637,
+                  "charOffset": 5533,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -2070,7 +2070,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 5645,
+                  "charOffset": 5541,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -2107,7 +2107,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 5652,
+                  "charOffset": 5548,
                   "snippet": {
                     "text": "="
                   }
@@ -2148,7 +2148,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 5730,
+                  "charOffset": 5625,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -2188,7 +2188,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 5738,
+                  "charOffset": 5633,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -2225,7 +2225,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 5745,
+                  "charOffset": 5640,
                   "snippet": {
                     "text": "="
                   }
@@ -2266,7 +2266,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 5823,
+                  "charOffset": 5717,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -2306,8 +2306,244 @@
                 },
                 "region": {
                   "charLength": 7,
+                  "charOffset": 5725,
+                  "snippet": {
+                    "text": ".Result"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.'Main Fill If'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 5732,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.'Main Fill If'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 5816,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.'Main Fill If'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 5824,
+                  "snippet": {
+                    "text": ".Result"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.'Main Fill If'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
                   "charOffset": 5831,
                   "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.'Main Fill If'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 5912,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.'Main Fill If'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 5920,
+                  "snippet": {
                     "text": ".Result"
                   }
                 }
@@ -2343,7 +2579,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 5838,
+                  "charOffset": 5927,
                   "snippet": {
                     "text": "="
                   }
@@ -2384,7 +2620,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 5923,
+                  "charOffset": 5992,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -2424,7 +2660,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 5931,
+                  "charOffset": 6000,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -2461,7 +2697,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 5938,
+                  "charOffset": 6007,
                   "snippet": {
                     "text": "="
                   }
@@ -2502,7 +2738,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 6020,
+                  "charOffset": 6132,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -2542,7 +2778,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 6028,
+                  "charOffset": 6140,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -2579,7 +2815,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 6035,
+                  "charOffset": 6147,
                   "snippet": {
                     "text": "="
                   }
@@ -2620,7 +2856,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 6101,
+                  "charOffset": 6245,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -2660,7 +2896,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 6109,
+                  "charOffset": 6253,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -2697,7 +2933,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 6116,
+                  "charOffset": 6260,
                   "snippet": {
                     "text": "="
                   }
@@ -2738,7 +2974,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 6242,
+                  "charOffset": 6393,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -2778,7 +3014,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 6250,
+                  "charOffset": 6401,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -2815,7 +3051,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 6257,
+                  "charOffset": 6408,
                   "snippet": {
                     "text": "="
                   }
@@ -2856,7 +3092,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 6356,
+                  "charOffset": 6559,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -2896,7 +3132,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 6364,
+                  "charOffset": 6567,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -2933,7 +3169,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 6371,
+                  "charOffset": 6574,
                   "snippet": {
                     "text": "="
                   }
@@ -2974,7 +3210,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 6505,
+                  "charOffset": 6714,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3014,7 +3250,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 6513,
+                  "charOffset": 6722,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3051,7 +3287,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 6520,
+                  "charOffset": 6729,
                   "snippet": {
                     "text": "="
                   }
@@ -3092,7 +3328,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 6672,
+                  "charOffset": 6953,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3132,7 +3368,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 6680,
+                  "charOffset": 6961,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3169,7 +3405,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 6687,
+                  "charOffset": 6968,
                   "snippet": {
                     "text": "="
                   }
@@ -3210,7 +3446,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 6828,
+                  "charOffset": 7038,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3250,7 +3486,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 6836,
+                  "charOffset": 7046,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3287,7 +3523,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 6843,
+                  "charOffset": 7053,
                   "snippet": {
                     "text": "="
                   }
@@ -3328,7 +3564,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7073,
+                  "charOffset": 7130,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3368,7 +3604,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7081,
+                  "charOffset": 7138,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3405,7 +3641,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7088,
+                  "charOffset": 7145,
                   "snippet": {
                     "text": "="
                   }
@@ -3446,7 +3682,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7159,
+                  "charOffset": 7222,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3486,7 +3722,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7167,
+                  "charOffset": 7230,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3523,7 +3759,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7174,
+                  "charOffset": 7237,
                   "snippet": {
                     "text": "="
                   }
@@ -3564,7 +3800,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7252,
+                  "charOffset": 7321,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3604,7 +3840,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7260,
+                  "charOffset": 7329,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3641,7 +3877,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7267,
+                  "charOffset": 7336,
                   "snippet": {
                     "text": "="
                   }
@@ -3682,7 +3918,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7345,
+                  "charOffset": 7417,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3722,7 +3958,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7353,
+                  "charOffset": 7425,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3759,7 +3995,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7360,
+                  "charOffset": 7432,
                   "snippet": {
                     "text": "="
                   }
@@ -3800,7 +4036,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7445,
+                  "charOffset": 7497,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3840,7 +4076,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7453,
+                  "charOffset": 7505,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3877,7 +4113,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7460,
+                  "charOffset": 7512,
                   "snippet": {
                     "text": "="
                   }
@@ -3918,7 +4154,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7542,
+                  "charOffset": 7637,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -3958,7 +4194,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7550,
+                  "charOffset": 7645,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -3995,7 +4231,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7557,
+                  "charOffset": 7652,
                   "snippet": {
                     "text": "="
                   }
@@ -4036,7 +4272,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7623,
+                  "charOffset": 7750,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -4076,7 +4312,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7631,
+                  "charOffset": 7758,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -4113,7 +4349,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7638,
+                  "charOffset": 7765,
                   "snippet": {
                     "text": "="
                   }
@@ -4154,7 +4390,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7764,
+                  "charOffset": 7898,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -4194,7 +4430,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7772,
+                  "charOffset": 7906,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -4231,7 +4467,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7779,
+                  "charOffset": 7913,
                   "snippet": {
                     "text": "="
                   }
@@ -4272,7 +4508,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 7878,
+                  "charOffset": 8064,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -4312,7 +4548,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 7886,
+                  "charOffset": 8072,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -4349,7 +4585,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 7893,
+                  "charOffset": 8079,
                   "snippet": {
                     "text": "="
                   }
@@ -4390,7 +4626,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 8027,
+                  "charOffset": 8219,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -4430,7 +4666,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 8035,
+                  "charOffset": 8227,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -4467,7 +4703,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 8042,
+                  "charOffset": 8234,
                   "snippet": {
                     "text": "="
                   }
@@ -4492,542 +4728,6 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 8194,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.'Main Fill If'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 8202,
-                  "snippet": {
-                    "text": ".Result"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.'Main Fill If'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 8209,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.'Main Fill If'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 8350,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.'Main Fill If'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 8358,
-                  "snippet": {
-                    "text": ".Result"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.'Main Fill If'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 8365,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.'Main Fill If'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Button_Back_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Button_Back_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Button_Back_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Button_Back_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Selected_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Selected_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Start",
-                "type": "Screen_Start.Gallery_CoA_Scanner_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6054,19 +5754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Colour_Main"
+                  "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Colour_Main",
+                  "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Colour_Main",
-                "module": "App",
-                "type": "App"
+                "member": "AccessibleLabel",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Button_Back_3"
               }
             }
           ],
@@ -6076,27 +5776,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Text_size_CoA"
+                  "fullyQualifiedName": "Screen_Start.Button_Back_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Text_size_CoA",
+                  "fullyQualifiedName": "Screen_Start.Button_Back_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Text_size_CoA",
-                "module": "App",
-                "type": "App"
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Button_Back_3"
               }
             }
           ],
@@ -6106,27 +5806,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Border_Thickness"
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Border_Thickness",
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Border_Thickness",
-                "module": "App",
-                "type": "App"
+                "member": "AccessibleLabel",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Selected_1"
               }
             }
           ],
@@ -6136,25 +5836,235 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Text_size_2"
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Text_size_2",
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Selected_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Text_size_2",
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Selected_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_1.Label1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Start.Gallery_CoA_Scanner_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Start",
+                "type": "Screen_Start.Gallery_CoA_Scanner_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Colour_To_Test"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Colour_To_Test",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Colour_To_Test",
                 "module": "App",
                 "type": "App"
               }
@@ -6204,66 +6114,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Colour_To_Test"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Colour_To_Test",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Colour_To_Test",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Var_Product_Menu_2"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Var_Product_Menu_2",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Var_Product_Menu_2",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Text_size"
                 }
               ],
@@ -6294,6 +6144,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Text_size_2"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Text_size_2",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text_size_2",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Border_Thickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Border_Thickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Border_Thickness",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Text_size_CoA"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Text_size_CoA",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text_size_CoA",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Colour_Main"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Colour_Main",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Colour_Main",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Colour_Text"
                 }
               ],
@@ -6305,6 +6275,36 @@
               },
               "properties": {
                 "member": "Colour_Text",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Var_Product_Menu_2"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Var_Product_Menu_2",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Var_Product_Menu_2",
                 "module": "App",
                 "type": "App"
               }
@@ -6474,36 +6474,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.'Main Fill If'.Fill",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.'Main Fill If'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_Test_input"
                 }
               ],
@@ -6526,7 +6496,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 9
+          "ruleIndex": 8
         }
       ],
       "tool": {
@@ -6666,23 +6636,6 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
-              }
-            },
-            {
-              "id": "app-InefficientDelayLoading",
-              "messageStrings": {
-                "issue": {
-                  "text": "Inefficient delay loading"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Use variables, collections, and navigation context to share state across screens instead."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "Controls that reference controls on other screens can slow down app loading and navigation. Doing this may force the app to load the other screens immediately, rather than waiting until the user navigates to that screen."
               }
             },
             {
