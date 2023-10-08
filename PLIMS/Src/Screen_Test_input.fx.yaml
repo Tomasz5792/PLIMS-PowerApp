@@ -1012,6 +1012,8 @@ Screen_Test_input As screen:
                 BorderThickness: =2
                 Fill: |-
                     =If(
+                    ThisItem.Result="",RGBA(0,0,0,0),
+                    
                     And(ThisItem.Result="R_MFI",Label_IV_MFI.Text="Not Tested"),Colour_Not_Tested,
                     
                     Colour_Viridor_GreenTint)
@@ -1019,8 +1021,8 @@ Screen_Test_input As screen:
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
+                PaddingLeft: =2
+                PaddingRight: =2
                 PaddingTop: =0
                 PressedColor: =Color.White
                 PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
