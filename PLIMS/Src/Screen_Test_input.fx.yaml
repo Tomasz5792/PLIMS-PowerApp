@@ -489,8 +489,14 @@ Screen_Test_input As screen:
             PressedColor: =Color.White
             PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
             Size: |-
-                =If(var_sample_point_selected_All=Blank(),12,
-                16)
+                =If(
+                Or(
+                var_sample_point_selected_All=Blank(),
+                var_material_selected="PET"&&var_sample_point_selected_PET=Blank(),
+                var_material_selected="HDPE Natural"&&var_sample_point_selected_HDPE=Blank(),
+                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_HDPE_SC=Blank(),
+                var_material_selected="PP"&&var_sample_point_selected_PP=Blank()
+                ),12,14)
             Text: |
                 =If(
                     ThisItem.Unit="","",
@@ -1776,80 +1782,74 @@ Screen_Test_input As screen:
 
         Label2 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =13
+            Height: =45
             Text: ="Material - "&var_material_selected
-            Visible: =false
-            Width: =45
-            X: =184
+            Width: =200
+            X: =753
+            Y: =576
             ZIndex: =16
 
         Label2_1 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =13
+            Height: =45
             Text: ="Samp point - "&var_sample_point_selected
-            Visible: =false
-            Width: =45
-            X: =229
+            Width: =200
+            X: =953
+            Y: =576
             ZIndex: =17
 
         Label2_2 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =13
+            Height: =45
             Text: ="All - "&var_sample_point_selected_All
-            Visible: =false
-            Width: =45
-            X: =184
-            Y: =13
+            Width: =200
+            X: =753
+            Y: =621
             ZIndex: =18
 
         Label2_3 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =13
+            Height: =45
             Text: ="PET - "&var_sample_point_selected_PET
-            Visible: =false
-            Width: =45
-            X: =184
-            Y: =26
+            Width: =200
+            X: =753
+            Y: =666
             ZIndex: =19
 
         Label2_4 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =13
+            Height: =45
             Text: ="HDPE - "&var_sample_point_selected_HDPE
-            Visible: =false
-            Width: =45
-            X: =184
-            Y: =38
+            Width: =200
+            X: =753
+            Y: =707
             ZIndex: =20
 
         Label2_5 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =13
+            Height: =45
             Text: ="HDPE SC - "&var_sample_point_selected_HDPE_SC
-            Visible: =false
-            Width: =45
-            X: =229
-            Y: =13
+            Width: =200
+            X: =953
+            Y: =621
             ZIndex: =21
 
         Label2_6 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =13
+            Height: =45
             Text: ="PP - "&var_sample_point_selected_PP
-            Visible: =false
-            Width: =45
-            X: =229
-            Y: =26
+            Width: =200
+            X: =953
+            Y: =666
             ZIndex: =22
 
         Label2_7 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =13
+            Height: =45
             Text: ="Verif - "&var_sample_point_selected_Verification
-            Visible: =false
-            Width: =45
-            X: =229
-            Y: =38
+            Width: =200
+            X: =953
+            Y: =707
             ZIndex: =23
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
