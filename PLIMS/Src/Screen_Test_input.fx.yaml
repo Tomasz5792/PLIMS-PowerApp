@@ -160,7 +160,7 @@ Screen_Test_input As screen:
                 0))
             ZIndex: =1
 
-    Title_Select_CoA_1 As label:
+    Title_Test_Input As label:
         Align: =TextPosition.Left
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 155, 62, 100)
@@ -409,7 +409,7 @@ Screen_Test_input As screen:
     Gallery2 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: |
-            =If(var_add_sample_visible,272,464)
+            =If(var_add_sample_visible,Parent.Height-Title_Test_Input.Height-Gallery_Add_Samples.Height-Gallery_Tests_Add_Sample.Height,464)
         Items: ='Test Results'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -417,7 +417,7 @@ Screen_Test_input As screen:
         TemplatePadding: =0
         TemplateSize: =58
         Width: =1366
-        Y: =If(var_add_sample_visible,496,304)
+        Y: =If(var_add_sample_visible,Title_Test_Input.Height+Gallery_Add_Samples.Height+Gallery_Tests_Add_Sample.Height,304)
         ZIndex: =14
 
         Label_Material As label:
@@ -1181,14 +1181,15 @@ Screen_Test_input As screen:
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
-        Height: =330
+        Height: =(Parent.Height-50-Gallery_Tests_Add_Sample.Height)/2
         Items: |-
             =[{Name: "PET Wash", Text: "PET
             Wash"},{Name: "PET Flake Bag", Text: "PET Flake Bag"},{Name: "PET Post Extruder", Text: "PET
             Post Extruder"},{Name: "SSP 1", Text: "SSP 1"},{Name: "PET Pellet Bag", Text: "PET
             Pellet Bag"},{Name: "PET Sampling Silo", Text: "PET
             Sampling Silo"},{Name: "Full", Text: "Full"},{Name: "", Text: ""},{Name: "PET Post Flake Sorter", Text: "PET Post Flake Sorter"},{Name: "", Text: ""},{Name: "SSP 2", Text: "SSP 2"},{Name: "", Text: ""},{Name: "", Text: ""},{Name: "", Text: ""},{Name: "HDPE Natural Wash", Text: "HDPE
-            Natural Wash"},{Name: "Natural Hopper 1", Text: "Natural
+            Natural
+            Wash"},{Name: "Natural Hopper 1", Text: "Natural
             Hopper 1"},{Name: "Natural Extruder 1", Text: "Natural
             Extruder 1"},{Name: "Extruder 1 1/2 Test", Text: "Extruder 1
             1/2 Test"},{Name: "HDPE Natural Pellet Bag", Text: "HDPE
@@ -1208,17 +1209,22 @@ Screen_Test_input As screen:
             Pellet Bag"},{Name: "PP Sampling Silo", Text: "PP Sampling Silo"}]
         Layout: =Layout.Vertical
         OnSelect: |+
-            =//for testing delete later
-            Set(var_clicked,ThisItem.Name);
-            
-            //if to set clicked value as true for use in add sample If and fill colour if.
+            =//if to set clicked value as true for use in add sample If and fill colour if.
             If(
+                //ThisItem.Name = "Clear", Set(var_selected_Clear, !var_selected_Clear),
+                ThisItem.Name = "Clear", Set(var_selected_PET_Wash, false);Set(var_selected_PET_Flake_Bag, false);Set(var_selected_SSP_1, false);Set(var_selected_PET_Pellet_Bag, false);Set(var_selected_PET_Sampling_Silo, false);Set(var_selected_PET_Post_Flake_Sorter, false);Set(var_selected_PET_Post_Extruder, false);Set(var_selected_SSP_2, false);Set(var_selected_HDPE_Natural_Wash, false);Set(var_selected_Natural_Hopper_1, false);Set(var_selected_Natural_Extruder_1, false);Set(var_selected_Extruder_1_1_2_Test, false);Set(var_selected_HDPE_Natural_Pellet_Bag, false);Set(var_selected_HDPE_Natural_Sampling_Silo, false);Set(var_selected_Natural_Hopper_2, false);Set(var_selected_Natural_Extruder_2, false);Set(var_selected_Extruder_2_1_2_Test, false);Set(var_selected_HDPE_Self_Coloured_Wash, false);Set(var_selected_Self_Coloured_Hopper_3, false);Set(var_selected_Self_Coloured_Extruder_3, false);Set(var_selected_Extruder_3_1_2_Test, false);Set(var_selected_HDPE_Self_Coloured_Pellet_Bag, false);Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false);Set(var_selected_Add_Samples, false);Set(var_selected_PP_Wash, false);Set(var_selected_PP_Hopper_4, false);Set(var_selected_PP_Extruder_4, false);Set(var_selected_Extruder_4_1_2_Test, false);Set(var_selected_PP_Pellet_Bag, false);Set(var_selected_PP_Sampling_Silo, false),
+            
+                //ThisItem.Name = "Full", Set(var_selected_Full, !var_selected_Full),
+                ThisItem.Name = "Full", Set(var_selected_PET_Wash, true);Set(var_selected_PET_Flake_Bag, false);Set(var_selected_SSP_1, false);Set(var_selected_PET_Pellet_Bag, false);Set(var_selected_PET_Sampling_Silo, false);Set(var_selected_PET_Post_Flake_Sorter, true);Set(var_selected_PET_Post_Extruder, true);Set(var_selected_SSP_2, false);Set(var_selected_HDPE_Natural_Wash, true);Set(var_selected_Natural_Hopper_1, true);Set(var_selected_Natural_Extruder_1, true);Set(var_selected_Extruder_1_1_2_Test, false);Set(var_selected_HDPE_Natural_Pellet_Bag, false);Set(var_selected_HDPE_Natural_Sampling_Silo, false);Set(var_selected_Natural_Hopper_2, true);Set(var_selected_Natural_Extruder_2, true);Set(var_selected_Extruder_2_1_2_Test, false);Set(var_selected_HDPE_Self_Coloured_Wash, false);Set(var_selected_Self_Coloured_Hopper_3, true);Set(var_selected_Self_Coloured_Extruder_3, true);Set(var_selected_Extruder_3_1_2_Test, false);Set(var_selected_HDPE_Self_Coloured_Pellet_Bag, false);Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false);Set(var_selected_Add_Samples, false);Set(var_selected_PP_Wash, false);Set(var_selected_PP_Hopper_4, true);Set(var_selected_PP_Extruder_4, true);Set(var_selected_Extruder_4_1_2_Test, false);Set(var_selected_PP_Pellet_Bag, false);Set(var_selected_PP_Sampling_Silo, false),
+            
+                //ThisItem.Name = "Half", Set(var_selected_Half, !var_selected_Half),
+            
+            
                 ThisItem.Name = "PET Wash", Set(var_selected_PET_Wash, !var_selected_PET_Wash),
                 ThisItem.Name = "PET Flake Bag", Set(var_selected_PET_Flake_Bag, !var_selected_PET_Flake_Bag),
                 ThisItem.Name = "SSP 1", Set(var_selected_SSP_1, !var_selected_SSP_1),
                 ThisItem.Name = "PET Pellet Bag", Set(var_selected_PET_Pellet_Bag, !var_selected_PET_Pellet_Bag),
                 ThisItem.Name = "PET Sampling Silo", Set(var_selected_PET_Sampling_Silo, !var_selected_PET_Sampling_Silo),
-                ThisItem.Name = "Full", Set(var_selected_Full, !var_selected_Full),
                 ThisItem.Name = "PET Post Flake Sorter", Set(var_selected_PET_Post_Flake_Sorter, !var_selected_PET_Post_Flake_Sorter),
                 ThisItem.Name = "PET Post Extruder", Set(var_selected_PET_Post_Extruder, !var_selected_PET_Post_Extruder),
                 ThisItem.Name = "SSP 2", Set(var_selected_SSP_2, !var_selected_SSP_2),
@@ -1228,11 +1234,9 @@ Screen_Test_input As screen:
                 ThisItem.Name = "Extruder 1 1/2 Test", Set(var_selected_Extruder_1_1_2_Test, !var_selected_Extruder_1_1_2_Test),
                 ThisItem.Name = "HDPE Natural Pellet Bag", Set(var_selected_HDPE_Natural_Pellet_Bag, !var_selected_HDPE_Natural_Pellet_Bag),
                 ThisItem.Name = "HDPE Natural Sampling Silo", Set(var_selected_HDPE_Natural_Sampling_Silo, !var_selected_HDPE_Natural_Sampling_Silo),
-                ThisItem.Name = "Half", Set(var_selected_Half, !var_selected_Half),
                 ThisItem.Name = "Natural Hopper 2", Set(var_selected_Natural_Hopper_2, !var_selected_Natural_Hopper_2),
                 ThisItem.Name = "Natural Extruder 2", Set(var_selected_Natural_Extruder_2, !var_selected_Natural_Extruder_2),
                 ThisItem.Name = "Extruder 2 1/2 Test", Set(var_selected_Extruder_2_1_2_Test, !var_selected_Extruder_2_1_2_Test),
-                ThisItem.Name = "Clear", Set(var_selected_Clear, !var_selected_Clear),
                 ThisItem.Name = "HDPE Self Coloured Wash", Set(var_selected_HDPE_Self_Coloured_Wash, !var_selected_HDPE_Self_Coloured_Wash),
                 ThisItem.Name = "Self Coloured Hopper 3", Set(var_selected_Self_Coloured_Hopper_3, !var_selected_Self_Coloured_Hopper_3),
                 ThisItem.Name = "Self Coloured Extruder 3", Set(var_selected_Self_Coloured_Extruder_3, !var_selected_Self_Coloured_Extruder_3),
@@ -1336,7 +1340,7 @@ Screen_Test_input As screen:
     Label4 As label:
         Fill: =RGBA(204, 231, 246, 1)
         Height: =44
-        Text: =var_clicked
+        Text: =
         Width: =203
         X: =578
         ZIndex: =25
@@ -1367,7 +1371,7 @@ Screen_Test_input As screen:
         Y: =1
         ZIndex: =27
 
-    Gallery_Tests_17 As gallery.galleryHorizontal:
+    Gallery_Tests_Add_Sample As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_Green
         Height: =58*2
@@ -1375,17 +1379,19 @@ Screen_Test_input As screen:
             =Gallery_Tests_1.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_17.Width/Gallery_Tests_17.AllItemsCount
+        TemplateSize: =Gallery_Tests_Add_Sample.Width/Gallery_Tests_Add_Sample.AllItemsCount
         Visible: =var_add_sample_visible
         Width: =1366
-        Y: =380
+        Y: |-
+            =Title_Test_Input.Height+Gallery_Add_Samples.Height
+            //380
         ZIndex: =28
 
         HtmlText1_4 As htmlViewer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =2
             Color: =Color.White
-            Height: =Gallery_Tests_17.TemplateHeight
+            Height: =Gallery_Tests_Add_Sample.TemplateHeight
             HtmlText: |-
                 ="<div style='
                     writing-mode: vertical-rl;
@@ -1405,15 +1411,15 @@ Screen_Test_input As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =16
-            Width: =Gallery_Tests_17.TemplateWidth
+            Width: =Gallery_Tests_Add_Sample.TemplateWidth
             ZIndex: =1
 
         Label3_3 As label:
-            Height: =Gallery_Tests_17.TemplateHeight
+            Height: =Gallery_Tests_Add_Sample.TemplateHeight
             OnSelect: =Select(Parent)
             PressedFill: =Colour_Viridor_Purple
             Text: =
-            Width: =Gallery_Tests_17.TemplateWidth
+            Width: =Gallery_Tests_Add_Sample.TemplateWidth
             ZIndex: =2
 
     Hide_add_sample As icon.CancelBadge:

@@ -4194,19 +4194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_17.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_Add_Sample.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_17.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_Add_Sample.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Gallery_Tests_17"
+                "type": "Screen_Test_input.Gallery_Tests_Add_Sample"
               }
             }
           ],
@@ -4224,19 +4224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_17.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_Add_Sample.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_17.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_Add_Sample.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Gallery_Tests_17"
+                "type": "Screen_Test_input.Gallery_Tests_Add_Sample"
               }
             }
           ],
