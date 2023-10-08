@@ -475,7 +475,7 @@ Screen_Test_input As screen:
             Text: |
                 =If(
                     ThisItem.Unit="","",
-                    ThisItem.Unit="U_Date","dd/mm/yyyy",
+                    ThisItem.Unit="U_Date","dd mmm yy",
                     ThisItem.Unit="U_Time","hh:mm",
                     ThisItem.Unit="U_Bag_Batch","",
                 
