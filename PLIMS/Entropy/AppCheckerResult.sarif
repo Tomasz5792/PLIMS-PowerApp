@@ -3674,19 +3674,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Refresh_Data_4.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_input.Show_add_sample.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Refresh_Data_4.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_input.Show_add_sample.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Refresh_Data_4"
+                "type": "Screen_Test_input.Show_add_sample"
               }
             }
           ],
@@ -3704,19 +3704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Refresh_Data_4.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_input.Show_add_sample.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Refresh_Data_4.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_input.Show_add_sample.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Refresh_Data_4"
+                "type": "Screen_Test_input.Show_add_sample"
               }
             }
           ],
@@ -3734,19 +3734,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Refresh_Data_5.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_input.Hide_add_sample.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Refresh_Data_5.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_input.Hide_add_sample.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Refresh_Data_5"
+                "type": "Screen_Test_input.Hide_add_sample"
               }
             }
           ],
@@ -3764,19 +3764,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Refresh_Data_5.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_input.Hide_add_sample.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Refresh_Data_5.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_input.Hide_add_sample.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Refresh_Data_5"
+                "type": "Screen_Test_input.Hide_add_sample"
               }
             }
           ],

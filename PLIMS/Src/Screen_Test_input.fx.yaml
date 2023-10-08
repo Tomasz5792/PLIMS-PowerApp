@@ -172,6 +172,46 @@ Screen_Test_input As screen:
         Width: =1366
         ZIndex: =4
 
+    Button_Back_9 As icon.CancelBadge:
+        Color: =Color.White
+        Height: =38
+        HoverColor: =Colour_Viridor_Purple
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PressedColor: =Colour_Viridor_GreenTint
+        Tooltip: ="Back"
+        Width: =38
+        X: =1322
+        Y: =7
+        ZIndex: =5
+
+    Button_Home_2 As icon.CancelBadge:
+        Color: =Color.White
+        Height: =38
+        HoverColor: =Colour_Viridor_Purple
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
+        PressedColor: =Colour_Viridor_GreenTint
+        Tooltip: ="Home"
+        Width: =38
+        X: =Button_Back_9.X-50
+        Y: =Button_Back_9.Y
+        ZIndex: =6
+
+    Refresh_Data_1 As icon.CancelBadge:
+        Color: =Color.White
+        Height: =34
+        HoverColor: =Colour_Viridor_Purple
+        Icon: =Icon.Reload
+        OnSelect: =Refresh('Test Results')
+        PressedColor: =Colour_Viridor_GreenTint
+        Rotation: =90
+        Tooltip: ="Dont press unless needed, will overload server with too many requests."
+        Width: =34
+        X: =Button_Back_9.X-50*2
+        Y: =10
+        ZIndex: =7
+
     Gallery_Tests_4 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 0, 1)
@@ -1218,6 +1258,23 @@ Screen_Test_input As screen:
         X: =578
         ZIndex: =25
 
+    Show_add_sample As icon.CancelBadge:
+        Color: =Color.White
+        Height: =40
+        HoverColor: =Colour_Viridor_Purple
+        Icon: =Icon.Add
+        OnSelect: |
+            =Set(var_add_sample_visible,true);
+            Set(var_sample_point_selected_All,Blank());
+            Set(var_material_selected,"All");
+        PressedColor: =Colour_Viridor_GreenTint
+        Rotation: =90
+        Tooltip: ="Dont press unless needed, will overload server with too many requests."
+        Width: =40
+        X: =Button_Back_9.X-50*3
+        Y: =7
+        ZIndex: =26
+
     Label4_3 As label:
         Fill: =RGBA(204, 231, 246, 1)
         Height: =44
@@ -1226,84 +1283,6 @@ Screen_Test_input As screen:
         X: =811
         Y: =1
         ZIndex: =27
-
-    Group1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =27
-
-        Button_Back_9 As icon.CancelBadge:
-            Color: =Color.White
-            Height: =38
-            HoverColor: =Colour_Viridor_Purple
-            Icon: =Icon.BackArrow
-            OnSelect: =Back()
-            PressedColor: =Colour_Viridor_GreenTint
-            Tooltip: ="Back"
-            Width: =38
-            X: =1322
-            Y: =7
-            ZIndex: =5
-
-        Button_Home_2 As icon.CancelBadge:
-            Color: =Color.White
-            Height: =38
-            HoverColor: =Colour_Viridor_Purple
-            Icon: =Icon.Home
-            OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
-            PressedColor: =Colour_Viridor_GreenTint
-            Tooltip: ="Home"
-            Width: =38
-            X: =Button_Back_9.X-50
-            Y: =Button_Back_9.Y
-            ZIndex: =6
-
-        Refresh_Data_1 As icon.CancelBadge:
-            Color: =Color.White
-            Height: =34
-            HoverColor: =Colour_Viridor_Purple
-            Icon: =Icon.Reload
-            OnSelect: =Refresh('Test Results')
-            PressedColor: =Colour_Viridor_GreenTint
-            Rotation: =90
-            Tooltip: ="Dont press unless needed, will overload server with too many requests."
-            Width: =34
-            X: =Button_Back_9.X-50*2
-            Y: =10
-            ZIndex: =7
-
-        Refresh_Data_4 As icon.CancelBadge:
-            Color: =Color.White
-            Height: =40
-            HoverColor: =Colour_Viridor_Purple
-            Icon: =Icon.Add
-            OnSelect: |
-                =Set(var_add_sample_visible,true);
-                Set(var_sample_point_selected_All,Blank());
-                Set(var_material_selected,"All");
-            PressedColor: =Colour_Viridor_GreenTint
-            Rotation: =90
-            Tooltip: ="Dont press unless needed, will overload server with too many requests."
-            Width: =40
-            X: =Button_Back_9.X-50*3
-            Y: =7
-            ZIndex: =26
-
-    Refresh_Data_5 As icon.CancelBadge:
-        Color: =Color.White
-        Height: =40
-        HoverColor: =Colour_Viridor_Purple
-        Icon: =Icon.Add
-        OnSelect: =Set(var_add_sample_visible,false);
-        PressedColor: =Colour_Viridor_GreenTint
-        Rotation: =90
-        Tooltip: ="Dont press unless needed, will overload server with too many requests."
-        Width: =40
-        X: =1110
-        Y: =7
-        ZIndex: =28
 
     Gallery_Tests_17 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -1317,7 +1296,7 @@ Screen_Test_input As screen:
         Visible: =var_add_sample_visible
         Width: =1366
         Y: =380
-        ZIndex: =29
+        ZIndex: =28
 
         HtmlText1_4 As htmlViewer:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -1353,4 +1332,19 @@ Screen_Test_input As screen:
             Text: =
             Width: =Gallery_Tests_17.TemplateWidth
             ZIndex: =2
+
+    Hide_add_sample As icon.CancelBadge:
+        Color: =Color.White
+        Height: =40
+        HoverColor: =Colour_Viridor_Purple
+        Icon: =Icon.Add
+        OnSelect: =Set(var_add_sample_visible,false);
+        PressedColor: =Colour_Viridor_GreenTint
+        Rotation: =90
+        Tooltip: ="Dont press unless needed, will overload server with too many requests."
+        Visible: =var_add_sample_visible
+        Width: =40
+        X: =Show_add_sample.X
+        Y: =Show_add_sample.Y
+        ZIndex: =29
 
