@@ -206,7 +206,7 @@ Screen_Test_input As screen:
         OnSelect: =Refresh('Test Results')
         PressedColor: =Colour_Viridor_GreenTint
         Rotation: =90
-        Tooltip: ="Dont press unless needed, will overload server with too many requests."
+        Tooltip: ="Refresh data."
         Width: =34
         X: =Button_Back_9.X-50*2
         Y: =10
@@ -2037,7 +2037,7 @@ Screen_Test_input As screen:
             Set(var_material_selected,"All");
         PressedColor: =Colour_Viridor_GreenTint
         Rotation: =90
-        Tooltip: ="Dont press unless needed, will overload server with too many requests."
+        Tooltip: ="Toggle adding samples on."
         Width: =40
         X: =Button_Back_9.X-50*3
         Y: =7
@@ -2110,7 +2110,7 @@ Screen_Test_input As screen:
         OnSelect: =Set(var_add_sample_visible,false);
         PressedColor: =Colour_Viridor_GreenTint
         Rotation: =90
-        Tooltip: ="Dont press unless needed, will overload server with too many requests."
+        Tooltip: ="Toggle adding samples off."
         Visible: =var_add_sample_visible
         Width: =40
         X: =Show_add_sample.X
