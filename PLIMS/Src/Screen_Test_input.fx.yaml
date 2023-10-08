@@ -1745,8 +1745,10 @@ Screen_Test_input As screen:
             {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"},]
             )
         LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Main_If.Width/Gallery_Main_If.AllItemsCount
+        Visible: =false
         Width: =301
         X: =277
         Y: =1
@@ -1782,74 +1784,80 @@ Screen_Test_input As screen:
 
         Label2 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =45
+            Height: =9
             Text: ="Material - "&var_material_selected
-            Width: =200
-            X: =753
-            Y: =576
+            Visible: =false
+            Width: =43
+            X: =172
             ZIndex: =16
 
         Label2_1 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =45
+            Height: =9
             Text: ="Samp point - "&var_sample_point_selected
-            Width: =200
-            X: =953
-            Y: =576
+            Visible: =false
+            Width: =43
+            X: =215
             ZIndex: =17
 
         Label2_2 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =45
+            Height: =9
             Text: ="All - "&var_sample_point_selected_All
-            Width: =200
-            X: =753
-            Y: =621
+            Visible: =false
+            Width: =43
+            X: =172
+            Y: =9
             ZIndex: =18
 
         Label2_3 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =45
+            Height: =9
             Text: ="PET - "&var_sample_point_selected_PET
-            Width: =200
-            X: =753
-            Y: =666
+            Visible: =false
+            Width: =43
+            X: =172
+            Y: =17
             ZIndex: =19
 
         Label2_4 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =45
+            Height: =9
             Text: ="HDPE - "&var_sample_point_selected_HDPE
-            Width: =200
-            X: =753
-            Y: =707
+            Visible: =false
+            Width: =43
+            X: =172
+            Y: =25
             ZIndex: =20
 
         Label2_5 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =45
+            Height: =9
             Text: ="HDPE SC - "&var_sample_point_selected_HDPE_SC
-            Width: =200
-            X: =953
-            Y: =621
+            Visible: =false
+            Width: =43
+            X: =215
+            Y: =9
             ZIndex: =21
 
         Label2_6 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =45
+            Height: =9
             Text: ="PP - "&var_sample_point_selected_PP
-            Width: =200
-            X: =953
-            Y: =666
+            Visible: =false
+            Width: =43
+            X: =215
+            Y: =17
             ZIndex: =22
 
         Label2_7 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =45
+            Height: =9
             Text: ="Verif - "&var_sample_point_selected_Verification
-            Width: =200
-            X: =953
-            Y: =707
+            Visible: =false
+            Width: =43
+            X: =215
+            Y: =25
             ZIndex: =23
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
@@ -2014,8 +2022,8 @@ Screen_Test_input As screen:
         Fill: =RGBA(204, 231, 246, 1)
         Height: =44
         Text: =
-        Width: =203
-        X: =578
+        Width: =141
+        X: =596
         ZIndex: =25
 
     Show_add_sample As icon.CancelBadge:
@@ -2039,9 +2047,8 @@ Screen_Test_input As screen:
         Fill: =RGBA(204, 231, 246, 1)
         Height: =44
         Text: =var_selected_PET_Post_Extruder
-        Width: =203
-        X: =811
-        Y: =1
+        Width: =131
+        X: =750
         ZIndex: =27
 
     Gallery_Tests_Add_Sample As gallery.galleryHorizontal:
