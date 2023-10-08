@@ -1184,7 +1184,8 @@ Screen_Test_input As screen:
         Height: =330
         Items: |-
             =[{Name: "PET Wash", Text: "PET
-            Wash"},{Name: "PET Flake Bag", Text: "PET Flake Bag"},{Name: "PET Post Extruder", Text: "PET Post Extruder"},{Name: "SSP 1", Text: "SSP 1"},{Name: "PET Pellet Bag", Text: "PET
+            Wash"},{Name: "PET Flake Bag", Text: "PET Flake Bag"},{Name: "PET Post Extruder", Text: "PET
+            Post Extruder"},{Name: "SSP 1", Text: "SSP 1"},{Name: "PET Pellet Bag", Text: "PET
             Pellet Bag"},{Name: "PET Sampling Silo", Text: "PET
             Sampling Silo"},{Name: "Full", Text: "Full"},{Name: "", Text: ""},{Name: "PET Post Flake Sorter", Text: "PET Post Flake Sorter"},{Name: "", Text: ""},{Name: "SSP 2", Text: "SSP 2"},{Name: "", Text: ""},{Name: "", Text: ""},{Name: "", Text: ""},{Name: "HDPE Natural Wash", Text: "HDPE
             Natural Wash"},{Name: "Natural Hopper 1", Text: "Natural
@@ -1260,14 +1261,49 @@ Screen_Test_input As screen:
         Label_Sampling_Point_2 As label:
             Align: =Align.Center
             Color: =If(Label_Sampling_Point_2.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
-            Fill: |
-                =If(ThisItem.Name="Full",Colour_Viridor_GreenTint,
-                If(ThisItem.Name="Half",Colour_Viridor_GreenTint,
-                If(ThisItem.Name="Wash",Colour_Viridor_GreenTint,
+            Fill: |+
+                =//If(ThisItem.Name="Full",Colour_Viridor_GreenTint,
+                //If(ThisItem.Name="Half",Colour_Viridor_GreenTint,
+                //If(ThisItem.Name="Wash",Colour_Viridor_GreenTint,
+                //If(ThisItem.Name="Add Samples",Colour_Viridor_Purple,
+                //Color.Transparent))))
                 
-                If(ThisItem.Name="Add Samples",Colour_Viridor_Purple,
+                If(
+                    ThisItem.Name = "PET Wash" && var_selected_PET_Wash,Colour_Viridor_Purple,
+                    ThisItem.Name = "PET Flake Bag" && var_selected_PET_Flake_Bag,Colour_Viridor_Purple,
+                    ThisItem.Name = "SSP 1" && var_selected_SSP_1,Colour_Viridor_Purple,
+                    ThisItem.Name = "PET Pellet Bag" && var_selected_PET_Pellet_Bag,Colour_Viridor_Purple,
+                    ThisItem.Name = "PET Sampling Silo" && var_selected_PET_Sampling_Silo,Colour_Viridor_Purple,
+                    ThisItem.Name = "Full" && var_selected_Full,Colour_Viridor_Purple,
+                    ThisItem.Name = "PET Post Flake Sorter" && var_selected_PET_Post_Flake_Sorter,Colour_Viridor_Purple,
+                    ThisItem.Name = "SSP 2" && var_selected_SSP_2,Colour_Viridor_Purple,
+                    ThisItem.Name = "HDPE Natural Wash" && var_selected_HDPE_Natural_Wash,Colour_Viridor_Purple,
+                    ThisItem.Name = "Natural Hopper 1" && var_selected_Natural_Hopper_1,Colour_Viridor_Purple,
+                    ThisItem.Name = "Natural Extruder 1" && var_selected_Natural_Extruder_1,Colour_Viridor_Purple,
+                    ThisItem.Name = "Extruder 1 1/2 Test" && var_selected_Extruder_1_1_2_Test,Colour_Viridor_Purple,
+                    ThisItem.Name = "HDPE Natural Pellet Bag" && var_selected_HDPE_Natural_Pellet_Bag,Colour_Viridor_Purple,
+                    ThisItem.Name = "HDPE Natural Sampling Silo" && var_selected_HDPE_Natural_Sampling_Silo,Colour_Viridor_Purple,
+                    ThisItem.Name = "Half" && var_selected_Half,Colour_Viridor_Purple,
+                    ThisItem.Name = "Natural Hopper 2" && var_selected_Natural_Hopper_2,Colour_Viridor_Purple,
+                    ThisItem.Name = "Natural Extruder 2" && var_selected_Natural_Extruder_2,Colour_Viridor_Purple,
+                    ThisItem.Name = "Extruder 2 1/2 Test" && var_selected_Extruder_2_1_2_Test,Colour_Viridor_Purple,
+                    ThisItem.Name = "Wash" && var_selected_Wash,Colour_Viridor_Purple,
+                    ThisItem.Name = "HDPE Self Coloured Wash" && var_selected_HDPE_Self_Coloured_Wash,Colour_Viridor_Purple,
+                    ThisItem.Name = "Self Coloured Hopper 3" && var_selected_Self_Coloured_Hopper_3,Colour_Viridor_Purple,
+                    ThisItem.Name = "Self Coloured Extruder 3" && var_selected_Self_Coloured_Extruder_3,Colour_Viridor_Purple,
+                    ThisItem.Name = "Extruder 3 1/2 Test" && var_selected_Extruder_3_1_2_Test,Colour_Viridor_Purple,
+                    ThisItem.Name = "HDPE Self Coloured Pellet Bag" && var_selected_HDPE_Self_Coloured_Pellet_Bag,Colour_Viridor_Purple,
+                    ThisItem.Name = "HDPE Self Coloured Sampling Silo" && var_selected_HDPE_Self_Coloured_Sampling_Silo,Colour_Viridor_Purple,
+                    ThisItem.Name = "Add Samples" && var_selected_Add_Samples,Colour_Viridor_Purple,
+                    ThisItem.Name = "PP Wash" && var_selected_PP_Wash,Colour_Viridor_Purple,
+                    ThisItem.Name = "PP Hopper 4" && var_selected_PP_Hopper_4,Colour_Viridor_Purple,
+                    ThisItem.Name = "PP Extruder 4" && var_selected_PP_Extruder_4,Colour_Viridor_Purple,
+                    ThisItem.Name = "Extruder 4 1/2 Test" && var_selected_Extruder_4_1_2_Test,Colour_Viridor_Purple,
+                    ThisItem.Name = "PP Pellet Bag" && var_selected_PP_Pellet_Bag,Colour_Viridor_Purple,
+                    ThisItem.Name = "PP Sampling Silo" && var_selected_PP_Sampling_Silo,Colour_Viridor_Purple,
+                    Color.Transparent
+                )
                 
-                Color.Transparent))))
             Height: |
                 =If(ThisItem.Name="",0,
                 If(ThisItem.Name="SSP 1",Parent.TemplateHeight,
