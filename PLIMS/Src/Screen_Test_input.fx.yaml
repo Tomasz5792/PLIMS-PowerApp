@@ -352,14 +352,14 @@ Screen_Test_input As screen:
                 //All
                 And(var_material_selected="All",var_sample_point_selected_All=Blank()),
                 If(
-                ThisItem.Result="R_Point",Gallery_Main_If.TemplateWidth*2,
-                ThisItem.Result="R_Material",Gallery_Main_If.TemplateWidth*2,
-                ThisItem.Result="R_Date",Gallery_Main_If.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Main_If.TemplateWidth*2,
-                Gallery_Main_If.TemplateWidth*1),
+                ThisItem.Result="R_Point",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*2,
+                Gallery_Tests_2.TemplateWidth*1),
                 
                 //Otherwise
-                Gallery_Main_If.TemplateWidth)
+                Gallery_Tests_2.TemplateWidth)
             ZIndex: =1
 
         Label3 As label:
@@ -1119,8 +1119,9 @@ Screen_Test_input As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Gallery_Main_If.Width/Gallery_Main_If.AllItemsCount
-        Width: =1366
-        Y: =603
+        Width: =301
+        X: =277
+        Y: =1
         ZIndex: =15
 
         Label_Main_If As label:
@@ -1140,18 +1141,8 @@ Screen_Test_input As screen:
             Size: =18
             Text: =ThisItem.Test
             Width: |-
-                =If(
-                
-                //All
-                And(var_material_selected="All",var_sample_point_selected_All=Blank()),If(
-                ThisItem.Result="R_Point",Gallery_Main_If.TemplateWidth*2,
-                ThisItem.Result="R_Material",Gallery_Main_If.TemplateWidth*2,
-                ThisItem.Result="R_Date",Gallery_Main_If.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Main_If.TemplateWidth*2,
-                Gallery_Main_If.TemplateWidth*1),
-                
-                //Otherwise
-                Gallery_Main_If.TemplateWidth)
+                =
+                Gallery_Main_If.TemplateWidth
             ZIndex: =1
 
     Group2 As group:
