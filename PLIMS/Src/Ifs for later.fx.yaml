@@ -155,3 +155,69 @@
         Width: =118
         ZIndex: =1
 
+    "'Main Fill If_1' As label":
+        Align: =Align.Center
+        Color: =Color.White
+        Fill: |-
+            =If(
+            //All
+            And(var_material_selected="All",var_sample_point_selected_All=Blank()),RGBA(179,225,199,255),
+            And(var_material_selected="All",var_sample_point_selected_All="Wash"),RGBA(179,225,199,255),
+            And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),RGBA(179,225,199,255),
+            And(var_material_selected="All",var_sample_point_selected_All="Post Flake Sorter"),RGBA(179,225,199,255),
+            And(var_material_selected="All",var_sample_point_selected_All="Post Extruder"),RGBA(179,225,199,255),
+            And(var_material_selected="All",var_sample_point_selected_All="SSP"),RGBA(179,225,199,255),
+            And(var_material_selected="All",var_sample_point_selected_All="Pellet Bag"),RGBA(179,225,199,255),
+            And(var_material_selected="All",var_sample_point_selected_All="Sampling Silo"),RGBA(179,225,199,255),
+            
+            //"PET"
+            And(var_material_selected="PET",var_sample_point_selected_PET=Blank()),RGBA(179,225,199,255),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),RGBA(179,225,199,255),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),RGBA(179,225,199,255),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Post Flake Sorter"),RGBA(179,225,199,255),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Post Extruder"),RGBA(179,225,199,255),
+            And(var_material_selected="PET",var_sample_point_selected_PET="SSP"),RGBA(179,225,199,255),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Pellet Bag"),RGBA(179,225,199,255),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),RGBA(179,225,199,255),
+            
+            //"HDPE Natural"
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Pellet Bag"),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Sampling Silo"),RGBA(179,225,199,255),
+            
+            //"HDPE Self Coloured"
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC=Blank()),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Wash"),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Post Flake Sorter"),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Post Extruder"),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Pellet Bag"),RGBA(179,225,199,255),
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Sampling Silo"),RGBA(179,225,199,255),
+            
+            //"PP"
+            And(var_material_selected="PP",var_sample_point_selected_PP=Blank()),RGBA(179,225,199,255),
+            And(var_material_selected="PP",var_sample_point_selected_PP="Wash"),RGBA(179,225,199,255),
+            And(var_material_selected="PP",var_sample_point_selected_PP="Post Flake Sorter"),RGBA(179,225,199,255),
+            And(var_material_selected="PP",var_sample_point_selected_PP="Post Extruder"),RGBA(179,225,199,255),
+            And(var_material_selected="PP",var_sample_point_selected_PP="Pellet Bag"),RGBA(179,225,199,255),
+            
+            //Verification
+            And(var_material_selected="Verification",var_sample_point_selected_Verification=Blank()),
+            RGBA(179,225,199,255),
+            And(var_material_selected="Verification",var_sample_point_selected_Verification="LMI"),
+            RGBA(179,225,199,255),
+            And(var_material_selected="Verification",var_sample_point_selected_Verification="GC"),
+            RGBA(179,225,199,255),
+            And(var_material_selected="Verification",var_sample_point_selected_Verification="Fimic"),
+            RGBA(179,225,199,255),
+            
+            Color.Red)
+        Height: =43
+        Text: |
+            ="Main Fill If Empty"
+        Width: =118
+        X: =312
+        ZIndex: =2
+

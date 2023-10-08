@@ -217,7 +217,7 @@ Screen_Test_input As screen:
         Fill: =RGBA(255, 255, 0, 1)
         Height: =58/2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Main_If.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_4.Width/Gallery_Tests_4.AllItemsCount
@@ -249,7 +249,7 @@ Screen_Test_input As screen:
         Fill: =RGBA(255, 255, 0, 1)
         Height: =58/2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Main_If.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_5.Width/Gallery_Tests_5.AllItemsCount
@@ -281,7 +281,7 @@ Screen_Test_input As screen:
         Fill: =Colour_Viridor_Green
         Height: =58
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Main_If.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_6.Width/Gallery_Tests_6.AllItemsCount
@@ -313,7 +313,7 @@ Screen_Test_input As screen:
         Fill: =Colour_Viridor_Green
         Height: =58*2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Main_If.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_2.Width/Gallery_Tests_2.AllItemsCount
@@ -346,7 +346,20 @@ Screen_Test_input As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =16
-            Width: =Gallery_Tests_2.TemplateWidth
+            Width: |-
+                =If(
+                
+                //All
+                And(var_material_selected="All",var_sample_point_selected_All=Blank()),
+                If(
+                ThisItem.Result="R_Point",Gallery_Main_If.TemplateWidth*2,
+                ThisItem.Result="R_Material",Gallery_Main_If.TemplateWidth*2,
+                ThisItem.Result="R_Date",Gallery_Main_If.TemplateWidth*2,
+                ThisItem.Result="R_Time",Gallery_Main_If.TemplateWidth*2,
+                Gallery_Main_If.TemplateWidth*1),
+                
+                //Otherwise
+                Gallery_Main_If.TemplateWidth)
             ZIndex: =1
 
         Label3 As label:
@@ -354,7 +367,7 @@ Screen_Test_input As screen:
             OnSelect: =Select(Parent)
             PressedFill: =Colour_Viridor_Purple
             Text: =
-            Width: =Gallery_Tests_2.TemplateWidth
+            Width: =
             ZIndex: =2
 
     Label_All_Test_Filter As label:
@@ -378,7 +391,7 @@ Screen_Test_input As screen:
         Fill: =Color.AliceBlue
         Height: =58/2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Main_If.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_3.Width/Gallery_Tests_3.AllItemsCount
@@ -391,7 +404,7 @@ Screen_Test_input As screen:
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.Black
-            Height: =Gallery_Tests_3.TemplateHeight
+            Height: =If(ThisItem.Result="",0,Gallery_Tests_3.TemplateHeight)
             LineHeight: =0.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -399,7 +412,7 @@ Screen_Test_input As screen:
             PaddingRight: =0
             PaddingTop: =0
             PressedColor: =Color.White
-            PressedFill: =Colour_Viridor_Purple
+            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
             Size: =If(And(var_material_selected="All",var_sample_point_selected_All=Blank()),12,16)
             Text: |
                 =If(
@@ -450,7 +463,21 @@ Screen_Test_input As screen:
                 
                 
                     ThisItem.Unit)
-            Width: =Gallery_Tests_3.TemplateWidth
+            Width: |-
+                =If(
+                ThisItem.Result="",0,
+                
+                //All
+                And(var_material_selected="All",var_sample_point_selected_All=Blank()),
+                If(
+                ThisItem.Result="R_Point",Gallery_Tests_3.TemplateWidth*2,
+                ThisItem.Result="R_Material",Gallery_Tests_3.TemplateWidth*2,
+                ThisItem.Result="R_Date",Gallery_Tests_3.TemplateWidth*2,
+                ThisItem.Result="R_Time",Gallery_Tests_3.TemplateWidth*2,
+                Gallery_Tests_3.TemplateWidth*1),
+                
+                //Otherwise
+                Gallery_Tests_3.TemplateWidth)
             ZIndex: =1
 
     Gallery2 As gallery.galleryVertical:
@@ -657,7 +684,7 @@ Screen_Test_input As screen:
             Fill: =Color.Transparent
             Height: =Parent.TemplateHeight
             Items: |
-                =Gallery_Tests_1.AllItems
+                =Gallery_Main_If.AllItems
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =Gallery_Tests_7.Width/Gallery_Tests_7.AllItemsCount
@@ -677,8 +704,8 @@ Screen_Test_input As screen:
                     
                     
                     
-                    RGBA(179,225,199,255))
-                Height: =Gallery_Tests_7.TemplateHeight
+                    RGBA(0,0,0,0))
+                Height: =If(ThisItem.Result="",0,Gallery_Tests_7.TemplateHeight)
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -686,8 +713,8 @@ Screen_Test_input As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 PressedColor: =Color.White
-                PressedFill: =Colour_Viridor_Purple
-                Size: =18
+                PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
+                Size: =If(And(var_material_selected="All",var_sample_point_selected_All=Blank()),15,18)
                 Text: |-
                     =If(
                     ThisItem.Result="R_Point",Label_Sample_Point.Text,
@@ -717,15 +744,29 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Ext_b*",Label_Ext_b.Text,
                     ThisItem.Result="R_Count_5g",Label_Pellet_Count_5g.Text,
                     ThisItem.Result="R_Vis",Label_Visual_Inspection.Text,
-                    ThisItem.Result="R_All_Inc","soon",
-                    ThisItem.Result="R_Cryst","soon",
+                    ThisItem.Result="R_All_Inc",Label_Inclusions.Text,
+                    ThisItem.Result="R_Cryst",Label_Crystalisation.Text,
                     
                     ThisItem.Result="R_Comment",Label_Comment.Text,
                     
                     
                     ThisItem.Result)
                     //Label_Date&Time
-                Width: =Gallery_Tests_7.TemplateWidth
+                Width: |-
+                    =If(
+                    ThisItem.Result="",0,
+                    
+                    //All
+                    And(var_material_selected="All",var_sample_point_selected_All=Blank()),
+                    If(
+                    ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
+                    ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
+                    ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
+                    ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*2,
+                    Gallery_Tests_7.TemplateWidth*1),
+                    
+                    //Otherwise
+                    Gallery_Tests_7.TemplateWidth)
                 ZIndex: =1
 
         Label_Extruder_IV As label:
@@ -794,20 +835,30 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =27
 
-        Label_Fines_5 As label:
+        Label_Inclusions As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.'Fines_Result_%'
+            Text: =ThisItem.Black_Inclusion_Pass_Fail
             Visible: =false
             Width: =177
             X: =340
             Y: =28
             ZIndex: =28
 
-    Gallery_Tests_1 As gallery.galleryHorizontal:
+        Label_Crystalisation As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Crystallisation_Result
+            Visible: =false
+            Width: =177
+            X: =360
+            Y: =28
+            ZIndex: =29
+
+    Gallery_Main_If As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(246, 88, 16, 1)
-        Height: =45
+        Height: =46
         Items: |-
             =//Main If
             If(
@@ -1067,17 +1118,17 @@ Screen_Test_input As screen:
             )
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_1.Width/Gallery_Tests_1.AllItemsCount
-        Width: =262
-        X: =292
+        TemplateSize: =Gallery_Main_If.Width/Gallery_Main_If.AllItemsCount
+        Width: =1366
+        Y: =603
         ZIndex: =15
 
-        Label5 As label:
+        Label_Main_If As label:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.White
-            Height: =Gallery_Tests_1.TemplateHeight
+            Height: =Gallery_Main_If.TemplateHeight
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -1088,7 +1139,19 @@ Screen_Test_input As screen:
             PressedFill: =Colour_Viridor_Purple
             Size: =18
             Text: =ThisItem.Test
-            Width: =Gallery_Tests_1.TemplateWidth
+            Width: |-
+                =If(
+                
+                //All
+                And(var_material_selected="All",var_sample_point_selected_All=Blank()),If(
+                ThisItem.Result="R_Point",Gallery_Main_If.TemplateWidth*2,
+                ThisItem.Result="R_Material",Gallery_Main_If.TemplateWidth*2,
+                ThisItem.Result="R_Date",Gallery_Main_If.TemplateWidth*2,
+                ThisItem.Result="R_Time",Gallery_Main_If.TemplateWidth*2,
+                Gallery_Main_If.TemplateWidth*1),
+                
+                //Otherwise
+                Gallery_Main_If.TemplateWidth)
             ZIndex: =1
 
     Group2 As group:
@@ -1373,7 +1436,7 @@ Screen_Test_input As screen:
         Fill: =Colour_Viridor_Green
         Height: =58*2
         Items: |
-            =Gallery_Tests_1.AllItems
+            =Gallery_Main_If.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_Add_Sample.Width/Gallery_Tests_Add_Sample.AllItemsCount

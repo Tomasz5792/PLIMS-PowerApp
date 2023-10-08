@@ -5034,19 +5034,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Main_If.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Main_If.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Gallery_Tests_1"
+                "type": "Screen_Test_input.Gallery_Main_If"
               }
             }
           ],
@@ -5064,19 +5064,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Main_If.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Tests_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Main_If.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Gallery_Tests_1"
+                "type": "Screen_Test_input.Gallery_Main_If"
               }
             }
           ],
@@ -6703,7 +6703,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Screen_Test_input\" is 336, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Screen_Test_input\" is 341, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
