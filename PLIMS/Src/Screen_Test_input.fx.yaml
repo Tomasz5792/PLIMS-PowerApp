@@ -701,9 +701,7 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_IV_MFI",Label_IV_MFI.Text,
                     ThisItem.Result="R_Ext_IV",Label_Extruder_IV.Text,
                     ThisItem.Result="R_GC",Label_GC.Text,
-                    //
-                    ThisItem.Result="R_Fines","soon",
-                    
+                    ThisItem.Result="R_Fines",Label_Fines.Text,
                     ThisItem.Result="R_Moisture",Label_Moisture.Text,
                     ThisItem.Result="R_Bulk",Label_Bulk_Density.Text,
                     ThisItem.Result="R_Mat_Den",Label_Material_Density.Text,
@@ -712,22 +710,14 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Glass",Label_Glass.Text,
                     ThisItem.Result="R_PET",Label_PET.Text,
                     ThisItem.Result="R_PVC",Label_PVC.Text,
-                    //
-                    ThisItem.Result="R_Float","soon",
-                    //
-                    ThisItem.Result="R_Comp","soon",
-                    
+                    ThisItem.Result="R_Float",Label_Float_Sink.Text,
+                    ThisItem.Result="R_Comp",Label_Composition.Text,
                     ThisItem.Result="R_pH",Label_pH.Text,
-                    //
-                    ThisItem.Result="R_Lab","soon",
-                    //
-                    ThisItem.Result="R_Ext_b*","soon",
-                    
+                    ThisItem.Result="R_Lab",Label_Lab.Text,
+                    ThisItem.Result="R_Ext_b*",Label_Ext_b.Text,
                     ThisItem.Result="R_Count_5g",Label_Pellet_Count_5g.Text,
                     ThisItem.Result="R_Vis",Label_Visual_Inspection.Text,
-                    //
                     ThisItem.Result="R_All_Inc","soon",
-                    //
                     ThisItem.Result="R_Cryst","soon",
                     
                     ThisItem.Result="R_Comment",Label_Comment.Text,
@@ -753,6 +743,66 @@ Screen_Test_input As screen:
             Visible: =false
             Width: =177
             ZIndex: =22
+
+        Label_Fines As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Fines_Result_%'
+            Visible: =false
+            Width: =177
+            X: =200
+            Y: =28
+            ZIndex: =23
+
+        Label_Float_Sink As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Float_Sink_Pass_Fail
+            Visible: =false
+            Width: =177
+            X: =220
+            Y: =28
+            ZIndex: =24
+
+        Label_Composition As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Comp_Pass_Fail
+            Visible: =false
+            Width: =177
+            X: =280
+            Y: =28
+            ZIndex: =25
+
+        Label_Lab As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Lab_Result_Pass_Fail
+            Visible: =false
+            Width: =177
+            X: =300
+            Y: =28
+            ZIndex: =26
+
+        Label_Ext_b As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Extruder_b_Value_Result
+            Visible: =false
+            Width: =177
+            X: =320
+            Y: =28
+            ZIndex: =27
+
+        Label_Fines_5 As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Fines_Result_%'
+            Visible: =false
+            Width: =177
+            X: =340
+            Y: =28
+            ZIndex: =28
 
     Gallery_Tests_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -1284,7 +1334,7 @@ Screen_Test_input As screen:
             Width: =Parent.TemplateWidth
             ZIndex: =1
 
-    Label4 As label:
+    Test_1 As label:
         Fill: =RGBA(204, 231, 246, 1)
         Height: =44
         Text: =
@@ -1309,7 +1359,7 @@ Screen_Test_input As screen:
         Y: =7
         ZIndex: =26
 
-    Label4_3 As label:
+    Test_2 As label:
         Fill: =RGBA(204, 231, 246, 1)
         Height: =44
         Text: =var_selected_PET_Post_Extruder
@@ -1422,6 +1472,7 @@ Screen_Test_input As screen:
                 Lab_a_Result: "Not Tested",
                 Lab_b_Result: "Not Tested",
                 Lab_Result_Pass_Fail: "Not Tested",
+                Extruder_b_Value_Result: "Not Tested",
                 Pellet_Count_Result_1g: "Not Tested",
                 Pellet_Count_Result_5g: "Not Tested",
                 'Black_Inclusions_Medium_Result_#': "Not Tested",

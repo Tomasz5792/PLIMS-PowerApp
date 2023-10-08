@@ -58,9 +58,7 @@ Screen_Start As screen:
         Height: =336
         Items: =["Add Samples","Soon"]
         Layout: =Layout.Vertical
-        OnSelect: |-
-            =If(ThisItem.Value="Add Samples",
-            Navigate(Screen_Create_Sample,ScreenTransition.None));
+        OnSelect: =//If(ThisItem.Value="Add Samples",Navigate(Screen_Create_Sample,ScreenTransition.None));
         TemplatePadding: =0
         TemplateSize: =Gallery_CoA_Scanner_1.Height/2
         Width: =683
