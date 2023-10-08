@@ -422,8 +422,8 @@ Screen_Test_input As screen:
                     ThisItem.Unit="U_Moisture","% w/w",
                     ThisItem.Unit="U_Moisture_Small","%
                 w/w",
-                    ThisItem.Unit="U_Bulk","Kg/m3",
-                    ThisItem.Unit="U_Mat_Den","Kg/m3",
+                    ThisItem.Unit="U_Bulk","Kg/m³",
+                    ThisItem.Unit="U_Mat_Den","Kg/m³",
                     ThisItem.Unit="U_Float","Pass/Fail",
                     ThisItem.Unit="U_Float_Small","Pass/
                 Fail",
@@ -434,13 +434,19 @@ Screen_Test_input As screen:
                     ThisItem.Unit="U_Lab","Pass/Fail",
                     ThisItem.Unit="U_Lab_Small","Pass/
                 Fail",
-                    ThisItem.Unit="U_Ext_b*","Pass/Fail",
-                    ThisItem.Unit="U_Ext_b*_Small","Pass/
-                Fail",
+                    ThisItem.Unit="U_Ext_b*","b*",
                     ThisItem.Unit="U_Count","Pellet/g",
                     ThisItem.Unit="U_Count_5g","Pellet/5g",
                     ThisItem.Unit="U_Count_5g_Small","/5g",
-                
+                    ThisItem.Unit="U_Vis","Pass/Fail",
+                    ThisItem.Unit="U_Vis_Small","Pass/
+                Fail",
+                    ThisItem.Unit="U_All_Inc","Pass/Fail",
+                    ThisItem.Unit="U_All_Inc_Small","Pass/
+                Fail",
+                    ThisItem.Unit="U_Cryst","10°C/min",
+                    ThisItem.Unit="U_Cryst_Small","10°C
+                /min",
                 
                 
                     ThisItem.Unit)
@@ -773,15 +779,15 @@ Screen_Test_input As screen:
             {Test:"Moisture", Unit:"U_Moisture_Small", Low_Spec:"Low_Moisture", High_Spec:"High_Moisture", Result:"R_Moisture"}, 
             {Test:"Bulk Density", Unit:"U_Bulk", Low_Spec:"Low_Bulk", High_Spec:"High_Bulk", Result:"R_Bulk"}, 
             {Test:"Material Density", Unit:"U_Mat_Den", Low_Spec:"Low_Mat_Den", High_Spec:"High_Mat_Den", Result:"R_Mat_Den"}, 
-            {Test:"Float Sink", Unit:"U_Float", Low_Spec:"Low_Float", High_Spec:"High_Float", Result:"R_Float"}, 
-            {Test:"Comp osition", Unit:"U_Comp", Low_Spec:"Low_Comp", High_Spec:"High_Comp", Result:"R_Comp"}, 
+            {Test:"Float Sink", Unit:"U_Float_Small", Low_Spec:"Low_Float", High_Spec:"High_Float", Result:"R_Float"}, 
+            {Test:"Comp osition", Unit:"U_Comp_Small", Low_Spec:"Low_Comp", High_Spec:"High_Comp", Result:"R_Comp"}, 
             {Test:"pH", Unit:"U_pH", Low_Spec:"Low_pH", High_Spec:"High_pH", Result:"R_pH"}, 
-            {Test:"Lab", Unit:"U_Lab", Low_Spec:"Low_Lab", High_Spec:"High_Lab", Result:"R_Lab"}, 
+            {Test:"Lab", Unit:"U_Lab_Small", Low_Spec:"Low_Lab", High_Spec:"High_Lab", Result:"R_Lab"}, 
             {Test:"Extruder b*", Unit:"U_Ext_b*", Low_Spec:"Low_Ext_b*", High_Spec:"High_Ext_b*", Result:"R_Ext_b*"}, 
             {Test:"Pellet Count", Unit:"U_Count_5g_Small", Low_Spec:"Low_Count_5g", High_Spec:"High_Count_5g", Result:"R_Count_5g"}, 
-            {Test:"Visual Inspection", Unit:"U_Vis", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
-            {Test:"Inclusions", Unit:"U_Med_Inc", Low_Spec:"Low_Med_Inc", High_Spec:"High_Med_Inc", Result:"R_All_Inc"}, 
-            {Test:"Crystal isation", Unit:"U_Cryst", Low_Spec:"Low_Cryst", High_Spec:"High_Cryst", Result:"R_Cryst"},
+            {Test:"Visual Inspection", Unit:"U_Vis_Small", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
+            {Test:"Inclusions", Unit:"U_All_Inc_Small", Low_Spec:"Low_All_Inc", High_Spec:"High_All_Inc", Result:"R_All_Inc"}, 
+            {Test:"Crystal isation", Unit:"U_Cryst_Small", Low_Spec:"Low_Cryst", High_Spec:"High_Cryst", Result:"R_Cryst"},
             ],
             //All, Wash
             And(var_material_selected="All",var_sample_point_selected_All="Wash"),
