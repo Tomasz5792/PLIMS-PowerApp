@@ -804,6 +804,154 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =19
 
+        Label_Extruder_IV As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Extruder_IV_Value_Result
+            Visible: =false
+            Width: =177
+            X: =357
+            ZIndex: =20
+
+        Label_GC As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.GC_Result_Pass_Fail
+            Visible: =false
+            Width: =177
+            X: =91
+            ZIndex: =21
+
+        Label_Fines As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Fines_Result_%'
+            Visible: =false
+            Width: =177
+            X: =200
+            Y: =28
+            ZIndex: =22
+
+        Label_Float_Sink As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Float_Sink_Pass_Fail
+            Visible: =false
+            Width: =177
+            X: =220
+            Y: =28
+            ZIndex: =23
+
+        Label_Composition As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Comp_Pass_Fail
+            Visible: =false
+            Width: =177
+            X: =280
+            Y: =28
+            ZIndex: =24
+
+        Label_Lab As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Lab_Result_Pass_Fail
+            Visible: =false
+            Width: =177
+            X: =300
+            Y: =28
+            ZIndex: =25
+
+        Label_Ext_b As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Extruder_b_Value_Result
+            Visible: =false
+            Width: =177
+            X: =320
+            Y: =28
+            ZIndex: =26
+
+        Label_Inclusions As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Black_Inclusion_Pass_Fail
+            Visible: =false
+            Width: =177
+            X: =340
+            Y: =28
+            ZIndex: =27
+
+        Label_Crystalisation As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Crystallisation_Result
+            Visible: =false
+            Width: =33
+            X: =127
+            Y: =28
+            ZIndex: =28
+
+        Label_Bag_Batch_Number As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Unique_No_Bag_Batch
+            Visible: =false
+            Width: =177
+            X: =380
+            Y: =28
+            ZIndex: =29
+
+        Label_AA As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Acetaldehyde_Result_ppm
+            Visible: =false
+            Width: =177
+            X: =420
+            Y: =28
+            ZIndex: =30
+
+        Label_Limonene As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Limonene_Result_ppm
+            Visible: =false
+            Width: =177
+            X: =440
+            Y: =28
+            ZIndex: =31
+
+        Label_L As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Lab_L_Result
+            Visible: =false
+            Width: =177
+            X: =460
+            Y: =28
+            ZIndex: =32
+
+        Label_a As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Lab_a_Result
+            Visible: =false
+            Width: =177
+            X: =480
+            Y: =28
+            ZIndex: =33
+
+        Label_b As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Lab_b_Result
+            Visible: =false
+            Width: =177
+            X: =500
+            Y: =28
+            ZIndex: =34
+
         Gallery_Tests_7 As gallery.galleryHorizontal:
             DelayItemLoading: =true
             Fill: =Color.Transparent
@@ -814,7 +962,7 @@ Screen_Test_input As screen:
             TemplatePadding: =0
             TemplateSize: =Gallery_Tests_7.Width/Gallery_Tests_7.AllItemsCount
             Width: =1366
-            ZIndex: =20
+            ZIndex: =35
 
             Label_Data_1 As label:
                 Align: =Align.Center
@@ -834,8 +982,8 @@ Screen_Test_input As screen:
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
+                PaddingLeft: =1
+                PaddingRight: =1
                 PaddingTop: =0
                 PressedColor: =Color.White
                 PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
@@ -848,10 +996,14 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Time",Label_Time.Text,
                     ThisItem.Result="R_Batch",Label_Batch_Number.Text,
                     ThisItem.Result="R_Bag",Label_Bag_Number.Text,
+                    ThisItem.Result="R_Bag_Batch",Label_Bag_Batch_Number.Text,
                     
                     ThisItem.Result="R_Caustic",Label_Caustic.Text,
+                    ThisItem.Result="R_IV",Label_IV_MFI.Text,
                     ThisItem.Result="R_IV_MFI",Label_IV_MFI.Text,
                     ThisItem.Result="R_Ext_IV",Label_Extruder_IV.Text,
+                    ThisItem.Result="R_AA",Label_AA.Text,
+                    ThisItem.Result="R_Limonene",Label_Limonene.Text,
                     ThisItem.Result="R_GC",Label_GC.Text,
                     ThisItem.Result="R_Fines",Label_Fines.Text,
                     ThisItem.Result="R_Moisture",Label_Moisture.Text,
@@ -865,6 +1017,10 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Float",Label_Float_Sink.Text,
                     ThisItem.Result="R_Comp",Label_Composition.Text,
                     ThisItem.Result="R_pH",Label_pH.Text,
+                    
+                    ThisItem.Result="R_L",Label_L.Text,
+                    ThisItem.Result="R_a",Label_a.Text,
+                    ThisItem.Result="R_b",Label_b.Text,
                     ThisItem.Result="R_Lab",Label_Lab.Text,
                     ThisItem.Result="R_Ext_b*",Label_Ext_b.Text,
                     ThisItem.Result="R_Count_5g",Label_Pellet_Count_5g.Text,
@@ -948,94 +1104,6 @@ Screen_Test_input As screen:
                     //Otherwise
                     Gallery_Tests_2.TemplateWidth)
                 ZIndex: =1
-
-        Label_Extruder_IV As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Extruder_IV_Value_Result
-            Visible: =false
-            Width: =177
-            X: =357
-            ZIndex: =21
-
-        Label_GC As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.GC_Result_Pass_Fail
-            Visible: =false
-            Width: =177
-            X: =437
-            ZIndex: =22
-
-        Label_Fines As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.'Fines_Result_%'
-            Visible: =false
-            Width: =177
-            X: =200
-            Y: =28
-            ZIndex: =23
-
-        Label_Float_Sink As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Float_Sink_Pass_Fail
-            Visible: =false
-            Width: =177
-            X: =220
-            Y: =28
-            ZIndex: =24
-
-        Label_Composition As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Comp_Pass_Fail
-            Visible: =false
-            Width: =177
-            X: =280
-            Y: =28
-            ZIndex: =25
-
-        Label_Lab As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Lab_Result_Pass_Fail
-            Visible: =false
-            Width: =177
-            X: =300
-            Y: =28
-            ZIndex: =26
-
-        Label_Ext_b As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Extruder_b_Value_Result
-            Visible: =false
-            Width: =177
-            X: =320
-            Y: =28
-            ZIndex: =27
-
-        Label_Inclusions As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Black_Inclusion_Pass_Fail
-            Visible: =false
-            Width: =177
-            X: =340
-            Y: =28
-            ZIndex: =28
-
-        Label_Crystalisation As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Crystallisation_Result
-            Visible: =false
-            Width: =177
-            X: =360
-            Y: =28
-            ZIndex: =29
 
     Gallery_Main_If As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -1924,6 +1992,10 @@ Screen_Test_input As screen:
                 Sample_Point: "Not Tested",
                 Sample_Point_Filter: "Not Tested",
                 'Date_&_Time': Now(),
+                Batch_Number: "Not Tested",
+                Bag_Number: "Not Tested",
+                Unique_No_Bag_Batch: "Not Tested",
+            
                 'Caustic_Strength_Result_%': "Not Tested",
                 IV_MFI_Result: "Not Tested",
                 Extruder_IV_Value_Result: "Not Tested",

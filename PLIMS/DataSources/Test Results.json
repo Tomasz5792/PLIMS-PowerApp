@@ -143,7 +143,8 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Specification_Filter": "Specification_Filter",
-      "Title": "Title"
+      "Title": "Title",
+      "Unique_No_Bag_Batch": "Unique_No_Bag_Batch"
     },
     "DatasetName": "https://viridor.sharepoint.com/sites/AvonmouthQualityTechs",
     "EncodeDataset": true,
