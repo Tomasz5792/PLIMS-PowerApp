@@ -400,7 +400,7 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =Colour_Viridor_Purple
-            Size: =If(And(var_material_selected="All",var_sample_point_selected_All=Blank()),13,16)
+            Size: =If(And(var_material_selected="All",var_sample_point_selected_All=Blank()),12,16)
             Text: |
                 =If(
                     ThisItem.Unit="","",
