@@ -355,7 +355,7 @@ Screen_Test_input As screen:
                 ThisItem.Result="R_Point",Gallery_Tests_2.TemplateWidth*2,
                 ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
                 ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*2,Gallery_Tests_2.TemplateWidth*1),
+                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
                 
                 And(var_material_selected="All",var_sample_point_selected_All="Wash"),Gallery_Tests_2.TemplateWidth,
                 And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),Gallery_Tests_2.TemplateWidth,
@@ -371,7 +371,7 @@ Screen_Test_input As screen:
                 ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
                 ThisItem.Result="R_Bag_Batch",Gallery_Tests_2.TemplateWidth*2,
                 ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*2,Gallery_Tests_2.TemplateWidth*1),
+                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
                 
                 And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),Gallery_Tests_2.TemplateWidth,
                 And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),Gallery_Tests_2.TemplateWidth,
@@ -382,7 +382,14 @@ Screen_Test_input As screen:
                 And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),Gallery_Tests_2.TemplateWidth,
                 
                 //"HDPE Natural"
-                And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),Gallery_Tests_2.TemplateWidth,
+                And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),If(
+                ThisItem.Result="R_Point",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Bag_Batch",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
+                
+                
                 And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),Gallery_Tests_2.TemplateWidth,
                 And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),Gallery_Tests_2.TemplateWidth,
                 And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),Gallery_Tests_2.TemplateWidth,
@@ -521,6 +528,8 @@ Screen_Test_input As screen:
                     ThisItem.Unit="U_Vis","Pass/Fail",
                     ThisItem.Unit="U_Vis_Small","Pass/
                 Fail",
+                    ThisItem.Unit="U_Med_Inc","No.",
+                    ThisItem.Unit="U_Lar_Inc","No.",
                     ThisItem.Unit="U_All_Inc","Pass/Fail",
                     ThisItem.Unit="U_All_Inc_Small","Pass/
                 Fail",
@@ -539,7 +548,7 @@ Screen_Test_input As screen:
                 ThisItem.Result="R_Point",Gallery_Tests_2.TemplateWidth*2,
                 ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
                 ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*2,Gallery_Tests_2.TemplateWidth*1),
+                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
                 
                 And(var_material_selected="All",var_sample_point_selected_All="Wash"),Gallery_Tests_2.TemplateWidth,
                 And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),Gallery_Tests_2.TemplateWidth,
@@ -555,7 +564,7 @@ Screen_Test_input As screen:
                 ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
                 ThisItem.Result="R_Bag_Batch",Gallery_Tests_2.TemplateWidth*2,
                 ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*2,Gallery_Tests_2.TemplateWidth*1),
+                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
                 
                 And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),Gallery_Tests_2.TemplateWidth,
                 And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),Gallery_Tests_2.TemplateWidth,
@@ -566,7 +575,14 @@ Screen_Test_input As screen:
                 And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),Gallery_Tests_2.TemplateWidth,
                 
                 //"HDPE Natural"
-                And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),Gallery_Tests_2.TemplateWidth,
+                And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),If(
+                ThisItem.Result="R_Point",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Bag_Batch",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
+                ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
+                
+                
                 And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),Gallery_Tests_2.TemplateWidth,
                 And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),Gallery_Tests_2.TemplateWidth,
                 And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),Gallery_Tests_2.TemplateWidth,
@@ -1000,6 +1016,7 @@ Screen_Test_input As screen:
                     
                     ThisItem.Result="R_Caustic",Label_Caustic.Text,
                     ThisItem.Result="R_IV",Label_IV_MFI.Text,
+                    ThisItem.Result="R_MFI",Label_IV_MFI.Text,
                     ThisItem.Result="R_IV_MFI",Label_IV_MFI.Text,
                     ThisItem.Result="R_Ext_IV",Label_Extruder_IV.Text,
                     ThisItem.Result="R_AA",Label_AA.Text,
@@ -1025,6 +1042,9 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Ext_b*",Label_Ext_b.Text,
                     ThisItem.Result="R_Count_5g",Label_Pellet_Count_5g.Text,
                     ThisItem.Result="R_Vis",Label_Visual_Inspection.Text,
+                    ThisItem.Result="R_Med_Inc",Label_Inclusions_Medium.Text,
+                    ThisItem.Result="R_Lar_Inc",Label_Inclusions_Large.Text,
+                    //Label_Inclusions_Large
                     ThisItem.Result="R_All_Inc",Label_Inclusions.Text,
                     ThisItem.Result="R_Cryst",Label_Crystalisation.Text,
                     
@@ -1042,7 +1062,7 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Point",Gallery_Tests_2.TemplateWidth*2,
                     ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
                     ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
-                    ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*2,Gallery_Tests_2.TemplateWidth*1),
+                    ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
                     
                     And(var_material_selected="All",var_sample_point_selected_All="Wash"),Gallery_Tests_2.TemplateWidth,
                     And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),Gallery_Tests_2.TemplateWidth,
@@ -1058,7 +1078,7 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
                     ThisItem.Result="R_Bag_Batch",Gallery_Tests_2.TemplateWidth*2,
                     ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
-                    ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*2,Gallery_Tests_2.TemplateWidth*1),
+                    ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
                     
                     And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),Gallery_Tests_2.TemplateWidth,
                     And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),Gallery_Tests_2.TemplateWidth,
@@ -1069,7 +1089,14 @@ Screen_Test_input As screen:
                     And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),Gallery_Tests_2.TemplateWidth,
                     
                     //"HDPE Natural"
-                    And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),Gallery_Tests_2.TemplateWidth,
+                    And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),If(
+                    ThisItem.Result="R_Point",Gallery_Tests_2.TemplateWidth*2,
+                    ThisItem.Result="R_Material",Gallery_Tests_2.TemplateWidth*2,
+                    ThisItem.Result="R_Bag_Batch",Gallery_Tests_2.TemplateWidth*2,
+                    ThisItem.Result="R_Date",Gallery_Tests_2.TemplateWidth*2,
+                    ThisItem.Result="R_Time",Gallery_Tests_2.TemplateWidth*1,Gallery_Tests_2.TemplateWidth*1),
+                    
+                    
                     And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),Gallery_Tests_2.TemplateWidth,
                     And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),Gallery_Tests_2.TemplateWidth,
                     And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),Gallery_Tests_2.TemplateWidth,
@@ -1105,6 +1132,28 @@ Screen_Test_input As screen:
                     Gallery_Tests_2.TemplateWidth)
                 ZIndex: =1
 
+        Label_Inclusions_Large As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: |-
+                =ThisItem.'Black_Inclusions_Large_Result_#'
+            Visible: =false
+            Width: =177
+            X: =360
+            Y: =28
+            ZIndex: =36
+
+        Label_Inclusions_Medium As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: |-
+                =ThisItem.'Black_Inclusions_Medium_Result_#'
+            Visible: =false
+            Width: =177
+            X: =400
+            Y: =28
+            ZIndex: =37
+
     Gallery_Main_If As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(246, 88, 16, 1)
@@ -1121,7 +1170,7 @@ Screen_Test_input As screen:
             {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"},
             {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
             {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"},
-            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
+            //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
             {Test:"Caustic Strength", Unit:"U_Caustic_Small", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic"}, 
             {Test:"IV MFI", Unit:"U_IV_MFI_Small", Low_Spec:"Low_IV_MFI", High_Spec:"High_IV_MFI", Result:"R_IV_MFI"}, 
             {Test:"Extruder IV", Unit:"U_Ext_IV", Low_Spec:"Low_Ext_IV", High_Spec:"High_Ext_IV", Result:"R_Ext_IV"}, 
@@ -1262,7 +1311,7 @@ Screen_Test_input As screen:
             {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"},
             {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
             {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"},
-            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""}, 
+            //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""}, 
             {Test:"Batch /Bag Number", Unit:"U_Bag_Batch", Low_Spec:"", High_Spec:"", Result:"R_Bag_Batch"},
             {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""}, 
             //{Test:"Bag Number", Unit:"U_Bag", Low_Spec:"", High_Spec:"", Result:"R_Bag"},
@@ -1340,7 +1389,16 @@ Screen_Test_input As screen:
             ],
             //PET SSP
             And(var_material_selected="PET",var_sample_point_selected_PET="SSP"),
-            [{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"}, {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"}, {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"}, {Test:"IV", Unit:"U_IV", Low_Spec:"Low_IV", High_Spec:"High_IV", Result:"R_IV"}, {Test:"L", Unit:"U_L", Low_Spec:"Low_L", High_Spec:"High_L", Result:"R_L"}, {Test:"a", Unit:"U_a", Low_Spec:"Low_a", High_Spec:"High_a", Result:"R_a"}, {Test:"b", Unit:"U_b", Low_Spec:"Low_b", High_Spec:"High_b", Result:"R_b"}, {Test:"Pellet Count", Unit:"U_Count", Low_Spec:"Low_Count", High_Spec:"High_Count", Result:"R_Count"}, {Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment"},],
+            [{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"}, 
+            {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"}, 
+            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"}, 
+            {Test:"IV", Unit:"U_IV", Low_Spec:"Low_IV", High_Spec:"High_IV", Result:"R_IV"}, 
+            {Test:"L", Unit:"U_L", Low_Spec:"Low_L", High_Spec:"High_L", Result:"R_L"}, 
+            {Test:"a", Unit:"U_a", Low_Spec:"Low_a", High_Spec:"High_a", Result:"R_a"}, 
+            {Test:"b", Unit:"U_b", Low_Spec:"Low_b", High_Spec:"High_b", Result:"R_b"}, 
+            {Test:"Pellet Count", Unit:"U_Count", Low_Spec:"Low_Count", High_Spec:"High_Count", Result:"R_Count"}, 
+            {Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment"},
+            ],
             //PET Pellet Bag
             And(var_material_selected="PET",var_sample_point_selected_PET="Pellet Bag"),
             [{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"}, 
@@ -1381,11 +1439,15 @@ Screen_Test_input As screen:
             ],
             //HDPE Natural All
             And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),
-            [{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"}, 
+            [{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point"},
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
             {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date"}, 
-            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"}, 
-            {Test:"Batch Number", Unit:"U_Batch", Low_Spec:"", High_Spec:"", Result:"R_Batch"}, 
-            {Test:"Bag Number", Unit:"U_Bag", Low_Spec:"", High_Spec:"", Result:"R_Bag"}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
+            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time"},
+            {Test:"Batch /Bag Number", Unit:"U_Bag_Batch", Low_Spec:"", High_Spec:"", Result:"R_Bag_Batch"},
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
+            //{Test:"Batch Number", Unit:"U_Batch", Low_Spec:"", High_Spec:"", Result:"R_Batch"}, 
+            //{Test:"Bag Number", Unit:"U_Bag", Low_Spec:"", High_Spec:"", Result:"R_Bag"}, 
             {Test:"Caustic Strength", Unit:"U_Caustic", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic"}, 
             {Test:"MFI", Unit:"U_MFI", Low_Spec:"Low_MFI", High_Spec:"High_MFI", Result:"R_MFI"}, 
             {Test:"Limonene", Unit:"U_Limonene", Low_Spec:"Low_Limonene", High_Spec:"High_Limonene", Result:"R_Limonene"}, 
@@ -1397,11 +1459,11 @@ Screen_Test_input As screen:
             {Test:"L", Unit:"U_L", Low_Spec:"Low_L", High_Spec:"High_L", Result:"R_L"}, 
             {Test:"a", Unit:"U_a", Low_Spec:"Low_a", High_Spec:"High_a", Result:"R_a"}, 
             {Test:"b", Unit:"U_b", Low_Spec:"Low_b", High_Spec:"High_b", Result:"R_b"}, 
-            {Test:"Pellet Count", Unit:"U_Count", Low_Spec:"Low_Count", High_Spec:"High_Count", Result:"R_Count"}, 
+            {Test:"Pellet Count", Unit:"U_Count_5g_Small", Low_Spec:"Low_Count_5g", High_Spec:"High_Count_5g", Result:"R_Count_5g"},
             {Test:"Visual Inspection", Unit:"U_Vis", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
             {Test:"Medium Inclusions", Unit:"U_Med_Inc", Low_Spec:"Low_Med_Inc", High_Spec:"High_Med_Inc", Result:"R_Med_Inc"}, 
             {Test:"Large Inclusions", Unit:"U_Lar_Inc", Low_Spec:"Low_Lar_Inc", High_Spec:"High_Lar_Inc", Result:"R_Lar_Inc"}, 
-            {Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment"},
+            //{Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment"},
             ],
             //HDPE Wash
             And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),
