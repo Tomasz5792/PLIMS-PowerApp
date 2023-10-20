@@ -87,13 +87,22 @@ Screen_Test_input As screen:
         OnSelect: |-
             =If(
                 And(ThisItem.Value="Wash",var_filter="All_All"),Set(var_filter,"All_Wash"),
-                And(ThisItem.Value="Wash",var_filter="All_All"),Set(var_filter,"All_Flake_Bag"),
-                And(ThisItem.Value="Wash",var_filter="All_All"),Set(var_filter,"All_Post_Flake_Sorter"),
-                And(ThisItem.Value="Wash",var_filter="All_All"),Set(var_filter,"All_Post_Extruder"),
-                And(ThisItem.Value="Wash",var_filter="All_All"),Set(var_filter,"All_SSP"),
-                And(ThisItem.Value="Wash",var_filter="All_All"),Set(var_filter,"All_Pellet_Bag"),
-                And(ThisItem.Value="Wash",var_filter="All_All"),Set(var_filter,"All_Sampling_Silo")
+                And(ThisItem.Value="Flake Bag",var_filter="All_All"),Set(var_filter,"PET_Flake_Bag"),
+                And(ThisItem.Value="Post Flake Sorter",var_filter="All_All"),Set(var_filter,"All_Post_Flake_Sorter"),
+                And(ThisItem.Value="Post Extruder",var_filter="All_All"),Set(var_filter,"All_Post_Extruder"),
+                And(ThisItem.Value="SSP",var_filter="All_All"),Set(var_filter,"PET_SSP"),
+                And(ThisItem.Value="Pellet Bag",var_filter="All_All"),Set(var_filter,"All_Pellet_Bag"),
+                And(ThisItem.Value="Sampling Silo",var_filter="All_All"),Set(var_filter,"All_Sampling_Silo"),
+            
+                And(ThisItem.Value="Wash",var_filter="PET_All"),Set(var_filter,"PET_Wash"),
+                And(ThisItem.Value="Flake Bag",var_filter="PET_All"),Set(var_filter,"PET_Flake_Bag"),
+                And(ThisItem.Value="Post Flake Sorter",var_filter="PET_All"),Set(var_filter,"PET_Post_Flake_Sorter"),
+                And(ThisItem.Value="Post Extruder",var_filter="PET_All"),Set(var_filter,"PET_Post_Extruder"),
+                And(ThisItem.Value="SSP",var_filter="PET_All"),Set(var_filter,"PET_SSP"),
+                And(ThisItem.Value="Pellet Bag",var_filter="PET_All"),Set(var_filter,"PET_Pellet_Bag"),
+                And(ThisItem.Value="Sampling Silo",var_filter="PET_All"),Set(var_filter,"PET_Sampling_Silo")
                 
+                    
             )
             
             //["All","PET","HDPE Natural","HDPE Self Coloured","PP"]
@@ -1714,23 +1723,7 @@ Screen_Test_input As screen:
             {Test:"Pellet Count", Unit:"U_Count", Low_Spec:"Low_Count", High_Spec:"High_Count", Result:"R_Count"},
             {Test:"Visual Inspection", Unit:"U_Vis", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
             //{Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment"},
-            ],
-            
-            And(var_material_selected="Verification",var_sample_point_selected_Verification=Blank()),
-            [{Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"}, 
-            {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"},],
-            And(var_material_selected="Verification",var_sample_point_selected_Verification="LMI"),
-            [{Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"}, 
-            {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"},],
-            And(var_material_selected="Verification",var_sample_point_selected_Verification="GC"),
-            [{Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"}, 
-            {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"},],
-            And(var_material_selected="Verification",var_sample_point_selected_Verification="Fimic"),
-            [{Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"}, 
-            {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"},],
-            
-            [{Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"}, 
-            {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"Error", Result:"Error"},]
+            ]
             )
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
