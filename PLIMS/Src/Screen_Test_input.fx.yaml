@@ -2121,7 +2121,7 @@ Screen_Test_input As screen:
         Height: =44
         OnSelect: |-
             =Patch('Test Results', Defaults('Test Results'), {
-                Unique: "Not Tested",
+                Title: "Not Tested",
                 Material: "Not Tested",
                 Sample_Point: "Not Tested",
                 Sample_Point_Filter: "Not Tested",
@@ -2171,22 +2171,4 @@ Screen_Test_input As screen:
         Text: ="+ Samples"
         Width: =123
         ZIndex: =30
-
-    Button1_1 As button:
-        Height: =44
-        OnSelect: |-
-            =Patch('Test Results', Defaults('Test Results'), {
-                Unique: "Not Tested",
-                Material: "Not Tested",
-                Sample_Point: "Not Tested",
-                Sample_Point_Filter: "Not Tested",
-                'Date_&_Time': Now(),
-                Batch_Number: "Not Tested",
-                Bag_Number: "Not Tested",
-                Unique_No_Batch_Bag: "Not Tested"
-            })
-        Text: ="+ Samples"
-        Width: =123
-        X: =153
-        ZIndex: =31
 
