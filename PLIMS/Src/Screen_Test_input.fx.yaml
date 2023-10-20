@@ -855,7 +855,7 @@ Screen_Test_input As screen:
         Label_Extruder_IV As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Extruder_IV_Value_Result
+            Text: =ThisItem.IV_Extruder_Value_Result
             Visible: =false
             Width: =177
             X: =357
@@ -923,7 +923,7 @@ Screen_Test_input As screen:
         Label_Inclusions As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Black_Inclusion_Pass_Fail
+            Text: =ThisItem.Black_Inclusions_Pass_Fail
             Visible: =false
             Width: =177
             X: =340
@@ -943,7 +943,7 @@ Screen_Test_input As screen:
         Label_Bag_Batch_Number As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Unique_No_Bag_Batch
+            Text: =ThisItem.Unique_No_Batch_Bag
             Visible: =false
             Width: =177
             X: =380
@@ -953,7 +953,7 @@ Screen_Test_input As screen:
         Label_AA As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Acetaldehyde_Result_ppm
+            Text: =ThisItem.GC_Acetaldehyde_Result_ppm
             Visible: =false
             Width: =177
             X: =420
@@ -963,7 +963,7 @@ Screen_Test_input As screen:
         Label_Limonene As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Limonene_Result_ppm
+            Text: =ThisItem.GC_Limonene_Result_ppm
             Visible: =false
             Width: =177
             X: =440
@@ -2119,23 +2119,23 @@ Screen_Test_input As screen:
 
     Button1 As button:
         Height: =44
-        OnSelect: |
+        OnSelect: |-
             =Patch('Test Results', Defaults('Test Results'), {
-                Title: "Not Tested",
+                Unique: "Not Tested",
                 Material: "Not Tested",
                 Sample_Point: "Not Tested",
                 Sample_Point_Filter: "Not Tested",
                 'Date_&_Time': Now(),
                 Batch_Number: "Not Tested",
                 Bag_Number: "Not Tested",
-                Unique_No_Bag_Batch: "Not Tested",
+                Unique_No_Batch_Bag: "Not Tested",
             
                 'Caustic_Strength_Result_%': "Not Tested",
                 IV_MFI_Result: "Not Tested",
-                Extruder_IV_Value_Result: "Not Tested",
-                Acetaldehyde_Result_ppm: "Not Tested",
-                Limonene_Result_ppm: "Not Tested",
-                Benzene_Result_ppm: "Not Tested",
+                IV_Extruder_Value_Result: "Not Tested",
+                GC_Acetaldehyde_Result_ppm: "Not Tested",
+                GC_Limonene_Result_ppm: "Not Tested",
+                GC_Benzene_Result_ppm: "Not Tested",
                 GC_Result_Pass_Fail: "Not Tested",
                 'Fines_Result_%': "Not Tested",
                 'Moisture_Result_%': "Not Tested",
@@ -2164,11 +2164,29 @@ Screen_Test_input As screen:
                 Pellet_Count_Result_5g: "Not Tested",
                 'Black_Inclusions_Medium_Result_#': "Not Tested",
                 'Black_Inclusions_Large_Result_#': "Not Tested",
-                Black_Inclusion_Pass_Fail: "Not Tested",
+                Black_Inclusions_Pass_Fail: "Not Tested",
                 Crystallisation_Result: "Not Tested",
                 Visual_Inspection_Result_Pass_Fail: "Not Tested"
             })
         Text: ="+ Samples"
         Width: =123
         ZIndex: =30
+
+    Button1_1 As button:
+        Height: =44
+        OnSelect: |-
+            =Patch('Test Results', Defaults('Test Results'), {
+                Unique: "Not Tested",
+                Material: "Not Tested",
+                Sample_Point: "Not Tested",
+                Sample_Point_Filter: "Not Tested",
+                'Date_&_Time': Now(),
+                Batch_Number: "Not Tested",
+                Bag_Number: "Not Tested",
+                Unique_No_Batch_Bag: "Not Tested"
+            })
+        Text: ="+ Samples"
+        Width: =123
+        X: =153
+        ZIndex: =31
 

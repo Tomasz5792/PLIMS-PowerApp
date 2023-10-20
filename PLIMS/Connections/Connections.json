@@ -13,7 +13,7 @@
       "https://viridor.sharepoint.com/sites/AvonmouthQualityTechs": {
         "dataSources": {
           "Test Results": {
-            "tableName": "c9c96267-d95b-4e9f-8efe-637f8da749fa"
+            "tableName": "330d2595-b391-42f1-a8fd-c5d68edae005"
           }
         }
       }
@@ -115,9 +115,6 @@
     "datasets": {
       "groups%252F7c8b8e69-c408-4055-aa6f-97fad6415a6f,b%2521WEuMByJ03kGfjOq-5g8-GqSjVSFLhUNAnrrmMZlIAHovPYHyg_1JQbpHdXhrRHTa,015G5YRC2P2FWJ7CVZJ5EL2PBRDKL7JQUY": {
         "dataSources": {
-          "Table_Results": {
-            "tableName": "{FB780B5C-0BB7-4078-B7A8-EAB01B85328A}"
-          },
           "Table_Specifications": {
             "tableName": "{45486548-5BEF-4C3A-A739-9E98A29323B1}"
           }
@@ -125,7 +122,6 @@
       }
     },
     "dataSources": [
-      "Table_Results",
       "Table_Specifications"
     ],
     "dependencies": {},
