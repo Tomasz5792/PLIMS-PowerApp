@@ -18,7 +18,7 @@ Screen_Test_input As screen:
         Fill: =Color.Transparent
         Height: =56
         Items: |+
-            =["All","PET","HDPE Natural","HDPE Self Coloured","PP","Verification"]
+            =["All","PET","HDPE Natural","HDPE Self Coloured","PP"]
             
             //For future when needed
             //"Verification"
@@ -47,7 +47,7 @@ Screen_Test_input As screen:
         TemplatePadding: =0
         TemplateSize: =56
         Width: =1366
-        WrapCount: =6
+        WrapCount: =5
         Y: =50
         ZIndex: =2
 
@@ -72,7 +72,7 @@ Screen_Test_input As screen:
             PressedFill: =If(ThisItem.Value="",Color.Transparent,Colour_Viridor_Purple)
             Size: =Text_size_Menu
             Text: =ThisItem.Value
-            Width: =227.66666666666666
+            Width: =273.2
             Y: |-
                 =If(ThisItem.Value="PP P&G",-30,
                 If(ThisItem.Value="PET Std",-30,
@@ -1748,7 +1748,6 @@ Screen_Test_input As screen:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Main_If.Width/Gallery_Main_If.AllItemsCount
-        Visible: =false
         Width: =301
         X: =277
         Y: =1
