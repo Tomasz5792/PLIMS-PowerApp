@@ -4774,46 +4774,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Test_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Test_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "var_filter"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Test_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "var_filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen_Start.Button_Back_3.AccessibleLabel"
                 }
               ],
