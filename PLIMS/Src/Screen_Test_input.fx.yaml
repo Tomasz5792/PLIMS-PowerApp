@@ -85,28 +85,27 @@ Screen_Test_input As screen:
         Items: =["Wash","Flake Bag","Post Flake Sorter","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
         Layout: =Layout.Vertical
         OnSelect: |-
-            =If(
-                And(ThisItem.Value="Wash",var_filter="All_All"),Set(var_filter,"All_Wash"),
-                And(ThisItem.Value="Flake Bag",var_filter="All_All"),Set(var_filter,"PET_Flake_Bag"),
-                And(ThisItem.Value="Post Flake Sorter",var_filter="All_All"),Set(var_filter,"All_Post_Flake_Sorter"),
-                And(ThisItem.Value="Post Extruder",var_filter="All_All"),Set(var_filter,"All_Post_Extruder"),
-                And(ThisItem.Value="SSP",var_filter="All_All"),Set(var_filter,"PET_SSP"),
-                And(ThisItem.Value="Pellet Bag",var_filter="All_All"),Set(var_filter,"All_Pellet_Bag"),
-                And(ThisItem.Value="Sampling Silo",var_filter="All_All"),Set(var_filter,"All_Sampling_Silo"),
+            =Set(var_sample_point_selected,ThisItem.Value);
             
-                And(ThisItem.Value="Wash",var_filter="PET_All"),Set(var_filter,"PET_Wash"),
-                And(ThisItem.Value="Flake Bag",var_filter="PET_All"),Set(var_filter,"PET_Flake_Bag"),
-                And(ThisItem.Value="Post Flake Sorter",var_filter="PET_All"),Set(var_filter,"PET_Post_Flake_Sorter"),
-                And(ThisItem.Value="Post Extruder",var_filter="PET_All"),Set(var_filter,"PET_Post_Extruder"),
-                And(ThisItem.Value="SSP",var_filter="PET_All"),Set(var_filter,"PET_SSP"),
-                And(ThisItem.Value="Pellet Bag",var_filter="PET_All"),Set(var_filter,"PET_Pellet_Bag"),
-                And(ThisItem.Value="Sampling Silo",var_filter="PET_All"),Set(var_filter,"PET_Sampling_Silo")
-                
-                    
-            )
+            If(And(ThisItem.Value<>"LMI",ThisItem.Value<>"GC",ThisItem.Value<>"Fimic"),
+            Set(var_sample_point_selected_All,ThisItem.Value));
             
-            //["All","PET","HDPE Natural","HDPE Self Coloured","PP"]
-            //["Wash","Flake Bag","Post Flake Sorter","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
+            If(And(ThisItem.Value<>"Flake Bag",ThisItem.Value<>"SSP"),
+            If(var_material_selected="All",Set(var_sample_point_selected_All,ThisItem.Value),
+            If(var_material_selected="PET",Set(var_sample_point_selected_PET,ThisItem.Value),
+            If(var_material_selected="HDPE Natural",Set(var_sample_point_selected_HDPE,ThisItem.Value),
+            If(var_material_selected="HDPE Self Coloured",Set(var_sample_point_selected_HDPE_SC,ThisItem.Value),
+            If(var_material_selected="PP",Set(var_sample_point_selected_PP,ThisItem.Value),
+            If(var_material_selected="Verification",Set(var_sample_point_selected_Verification,ThisItem.Value)
+            )))))));
+            
+            If(And(And(var_material_selected<>"PET",var_material_selected<>"All"),Or(ThisItem.Value="Flake Bag",ThisItem.Value="SSP")),
+            Set(var_material_selected,"PET");
+            Set(var_sample_point_selected_PET,ThisItem.Value);
+            //Set(var_sample_point_selected_All,ThisItem.Value);
+            );
+            
+            If(var_material_selected="PET",Set(var_sample_point_selected_PET,ThisItem.Value));
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =54

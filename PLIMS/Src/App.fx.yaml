@@ -14,7 +14,7 @@ App As appinfo:
         //Text size
         Set(Text_size,18);Set(Text_size_2,13);Set(Text_size_Menu,20);Set(Text_size_Title,25);Set(Text_size_large,40);Set(Border_Thickness,1.2);Set(Text_size_CoA,9);
         
-        Set(var_filter,"All_All");  //setting material selected to all for test screen
+        Set(var_material_selected,"All");  //setting material selected to all for test screen
         
         //Loading Tables
         //ClearCollect(Collection_Specifications,Table_Specifications);
