@@ -582,23 +582,23 @@ Screen_Test_input As screen:
             =If(
             //All
             And(var_material_selected="All",var_sample_point_selected_All=Blank()),'Test Results',
-            And(var_material_selected="All",var_sample_point_selected_All="Wash"),'Test Results',
-            And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),'Test Results',
-            And(var_material_selected="All",var_sample_point_selected_All="Post Flake Sorter"),'Test Results',
-            And(var_material_selected="All",var_sample_point_selected_All="Post Extruder"),'Test Results',
-            And(var_material_selected="All",var_sample_point_selected_All="SSP"),'Test Results',
-            And(var_material_selected="All",var_sample_point_selected_All="Pellet Bag"),'Test Results',
-            And(var_material_selected="All",var_sample_point_selected_All="Sampling Silo"),'Test Results',
+            And(var_material_selected="All",var_sample_point_selected_All="Wash"),Filter('Test Results',Sample_Point_Filter="Wash"),
+            And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),Filter('Test Results',Sample_Point_Filter="Flake Bag"),
+            And(var_material_selected="All",var_sample_point_selected_All="Post Flake Sorter"),Filter('Test Results',Sample_Point_Filter="Post Flake Sorter"),
+            And(var_material_selected="All",var_sample_point_selected_All="Post Extruder"),Filter('Test Results',Sample_Point_Filter="Post Extruder"),
+            And(var_material_selected="All",var_sample_point_selected_All="SSP"),Filter('Test Results',Sample_Point_Filter="SSP"),
+            And(var_material_selected="All",var_sample_point_selected_All="Pellet Bag"),Filter('Test Results',Sample_Point_Filter="Pellet Bag"),
+            And(var_material_selected="All",var_sample_point_selected_All="Sampling Silo"),Filter('Test Results',Sample_Point_Filter="Sampling Silo"),
             
             //"PET"
-            And(var_material_selected="PET",var_sample_point_selected_PET=Blank()),'Test Results',
-            And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),'Test Results',
-            And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),'Test Results',
-            And(var_material_selected="PET",var_sample_point_selected_PET="Post Flake Sorter"),'Test Results',
-            And(var_material_selected="PET",var_sample_point_selected_PET="Post Extruder"),'Test Results',
-            And(var_material_selected="PET",var_sample_point_selected_PET="SSP"),'Test Results',
-            And(var_material_selected="PET",var_sample_point_selected_PET="Pellet Bag"),'Test Results',
-            And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),'Test Results',
+            And(var_material_selected="PET",var_sample_point_selected_PET=Blank()),Filter('Test Results',Material="PET"),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),Filter('Test Results',Material="PET"&&Sample_Point_Filter="Wash"),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),Filter('Test Results',Material="PET"&&Sample_Point_Filter="Flake Bag"),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Post Flake Sorter"),Filter('Test Results',Material="PET"&&Sample_Point_Filter="Post Flake Sorter"),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Post Extruder"),Filter('Test Results',Material="PET"&&Sample_Point_Filter="Post Extruder"),
+            And(var_material_selected="PET",var_sample_point_selected_PET="SSP"),Filter('Test Results',Material="PET"&&Sample_Point_Filter="SSP"),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Pellet Bag"),Filter('Test Results',Material="PET"&&Sample_Point_Filter="Pellet Bag"),
+            And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),Filter('Test Results',Material="PET"&&Sample_Point_Filter="Sampling Silo"),
             
             //"HDPE Natural"
             And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),'Test Results',
@@ -1105,7 +1105,7 @@ Screen_Test_input As screen:
     Gallery_Main_If As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(246, 88, 16, 1)
-        Height: =46
+        Height: =53
         Items: |-
             =//Main If
             If(
@@ -1807,9 +1807,8 @@ Screen_Test_input As screen:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Main_If.Width/Gallery_Main_If.AllItemsCount
-        Width: =301
-        X: =277
-        Y: =1
+        Width: =1366
+        Y: =608
         ZIndex: =15
 
         Label_Main_If As label:
@@ -1842,80 +1841,80 @@ Screen_Test_input As screen:
 
         Label2 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =15
+            Height: =11
             Text: ="Material - "&var_material_selected
             Visible: =false
-            Width: =49
-            X: =179
+            Width: =69
+            X: =172
             ZIndex: =16
 
         Label2_1 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =15
+            Height: =11
             Text: ="Samp point - "&var_sample_point_selected
             Visible: =false
-            Width: =49
-            X: =228
+            Width: =69
+            X: =241
             ZIndex: =17
 
         Label2_2 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =15
+            Height: =11
             Text: ="All - "&var_sample_point_selected_All
             Visible: =false
-            Width: =49
-            X: =179
-            Y: =15
+            Width: =69
+            X: =172
+            Y: =11
             ZIndex: =18
 
         Label2_3 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =15
+            Height: =11
             Text: ="PET - "&var_sample_point_selected_PET
             Visible: =false
-            Width: =49
-            X: =179
-            Y: =29
+            Width: =69
+            X: =172
+            Y: =22
             ZIndex: =19
 
         Label2_4 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =15
+            Height: =11
             Text: ="HDPE - "&var_sample_point_selected_HDPE
             Visible: =false
-            Width: =49
-            X: =179
-            Y: =42
+            Width: =69
+            X: =172
+            Y: =33
             ZIndex: =20
 
         Label2_5 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =15
+            Height: =11
             Text: ="HDPE SC - "&var_sample_point_selected_HDPE_SC
             Visible: =false
-            Width: =49
-            X: =228
-            Y: =15
+            Width: =69
+            X: =241
+            Y: =11
             ZIndex: =21
 
         Label2_6 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =15
+            Height: =11
             Text: ="PP - "&var_sample_point_selected_PP
             Visible: =false
-            Width: =49
-            X: =228
-            Y: =29
+            Width: =69
+            X: =241
+            Y: =22
             ZIndex: =22
 
         Label2_7 As label:
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =15
+            Height: =11
             Text: ="Verif - "&var_sample_point_selected_Verification
             Visible: =false
-            Width: =49
-            X: =228
-            Y: =42
+            Width: =69
+            X: =241
+            Y: =33
             ZIndex: =23
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
