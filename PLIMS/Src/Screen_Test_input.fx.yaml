@@ -601,12 +601,12 @@ Screen_Test_input As screen:
             And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),Filter('Test Results',Material="PET"&&Sample_Point_Filter="Sampling Silo"),
             
             //"HDPE Natural"
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),'Test Results',
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),'Test Results',
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),'Test Results',
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),'Test Results',
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Pellet Bag"),'Test Results',
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Sampling Silo"),'Test Results',
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),Filter('Test Results',Material="HDPE Natural"),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Wash"),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Post Flake Sorter"),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Post Extruder"),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Pellet Bag"),Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Pellet Bag"),
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Sampling Silo"),Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Sampling Silo"),
             
             //"HDPE Self Coloured"
             And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC=Blank()),'Test Results',
