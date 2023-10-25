@@ -226,7 +226,7 @@ Screen_Test_input As screen:
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.Black
-            Height: =Gallery_Tests_4.TemplateHeight
+            Height: =If(ThisItem.Result="",0,Gallery_Tests_4.TemplateHeight)
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -234,7 +234,7 @@ Screen_Test_input As screen:
             PaddingRight: =0
             PaddingTop: =0
             PressedColor: =Color.White
-            PressedFill: =Colour_Viridor_Purple
+            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
             Size: =16
             Text: =ThisItem.High_Spec
             Width: |-
@@ -272,7 +272,7 @@ Screen_Test_input As screen:
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.Black
-            Height: =Gallery_Tests_5.TemplateHeight
+            Height: =If(ThisItem.Result="",0,Gallery_Tests_5.TemplateHeight)
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -280,7 +280,7 @@ Screen_Test_input As screen:
             PaddingRight: =0
             PaddingTop: =0
             PressedColor: =Color.White
-            PressedFill: =Colour_Viridor_Purple
+            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
             Size: =16
             Text: =ThisItem.Low_Spec
             Width: |-
@@ -318,7 +318,7 @@ Screen_Test_input As screen:
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.White
-            Height: =Gallery_Tests_6.TemplateHeight
+            Height: =If(ThisItem.Result="",0,Gallery_Tests_6.TemplateHeight)
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -326,14 +326,15 @@ Screen_Test_input As screen:
             PaddingRight: =0
             PaddingTop: =0
             PressedColor: =Color.White
-            PressedFill: =Colour_Viridor_Purple
+            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
             Size: |
                 =If(
                 Or(
                 
-                var_material_selected="PET"&&var_sample_point_selected_All="Pellet Bag"
+                var_material_selected="PET"&&var_sample_point_selected_All="Pellet Bag",
+                var_material_selected="PET"&&var_sample_point_selected_All="Sampling Silo"
                 
-                ),16,18)
+                ),15,18)
             Text: =ThisItem.Test
             Width: |-
                 =If(
@@ -467,6 +468,7 @@ Screen_Test_input As screen:
                 var_material_selected="All"&&var_sample_point_selected_All="Sampling Silo",
                 var_material_selected="PET"&&var_sample_point_selected_PET=Blank(),
                 var_material_selected="PET"&&var_sample_point_selected_All="Pellet Bag",
+                var_material_selected="PET"&&var_sample_point_selected_All="Sampling Silo",
                 var_material_selected="HDPE Natural"&&var_sample_point_selected_HDPE=Blank(),
                 var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_HDPE_SC=Blank(),
                 var_material_selected="PP"&&var_sample_point_selected_PP=Blank()
@@ -477,8 +479,9 @@ Screen_Test_input As screen:
                     ThisItem.Unit="","",
                     ThisItem.Unit="U_Date","dd mmm yy",
                     ThisItem.Unit="U_Time","hh:mm",
+                    ThisItem.Unit="U_Batch","",
+                    ThisItem.Unit="U_Bag","",
                     ThisItem.Unit="U_Bag_Batch","",
-                
                     ThisItem.Unit="U_Caustic","% w/w",
                     ThisItem.Unit="U_Caustic_Small","%
                 w/w",
@@ -1376,7 +1379,7 @@ Screen_Test_input As screen:
             {Test:"a", Unit:"U_a", Low_Spec:"Low_a", High_Spec:"High_a", Result:"R_a"}, 
             {Test:"b", Unit:"U_b", Low_Spec:"Low_b", High_Spec:"High_b", Result:"R_b"}, 
             {Test:"Pellet Count", Unit:"U_Count", Low_Spec:"Low_Count", High_Spec:"High_Count", Result:"R_Count_1g"}, 
-            {Test:"Visual Inspection", Unit:"U_Vis", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
+            {Test:"Visual Inspection", Unit:"U_Vis_Small", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
             ],
             //PET Sampling Silo
             And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),
@@ -1389,16 +1392,16 @@ Screen_Test_input As screen:
             {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:""},
             {Test:"IV", Unit:"U_IV", Low_Spec:"Low_IV", High_Spec:"High_IV", Result:"R_IV"}, 
             {Test:"AA", Unit:"U_AA", Low_Spec:"Low_AA", High_Spec:"High_AA", Result:"R_AA"}, 
-            {Test:"Limonene", Unit:"U_Limonene", Low_Spec:"Low_Limonene", High_Spec:"High_Limonene", Result:"R_Limonene"}, 
+            {Test:"Limon ene", Unit:"U_Limonene", Low_Spec:"Low_Limonene", High_Spec:"High_Limonene", Result:"R_Limonene"}, 
             {Test:"Fines", Unit:"U_Fines", Low_Spec:"Low_Fines", High_Spec:"High_Fines", Result:"R_Fines"}, 
-            {Test:"Moisture", Unit:"U_Moisture", Low_Spec:"Low_Moisture", High_Spec:"High_Moisture", Result:"R_Moisture"}, 
+            {Test:"Mois ture", Unit:"U_Moisture", Low_Spec:"Low_Moisture", High_Spec:"High_Moisture", Result:"R_Moisture"}, 
             {Test:"Bulk Density", Unit:"U_Bulk", Low_Spec:"Low_Bulk", High_Spec:"High_Bulk", Result:"R_Bulk"}, 
             {Test:"pH", Unit:"U_pH", Low_Spec:"Low_pH", High_Spec:"High_pH", Result:"R_pH"},
             {Test:"L", Unit:"U_L", Low_Spec:"Low_L", High_Spec:"High_L", Result:"R_L"}, 
             {Test:"a", Unit:"U_a", Low_Spec:"Low_a", High_Spec:"High_a", Result:"R_a"}, 
             {Test:"b", Unit:"U_b", Low_Spec:"Low_b", High_Spec:"High_b", Result:"R_b"}, 
             {Test:"Pellet Count", Unit:"U_Count", Low_Spec:"Low_Count", High_Spec:"High_Count", Result:"R_Count_1g"}, 
-            {Test:"Visual Inspection", Unit:"U_Vis", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
+            {Test:"Visual Inspection", Unit:"U_Vis_Small", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"}, 
             ],
             //HDPE Natural All
             And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),
