@@ -336,7 +336,7 @@ Screen_Test_input As screen:
                 var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Post Extruder",
                 var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Pellet Bag",
                 var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Sampling Silo",
-                //var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Post Extruder",
+                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Post Extruder",
                 var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Pellet Bag",
                 var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Sampling Silo"
                 
@@ -482,7 +482,7 @@ Screen_Test_input As screen:
                 var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Pellet Bag",
                 var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Sampling Silo",
                 var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_HDPE_SC=Blank(),
-                //var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Post Extruder",
+                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Post Extruder",
                 var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Pellet Bag",
                 var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Sampling Silo",
                 var_material_selected="PP"&&var_sample_point_selected_PP=Blank()
@@ -1629,9 +1629,9 @@ Screen_Test_input As screen:
             {Test:"a", Unit:"U_a", Low_Spec:"Low_a", High_Spec:"High_a", Result:"R_a"},
             {Test:"b", Unit:"U_b", Low_Spec:"Low_b", High_Spec:"High_b", Result:"R_b"},
             {Test:"Pellet Count", Unit:"U_Count_5g", Low_Spec:"Low_Count", High_Spec:"High_Count", Result:"R_Count_5g"},
-            {Test:"Visual Inspection", Unit:"U_Vis", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"},
-            {Test:"Medium Inclusions", Unit:"U_Med_Inc", Low_Spec:"Low_Med_Inc", High_Spec:"High_Med_Inc", Result:"R_Med_Inc"},
-            {Test:"Large Inclusions", Unit:"U_Lar_Inc", Low_Spec:"Low_Lar_Inc", High_Spec:"High_Lar_Inc", Result:"R_Lar_Inc"},
+            {Test:"Visual Inspec tion", Unit:"U_Vis_Small", Low_Spec:"Low_Vis", High_Spec:"High_Vis", Result:"R_Vis"},
+            {Test:"Medium Inclus ions", Unit:"U_Med_Inc", Low_Spec:"Low_Med_Inc", High_Spec:"High_Med_Inc", Result:"R_Med_Inc"},
+            {Test:"Large Inclus ions", Unit:"U_Lar_Inc", Low_Spec:"Low_Lar_Inc", High_Spec:"High_Lar_Inc", Result:"R_Lar_Inc"},
             //{Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment"},
             ],
             //HDPE Self Coloured SSP
