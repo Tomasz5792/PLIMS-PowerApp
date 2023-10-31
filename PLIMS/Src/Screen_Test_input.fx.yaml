@@ -460,41 +460,61 @@ Screen_Test_input As screen:
             Width: =
             ZIndex: =2
 
-    Label_All_Test_Filter As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(246, 88, 16, 1)
-        Height: =45
-        Text: |-
-            =If(Or(var_material_selected="All",
-            And(var_material_selected="PET",var_sample_point_selected_PET=Blank()),
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC=Blank()),
-            And(var_material_selected="PP",var_sample_point_selected_PP=Blank())
-            ),true,false)
-        Visible: =false
-        Width: =60
-        X: =172
-        ZIndex: =12
-
-    Gallery_Tests_3 As gallery.galleryHorizontal:
+    Gallery_Units_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =Color.AliceBlue
         Height: =58/2
         Items: |
-            =Gallery_Main_If.AllItems
+            =Switch(var_filter_selected,
+                "All_All", col_All_All,
+                "All_Wash", col_All_Wash,
+                "All_Flake_Bag", col_All_Flake_Bag,
+                "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
+                "All_Post_Extruder", col_All_Post_Extruder,
+                "All_SSP", col_All_SSP,
+                "All_Pellet_Bag", col_All_Pellet_Bag,
+                "All_Sampling_Silo", col_All_Sampling_Silo,
+                "PET_All", col_PET_All,
+                "PET_Wash", col_PET_Wash,
+                "PET_Flake_Bag", col_PET_Flake_Bag,
+                "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
+                "PET_Post_Extruder", col_PET_Post_Extruder,
+                "PET_SSP", col_PET_SSP,
+                "PET_Pellet_Bag", col_PET_Pellet_Bag,
+                "PET_Sampling_Silo", col_PET_Sampling_Silo,
+                "HDPE_Nat_All", col_HDPE_Nat_All,
+                "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
+                "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
+                "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
+                "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
+                "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
+                "HDPE_SC_All", col_HDPE_SC_All,
+                "HDPE_SC_Wash", col_HDPE_SC_Wash,
+                "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
+                "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
+                "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
+                "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
+                "PP_All", col_PP_All,
+                "PP_Wash", col_PP_Wash,
+                "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
+                "PP_Post_Extruder", col_PP_Post_Extruder,
+                "PP_Pellet_Bag", col_PP_Pellet_Bag,
+                "PP_Sampling_Silo", col_PP_Sampling_Silo,
+                col_Error
+            )
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_3.Width/Gallery_Tests_3.AllItemsCount
+        TemplateSize: =Gallery_Units_1.Width/Gallery_Units_1.AllItemsCount
         Width: =1366
         Y: =If(Label_All_Test_Filter.Text="true",275,217)
-        ZIndex: =13
+        ZIndex: =12
 
         Label5_1 As label:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.Black
-            Height: =If(ThisItem.Result="",0,Gallery_Tests_3.TemplateHeight)
+            Height: =If(ThisItem.Result="",0,Gallery_Units_1.TemplateHeight)
             LineHeight: =0.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -597,17 +617,17 @@ Screen_Test_input As screen:
                 =If(
                 ThisItem.Result="",0,
                 
-                ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Batch",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Bag",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Bag_Batch",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*1,
-                ThisItem.Result="R_Comment",Gallery_Tests_7.TemplateWidth*6,
+                ThisItem.Result="R_Point",Gallery_Units_1.TemplateWidth*2,
+                ThisItem.Result="R_Material",Gallery_Units_1.TemplateWidth*2,
+                ThisItem.Result="R_Batch",Gallery_Units_1.TemplateWidth*2,
+                ThisItem.Result="R_Bag",Gallery_Units_1.TemplateWidth*2,
+                ThisItem.Result="R_Bag_Batch",Gallery_Units_1.TemplateWidth*2,
+                ThisItem.Result="R_Date",Gallery_Units_1.TemplateWidth*2,
+                ThisItem.Result="R_Time",Gallery_Units_1.TemplateWidth*1,
+                ThisItem.Result="R_Comment",Gallery_Units_1.TemplateWidth*6,
                 
                 //otherwise
-                Gallery_Tests_7.TemplateWidth*1)
+                Gallery_Units_1.TemplateWidth*1)
             ZIndex: =1
 
     Gallery2 As gallery.galleryVertical:
@@ -665,7 +685,7 @@ Screen_Test_input As screen:
         TemplateSize: =58
         Width: =1366
         Y: =If(var_add_sample_visible,Title_Test_Input.Height+Gallery_Add_Samples.Height+Gallery_Tests_Add_Sample.Height,304)
-        ZIndex: =14
+        ZIndex: =13
 
         Label_Material As label:
             Height: =30
@@ -1842,7 +1862,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Main_If.Width/Gallery_Main_If.AllItemsCount
         Width: =519
         X: =212
-        ZIndex: =15
+        ZIndex: =14
 
         Label_Main_If As label:
             Align: =Align.Center
@@ -1945,7 +1965,7 @@ Screen_Test_input As screen:
         Width: =1366
         WrapCount: =7
         Y: =50
-        ZIndex: =24
+        ZIndex: =15
 
         Label_Sampling_Point_2 As label:
             Align: =Align.Center
@@ -2029,7 +2049,7 @@ Screen_Test_input As screen:
         Text: =var_filter_selected
         Width: =141
         X: =1025
-        ZIndex: =25
+        ZIndex: =16
 
     Show_add_sample As icon.CancelBadge:
         Color: =Color.White
@@ -2046,7 +2066,7 @@ Screen_Test_input As screen:
         Width: =40
         X: =Button_Back_9.X-50*3
         Y: =7
-        ZIndex: =26
+        ZIndex: =17
 
     Test_2 As label:
         Fill: =RGBA(204, 231, 246, 1)
@@ -2054,7 +2074,7 @@ Screen_Test_input As screen:
         Text: =var_sample_point_selected
         Width: =131
         X: =889
-        ZIndex: =27
+        ZIndex: =18
 
     Gallery_Tests_Add_Sample As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -2070,7 +2090,7 @@ Screen_Test_input As screen:
         Y: |-
             =Title_Test_Input.Height+Gallery_Add_Samples.Height
             //380
-        ZIndex: =28
+        ZIndex: =19
 
         HtmlText1_4 As htmlViewer:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -2120,7 +2140,7 @@ Screen_Test_input As screen:
         Width: =40
         X: =Show_add_sample.X
         Y: =Show_add_sample.Y
-        ZIndex: =29
+        ZIndex: =20
 
     Button1 As button:
         Height: =44
@@ -2175,7 +2195,7 @@ Screen_Test_input As screen:
             })
         Text: ="+ Samples"
         Width: =123
-        ZIndex: =30
+        ZIndex: =21
 
     Test_3 As label:
         Fill: =RGBA(204, 231, 246, 1)
@@ -2183,7 +2203,7 @@ Screen_Test_input As screen:
         Text: =var_material_selected
         Width: =131
         X: =749
-        ZIndex: =31
+        ZIndex: =22
 
     "Gallery_Select_Material_2 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =RGBA(215, 223, 240, 1)
@@ -2198,7 +2218,7 @@ Screen_Test_input As screen:
         WrapCount: =8
         X: =508
         Y: =498
-        ZIndex: =32
+        ZIndex: =23
 
         Label1_7 As label:
             Align: =Align.Center
@@ -2275,7 +2295,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Main_If_2.Width/Gallery_Main_If_2.AllItemsCount
         Width: =1366
         Y: =419
-        ZIndex: =33
+        ZIndex: =24
 
         Label_Main_If_2 As label:
             Align: =Align.Center
@@ -2343,7 +2363,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Tests_14.Width/Gallery_Tests_14.AllItemsCount
         Width: =1366
         Y: =351
-        ZIndex: =34
+        ZIndex: =25
 
         Label5_9 As label:
             Align: =Align.Center
@@ -2378,4 +2398,27 @@ Screen_Test_input As screen:
             Text: =ThisItem.Test
             Width: =Gallery_Tests_14.TemplateWidth
             ZIndex: =1
+
+    Label_All_Test_Filter As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(246, 88, 16, 1)
+        Height: =45
+        Text: |-
+            =If(Or(
+            var_filter_selected="All_All"
+            ,var_filter_selected="PET_All"
+            ,var_filter_selected="HDPE_Nat_All" 
+            ,var_filter_selected="HDPE_SC_All" 
+            ,var_filter_selected="PP_All" 
+            //,var_filter_selected="All_Flake_Bag" 
+            ,var_filter_selected="All_Post_Flake_Sorter" 
+            ,var_filter_selected="All_Post_Extruder" 
+            //,var_filter_selected="All_SSP" 
+            ,var_filter_selected="All_Pellet_Bag" 
+            ,var_filter_selected="All_Sampling_Silo" 
+            ),true,false)
+        Visible: =false
+        Width: =60
+        X: =172
+        ZIndex: =26
 
