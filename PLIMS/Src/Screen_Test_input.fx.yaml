@@ -422,6 +422,7 @@ Screen_Test_input As screen:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_Main.Width/Gallery_Tests_Main.AllItemsCount
+        Transition: =Transition.Pop
         Width: =1366
         Y: =160
         ZIndex: =10
@@ -518,6 +519,7 @@ Screen_Test_input As screen:
             )
             
         LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_Large.Width/Gallery_Tests_Large.AllItemsCount
         Visible: =If(Label_All_Test_Filter.Text="true",true,false)
