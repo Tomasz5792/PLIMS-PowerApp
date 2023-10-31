@@ -302,7 +302,13 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =16
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),12,14)
             Text: =ThisItem.Low_Spec
             Width: |-
                 =If(
@@ -386,7 +392,13 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =16
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),12,14)
             Text: =ThisItem.High_Spec
             Width: |-
                 =If(
@@ -470,7 +482,13 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =If(var_sample_point_selected=Blank(),14,18)
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),14,18)
             Text: =ThisItem.Test
             Width: |-
                 =If(
@@ -646,7 +664,13 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =If(var_sample_point_selected=Blank(),12,14)
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),12,14)
             Text: |
                 =If(
                     ThisItem.Unit="","",
