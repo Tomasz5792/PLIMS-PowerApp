@@ -661,27 +661,7 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-            Size: |-
-                =If(
-                Or(
-                var_sample_point_selected_All=Blank(),
-                var_material_selected="All"&&var_sample_point_selected_All="Post Extruder",
-                var_material_selected="All"&&var_sample_point_selected_All="Pellet Bag",
-                var_material_selected="All"&&var_sample_point_selected_All="Sampling Silo",
-                var_material_selected="PET"&&var_sample_point_selected_PET=Blank(),
-                var_material_selected="PET"&&var_sample_point_selected_All="Pellet Bag",
-                var_material_selected="PET"&&var_sample_point_selected_All="Sampling Silo",
-                var_material_selected="HDPE Natural"&&var_sample_point_selected_HDPE=Blank(),
-                var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Post Extruder",
-                var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Pellet Bag",
-                var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Sampling Silo",
-                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_HDPE_SC=Blank(),
-                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Post Extruder",
-                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Pellet Bag",
-                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Sampling Silo",
-                var_material_selected="PP"&&var_sample_point_selected_PP=Blank()
-                
-                ),12,14)
+            Size: =If(var_sample_point_selected=Blank(),12,14)
             Text: |
                 =If(
                     ThisItem.Unit="","",
@@ -1232,7 +1212,7 @@ Screen_Test_input As screen:
                 PaddingTop: =0
                 PressedColor: =Color.White
                 PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-                Size: =If(var_sample_point_selected_All=Blank(),15,17)
+                Size: =If(var_sample_point_selected=Blank(),15,17)
                 Text: |-
                     =If(
                     ThisItem.Result="R_Point",Label_Sample_Point.Text,
