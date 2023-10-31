@@ -4980,7 +4980,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 167,
+                  "charOffset": 171,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -5020,7 +5020,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 175,
+                  "charOffset": 179,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -5057,7 +5057,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 182,
+                  "charOffset": 186,
                   "snippet": {
                     "text": "="
                   }
@@ -5098,48 +5098,48 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 229,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.Label4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
                   "charOffset": 237,
                   "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.Label4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 245,
+                  "snippet": {
                     "text": ".Result"
                   }
                 }
@@ -5175,7 +5175,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 244,
+                  "charOffset": 252,
                   "snippet": {
                     "text": "="
                   }
@@ -5216,7 +5216,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 287,
+                  "charOffset": 299,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -5256,7 +5256,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 295,
+                  "charOffset": 307,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -5293,7 +5293,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 302,
+                  "charOffset": 314,
                   "snippet": {
                     "text": "="
                   }
@@ -5334,7 +5334,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 1211,
+                  "charOffset": 1259,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -5374,7 +5374,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 1219,
+                  "charOffset": 1267,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -5411,7 +5411,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1226,
+                  "charOffset": 1274,
                   "snippet": {
                     "text": "="
                   }
@@ -5452,7 +5452,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 1270,
+                  "charOffset": 1322,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -5492,7 +5492,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 1278,
+                  "charOffset": 1330,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -5529,7 +5529,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1285,
+                  "charOffset": 1337,
                   "snippet": {
                     "text": "="
                   }
@@ -5570,7 +5570,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 1332,
+                  "charOffset": 1388,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -5610,7 +5610,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 1340,
+                  "charOffset": 1396,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -5647,89 +5647,89 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1347,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.Label4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 1395,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Ifs for later",
-                "type": "'Ifs for later'.Label4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
                   "charOffset": 1403,
                   "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.Label4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 1455,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Ifs for later",
+                "type": "'Ifs for later'.Label4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Ifs for later'.Label4.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 1463,
+                  "snippet": {
                     "text": ".Result"
                   }
                 }
@@ -5765,7 +5765,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1410,
+                  "charOffset": 1470,
                   "snippet": {
                     "text": "="
                   }
@@ -5806,7 +5806,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 1453,
+                  "charOffset": 1517,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -5846,7 +5846,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 1461,
+                  "charOffset": 1525,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -5883,7 +5883,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1468,
+                  "charOffset": 1532,
                   "snippet": {
                     "text": "="
                   }
@@ -5924,7 +5924,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 2396,
+                  "charOffset": 2496,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -5964,7 +5964,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 2404,
+                  "charOffset": 2504,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6001,7 +6001,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 2411,
+                  "charOffset": 2511,
                   "snippet": {
                     "text": "="
                   }
@@ -6042,7 +6042,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 2455,
+                  "charOffset": 2559,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -6082,7 +6082,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 2463,
+                  "charOffset": 2567,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6119,7 +6119,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 2470,
+                  "charOffset": 2574,
                   "snippet": {
                     "text": "="
                   }
@@ -6160,7 +6160,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 2517,
+                  "charOffset": 2625,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -6200,7 +6200,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 2525,
+                  "charOffset": 2633,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6237,7 +6237,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 2532,
+                  "charOffset": 2640,
                   "snippet": {
                     "text": "="
                   }
@@ -6278,7 +6278,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 2580,
+                  "charOffset": 2692,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -6318,7 +6318,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 2588,
+                  "charOffset": 2700,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6355,7 +6355,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 2595,
+                  "charOffset": 2707,
                   "snippet": {
                     "text": "="
                   }
@@ -6396,7 +6396,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 2638,
+                  "charOffset": 2754,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -6436,7 +6436,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 2646,
+                  "charOffset": 2762,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6473,7 +6473,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 2653,
+                  "charOffset": 2769,
                   "snippet": {
                     "text": "="
                   }
@@ -6514,7 +6514,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3441,
+                  "charOffset": 3585,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -6554,7 +6554,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3449,
+                  "charOffset": 3593,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6591,7 +6591,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3456,
+                  "charOffset": 3600,
                   "snippet": {
                     "text": "="
                   }
@@ -6632,7 +6632,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3500,
+                  "charOffset": 3648,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -6672,7 +6672,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3508,
+                  "charOffset": 3656,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6709,7 +6709,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3515,
+                  "charOffset": 3663,
                   "snippet": {
                     "text": "="
                   }
@@ -6750,7 +6750,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3562,
+                  "charOffset": 3714,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -6790,7 +6790,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3570,
+                  "charOffset": 3722,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6827,7 +6827,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3577,
+                  "charOffset": 3729,
                   "snippet": {
                     "text": "="
                   }
@@ -6868,7 +6868,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3625,
+                  "charOffset": 3781,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -6908,7 +6908,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3633,
+                  "charOffset": 3789,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -6945,7 +6945,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3640,
+                  "charOffset": 3796,
                   "snippet": {
                     "text": "="
                   }
@@ -6986,7 +6986,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 3683,
+                  "charOffset": 3843,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -7026,7 +7026,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 3691,
+                  "charOffset": 3851,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -7063,7 +7063,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 3698,
+                  "charOffset": 3858,
                   "snippet": {
                     "text": "="
                   }
@@ -7104,7 +7104,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4493,
+                  "charOffset": 4681,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -7144,7 +7144,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4501,
+                  "charOffset": 4689,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -7181,7 +7181,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4508,
+                  "charOffset": 4696,
                   "snippet": {
                     "text": "="
                   }
@@ -7222,7 +7222,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4552,
+                  "charOffset": 4744,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -7262,7 +7262,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4560,
+                  "charOffset": 4752,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -7299,7 +7299,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4567,
+                  "charOffset": 4759,
                   "snippet": {
                     "text": "="
                   }
@@ -7340,7 +7340,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4614,
+                  "charOffset": 4810,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -7380,7 +7380,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4622,
+                  "charOffset": 4818,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -7417,7 +7417,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4629,
+                  "charOffset": 4825,
                   "snippet": {
                     "text": "="
                   }
@@ -7458,7 +7458,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4677,
+                  "charOffset": 4877,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -7498,7 +7498,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4685,
+                  "charOffset": 4885,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -7535,7 +7535,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4692,
+                  "charOffset": 4892,
                   "snippet": {
                     "text": "="
                   }
@@ -7576,7 +7576,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 4735,
+                  "charOffset": 4939,
                   "snippet": {
                     "text": "ThisItem"
                   }
@@ -7616,7 +7616,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 4743,
+                  "charOffset": 4947,
                   "snippet": {
                     "text": ".Result"
                   }
@@ -7653,7 +7653,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 4750,
+                  "charOffset": 4954,
                   "snippet": {
                     "text": "="
                   }
@@ -7693,10 +7693,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 5789,
+                  "charLength": 6037,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "If(\nThisItem.Result=\"\",0,\n\n//All\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),\n\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Wash\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Flake Bag\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Post Flake Sorter\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Post Extruder\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"SSP\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Pellet Bag\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Sampling Silo\"),Gallery_Tests_7.TemplateWidth,\n\n//\"PET\"\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Bag_Batch\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),\n\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Wash\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Flake Bag\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Post Flake Sorter\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Post Extruder\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"SSP\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Pellet Bag\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Sampling Silo\"),Gallery_Tests_7.TemplateWidth,\n\n//\"HDPE Natural\"\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Bag_Batch\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),\n\n\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Wash\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Post Flake Sorter\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Post Extruder\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Pellet Bag\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Sampling Silo\"),Gallery_Tests_7.TemplateWidth,\n\n//\"HDPE Self Coloured\"\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Bag_Batch\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),\n\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Wash\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Post Flake Sorter\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Post Extruder\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Pellet Bag\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Sampling Silo\"),Gallery_Tests_7.TemplateWidth,\n\n//\"PP\"\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Bag_Batch\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_7.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),\n\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=\"Wash\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=\"Post Flake Sorter\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=\"Post Extruder\"),Gallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=\"Pellet Bag\"),Gallery_Tests_7.TemplateWidth,\n\n//Verification\nAnd(var_material_selected=\"Verification\",var_sample_point_selected_Verification=Blank()),\nGallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"Verification\",var_sample_point_selected_Verification=\"LMI\"),\nGallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"Verification\",var_sample_point_selected_Verification=\"GC\"),\nGallery_Tests_7.TemplateWidth,\nAnd(var_material_selected=\"Verification\",var_sample_point_selected_Verification=\"Fimic\"),\nGallery_Tests_7.TemplateWidth,\n\n//Otherwise\nGallery_Tests_7.TemplateWidth)"
+                    "text": "If(\nThisItem.Result=\"\",0,\n\n//All\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),\n\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Wash\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Flake Bag\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Post Flake Sorter\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Post Extruder\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"SSP\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Pellet Bag\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"All\",var_sample_point_selected_All=\"Sampling Silo\"),Gallery_Tests_Inner.TemplateWidth,\n\n//\"PET\"\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Bag_Batch\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),\n\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Wash\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Flake Bag\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Post Flake Sorter\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Post Extruder\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"SSP\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Pellet Bag\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PET\",var_sample_point_selected_PET=\"Sampling Silo\"),Gallery_Tests_Inner.TemplateWidth,\n\n//\"HDPE Natural\"\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Bag_Batch\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),\n\n\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Wash\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Post Flake Sorter\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Post Extruder\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Pellet Bag\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"HDPE Natural\",var_sample_point_selected_HDPE=\"Sampling Silo\"),Gallery_Tests_Inner.TemplateWidth,\n\n//\"HDPE Self Coloured\"\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Bag_Batch\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),\n\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Wash\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Post Flake Sorter\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Post Extruder\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Pellet Bag\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"HDPE Self Coloured\",var_sample_point_selected_HDPE_SC=\"Sampling Silo\"),Gallery_Tests_Inner.TemplateWidth,\n\n//\"PP\"\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=Blank()),If(\nThisItem.Result=\"R_Point\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Material\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Bag_Batch\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Date\",Gallery_Tests_Inner.TemplateWidth*2,\nThisItem.Result=\"R_Time\",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),\n\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=\"Wash\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=\"Post Flake Sorter\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=\"Post Extruder\"),Gallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"PP\",var_sample_point_selected_PP=\"Pellet Bag\"),Gallery_Tests_Inner.TemplateWidth,\n\n//Verification\nAnd(var_material_selected=\"Verification\",var_sample_point_selected_Verification=Blank()),\nGallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"Verification\",var_sample_point_selected_Verification=\"LMI\"),\nGallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"Verification\",var_sample_point_selected_Verification=\"GC\"),\nGallery_Tests_Inner.TemplateWidth,\nAnd(var_material_selected=\"Verification\",var_sample_point_selected_Verification=\"Fimic\"),\nGallery_Tests_Inner.TemplateWidth,\n\n//Otherwise\nGallery_Tests_Inner.TemplateWidth)"
                   }
                 }
               },
@@ -9945,19 +9945,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_7.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_Inner.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_7.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_Inner.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_7"
+                "type": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_Inner"
               }
             }
           ],
@@ -9975,19 +9975,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_7.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_Inner.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_7.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_Inner.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_Test_input",
-                "type": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_7"
+                "type": "Screen_Test_input.Gallery_Results_Main.Gallery_Tests_Inner"
               }
             }
           ],

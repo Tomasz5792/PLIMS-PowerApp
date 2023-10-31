@@ -478,8 +478,45 @@ Screen_Test_input As screen:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_Green
         Height: =58*2
-        Items: |
-            =Gallery_Main_If.AllItems
+        Items: |+
+            =Switch(var_filter_selected,
+                "All_All", col_All_All,
+                "All_Wash", col_All_Wash,
+                "All_Flake_Bag", col_All_Flake_Bag,
+                "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
+                "All_Post_Extruder", col_All_Post_Extruder,
+                "All_SSP", col_All_SSP,
+                "All_Pellet_Bag", col_All_Pellet_Bag,
+                "All_Sampling_Silo", col_All_Sampling_Silo,
+                "PET_All", col_PET_All,
+                "PET_Wash", col_PET_Wash,
+                "PET_Flake_Bag", col_PET_Flake_Bag,
+                "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
+                "PET_Post_Extruder", col_PET_Post_Extruder,
+                "PET_SSP", col_PET_SSP,
+                "PET_Pellet_Bag", col_PET_Pellet_Bag,
+                "PET_Sampling_Silo", col_PET_Sampling_Silo,
+                "HDPE_Nat_All", col_HDPE_Nat_All,
+                "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
+                "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
+                "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
+                "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
+                "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
+                "HDPE_SC_All", col_HDPE_SC_All,
+                "HDPE_SC_Wash", col_HDPE_SC_Wash,
+                "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
+                "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
+                "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
+                "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
+                "PP_All", col_PP_All,
+                "PP_Wash", col_PP_Wash,
+                "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
+                "PP_Post_Extruder", col_PP_Post_Extruder,
+                "PP_Pellet_Bag", col_PP_Pellet_Bag,
+                "PP_Sampling_Silo", col_PP_Sampling_Silo,
+                col_Error
+            )
+            
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_Large.Width/Gallery_Tests_Large.AllItemsCount
@@ -516,17 +553,17 @@ Screen_Test_input As screen:
                 =If(
                 ThisItem.Result="",0,
                 
-                ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Batch",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Bag",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Bag_Batch",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*1,
-                ThisItem.Result="R_Comment",Gallery_Tests_7.TemplateWidth*6,
+                ThisItem.Result="R_Point",Gallery_Tests_Large.TemplateWidth*2,
+                ThisItem.Result="R_Material",Gallery_Tests_Large.TemplateWidth*2,
+                ThisItem.Result="R_Batch",Gallery_Tests_Large.TemplateWidth*2,
+                ThisItem.Result="R_Bag",Gallery_Tests_Large.TemplateWidth*2,
+                ThisItem.Result="R_Bag_Batch",Gallery_Tests_Large.TemplateWidth*2,
+                ThisItem.Result="R_Date",Gallery_Tests_Large.TemplateWidth*2,
+                ThisItem.Result="R_Time",Gallery_Tests_Large.TemplateWidth*1,
+                ThisItem.Result="R_Comment",Gallery_Tests_Large.TemplateWidth*6,
                 
                 //otherwise
-                Gallery_Tests_7.TemplateWidth*1)
+                Gallery_Tests_Large.TemplateWidth*1)
             ZIndex: =1
 
         Label3 As label:
@@ -1101,15 +1138,54 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =34
 
-        Gallery_Tests_7 As gallery.galleryHorizontal:
+        Gallery_Tests_Inner As gallery.galleryHorizontal:
             DelayItemLoading: =true
             Fill: =Color.Transparent
             Height: =Parent.TemplateHeight
-            Items: |
-                =Gallery_Main_If.AllItems
+            Items: |+
+                =Switch(var_filter_selected,
+                    "All_All", col_All_All,
+                    "All_Wash", col_All_Wash,
+                    "All_Flake_Bag", col_All_Flake_Bag,
+                    "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
+                    "All_Post_Extruder", col_All_Post_Extruder,
+                    "All_SSP", col_All_SSP,
+                    "All_Pellet_Bag", col_All_Pellet_Bag,
+                    "All_Sampling_Silo", col_All_Sampling_Silo,
+                    "PET_All", col_PET_All,
+                    "PET_Wash", col_PET_Wash,
+                    "PET_Flake_Bag", col_PET_Flake_Bag,
+                    "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
+                    "PET_Post_Extruder", col_PET_Post_Extruder,
+                    "PET_SSP", col_PET_SSP,
+                    "PET_Pellet_Bag", col_PET_Pellet_Bag,
+                    "PET_Sampling_Silo", col_PET_Sampling_Silo,
+                    "HDPE_Nat_All", col_HDPE_Nat_All,
+                    "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
+                    "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
+                    "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
+                    "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
+                    "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
+                    "HDPE_SC_All", col_HDPE_SC_All,
+                    "HDPE_SC_Wash", col_HDPE_SC_Wash,
+                    "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
+                    "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
+                    "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
+                    "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
+                    "PP_All", col_PP_All,
+                    "PP_Wash", col_PP_Wash,
+                    "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
+                    "PP_Post_Extruder", col_PP_Post_Extruder,
+                    "PP_Pellet_Bag", col_PP_Pellet_Bag,
+                    "PP_Sampling_Silo", col_PP_Sampling_Silo,
+                    col_Error
+                )
+                
+                
             LoadingSpinner: =LoadingSpinner.Data
+            ShowScrollbar: =false
             TemplatePadding: =0
-            TemplateSize: =Gallery_Tests_7.Width/Gallery_Tests_7.AllItemsCount
+            TemplateSize: =Gallery_Tests_Inner.Width/Gallery_Tests_Inner.AllItemsCount
             Width: =1366
             ZIndex: =35
 
@@ -1124,7 +1200,7 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_MFI",Label_IV_MFI.Text="Not Tested"),Colour_Not_Tested,
                     
                     Colour_Viridor_GreenTint)
-                Height: =If(ThisItem.Result="",0,Gallery_Tests_7.TemplateHeight)
+                Height: =If(ThisItem.Result="",0,Gallery_Tests_Inner.TemplateHeight)
                 LineHeight: =1
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -1188,17 +1264,17 @@ Screen_Test_input As screen:
                     =If(
                     ThisItem.Result="",0,
                     
-                    ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
-                    ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
-                    ThisItem.Result="R_Batch",Gallery_Tests_7.TemplateWidth*2,
-                    ThisItem.Result="R_Bag",Gallery_Tests_7.TemplateWidth*2,
-                    ThisItem.Result="R_Bag_Batch",Gallery_Tests_7.TemplateWidth*2,
-                    ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
-                    ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*1,
-                    ThisItem.Result="R_Comment",Gallery_Tests_7.TemplateWidth*6,
+                    ThisItem.Result="R_Point",Gallery_Tests_Inner.TemplateWidth*2,
+                    ThisItem.Result="R_Material",Gallery_Tests_Inner.TemplateWidth*2,
+                    ThisItem.Result="R_Batch",Gallery_Tests_Inner.TemplateWidth*2,
+                    ThisItem.Result="R_Bag",Gallery_Tests_Inner.TemplateWidth*2,
+                    ThisItem.Result="R_Bag_Batch",Gallery_Tests_Inner.TemplateWidth*2,
+                    ThisItem.Result="R_Date",Gallery_Tests_Inner.TemplateWidth*2,
+                    ThisItem.Result="R_Time",Gallery_Tests_Inner.TemplateWidth*1,
+                    ThisItem.Result="R_Comment",Gallery_Tests_Inner.TemplateWidth*6,
                     
                     //otherwise
-                    Gallery_Tests_7.TemplateWidth*1)
+                    Gallery_Tests_Inner.TemplateWidth*1)
                 ZIndex: =1
 
         Label_Inclusions_Large As label:

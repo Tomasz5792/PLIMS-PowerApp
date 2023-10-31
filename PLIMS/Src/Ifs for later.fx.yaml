@@ -230,89 +230,89 @@
             
             //All
             And(var_material_selected="All",var_sample_point_selected_All=Blank()),If(
-            ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),
+            ThisItem.Result="R_Point",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Material",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Date",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Time",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),
             
-            And(var_material_selected="All",var_sample_point_selected_All="Wash"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="All",var_sample_point_selected_All="Post Flake Sorter"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="All",var_sample_point_selected_All="Post Extruder"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="All",var_sample_point_selected_All="SSP"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="All",var_sample_point_selected_All="Pellet Bag"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="All",var_sample_point_selected_All="Sampling Silo"),Gallery_Tests_7.TemplateWidth,
+            And(var_material_selected="All",var_sample_point_selected_All="Wash"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="All",var_sample_point_selected_All="Flake Bag"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="All",var_sample_point_selected_All="Post Flake Sorter"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="All",var_sample_point_selected_All="Post Extruder"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="All",var_sample_point_selected_All="SSP"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="All",var_sample_point_selected_All="Pellet Bag"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="All",var_sample_point_selected_All="Sampling Silo"),Gallery_Tests_Inner.TemplateWidth,
             
             //"PET"
             And(var_material_selected="PET",var_sample_point_selected_PET=Blank()),If(
-            ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Bag_Batch",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),
+            ThisItem.Result="R_Point",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Material",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Bag_Batch",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Date",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Time",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),
             
-            And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PET",var_sample_point_selected_PET="Post Flake Sorter"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PET",var_sample_point_selected_PET="Post Extruder"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PET",var_sample_point_selected_PET="SSP"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PET",var_sample_point_selected_PET="Pellet Bag"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),Gallery_Tests_7.TemplateWidth,
+            And(var_material_selected="PET",var_sample_point_selected_PET="Wash"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PET",var_sample_point_selected_PET="Flake Bag"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PET",var_sample_point_selected_PET="Post Flake Sorter"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PET",var_sample_point_selected_PET="Post Extruder"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PET",var_sample_point_selected_PET="SSP"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PET",var_sample_point_selected_PET="Pellet Bag"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PET",var_sample_point_selected_PET="Sampling Silo"),Gallery_Tests_Inner.TemplateWidth,
             
             //"HDPE Natural"
             And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE=Blank()),If(
-            ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Bag_Batch",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),
+            ThisItem.Result="R_Point",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Material",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Bag_Batch",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Date",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Time",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),
             
             
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Pellet Bag"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Sampling Silo"),Gallery_Tests_7.TemplateWidth,
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Wash"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Flake Sorter"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Post Extruder"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Pellet Bag"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="HDPE Natural",var_sample_point_selected_HDPE="Sampling Silo"),Gallery_Tests_Inner.TemplateWidth,
             
             //"HDPE Self Coloured"
             And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC=Blank()),If(
-            ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Bag_Batch",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),
+            ThisItem.Result="R_Point",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Material",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Bag_Batch",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Date",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Time",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),
             
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Wash"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Post Flake Sorter"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Post Extruder"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Pellet Bag"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Sampling Silo"),Gallery_Tests_7.TemplateWidth,
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Wash"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Post Flake Sorter"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Post Extruder"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Pellet Bag"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="HDPE Self Coloured",var_sample_point_selected_HDPE_SC="Sampling Silo"),Gallery_Tests_Inner.TemplateWidth,
             
             //"PP"
             And(var_material_selected="PP",var_sample_point_selected_PP=Blank()),If(
-            ThisItem.Result="R_Point",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Material",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Bag_Batch",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Date",Gallery_Tests_7.TemplateWidth*2,
-            ThisItem.Result="R_Time",Gallery_Tests_7.TemplateWidth*1,Gallery_Tests_7.TemplateWidth*1),
+            ThisItem.Result="R_Point",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Material",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Bag_Batch",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Date",Gallery_Tests_Inner.TemplateWidth*2,
+            ThisItem.Result="R_Time",Gallery_Tests_Inner.TemplateWidth*1,Gallery_Tests_Inner.TemplateWidth*1),
             
-            And(var_material_selected="PP",var_sample_point_selected_PP="Wash"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PP",var_sample_point_selected_PP="Post Flake Sorter"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PP",var_sample_point_selected_PP="Post Extruder"),Gallery_Tests_7.TemplateWidth,
-            And(var_material_selected="PP",var_sample_point_selected_PP="Pellet Bag"),Gallery_Tests_7.TemplateWidth,
+            And(var_material_selected="PP",var_sample_point_selected_PP="Wash"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PP",var_sample_point_selected_PP="Post Flake Sorter"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PP",var_sample_point_selected_PP="Post Extruder"),Gallery_Tests_Inner.TemplateWidth,
+            And(var_material_selected="PP",var_sample_point_selected_PP="Pellet Bag"),Gallery_Tests_Inner.TemplateWidth,
             
             //Verification
             And(var_material_selected="Verification",var_sample_point_selected_Verification=Blank()),
-            Gallery_Tests_7.TemplateWidth,
+            Gallery_Tests_Inner.TemplateWidth,
             And(var_material_selected="Verification",var_sample_point_selected_Verification="LMI"),
-            Gallery_Tests_7.TemplateWidth,
+            Gallery_Tests_Inner.TemplateWidth,
             And(var_material_selected="Verification",var_sample_point_selected_Verification="GC"),
-            Gallery_Tests_7.TemplateWidth,
+            Gallery_Tests_Inner.TemplateWidth,
             And(var_material_selected="Verification",var_sample_point_selected_Verification="Fimic"),
-            Gallery_Tests_7.TemplateWidth,
+            Gallery_Tests_Inner.TemplateWidth,
             
             //Otherwise
-            Gallery_Tests_7.TemplateWidth)
+            Gallery_Tests_Inner.TemplateWidth)
         Height: =51
         Text: ="gallery width"
         Width: =118
