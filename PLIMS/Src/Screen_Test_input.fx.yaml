@@ -470,22 +470,7 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-            Size: |
-                =If(
-                Or(
-                
-                var_material_selected="PET"&&var_sample_point_selected_All="Pellet Bag",
-                var_material_selected="PET"&&var_sample_point_selected_All="Sampling Silo",
-                var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Post Extruder",
-                var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Pellet Bag",
-                var_material_selected="HDPE Natural"&&var_sample_point_selected_All="Sampling Silo",
-                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Post Extruder",
-                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Pellet Bag",
-                var_material_selected="HDPE Self Coloured"&&var_sample_point_selected_All="Sampling Silo"
-                
-                
-                
-                ),14,18)
+            Size: =If(var_sample_point_selected=Blank(),14,18)
             Text: =ThisItem.Test
             Width: |-
                 =If(
@@ -661,7 +646,7 @@ Screen_Test_input As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =12
+            Size: =If(var_sample_point_selected=Blank(),12,14)
             Text: |
                 =If(
                     ThisItem.Unit="","",
