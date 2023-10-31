@@ -189,9 +189,9 @@ Screen_Test_input As screen:
             Blank(),Set(var_filter_selected,"All_Flake_Bag"),
             "All",Set(var_filter_selected,"All_Flake_Bag"),
             "PET",Set(var_filter_selected,"PET_Flake_Bag"),
-            "HDPE Natural",Set(var_filter_selected,"All_Flake_Bag"),
-            "HDPE Self Coloured",Set(var_filter_selected,"All_Flake_Bag"),
-            "PP",Set(var_filter_selected,"All_Flake_Bag"),
+            "HDPE Natural",Set(var_filter_selected,"HDPE_Nat_Flake_Bag"),
+            "HDPE Self Coloured",Set(var_filter_selected,"HDPE_SC_Flake_Bag"),
+            "PP",Set(var_filter_selected,"PP_Flake_Bag"),
             Set(var_filter_selected,"Error")
             )
             
@@ -222,9 +222,9 @@ Screen_Test_input As screen:
             Blank(),Set(var_filter_selected,"All_SSP"),
             "All",Set(var_filter_selected,"All_SSP"),
             "PET",Set(var_filter_selected,"PET_SSP"),
-            "HDPE Natural",Set(var_filter_selected,"All_SSP"),
-            "HDPE Self Coloured",Set(var_filter_selected,"All_SSP"),
-            "PP",Set(var_filter_selected,"All_SSP"),
+            "HDPE Natural",Set(var_filter_selected,"HDPE_Nat_SSP"),
+            "HDPE Self Coloured",Set(var_filter_selected,"HDPE_SC_SSP"),
+            "PP",Set(var_filter_selected,"PP_SSP"),
             Set(var_filter_selected,"Error")
             )
             
