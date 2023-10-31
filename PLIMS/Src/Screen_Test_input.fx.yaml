@@ -858,6 +858,7 @@ Screen_Test_input As screen:
 
     Gallery_Results_Main As gallery.galleryVertical:
         DelayItemLoading: =true
+        Fill: =Colour_Viridor_GreenTint
         Height: |
             =If(var_add_sample_visible,Parent.Height-Title_Test_Input.Height-Gallery_Add_Samples.Height-Gallery_Tests_Add_Sample.Height,464)
         Items: |
@@ -872,14 +873,15 @@ Screen_Test_input As screen:
                 "All_Pellet_Bag", Filter('Test Results',Sample_Point_Filter="Pellet Bag"),
                 "All_Sampling_Silo", Filter('Test Results',Sample_Point_Filter="Sampling Silo"),
             
-                "PET_All", 'Test Results',
-                "PET_Wash", 'Test Results',
-                "PET_Flake_Bag", 'Test Results',
-                "PET_Post_Flake_Sorter", 'Test Results',
-                "PET_Post_Extruder", 'Test Results',
-                "PET_SSP", 'Test Results',
-                "PET_Pellet_Bag", 'Test Results',
-                "PET_Sampling_Silo", 'Test Results',
+                "PET_All", Filter('Test Results',Material="PET"),
+                "PET_Wash", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Wash"),
+                "PET_Flake_Bag", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Flake Bag"),
+                "PET_Post_Flake_Sorter", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Post Flake Sorter"),
+                "PET_Post_Extruder", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Post Extruder"),
+                "PET_SSP", Filter('Test Results',Material="PET"&&Sample_Point_Filter="SSP"),
+                "PET_Pellet_Bag", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Pellet Bag"),
+                "PET_Sampling_Silo", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Sampling Silo"),
+            
                 "HDPE_Nat_All", 'Test Results',
                 "HDPE_Nat_Wash", 'Test Results',
                 "HDPE_Nat_Flake_Bag", 'Test Results',
@@ -888,6 +890,7 @@ Screen_Test_input As screen:
                 "HDPE_Nat_SSP", 'Test Results',
                 "HDPE_Nat_Pellet_Bag", 'Test Results',
                 "HDPE_Nat_Sampling_Silo", 'Test Results',
+            
                 "HDPE_SC_All", 'Test Results',
                 "HDPE_SC_Wash", 'Test Results',
                 "HDPE_SC_Flake_Bag", 'Test Results',
@@ -896,6 +899,7 @@ Screen_Test_input As screen:
                 "HDPE_SC_SSP", 'Test Results',
                 "HDPE_SC_Pellet_Bag", 'Test Results',
                 "HDPE_SC_Sampling_Silo", 'Test Results',
+            
                 "PP_All", 'Test Results',
                 "PP_Wash", 'Test Results',
                 "PP_Flake_Bag", 'Test Results',
@@ -904,6 +908,7 @@ Screen_Test_input As screen:
                 "PP_SSP", 'Test Results',
                 "PP_Pellet_Bag", 'Test Results',
                 "PP_Sampling_Silo", 'Test Results',
+                
                 'Test Results'
             )
         Layout: =Layout.Vertical
