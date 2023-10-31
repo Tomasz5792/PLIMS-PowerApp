@@ -16,8 +16,183 @@ App As appinfo:
         
         Set(var_material_selected,"All");  //setting material selected to all for test screen
         
-        //Loading Tables
-        //ClearCollect(Collection_Specifications,Table_Specifications);
+        //Loading Collections
+        
+        // For All_All
+        ClearCollect(col_All_All, [
+        { Test: "All_All", Unit: "All_All", Low_Spec: "All_All", High_Spec: "All_All", Result: "All_All" }
+        ]);
+        
+        // For All_Wash
+        ClearCollect(col_All_Wash, [
+        { Test: "All_Wash", Unit: "All_Wash", Low_Spec: "All_Wash", High_Spec: "All_Wash", Result: "All_Wash" }
+        ]);
+        
+        // For All_Flake_Bag
+        ClearCollect(col_All_Flake_Bag, [
+        { Test: "All_Flake_Bag", Unit: "All_Flake_Bag", Low_Spec: "All_Flake_Bag", High_Spec: "All_Flake_Bag", Result: "All_Flake_Bag" }
+        ]);
+        
+        // For All_Post_Flake_Sorter
+        ClearCollect(col_All_Post_Flake_Sorter, [
+        { Test: "All_Post_Flake_Sorter", Unit: "All_Post_Flake_Sorter", Low_Spec: "All_Post_Flake_Sorter", High_Spec: "All_Post_Flake_Sorter", Result: "All_Post_Flake_Sorter" }
+        ]);
+        
+        // For All_Post_Extruder
+        ClearCollect(col_All_Post_Extruder, [
+        { Test: "All_Post_Extruder", Unit: "All_Post_Extruder", Low_Spec: "All_Post_Extruder", High_Spec: "All_Post_Extruder", Result: "All_Post_Extruder" }
+        ]);
+        
+        // For All_SSP
+        ClearCollect(col_All_SSP, [
+        { Test: "All_SSP", Unit: "All_SSP", Low_Spec: "All_SSP", High_Spec: "All_SSP", Result: "All_SSP" }
+        ]);
+        
+        // For All_Pellet_Bag
+        ClearCollect(col_All_Pellet_Bag, [
+        { Test: "All_Pellet_Bag", Unit: "All_Pellet_Bag", Low_Spec: "All_Pellet_Bag", High_Spec: "All_Pellet_Bag", Result: "All_Pellet_Bag" }
+        ]);
+        
+        // For All_Sampling_Silo
+        ClearCollect(col_All_Sampling_Silo, [
+        { Test: "All_Sampling_Silo", Unit: "All_Sampling_Silo", Low_Spec: "All_Sampling_Silo", High_Spec: "All_Sampling_Silo", Result: "All_Sampling_Silo" }
+        ]);
+        
+        // For PET_All
+        ClearCollect(col_PET_All, [
+        { Test: "PET_All", Unit: "PET_All", Low_Spec: "PET_All", High_Spec: "PET_All", Result: "PET_All" }
+        ]);
+        
+        // For PET_Wash
+        ClearCollect(col_PET_Wash, [
+        { Test: "PET_Wash", Unit: "PET_Wash", Low_Spec: "PET_Wash", High_Spec: "PET_Wash", Result: "PET_Wash" }
+        ]);
+        
+        // For PET_Flake_Bag
+        ClearCollect(col_PET_Flake_Bag, [
+        { Test: "PET_Flake_Bag", Unit: "PET_Flake_Bag", Low_Spec: "PET_Flake_Bag", High_Spec: "PET_Flake_Bag", Result: "PET_Flake_Bag" }
+        ]);
+        
+        // For PET_Post_Flake_Sorter
+        ClearCollect(col_PET_Post_Flake_Sorter, [
+        { Test: "PET_Post_Flake_Sorter", Unit: "PET_Post_Flake_Sorter", Low_Spec: "PET_Post_Flake_Sorter", High_Spec: "PET_Post_Flake_Sorter", Result: "PET_Post_Flake_Sorter" }
+        ]);
+        
+        // For PET_Post_Extruder
+        ClearCollect(col_PET_Post_Extruder, [
+        { Test: "PET_Post_Extruder", Unit: "PET_Post_Extruder", Low_Spec: "PET_Post_Extruder", High_Spec: "PET_Post_Extruder", Result: "PET_Post_Extruder" }
+        ]);
+        
+        // For PET_SSP
+        ClearCollect(col_PET_SSP, [
+        { Test: "PET_SSP", Unit: "PET_SSP", Low_Spec: "PET_SSP", High_Spec: "PET_SSP", Result: "PET_SSP" }
+        ]);
+        
+        // For PET_Pellet_Bag
+        ClearCollect(col_PET_Pellet_Bag, [
+        { Test: "PET_Pellet_Bag", Unit: "PET_Pellet_Bag", Low_Spec: "PET_Pellet_Bag", High_Spec: "PET_Pellet_Bag", Result: "PET_Pellet_Bag" }
+        ]);
+        
+        // For PET_Sampling_Silo
+        ClearCollect(col_PET_Sampling_Silo, [
+        { Test: "PET_Sampling_Silo", Unit: "PET_Sampling_Silo", Low_Spec: "PET_Sampling_Silo", High_Spec: "PET_Sampling_Silo", Result: "PET_Sampling_Silo" }
+        ]);
+        
+        // For HDPE_Nat_All
+        ClearCollect(col_HDPE_Nat_All, [
+        { Test: "HDPE_Nat_All", Unit: "HDPE_Nat_All", Low_Spec: "HDPE_Nat_All", High_Spec: "HDPE_Nat_All", Result: "HDPE_Nat_All" }
+        ]);
+        
+        // For HDPE_Nat_Wash
+        ClearCollect(col_HDPE_Nat_Wash, [
+        { Test: "HDPE_Nat_Wash", Unit: "HDPE_Nat_Wash", Low_Spec: "HDPE_Nat_Wash", High_Spec: "HDPE_Nat_Wash", Result: "HDPE_Nat_Wash" }
+        ]);
+        
+        // For HDPE_Nat_Post_Flake_Sorter
+        ClearCollect(col_HDPE_Nat_Post_Flake_Sorter, [
+        { Test: "HDPE_Nat_Post_Flake_Sorter", Unit: "HDPE_Nat_Post_Flake_Sorter", Low_Spec: "HDPE_Nat_Post_Flake_Sorter", High_Spec: "HDPE_Nat_Post_Flake_Sorter", Result: "HDPE_Nat_Post_Flake_Sorter" }
+        ]);
+        
+        // For HDPE_Nat_Post_Extruder
+        ClearCollect(col_HDPE_Nat_Post_Extruder, [
+        { Test: "HDPE_Nat_Post_Extruder", Unit: "HDPE_Nat_Post_Extruder", Low_Spec: "HDPE_Nat_Post_Extruder", High_Spec: "HDPE_Nat_Post_Extruder", Result: "HDPE_Nat_Post_Extruder" }
+        ]);
+        
+        // For HDPE_Nat_Pellet_Bag
+        ClearCollect(col_HDPE_Nat_Pellet_Bag, [
+        { Test: "HDPE_Nat_Pellet_Bag", Unit: "HDPE_Nat_Pellet_Bag", Low_Spec: "HDPE_Nat_Pellet_Bag", High_Spec: "HDPE_Nat_Pellet_Bag", Result: "HDPE_Nat_Pellet_Bag" }
+        ]);
+        
+        // For HDPE_Nat_Sampling_Silo
+        ClearCollect(col_HDPE_Nat_Sampling_Silo, [
+        { Test: "HDPE_Nat_Sampling_Silo", Unit: "HDPE_Nat_Sampling_Silo", Low_Spec: "HDPE_Nat_Sampling_Silo", High_Spec: "HDPE_Nat_Sampling_Silo", Result: "HDPE_Nat_Sampling_Silo" }
+        ]);
+        
+        // For HDPE_SC_All
+        ClearCollect(col_HDPE_SC_All, [
+        { Test: "HDPE_SC_All", Unit: "HDPE_SC_All", Low_Spec: "HDPE_SC_All", High_Spec: "HDPE_SC_All", Result: "HDPE_SC_All" }
+        ]);
+        
+        // For HDPE_SC_Wash
+        ClearCollect(col_HDPE_SC_Wash, [
+        { Test: "HDPE_SC_Wash", Unit: "HDPE_SC_Wash", Low_Spec: "HDPE_SC_Wash", High_Spec: "HDPE_SC_Wash", Result: "HDPE_SC_Wash" }
+        ]);
+        
+        // For HDPE_SC_Post_Flake_Sorter
+        ClearCollect(col_HDPE_SC_Post_Flake_Sorter, [
+        { Test: "HDPE_SC_Post_Flake_Sorter", Unit: "HDPE_SC_Post_Flake_Sorter", Low_Spec: "HDPE_SC_Post_Flake_Sorter", High_Spec: "HDPE_SC_Post_Flake_Sorter", Result: "HDPE_SC_Post_Flake_Sorter" }
+        ]);
+        
+        // For HDPE_SC_Post_Extruder
+        ClearCollect(col_HDPE_SC_Post_Extruder, [
+        { Test: "HDPE_SC_Post_Extruder", Unit: "HDPE_SC_Post_Extruder", Low_Spec: "HDPE_SC_Post_Extruder", High_Spec: "HDPE_SC_Post_Extruder", Result: "HDPE_SC_Post_Extruder" }
+        ]);
+        
+        // For HDPE_SC_Pellet_Bag
+        ClearCollect(col_HDPE_SC_Pellet_Bag, [
+        { Test: "HDPE_SC_Pellet_Bag", Unit: "HDPE_SC_Pellet_Bag", Low_Spec: "HDPE_SC_Pellet_Bag", High_Spec: "HDPE_SC_Pellet_Bag", Result: "HDPE_SC_Pellet_Bag" }
+        ]);
+        
+        // For HDPE_SC_Sampling_Silo
+        ClearCollect(col_HDPE_SC_Sampling_Silo, [
+        { Test: "HDPE_SC_Sampling_Silo", Unit: "HDPE_SC_Sampling_Silo", Low_Spec: "HDPE_SC_Sampling_Silo", High_Spec: "HDPE_SC_Sampling_Silo", Result: "HDPE_SC_Sampling_Silo" }
+        ]);
+        
+        // For PP_All
+        ClearCollect(col_PP_All, [
+        { Test: "PP_All", Unit: "PP_All", Low_Spec: "PP_All", High_Spec: "PP_All", Result: "PP_All" }
+        ]);
+        
+        // For PP_Wash
+        ClearCollect(col_PP_Wash, [
+        { Test: "PP_Wash", Unit: "PP_Wash", Low_Spec: "PP_Wash", High_Spec: "PP_Wash", Result: "PP_Wash" }
+        ]);
+        
+        // For PP_Post_Flake_Sorter
+        ClearCollect(col_PP_Post_Flake_Sorter, [
+        { Test: "PP_Post_Flake_Sorter", Unit: "PP_Post_Flake_Sorter", Low_Spec: "PP_Post_Flake_Sorter", High_Spec: "PP_Post_Flake_Sorter", Result: "PP_Post_Flake_Sorter" }
+        ]);
+        
+        // For PP_Post_Extruder
+        ClearCollect(col_PP_Post_Extruder, [
+        { Test: "PP_Post_Extruder", Unit: "PP_Post_Extruder", Low_Spec: "PP_Post_Extruder", High_Spec: "PP_Post_Extruder", Result: "PP_Post_Extruder" }
+        ]);
+        
+        // For PP_Pellet_Bag
+        ClearCollect(col_PP_Pellet_Bag, [
+        { Test: "PP_Pellet_Bag", Unit: "PP_Pellet_Bag", Low_Spec: "PP_Pellet_Bag", High_Spec: "PP_Pellet_Bag", Result: "PP_Pellet_Bag" }
+        ]);
+        
+        // For PP_Sampling_Silo
+        ClearCollect(col_PP_Sampling_Silo, [
+        { Test: "PP_Sampling_Silo", Unit: "PP_Sampling_Silo", Low_Spec: "PP_Sampling_Silo", High_Spec: "PP_Sampling_Silo", Result: "PP_Sampling_Silo" }
+        ]);
+        
+        ClearCollect(col_Error,[
+        {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"", Result:"Error"},
+        {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"", Result:"Error"},
+        {Test:"Error", Unit:"Error", Low_Spec:"Error", High_Spec:"", Result:"Error"},
+        ]);
         
         Set(Var_Start,"Loaded");
     Theme: =PowerAppsTheme

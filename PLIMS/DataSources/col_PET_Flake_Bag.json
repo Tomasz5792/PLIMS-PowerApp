@@ -1,0 +1,9 @@
+[
+  {
+    "IsComponentScoped": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "col_PET_Flake_Bag",
+    "Type": "CollectionDataSourceInfo"
+  }
+]

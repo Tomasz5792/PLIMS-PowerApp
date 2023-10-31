@@ -123,7 +123,7 @@ Screen_Start As screen:
         Y: =16
         ZIndex: =6
 
-    "Gallery_CoA_Scanner_2 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
+    "Gallery_Other_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_PinkTint
         Height: =136
@@ -131,7 +131,7 @@ Screen_Start As screen:
         Layout: =Layout.Vertical
         OnSelect: =Set(Var_Product_Menu_2,ThisItem)
         TemplatePadding: =0
-        TemplateSize: =Gallery_CoA_Scanner_2.Height
+        TemplateSize: =Gallery_Other_1.Height
         Width: =1366
         WrapCount: =6
         Y: =632
