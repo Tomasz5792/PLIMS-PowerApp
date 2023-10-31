@@ -150,8 +150,107 @@ Screen_Test_input As screen:
         Height: =54
         Items: =["Wash","Flake Bag","Post Flake Sorter","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
         Layout: =Layout.Vertical
-        OnSelect: |
-            =Set(var_sample_point_selected,ThisItem.Value);
+        OnSelect: |-
+            =//["All_All","All_Wash","All_Flake_Bag","All_Post_Flake_Sorter","All_Post_Extruder","All_SSP","All_Pellet_Bag","All_Sampling_Silo",
+            //"PET_All","PET_Wash","PET_Flake_Bag","PET_Post_Flake_Sorter","PET_Post_Extruder","PET_SSP","PET_Pellet_Bag","PET_Sampling_Silo",
+            //"HDPE_Nat_All","HDPE_Nat_Wash","HDPE_Nat_Flake_Bag","HDPE_Nat_Post_Flake_Sorter","HDPE_Nat_Post_Extruder","HDPE_Nat_SSP","HDPE_Nat_Pellet_Bag","HDPE_Nat_Sampling_Silo",
+            //"HDPE_SC_All","HDPE_SC_Wash","HDPE_SC_Flake_Bag","HDPE_SC_Post_Flake_Sorter","HDPE_SC_Post_Extruder","HDPE_SC_SSP","HDPE_SC_Pellet_Bag","HDPE_SC_Sampling_Silo",
+            //"PP_All","PP_Wash","PP_Flake_Bag","PP_Post_Flake_Sorter","PP_Post_Extruder","PP_SSP","PP_Pellet_Bag","PP_Sampling_Silo"]
+            //["All","PET","HDPE Natural","HDPE Self Coloured","PP"]
+            
+            If(var_sample_point_selected=ThisItem.Value,Set(var_material_selected,Blank());
+            Switch(ThisItem.Value
+            ,"Wash",Set(var_filter_selected,"All_Wash")
+            ,"Flake Bag",Set(var_filter_selected,"All_Flake_Bag")
+            ,"Post Flake Sorter",Set(var_filter_selected,"All_Post_Flake_Sorter")
+            ,"Post Extruder",Set(var_filter_selected,"All_Post_Extruder")
+            ,"SSP",Set(var_filter_selected,"All_SSP")
+            ,"Pellet Bag",Set(var_filter_selected,"All_Pellet_Bag")
+            ,"Sampling Silo",Set(var_filter_selected,"All_Sampling_Silo")
+            ,Set(var_filter_selected,"")
+            );
+            ,Set(var_sample_point_selected,ThisItem.Value));
+            
+            //["Wash","Flake Bag","Post Flake Sorter","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
+            Switch(ThisItem.Value
+            ,"Wash",
+            Switch(var_material_selected,
+            Blank(),Set(var_filter_selected,"All_Wash"),
+            "All",Set(var_filter_selected,"All_Wash"),
+            "PET",Set(var_filter_selected,"PET_Wash"),
+            "HDPE Natural",Set(var_filter_selected,"HDPE_Nat_Wash"),
+            "HDPE Self Coloured",Set(var_filter_selected,"HDPE_SC_Wash"),
+            "PP",Set(var_filter_selected,"PP_Wash"),
+            Set(var_filter_selected,"Error")
+            )
+            
+            ,"Flake Bag",
+            Switch(var_material_selected,
+            Blank(),Set(var_filter_selected,"All_Flake_Bag"),
+            "All",Set(var_filter_selected,"All_Flake_Bag"),
+            "PET",Set(var_filter_selected,"PET_Flake_Bag"),
+            "HDPE Natural",Set(var_filter_selected,"All_Flake_Bag"),
+            "HDPE Self Coloured",Set(var_filter_selected,"All_Flake_Bag"),
+            "PP",Set(var_filter_selected,"All_Flake_Bag"),
+            Set(var_filter_selected,"Error")
+            )
+            
+            ,"Post Flake Sorter",
+            Switch(var_material_selected,
+            Blank(),Set(var_filter_selected,"All_Post_Flake_Sorter"),
+            "All",Set(var_filter_selected,"All_Post_Flake_Sorter"),
+            "PET",Set(var_filter_selected,"PET_Post_Flake_Sorter"),
+            "HDPE Natural",Set(var_filter_selected,"HDPE_Nat_Post_Flake_Sorter"),
+            "HDPE Self Coloured",Set(var_filter_selected,"HDPE_SC_Post_Flake_Sorter"),
+            "PP",Set(var_filter_selected,"PP_Post_Flake_Sorter"),
+            Set(var_filter_selected,"Error")
+            )
+            
+            ,"Post Extruder",
+            Switch(var_material_selected,
+            Blank(),Set(var_filter_selected,"All_Post_Extruder"),
+            "All",Set(var_filter_selected,"All_Post_Extruder"),
+            "PET",Set(var_filter_selected,"PET_Post_Extruder"),
+            "HDPE Natural",Set(var_filter_selected,"HDPE_Nat_Post_Extruder"),
+            "HDPE Self Coloured",Set(var_filter_selected,"HDPE_SC_Post_Extruder"),
+            "PP",Set(var_filter_selected,"PP_Post_Extruder"),
+            Set(var_filter_selected,"Error")
+            )
+            
+            ,"SSP",
+            Switch(var_material_selected,
+            Blank(),Set(var_filter_selected,"All_SSP"),
+            "All",Set(var_filter_selected,"All_SSP"),
+            "PET",Set(var_filter_selected,"PET_SSP"),
+            "HDPE Natural",Set(var_filter_selected,"All_SSP"),
+            "HDPE Self Coloured",Set(var_filter_selected,"All_SSP"),
+            "PP",Set(var_filter_selected,"All_SSP"),
+            Set(var_filter_selected,"Error")
+            )
+            
+            ,"Pellet Bag",
+            Switch(var_material_selected,
+            Blank(),Set(var_filter_selected,"All_Pellet_Bag"),
+            "All",Set(var_filter_selected,"All_Pellet_Bag"),
+            "PET",Set(var_filter_selected,"PET_Pellet_Bag"),
+            "HDPE Natural",Set(var_filter_selected,"HDPE_Nat_Pellet_Bag"),
+            "HDPE Self Coloured",Set(var_filter_selected,"HDPE_Nat_Pellet_Bag"),
+            "PP",Set(var_filter_selected,"PP_Pellet_Bag"),
+            Set(var_filter_selected,"Error")
+            )
+            
+            ,"Sampling Silo",
+            Switch(var_material_selected,
+            Blank(),Set(var_filter_selected,"All_Sampling_Silo"),
+            "All",Set(var_filter_selected,"All_Sampling_Silo"),
+            "PET",Set(var_filter_selected,"PET_Sampling_Silo"),
+            "HDPE Natural",Set(var_filter_selected,"HDPE_Nat_Sampling_Silo"),
+            "HDPE Self Coloured",Set(var_filter_selected,"HDPE_SC_Sampling_Silo"),
+            "PP",Set(var_filter_selected,"PP_Sampling_Silo"),
+            Set(var_filter_selected,"Error")
+            )
+            
+            );
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =54
