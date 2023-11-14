@@ -498,96 +498,6 @@ Screen_Test_input As screen:
                 Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
-    Gallery_Tests_Main As gallery.galleryHorizontal:
-        DelayItemLoading: =true
-        Fill: =Colour_Viridor_Green
-        Height: =58
-        Items: |
-            =Switch(var_filter_selected,
-                "All_All", col_All_All,
-                "All_Wash", col_All_Wash,
-                "All_Flake_Bag", col_All_Flake_Bag,
-                "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
-                "All_Post_Extruder", col_All_Post_Extruder,
-                "All_SSP", col_All_SSP,
-                "All_Pellet_Bag", col_All_Pellet_Bag,
-                "All_Sampling_Silo", col_All_Sampling_Silo,
-                "PET_All", col_PET_All,
-                "PET_Wash", col_PET_Wash,
-                "PET_Flake_Bag", col_PET_Flake_Bag,
-                "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
-                "PET_Post_Extruder", col_PET_Post_Extruder,
-                "PET_SSP", col_PET_SSP,
-                "PET_Pellet_Bag", col_PET_Pellet_Bag,
-                "PET_Sampling_Silo", col_PET_Sampling_Silo,
-                "HDPE_Nat_All", col_HDPE_Nat_All,
-                "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
-                "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
-                "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
-                "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
-                "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
-                "HDPE_SC_All", col_HDPE_SC_All,
-                "HDPE_SC_Wash", col_HDPE_SC_Wash,
-                "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
-                "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
-                "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
-                "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
-                "PP_All", col_PP_All,
-                "PP_Wash", col_PP_Wash,
-                "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
-                "PP_Post_Extruder", col_PP_Post_Extruder,
-                "PP_Pellet_Bag", col_PP_Pellet_Bag,
-                "PP_Sampling_Silo", col_PP_Sampling_Silo,
-                col_Error
-            )
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: |-
-            =If(
-            ThisItem.Test="","",   
-            ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
-            
-            Navigate(Screen_Under_Construction,ScreenTransition.None))
-        ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_Main.Width/Gallery_Tests_Main.AllItemsCount
-        Transition: =Transition.Pop
-        Width: =1366
-        Y: =160
-        ZIndex: =10
-
-        Label5_4 As label:
-            Align: =Align.Center
-            BorderColor: =Color.Transparent
-            BorderThickness: =2
-            Color: =Color.White
-            Height: =If(ThisItem.Result="",0,Gallery_Tests_Main.TemplateHeight)
-            HoverBorderColor: =Colour_Viridor_Purple
-            HoverFill: =If(ThisItem.Test="",Color.Transparent,Colour_Viridor_Purple)
-            LineHeight: =1
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Self.PressedFill
-            PressedColor: =Color.White
-            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Green)
-            Size: |-
-                =If(Or(
-                var_sample_point_selected=Blank()
-                ,var_sample_point_selected="Post Extruder"
-                ,var_sample_point_selected="Pellet Bag"
-                ,var_sample_point_selected="Sampling Silo"
-                ),14,18)
-            Text: =ThisItem.Test
-            Width: |-
-                =If(
-                ThisItem.Test="",0,
-                
-                //otherwise
-                Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
-            ZIndex: =1
-
     Gallery_Tests_Large As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_Green
@@ -638,7 +548,7 @@ Screen_Test_input As screen:
         Visible: =If(Label_All_Test_Filter.Text="true",true,false)
         Width: =1366
         Y: =160
-        ZIndex: =11
+        ZIndex: =10
 
         HtmlText1_1 As htmlViewer:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -729,7 +639,7 @@ Screen_Test_input As screen:
         TemplateSize: =Gallery_Units.Width/Gallery_Units.AllItemsCount
         Width: =1366
         Y: =If(Label_All_Test_Filter.Text="true",275,217)
-        ZIndex: =12
+        ZIndex: =11
 
         Label5_1 As label:
             Align: =Align.Center
@@ -896,7 +806,7 @@ Screen_Test_input As screen:
         TemplateSize: =58
         Width: =1366
         Y: =If(var_add_sample_visible,Title_Test_Input.Height+Gallery_Add_Samples.Height+Gallery_Tests_Add_Sample.Height,304)
-        ZIndex: =13
+        ZIndex: =12
 
         Label_Material As label:
             Height: =30
@@ -1476,7 +1386,7 @@ Screen_Test_input As screen:
         Width: =1366
         WrapCount: =7
         Y: =50
-        ZIndex: =15
+        ZIndex: =13
 
         Label_Sampling_Point_2 As label:
             Align: =Align.Center
@@ -1569,7 +1479,7 @@ Screen_Test_input As screen:
         Width: =40
         X: =Button_Back_9.X-50*3
         Y: =7
-        ZIndex: =16
+        ZIndex: =14
 
     Gallery_Tests_Add_Sample As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -1621,7 +1531,7 @@ Screen_Test_input As screen:
         Y: |-
             =Title_Test_Input.Height+Gallery_Add_Samples.Height
             //380
-        ZIndex: =17
+        ZIndex: =15
 
         HtmlText1_4 As htmlViewer:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -1677,7 +1587,7 @@ Screen_Test_input As screen:
         Width: =40
         X: =Show_add_sample.X
         Y: =Show_add_sample.Y
-        ZIndex: =18
+        ZIndex: =16
 
     Test_Button_add_samples As button:
         Height: =44
@@ -1732,7 +1642,7 @@ Screen_Test_input As screen:
             })
         Text: ="+ Samples"
         Width: =123
-        ZIndex: =19
+        ZIndex: =17
 
     "Gallery_All_Filters As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =RGBA(215, 223, 240, 1)
@@ -1748,7 +1658,7 @@ Screen_Test_input As screen:
         WrapCount: =8
         X: =508
         Y: =498
-        ZIndex: =20
+        ZIndex: =18
 
         Label1_7 As label:
             Align: =Align.Center
@@ -1798,7 +1708,89 @@ Screen_Test_input As screen:
         Visible: =false
         Width: =60
         X: =172
-        ZIndex: =21
+        ZIndex: =19
+
+    Gallery_Tests_Main As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_Green
+        Height: =57
+        Items: |
+            =Switch(var_filter_selected,
+                "All_All", col_All_All,
+                "All_Wash", col_All_Wash,
+                "All_Flake_Bag", col_All_Flake_Bag,
+                "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
+                "All_Post_Extruder", col_All_Post_Extruder,
+                "All_SSP", col_All_SSP,
+                "All_Pellet_Bag", col_All_Pellet_Bag,
+                "All_Sampling_Silo", col_All_Sampling_Silo,
+                "PET_All", col_PET_All,
+                "PET_Wash", col_PET_Wash,
+                "PET_Flake_Bag", col_PET_Flake_Bag,
+                "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
+                "PET_Post_Extruder", col_PET_Post_Extruder,
+                "PET_SSP", col_PET_SSP,
+                "PET_Pellet_Bag", col_PET_Pellet_Bag,
+                "PET_Sampling_Silo", col_PET_Sampling_Silo,
+                "HDPE_Nat_All", col_HDPE_Nat_All,
+                "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
+                "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
+                "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
+                "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
+                "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
+                "HDPE_SC_All", col_HDPE_SC_All,
+                "HDPE_SC_Wash", col_HDPE_SC_Wash,
+                "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
+                "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
+                "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
+                "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
+                "PP_All", col_PP_All,
+                "PP_Wash", col_PP_Wash,
+                "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
+                "PP_Post_Extruder", col_PP_Post_Extruder,
+                "PP_Pellet_Bag", col_PP_Pellet_Bag,
+                "PP_Sampling_Silo", col_PP_Sampling_Silo,
+                col_Error
+            )
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =If(
+            ThisItem.Test="","",   
+            ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
+            
+            Navigate(Screen_Under_Construction,ScreenTransition.None))
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Tests_Main.Width/Gallery_Tests_Main.AllItemsCount
+        Width: =1366
+        Y: =160
+        ZIndex: =23
+
+        Label5_10 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.White
+            Height: =If(ThisItem.Result="",0,Gallery_Tests_Main.TemplateHeight)
+            HoverBorderColor: =Color.Transparent
+            HoverFill: =Colour_Viridor_Purple
+            LineHeight: =0.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.White
+            PressedFill: =Color.Transparent
+            Size: =18
+            Text: =ThisItem.Test
+            Width: |-
+                =If(
+                ThisItem.Result="",0,
+                
+                //otherwise
+                Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
+            ZIndex: =1
 
     Test_boxes As group:
         Height: =5
@@ -1813,7 +1805,7 @@ Screen_Test_input As screen:
             Text: =var_filter_selected
             Width: =141
             X: =1025
-            ZIndex: =22
+            ZIndex: =20
 
         Test_2 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1821,7 +1813,7 @@ Screen_Test_input As screen:
             Text: =var_sample_point_selected
             Width: =131
             X: =889
-            ZIndex: =23
+            ZIndex: =21
 
         Test_3 As label:
             Fill: =RGBA(204, 231, 246, 1)
@@ -1829,5 +1821,5 @@ Screen_Test_input As screen:
             Text: =var_material_selected
             Width: =131
             X: =749
-            ZIndex: =24
+            ZIndex: =22
 
