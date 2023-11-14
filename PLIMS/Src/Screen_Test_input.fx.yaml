@@ -559,6 +559,11 @@ Screen_Test_input As screen:
                 col_Error
             )
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =If(
+            ThisItem.Test="",Navigate(Screen_Test_pH,ScreenTransition.None);,
+            
+            Navigate(Under_Construction,ScreenTransition.None))
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_Main.Width/Gallery_Tests_Main.AllItemsCount
