@@ -16173,19 +16173,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Under_Construction.Button_Back_10.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Under_Construction.Button_Back_10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Under_Construction.Button_Back_10.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Under_Construction.Button_Back_10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Under_Construction",
-                "type": "Under_Construction.Button_Back_10"
+                "module": "Screen_Under_Construction",
+                "type": "Screen_Under_Construction.Button_Back_10"
               }
             }
           ],
@@ -16203,19 +16203,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Under_Construction.Button_Back_10.TabIndex"
+                  "fullyQualifiedName": "Screen_Under_Construction.Button_Back_10.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Under_Construction.Button_Back_10.TabIndex",
+                  "fullyQualifiedName": "Screen_Under_Construction.Button_Back_10.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Under_Construction",
-                "type": "Under_Construction.Button_Back_10"
+                "module": "Screen_Under_Construction",
+                "type": "Screen_Under_Construction.Button_Back_10"
               }
             }
           ],
@@ -16233,19 +16233,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Under_Construction.Button_Home_3.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Under_Construction.Button_Home_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Under_Construction.Button_Home_3.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Under_Construction.Button_Home_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Under_Construction",
-                "type": "Under_Construction.Button_Home_3"
+                "module": "Screen_Under_Construction",
+                "type": "Screen_Under_Construction.Button_Home_3"
               }
             }
           ],
@@ -16263,19 +16263,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Under_Construction.Button_Home_3.TabIndex"
+                  "fullyQualifiedName": "Screen_Under_Construction.Button_Home_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Under_Construction.Button_Home_3.TabIndex",
+                  "fullyQualifiedName": "Screen_Under_Construction.Button_Home_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Under_Construction",
-                "type": "Under_Construction.Button_Home_3"
+                "module": "Screen_Under_Construction",
+                "type": "Screen_Under_Construction.Button_Home_3"
               }
             }
           ],
@@ -16293,19 +16293,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Under_Construction.Refresh_Data_2.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Under_Construction.Refresh_Data_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Under_Construction.Refresh_Data_2.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Under_Construction.Refresh_Data_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Under_Construction",
-                "type": "Under_Construction.Refresh_Data_2"
+                "module": "Screen_Under_Construction",
+                "type": "Screen_Under_Construction.Refresh_Data_2"
               }
             }
           ],
@@ -16323,19 +16323,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Under_Construction.Refresh_Data_2.TabIndex"
+                  "fullyQualifiedName": "Screen_Under_Construction.Refresh_Data_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Under_Construction.Refresh_Data_2.TabIndex",
+                  "fullyQualifiedName": "Screen_Under_Construction.Refresh_Data_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Under_Construction",
-                "type": "Under_Construction.Refresh_Data_2"
+                "module": "Screen_Under_Construction",
+                "type": "Screen_Under_Construction.Refresh_Data_2"
               }
             }
           ],
@@ -16353,19 +16353,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Button_Home_4.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Button_Home_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Button_Home_4.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Button_Home_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Button_Home_4"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Button_Home_4"
               }
             }
           ],
@@ -16383,19 +16383,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Button_Home_4.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Button_Home_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Button_Home_4.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Button_Home_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Button_Home_4"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Button_Home_4"
               }
             }
           ],
@@ -16413,19 +16413,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Button_Back_11.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Button_Back_11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Button_Back_11.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Button_Back_11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Button_Back_11"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Button_Back_11"
               }
             }
           ],
@@ -16443,19 +16443,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Button_Back_11.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Button_Back_11.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Button_Back_11.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Button_Back_11.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Button_Back_11"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Button_Back_11"
               }
             }
           ],
@@ -16473,19 +16473,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Refresh_Data_3.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Refresh_Data_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Refresh_Data_3.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Refresh_Data_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Refresh_Data_3"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Refresh_Data_3"
               }
             }
           ],
@@ -16503,19 +16503,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Refresh_Data_3.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Refresh_Data_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Refresh_Data_3.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Refresh_Data_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Refresh_Data_3"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Refresh_Data_3"
               }
             }
           ],
@@ -16533,19 +16533,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Results_Main_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1"
               }
             }
           ],
@@ -16563,19 +16563,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Results_Main_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1"
               }
             }
           ],
@@ -16593,19 +16593,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.Gallery_Tests_Inner_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.Gallery_Tests_Inner_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Results_Main_1.Gallery_Tests_Inner_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1"
               }
             }
           ],
@@ -16623,19 +16623,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.Gallery_Tests_Inner_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.Gallery_Tests_Inner_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Results_Main_1.Gallery_Tests_Inner_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1"
               }
             }
           ],
@@ -16653,19 +16653,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Tests_Main_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Tests_Main_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Tests_Main_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1"
               }
             }
           ],
@@ -16683,19 +16683,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Tests_Main_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Tests_Main_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Tests_Main_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1"
               }
             }
           ],
@@ -16713,19 +16713,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Units_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Units_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Units_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Units_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Units_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Units_1"
               }
             }
           ],
@@ -16743,19 +16743,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Units_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Units_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Units_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Units_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Units_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Units_1"
               }
             }
           ],
@@ -16773,19 +16773,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Spec_Low_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Spec_Low_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Spec_Low_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1"
               }
             }
           ],
@@ -16803,19 +16803,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Spec_Low_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Spec_Low_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Spec_Low_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1"
               }
             }
           ],
@@ -16833,19 +16833,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Spec_High_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Spec_High_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Spec_High_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1"
               }
             }
           ],
@@ -16863,19 +16863,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Spec_High_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Spec_High_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Spec_High_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1"
               }
             }
           ],
@@ -17402,19 +17402,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.Y"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.Y",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Results_Main_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1"
               }
             }
           ],
@@ -17432,19 +17432,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.Height"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Height"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_pH.Gallery_Results_Main_1.Height",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Height",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Height",
-                "module": "Screen_Test_pH",
-                "type": "Screen_Test_pH.Gallery_Results_Main_1"
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1"
               }
             }
           ],

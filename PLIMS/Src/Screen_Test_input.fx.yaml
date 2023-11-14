@@ -561,9 +561,9 @@ Screen_Test_input As screen:
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
             =If(
-            ThisItem.Test="",Navigate(Screen_Test_pH,ScreenTransition.None);,
+            ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None);,
             
-            Navigate(Under_Construction,ScreenTransition.None))
+            Navigate(Screen_Under_Construction,ScreenTransition.None))
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_Main.Width/Gallery_Tests_Main.AllItemsCount

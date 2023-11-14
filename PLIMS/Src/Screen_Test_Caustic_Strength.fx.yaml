@@ -1,4 +1,4 @@
-Screen_Test_pH As screen:
+Screen_Test_Caustic_Strength As screen:
     Fill: =Colour_Viridor_White
 
     Title_Test_Input_2 As label:
