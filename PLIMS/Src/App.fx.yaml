@@ -12,7 +12,7 @@ App As appinfo:
         Set(Colour_Not_Tested,Color.Gray);Set(Colour_To_Test,RGBA(179,225,199,255));Set(Colour_Testing,RGBA(219,186,226,255));
         
         //Text size
-        Set(Text_size,18);Set(Text_size_2,13);Set(Text_size_Menu,20);Set(Text_size_Title,25);Set(Text_size_large,40);Set(Border_Thickness,1.2);Set(Text_size_CoA,9);
+        Set(Text_size,17);Set(Text_size_2,15);Set(Text_size_Menu,20);Set(Text_size_Title,25);Set(Text_size_large,40);Set(Border_Thickness,1.2);
         
         //Variables
         Set(var_filter_selected,"All_Sampling_Silo");  //setting filter

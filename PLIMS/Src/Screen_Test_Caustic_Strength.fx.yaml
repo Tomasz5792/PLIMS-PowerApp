@@ -72,6 +72,7 @@ Screen_Test_Caustic_Strength As screen:
         Label3 As label:
             Height: =54
             OnSelect: =Select(Parent)
+            Size: =Text_size
             Text: =ThisItem.Material
             Width: =118
             ZIndex: =1
@@ -79,6 +80,7 @@ Screen_Test_Caustic_Strength As screen:
         Label3_1 As label:
             Height: =54
             OnSelect: =Select(Parent)
+            Size: =Text_size
             Text: =ThisItem.Sample_Point
             Width: =118
             X: =131
@@ -87,6 +89,7 @@ Screen_Test_Caustic_Strength As screen:
         Label3_2 As label:
             Height: =54
             OnSelect: =Select(Parent)
+            Size: =Text_size
             Text: =ThisItem.'Date_&_Time'
             Width: =118
             X: =328
@@ -95,6 +98,7 @@ Screen_Test_Caustic_Strength As screen:
         Label3_3 As label:
             Height: =54
             OnSelect: =Select(Parent)
+            Size: =Text_size
             Text: =ThisItem.'Date_&_Time'
             Width: =118
             X: =468
@@ -103,6 +107,7 @@ Screen_Test_Caustic_Strength As screen:
         Label3_4 As label:
             Height: =54
             OnSelect: =Select(Parent)
+            Size: =Text_size
             Text: =ThisItem.'Caustic_Strength_Result_%'
             Width: =118
             X: =776
