@@ -457,131 +457,6 @@ Screen_Test_Caustic_Strength As screen:
             Y: =28
             ZIndex: =34
 
-        Gallery_Tests_Inner_1 As gallery.galleryHorizontal:
-            DelayItemLoading: =true
-            Fill: =Color.Transparent
-            Height: =Parent.TemplateHeight
-            Items: |+
-                =Switch(var_filter_selected,
-                    "All_All", col_All_All,
-                    "All_Wash", col_All_Wash,
-                    "All_Flake_Bag", col_All_Flake_Bag,
-                    "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
-                    "All_Post_Extruder", col_All_Post_Extruder,
-                    "All_SSP", col_All_SSP,
-                    "All_Pellet_Bag", col_All_Pellet_Bag,
-                    "All_Sampling_Silo", col_All_Sampling_Silo,
-                    "PET_All", col_PET_All,
-                    "PET_Wash", col_PET_Wash,
-                    "PET_Flake_Bag", col_PET_Flake_Bag,
-                    "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
-                    "PET_Post_Extruder", col_PET_Post_Extruder,
-                    "PET_SSP", col_PET_SSP,
-                    "PET_Pellet_Bag", col_PET_Pellet_Bag,
-                    "PET_Sampling_Silo", col_PET_Sampling_Silo,
-                    "HDPE_Nat_All", col_HDPE_Nat_All,
-                    "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
-                    "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
-                    "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
-                    "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
-                    "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
-                    "HDPE_SC_All", col_HDPE_SC_All,
-                    "HDPE_SC_Wash", col_HDPE_SC_Wash,
-                    "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
-                    "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
-                    "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
-                    "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
-                    "PP_All", col_PP_All,
-                    "PP_Wash", col_PP_Wash,
-                    "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
-                    "PP_Post_Extruder", col_PP_Post_Extruder,
-                    "PP_Pellet_Bag", col_PP_Pellet_Bag,
-                    "PP_Sampling_Silo", col_PP_Sampling_Silo,
-                    col_Error
-                )
-                
-                
-            LoadingSpinner: =LoadingSpinner.Data
-            ShowScrollbar: =false
-            TemplatePadding: =0
-            TemplateSize: =Gallery_Tests_Inner_1.Width/Gallery_Tests_Inner_1.AllItemsCount
-            Width: =1366
-            ZIndex: =35
-
-            Label_Data_2 As label:
-                Align: =Align.Center
-                BorderColor: =Color.Transparent
-                BorderThickness: =2
-                Fill: |-
-                    =If(
-                    ThisItem.Result="",RGBA(0,0,0,0),
-                    
-                    And(ThisItem.Result="R_MFI",Label_IV_MFI_1.Text="Not Tested"),Colour_Not_Tested,
-                    
-                    Colour_Viridor_GreenTint)
-                Height: =If(ThisItem.Result="",0,Gallery_Tests_Inner_1.TemplateHeight)
-                LineHeight: =1
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                PressedColor: =Color.White
-                PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-                Size: =If(var_sample_point_selected=Blank(),15,17)
-                Text: |-
-                    =If(
-                    ThisItem.Result="R_Point",Label_Sample_Point_1.Text,
-                    ThisItem.Result="R_Material",Label_Material_1.Text,
-                    ThisItem.Result="R_Date",Label_Date_1.Text,
-                    ThisItem.Result="R_Time",Label_Time_1.Text,
-                    ThisItem.Result="R_Batch",Label_Batch_Number_1.Text,
-                    ThisItem.Result="R_Bag",Label_Bag_Number_1.Text,
-                    ThisItem.Result="R_Bag_Batch",Label_Bag_Batch_Number_1.Text,
-                    
-                    ThisItem.Result="R_Caustic",Label_Caustic_1.Text,
-                    ThisItem.Result="R_IV",Label_IV_MFI_1.Text,
-                    ThisItem.Result="R_MFI",Label_IV_MFI_1.Text,
-                    ThisItem.Result="R_IV_MFI",Label_IV_MFI_1.Text,
-                    ThisItem.Result="R_Ext_IV",Label_Extruder_IV_1.Text,
-                    ThisItem.Result="R_AA",Label_AA_1.Text,
-                    ThisItem.Result="R_Limonene",Label_Limonene_1.Text,
-                    ThisItem.Result="R_GC",Label_GC_1.Text,
-                    ThisItem.Result="R_Fines",Label_Fines_1.Text,
-                    ThisItem.Result="R_Moisture",Label_Moisture_1.Text,
-                    ThisItem.Result="R_Bulk",Label_Bulk_Density_1.Text,
-                    ThisItem.Result="R_Mat_Den",Label_Material_Density_1.Text,
-                    
-                    ThisItem.Result="R_Metal",Label_Metal_1.Text,
-                    ThisItem.Result="R_Glass",Label_Glass_1.Text,
-                    ThisItem.Result="R_PET",Label_PET_1.Text,
-                    ThisItem.Result="R_PVC",Label_PVC_1.Text,
-                    ThisItem.Result="R_Float",Label_Float_Sink_1.Text,
-                    ThisItem.Result="R_Comp",Label_Composition_1.Text,
-                    ThisItem.Result="R_pH",Label_pH_1.Text,
-                    
-                    ThisItem.Result="R_L",Label_L_1.Text,
-                    ThisItem.Result="R_a",Label_a_1.Text,
-                    ThisItem.Result="R_b",Label_b_1.Text,
-                    ThisItem.Result="R_Lab",Label_Lab_1.Text,
-                    ThisItem.Result="R_Ext_b*",Label_Ext_b_1.Text,
-                    ThisItem.Result="R_Count_1g",Label_Pellet_Count_1g_1.Text,
-                    ThisItem.Result="R_Count_5g",Label_Pellet_Count_5g_1.Text,
-                    ThisItem.Result="R_Vis",Label_Visual_Inspection_1.Text,
-                    ThisItem.Result="R_Med_Inc",Label_Inclusions_Medium_1.Text,
-                    ThisItem.Result="R_Lar_Inc",Label_Inclusions_Large_1.Text,
-                    //Label_Inclusions_Large
-                    ThisItem.Result="R_All_Inc",Label_Inclusions_1.Text,
-                    ThisItem.Result="R_Cryst",Label_Crystalisation_1.Text,
-                    
-                    ThisItem.Result="R_Comment",Label_Comment_1.Text,
-                    
-                    
-                    ThisItem.Result)
-                    //Label_Date&Time
-                Width: =136.6
-                ZIndex: =1
-
         Label_Inclusions_Large_1 As label:
             Height: =30
             OnSelect: =Select(Parent)
@@ -613,6 +488,15 @@ Screen_Test_Caustic_Strength As screen:
             X: =520
             Y: =28
             ZIndex: =38
+
+        Label2 As label:
+            Align: =Align.Center
+            Height: =58
+            OnSelect: =Select(Parent)
+            Size: =17
+            Text: =ThisItem.Material
+            Width: =177
+            ZIndex: =39
 
     Gallery_Spec_Low_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -735,74 +619,7 @@ Screen_Test_Caustic_Strength As screen:
                 ,var_sample_point_selected="Sampling Silo"
                 ),12,14)
             Text: |
-                =If(
-                    ThisItem.Unit="","",
-                    ThisItem.Unit="U_Point","",
-                    ThisItem.Unit="U_Date","dd mmm yy",
-                    ThisItem.Unit="U_Time","hh:mm",
-                    ThisItem.Unit="U_Batch","",
-                    ThisItem.Unit="U_Bag","",
-                    ThisItem.Unit="U_Bag_Batch","",
-                    ThisItem.Unit="U_Caustic","% w/w",
-                    ThisItem.Unit="U_Caustic_Small","%
-                w/w",
-                    ThisItem.Unit="U_IV","dL/g",
-                    ThisItem.Unit="U_MFI","g/10min",
-                    ThisItem.Unit="U_MFI_Small","g/
-                10min",
-                    ThisItem.Unit="U_IV_MFI","dL/g g/10min",
-                    ThisItem.Unit="U_Ext_IV","dL/g",
-                    ThisItem.Unit="U_IV_MFI_Small","dL/g
-                g/10m",
-                    ThisItem.Unit="U_AA","ppm",
-                    ThisItem.Unit="U_Limonene","ppm",
-                    ThisItem.Unit="U_GC","Pass/Fail",
-                    ThisItem.Unit="U_GC_Small","Pass/
-                Fail",
-                    ThisItem.Unit="U_Fines","% w/w",
-                    ThisItem.Unit="U_Fines_Small","%
-                w/w",
-                    ThisItem.Unit="U_Moisture","% w/w",
-                    ThisItem.Unit="U_Moisture_Small","%
-                w/w",
-                    ThisItem.Unit="U_Bulk","Kg/m³",
-                    ThisItem.Unit="U_Mat_Den","Kg/m³",
-                
-                    ThisItem.Unit="U_Metal","ppm",
-                    ThisItem.Unit="U_Glass","ppm",
-                    ThisItem.Unit="U_PET","ppm",
-                    ThisItem.Unit="U_PVC","ppm",
-                    ThisItem.Unit="U_Float","Pass/Fail",
-                    ThisItem.Unit="U_Float_Small","Pass/
-                Fail",
-                    ThisItem.Unit="U_pH","pHU",
-                    ThisItem.Unit="U_Comp","Pass/Fail",
-                    ThisItem.Unit="U_Comp_Small","Pass/
-                Fail",
-                    ThisItem.Unit="U_L","L*",
-                    ThisItem.Unit="U_a","a*",
-                    ThisItem.Unit="U_b","b*",
-                    ThisItem.Unit="U_Lab","Pass/Fail",
-                    ThisItem.Unit="U_Lab_Small","Pass/
-                Fail",
-                    ThisItem.Unit="U_Ext_b*","b*",
-                    ThisItem.Unit="U_Count","Pellet/g",
-                    ThisItem.Unit="U_Count_5g","Pellet/5g",
-                    ThisItem.Unit="U_Count_5g_Small","/5g",
-                    ThisItem.Unit="U_Vis","Pass/Fail",
-                    ThisItem.Unit="U_Vis_Small","Pass/
-                Fail",
-                    ThisItem.Unit="U_Med_Inc","No.",
-                    ThisItem.Unit="U_Lar_Inc","No.",
-                    ThisItem.Unit="U_All_Inc","Pass/Fail",
-                    ThisItem.Unit="U_All_Inc_Small","Pass/
-                Fail",
-                    ThisItem.Unit="U_Cryst","10°C/min",
-                    ThisItem.Unit="U_Cryst_Small","10°C
-                /min",
-                
-                
-                    ThisItem.Unit)
+                =ThisItem.Unit
             Width: |-
                 =If(
                 ThisItem.Result="",0,
@@ -819,9 +636,10 @@ Screen_Test_Caustic_Strength As screen:
             =[
             {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1}, 
             {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
-            {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
-            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1},
-            {Test:"Caustic Strength", Unit:"U_Caustic", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic", Width:1},
+            {Test:"Date", Unit:"dd mm yyyy", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
+            {Test:"Time", Unit:"hh:mm", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1},
+            {Test:"Titration", Unit:"mL", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic", Width:1},
+            {Test:"Caustic Strength", Unit:"% w/w", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic", Width:1},
             ]
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
