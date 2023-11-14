@@ -839,7 +839,7 @@ Screen_Test_Caustic_Strength As screen:
             BorderThickness: =2
             Color: =Color.White
             Height: =If(ThisItem.Result="",0,Gallery_Title_Caustic.TemplateHeight)
-            HoverFill: =If(ThisItem.Test="",Color.Transparent,Colour_Viridor_Purple)
+            HoverFill: =Color.Transparent
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
