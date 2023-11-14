@@ -749,7 +749,6 @@ Screen_Test_input As screen:
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =58
         Width: =1366
