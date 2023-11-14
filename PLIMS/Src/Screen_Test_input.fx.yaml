@@ -284,58 +284,6 @@ Screen_Test_input As screen:
                 0))
             ZIndex: =1
 
-    Title_Test_Input As label:
-        Align: =TextPosition.Left
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 155, 62, 100)
-        Font: =Font.'Segoe UI'
-        Height: =51
-        PaddingLeft: =14
-        Size: =Text_size_Title
-        Text: ="Test Input"
-        Width: =1366
-        ZIndex: =4
-
-    Button_Back_9 As icon.CancelBadge:
-        Color: =Color.White
-        Height: =38
-        HoverColor: =Colour_Viridor_Purple
-        Icon: =Icon.BackArrow
-        OnSelect: =Back()
-        PressedColor: =Colour_Viridor_GreenTint
-        Tooltip: ="Back"
-        Width: =38
-        X: =1322
-        Y: =7
-        ZIndex: =5
-
-    Button_Home_2 As icon.CancelBadge:
-        Color: =Color.White
-        Height: =38
-        HoverColor: =Colour_Viridor_Purple
-        Icon: =Icon.Home
-        OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
-        PressedColor: =Colour_Viridor_GreenTint
-        Tooltip: ="Home"
-        Width: =38
-        X: =Button_Back_9.X-50
-        Y: =Button_Back_9.Y
-        ZIndex: =6
-
-    Refresh_Data_1 As icon.CancelBadge:
-        Color: =Color.White
-        Height: =34
-        HoverColor: =Colour_Viridor_Purple
-        Icon: =Icon.Reload
-        OnSelect: =Refresh('Test Results')
-        PressedColor: =Colour_Viridor_GreenTint
-        Rotation: =90
-        Tooltip: ="Refresh data."
-        Width: =34
-        X: =Button_Back_9.X-50*2
-        Y: =10
-        ZIndex: =7
-
     Gallery_Spec_Low As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 0, 1)
@@ -1144,6 +1092,38 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =34
 
+        Label_Inclusions_Large As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: |-
+                =ThisItem.'Black_Inclusions_Large_Result_#'
+            Visible: =false
+            Width: =177
+            X: =360
+            Y: =28
+            ZIndex: =35
+
+        Label_Inclusions_Medium As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: |-
+                =ThisItem.'Black_Inclusions_Medium_Result_#'
+            Visible: =false
+            Width: =177
+            X: =400
+            Y: =28
+            ZIndex: =36
+
+        Label_Pellet_Count_1g As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Pellet_Count_Result_1g
+            Visible: =false
+            Width: =177
+            X: =520
+            Y: =28
+            ZIndex: =37
+
         Gallery_Tests_Inner As gallery.galleryHorizontal:
             DelayItemLoading: =true
             Fill: =Color.Transparent
@@ -1193,7 +1173,7 @@ Screen_Test_input As screen:
             TemplatePadding: =0
             TemplateSize: =Gallery_Tests_Inner.Width/Gallery_Tests_Inner.AllItemsCount
             Width: =1366
-            ZIndex: =35
+            ZIndex: =38
 
             Label_Data_1 As label:
                 Align: =Align.Center
@@ -1273,38 +1253,6 @@ Screen_Test_input As screen:
                     //otherwise
                     Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
                 ZIndex: =1
-
-        Label_Inclusions_Large As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: |-
-                =ThisItem.'Black_Inclusions_Large_Result_#'
-            Visible: =false
-            Width: =177
-            X: =360
-            Y: =28
-            ZIndex: =36
-
-        Label_Inclusions_Medium As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: |-
-                =ThisItem.'Black_Inclusions_Medium_Result_#'
-            Visible: =false
-            Width: =177
-            X: =400
-            Y: =28
-            ZIndex: =37
-
-        Label_Pellet_Count_1g As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Pellet_Count_Result_1g
-            Visible: =false
-            Width: =177
-            X: =520
-            Y: =28
-            ZIndex: =38
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
@@ -1797,6 +1745,65 @@ Screen_Test_input As screen:
                 //otherwise
                 Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
             ZIndex: =1
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =24
+
+        Title_Test_Input As label:
+            Align: =TextPosition.Left
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 155, 62, 100)
+            Font: =Font.'Segoe UI'
+            Height: =51
+            PaddingLeft: =14
+            Size: =Text_size_Title
+            Text: ="Test Input"
+            Width: =1366
+            ZIndex: =4
+
+        Button_Back_9 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.BackArrow
+            OnSelect: =Back()
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Back"
+            Width: =38
+            X: =1322
+            Y: =7
+            ZIndex: =5
+
+        Button_Home_2 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Home"
+            Width: =38
+            X: =Button_Back_9.X-50
+            Y: =Button_Back_9.Y
+            ZIndex: =6
+
+        Refresh_Data_1 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =34
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Reload
+            OnSelect: =Refresh('Test Results')
+            PressedColor: =Colour_Viridor_GreenTint
+            Rotation: =90
+            Tooltip: ="Refresh data."
+            Width: =34
+            X: =Button_Back_9.X-50*2
+            Y: =10
+            ZIndex: =7
 
     Test_boxes As group:
         Height: =5

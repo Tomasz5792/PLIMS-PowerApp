@@ -16473,19 +16473,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1"
+                "type": "Screen_Test_Caustic_Strength.Gallery2"
               }
             }
           ],
@@ -16503,19 +16503,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1"
+                "type": "Screen_Test_Caustic_Strength.Gallery2"
               }
             }
           ],
@@ -16527,66 +16527,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -17396,66 +17336,6 @@
           },
           "ruleId": "app-ScreenHasManyControls",
           "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.Label_Data_2.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.Label_Data_2.Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.Label_Data_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.Label_Data_2.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.Label_Data_2.Fill",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Gallery_Tests_Inner_1.Label_Data_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
         }
       ],
       "tool": {
@@ -17649,7 +17529,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Screen_Test_input\" is 369, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Screen_Test_input\" is 370, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
