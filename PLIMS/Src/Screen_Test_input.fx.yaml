@@ -690,8 +690,7 @@ Screen_Test_input As screen:
     Gallery_Results_Main As gallery.galleryVertical:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_GreenTint
-        Height: |
-            =If(var_add_sample_visible,Parent.Height-Title_Test_Input.Height-Gallery_Add_Samples.Height-Gallery_Tests_Add_Sample.Height,464)
+        Height: =464
         Items: |
             =Switch(var_filter_selected,
             
