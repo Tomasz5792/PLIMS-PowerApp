@@ -56,7 +56,7 @@ Screen_Start As screen:
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_GreenTint
         Height: =336
-        Items: =["Add Samples","Soon"]
+        Items: =["Under Construction","Under Construction"]
         Layout: =Layout.Vertical
         OnSelect: =//If(ThisItem.Value="Add Samples",Navigate(Screen_Create_Sample,ScreenTransition.None));
         TemplatePadding: =0
@@ -104,7 +104,7 @@ Screen_Start As screen:
         Height: =74
         PaddingLeft: =20
         Size: =30
-        Text: ="Soon"
+        Text: ="Under Construction"
         Width: =683
         X: =683
         Y: =148
@@ -127,7 +127,7 @@ Screen_Start As screen:
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_PinkTint
         Height: =136
-        Items: =["Soon"]
+        Items: =["Under Construction"]
         Layout: =Layout.Vertical
         OnSelect: =Set(Var_Product_Menu_2,ThisItem)
         TemplatePadding: =0
@@ -159,7 +159,7 @@ Screen_Start As screen:
         Height: =74
         PaddingLeft: =20
         Size: =30
-        Text: ="Other"
+        Text: ="Under Construction"
         Width: =1366
         Y: =558
         ZIndex: =8
