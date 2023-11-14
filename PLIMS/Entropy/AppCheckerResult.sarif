@@ -16653,6 +16653,246 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Units_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Units_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Units_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Units_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Units_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Units_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Spec_Low_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Test_Caustic_Strength",
+                "type": "Screen_Test_Caustic_Strength.Gallery_Spec_High_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Colour_Text"
                 }
               ],
@@ -17156,66 +17396,6 @@
           },
           "ruleId": "app-ScreenHasManyControls",
           "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Results_Main_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
         }
       ],
       "tool": {

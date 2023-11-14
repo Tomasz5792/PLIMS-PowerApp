@@ -18242,8 +18242,22 @@
           "NameMapSourceSchema": "?"
         },
         "DisabledBorderColor",
-        "PressedBorderColor",
-        "HoverBorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Self.BorderColor",
+          "InvariantPropertyName": "PressedBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Self.BorderColor",
+          "InvariantPropertyName": "HoverBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
