@@ -824,41 +824,32 @@ Screen_Test_Caustic_Strength As screen:
             {Test:"Caustic Strength", Unit:"U_Caustic", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic", Width:1},
             ]
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Title_Caustic.Width/Gallery_Title_Caustic.AllItemsCount
-        Transition: =Transition.Pop
         Width: =1366
         Y: =51
-        ZIndex: =9
+        ZIndex: =10
 
-        Label5_7 As label:
+        Label5_9 As label:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: =Color.White
             Height: =If(ThisItem.Result="",0,Gallery_Title_Caustic.TemplateHeight)
-            HoverFill: =Color.Transparent
-            LineHeight: =1
+            LineHeight: =0.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             PressedColor: =Color.White
-            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-            Size: |-
-                =If(Or(
-                var_sample_point_selected=Blank()
-                ,var_sample_point_selected="Post Extruder"
-                ,var_sample_point_selected="Pellet Bag"
-                ,var_sample_point_selected="Sampling Silo"
-                ),14,18)
+            PressedFill: =Color.Transparent
+            Size: =18
             Text: =ThisItem.Test
             Width: |-
                 =If(
-                ThisItem.Test="",0,
+                ThisItem.Result="",0,
                 
                 //otherwise
                 Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
