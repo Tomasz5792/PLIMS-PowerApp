@@ -598,17 +598,8 @@ Screen_Test_input As screen:
                 =If(
                 ThisItem.Result="",0,
                 
-                ThisItem.Result="R_Point",Gallery_Tests_Main.TemplateWidth*2,
-                ThisItem.Result="R_Material",Gallery_Tests_Main.TemplateWidth*2,
-                ThisItem.Result="R_Batch",Gallery_Tests_Main.TemplateWidth*2,
-                ThisItem.Result="R_Bag",Gallery_Tests_Main.TemplateWidth*2,
-                ThisItem.Result="R_Bag_Batch",Gallery_Tests_Main.TemplateWidth*2,
-                ThisItem.Result="R_Date",Gallery_Tests_Main.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Tests_Main.TemplateWidth*1,
-                ThisItem.Result="R_Comment",Gallery_Tests_Main.TemplateWidth*6,
-                
                 //otherwise
-                Gallery_Tests_Main.TemplateWidth*1)
+                Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
     Gallery_Tests_Large As gallery.galleryHorizontal:

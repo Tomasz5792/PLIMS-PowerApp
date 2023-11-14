@@ -1870,7 +1870,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery_Spec_High",
-      "ParentIndex": 18,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2084,7 +2084,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery_Spec_Low",
-      "ParentIndex": 19,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3209,7 +3209,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery_Units",
-      "ParentIndex": 17,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
