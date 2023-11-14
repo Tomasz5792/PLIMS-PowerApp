@@ -16713,19 +16713,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.TabIndex"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Title_Caustic.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.TabIndex",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Title_Caustic.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1"
+                "type": "Screen_Test_Caustic_Strength.Gallery_Title_Caustic"
               }
             }
           ],
@@ -16743,19 +16743,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Title_Caustic.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Caustic_Strength.Gallery_Title_Caustic.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_Caustic_Strength",
-                "type": "Screen_Test_Caustic_Strength.Gallery_Tests_Main_1"
+                "type": "Screen_Test_Caustic_Strength.Gallery_Title_Caustic"
               }
             }
           ],

@@ -618,45 +618,7 @@ Screen_Test_Caustic_Strength As screen:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 0, 1)
         Height: =58/2
-        Items: |+
-            =Switch(var_filter_selected,
-                "All_All", col_All_All,
-                "All_Wash", col_All_Wash,
-                "All_Flake_Bag", col_All_Flake_Bag,
-                "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
-                "All_Post_Extruder", col_All_Post_Extruder,
-                "All_SSP", col_All_SSP,
-                "All_Pellet_Bag", col_All_Pellet_Bag,
-                "All_Sampling_Silo", col_All_Sampling_Silo,
-                "PET_All", col_PET_All,
-                "PET_Wash", col_PET_Wash,
-                "PET_Flake_Bag", col_PET_Flake_Bag,
-                "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
-                "PET_Post_Extruder", col_PET_Post_Extruder,
-                "PET_SSP", col_PET_SSP,
-                "PET_Pellet_Bag", col_PET_Pellet_Bag,
-                "PET_Sampling_Silo", col_PET_Sampling_Silo,
-                "HDPE_Nat_All", col_HDPE_Nat_All,
-                "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
-                "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
-                "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
-                "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
-                "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
-                "HDPE_SC_All", col_HDPE_SC_All,
-                "HDPE_SC_Wash", col_HDPE_SC_Wash,
-                "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
-                "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
-                "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
-                "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
-                "PP_All", col_PP_All,
-                "PP_Wash", col_PP_Wash,
-                "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
-                "PP_Post_Extruder", col_PP_Post_Extruder,
-                "PP_Pellet_Bag", col_PP_Pellet_Bag,
-                "PP_Sampling_Silo", col_PP_Sampling_Silo,
-                col_Error
-            )
-            
+        Items: =Gallery_Title_Caustic.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =0
@@ -692,52 +654,14 @@ Screen_Test_Caustic_Strength As screen:
                 ThisItem.Result="",0,
                 
                 //otherwise
-                Gallery_Tests_Main_1.TemplateWidth*ThisItem.Width)
+                Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
     Gallery_Spec_High_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 0, 1)
         Height: =58/2
-        Items: |+
-            =Switch(var_filter_selected,
-                "All_All", col_All_All,
-                "All_Wash", col_All_Wash,
-                "All_Flake_Bag", col_All_Flake_Bag,
-                "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
-                "All_Post_Extruder", col_All_Post_Extruder,
-                "All_SSP", col_All_SSP,
-                "All_Pellet_Bag", col_All_Pellet_Bag,
-                "All_Sampling_Silo", col_All_Sampling_Silo,
-                "PET_All", col_PET_All,
-                "PET_Wash", col_PET_Wash,
-                "PET_Flake_Bag", col_PET_Flake_Bag,
-                "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
-                "PET_Post_Extruder", col_PET_Post_Extruder,
-                "PET_SSP", col_PET_SSP,
-                "PET_Pellet_Bag", col_PET_Pellet_Bag,
-                "PET_Sampling_Silo", col_PET_Sampling_Silo,
-                "HDPE_Nat_All", col_HDPE_Nat_All,
-                "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
-                "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
-                "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
-                "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
-                "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
-                "HDPE_SC_All", col_HDPE_SC_All,
-                "HDPE_SC_Wash", col_HDPE_SC_Wash,
-                "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
-                "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
-                "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
-                "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
-                "PP_All", col_PP_All,
-                "PP_Wash", col_PP_Wash,
-                "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
-                "PP_Post_Extruder", col_PP_Post_Extruder,
-                "PP_Pellet_Bag", col_PP_Pellet_Bag,
-                "PP_Sampling_Silo", col_PP_Sampling_Silo,
-                col_Error
-            )
-            
+        Items: =Gallery_Title_Caustic.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =0
@@ -773,141 +697,21 @@ Screen_Test_Caustic_Strength As screen:
                 ThisItem.Result="",0,
                 
                 //otherwise
-                Gallery_Tests_Main_1.TemplateWidth*ThisItem.Width)
-            ZIndex: =1
-
-    Gallery_Tests_Main_1 As gallery.galleryHorizontal:
-        DelayItemLoading: =true
-        Fill: =Colour_Viridor_Purple
-        Height: =58
-        Items: |
-            =Switch(var_filter_selected,
-                "All_All", col_All_All,
-                "All_Wash", col_All_Wash,
-                "All_Flake_Bag", col_All_Flake_Bag,
-                "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
-                "All_Post_Extruder", col_All_Post_Extruder,
-                "All_SSP", col_All_SSP,
-                "All_Pellet_Bag", col_All_Pellet_Bag,
-                "All_Sampling_Silo", col_All_Sampling_Silo,
-                "PET_All", col_PET_All,
-                "PET_Wash", col_PET_Wash,
-                "PET_Flake_Bag", col_PET_Flake_Bag,
-                "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
-                "PET_Post_Extruder", col_PET_Post_Extruder,
-                "PET_SSP", col_PET_SSP,
-                "PET_Pellet_Bag", col_PET_Pellet_Bag,
-                "PET_Sampling_Silo", col_PET_Sampling_Silo,
-                "HDPE_Nat_All", col_HDPE_Nat_All,
-                "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
-                "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
-                "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
-                "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
-                "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
-                "HDPE_SC_All", col_HDPE_SC_All,
-                "HDPE_SC_Wash", col_HDPE_SC_Wash,
-                "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
-                "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
-                "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
-                "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
-                "PP_All", col_PP_All,
-                "PP_Wash", col_PP_Wash,
-                "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
-                "PP_Post_Extruder", col_PP_Post_Extruder,
-                "PP_Pellet_Bag", col_PP_Pellet_Bag,
-                "PP_Sampling_Silo", col_PP_Sampling_Silo,
-                col_Error
-            )
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =
-        ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: =Gallery_Tests_Main_1.Width/Gallery_Tests_Main_1.AllItemsCount
-        Transition: =Transition.Pop
-        Width: =1366
-        Y: =51
-        ZIndex: =8
-
-        Label5_7 As label:
-            Align: =Align.Center
-            BorderColor: =Color.Transparent
-            BorderThickness: =2
-            Color: =Color.White
-            Height: =If(ThisItem.Result="",0,Gallery_Tests_Main_1.TemplateHeight)
-            HoverFill: =If(ThisItem.Test="",Color.Transparent,Colour_Viridor_Purple)
-            LineHeight: =1
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedColor: =Color.White
-            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Green)
-            Size: |-
-                =If(Or(
-                var_sample_point_selected=Blank()
-                ,var_sample_point_selected="Post Extruder"
-                ,var_sample_point_selected="Pellet Bag"
-                ,var_sample_point_selected="Sampling Silo"
-                ),14,18)
-            Text: =ThisItem.Test
-            Width: |-
-                =If(
-                ThisItem.Test="",0,
-                
-                //otherwise
-                Gallery_Tests_Main_1.TemplateWidth*ThisItem.Width)
+                Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
     Gallery_Units_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =Color.AliceBlue
         Height: =58/2
-        Items: |
-            =Switch(var_filter_selected,
-                "All_All", col_All_All,
-                "All_Wash", col_All_Wash,
-                "All_Flake_Bag", col_All_Flake_Bag,
-                "All_Post_Flake_Sorter", col_All_Post_Flake_Sorter,
-                "All_Post_Extruder", col_All_Post_Extruder,
-                "All_SSP", col_All_SSP,
-                "All_Pellet_Bag", col_All_Pellet_Bag,
-                "All_Sampling_Silo", col_All_Sampling_Silo,
-                "PET_All", col_PET_All,
-                "PET_Wash", col_PET_Wash,
-                "PET_Flake_Bag", col_PET_Flake_Bag,
-                "PET_Post_Flake_Sorter", col_PET_Post_Flake_Sorter,
-                "PET_Post_Extruder", col_PET_Post_Extruder,
-                "PET_SSP", col_PET_SSP,
-                "PET_Pellet_Bag", col_PET_Pellet_Bag,
-                "PET_Sampling_Silo", col_PET_Sampling_Silo,
-                "HDPE_Nat_All", col_HDPE_Nat_All,
-                "HDPE_Nat_Wash", col_HDPE_Nat_Wash,
-                "HDPE_Nat_Post_Flake_Sorter", col_HDPE_Nat_Post_Flake_Sorter,
-                "HDPE_Nat_Post_Extruder", col_HDPE_Nat_Post_Extruder,
-                "HDPE_Nat_Pellet_Bag", col_HDPE_Nat_Pellet_Bag,
-                "HDPE_Nat_Sampling_Silo", col_HDPE_Nat_Sampling_Silo,
-                "HDPE_SC_All", col_HDPE_SC_All,
-                "HDPE_SC_Wash", col_HDPE_SC_Wash,
-                "HDPE_SC_Post_Flake_Sorter", col_HDPE_SC_Post_Flake_Sorter,
-                "HDPE_SC_Post_Extruder", col_HDPE_SC_Post_Extruder,
-                "HDPE_SC_Pellet_Bag", col_HDPE_SC_Pellet_Bag,
-                "HDPE_SC_Sampling_Silo", col_HDPE_SC_Sampling_Silo,
-                "PP_All", col_PP_All,
-                "PP_Wash", col_PP_Wash,
-                "PP_Post_Flake_Sorter", col_PP_Post_Flake_Sorter,
-                "PP_Post_Extruder", col_PP_Post_Extruder,
-                "PP_Pellet_Bag", col_PP_Pellet_Bag,
-                "PP_Sampling_Silo", col_PP_Sampling_Silo,
-                col_Error
-            )
+        Items: =Gallery_Title_Caustic.AllItems
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Units_1.Width/Gallery_Units_1.AllItemsCount
         Width: =1366
         Y: =109
-        ZIndex: =9
+        ZIndex: =8
 
         Label5_8 As label:
             Align: =Align.Center
@@ -1004,6 +808,59 @@ Screen_Test_Caustic_Strength As screen:
                 ThisItem.Result="",0,
                 
                 //otherwise
-                Gallery_Tests_Main_1.TemplateWidth*ThisItem.Width)
+                Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
+            ZIndex: =1
+
+    Gallery_Title_Caustic As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_Purple
+        Height: =58
+        Items: |-
+            =[
+            {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1}, 
+            {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
+            {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
+            {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1},
+            {Test:"Caustic Strength", Unit:"U_Caustic", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic", Width:1},
+            ]
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Title_Caustic.Width/Gallery_Title_Caustic.AllItemsCount
+        Transition: =Transition.Pop
+        Width: =1366
+        Y: =51
+        ZIndex: =9
+
+        Label5_7 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.White
+            Height: =If(ThisItem.Result="",0,Gallery_Title_Caustic.TemplateHeight)
+            HoverFill: =If(ThisItem.Test="",Color.Transparent,Colour_Viridor_Purple)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.White
+            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),14,18)
+            Text: =ThisItem.Test
+            Width: |-
+                =If(
+                ThisItem.Test="",0,
+                
+                //otherwise
+                Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
