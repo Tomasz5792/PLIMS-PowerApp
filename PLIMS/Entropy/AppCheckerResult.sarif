@@ -16953,36 +16953,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Text_size_CoA"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Text_size_CoA",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text_size_CoA",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Border_Thickness"
                 }
               ],
@@ -17114,6 +17084,36 @@
               },
               "properties": {
                 "member": "Colour_To_Test",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Text_size_CoA"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Text_size_CoA",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text_size_CoA",
                 "module": "App",
                 "type": "App"
               }
