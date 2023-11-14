@@ -688,6 +688,7 @@ Screen_Test_input As screen:
             ZIndex: =1
 
     Gallery_Results_Main As gallery.galleryVertical:
+        BorderColor: =RGBA(0, 0, 0, 0)
         DelayItemLoading: =true
         Fill: =Colour_Viridor_GreenTint
         Height: =464
@@ -748,6 +749,7 @@ Screen_Test_input As screen:
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =58
         Width: =1366
