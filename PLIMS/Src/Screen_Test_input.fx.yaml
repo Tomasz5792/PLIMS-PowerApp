@@ -399,8 +399,8 @@ Screen_Test_input As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedColor: =Color.White
-            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
+            PressedColor: =Color.Black
+            PressedFill: =Color.Transparent
             Size: |-
                 =If(Or(
                 var_sample_point_selected=Blank()
@@ -480,8 +480,8 @@ Screen_Test_input As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedColor: =Color.White
-            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
+            PressedColor: =Color.Black
+            PressedFill: =Color.Transparent
             Size: |-
                 =If(Or(
                 var_sample_point_selected=Blank()
@@ -561,6 +561,7 @@ Screen_Test_input As screen:
             BorderThickness: =2
             Color: =Color.White
             Height: =If(ThisItem.Result="",0,Gallery_Tests_Main.TemplateHeight)
+            HoverFill: =If(ThisItem.Test="",Color.Transparent,Colour_Viridor_Purple)
             LineHeight: =1
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -568,7 +569,7 @@ Screen_Test_input As screen:
             PaddingRight: =0
             PaddingTop: =0
             PressedColor: =Color.White
-            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
+            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Green)
             Size: |-
                 =If(Or(
                 var_sample_point_selected=Blank()
@@ -740,8 +741,8 @@ Screen_Test_input As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedColor: =Color.White
-            PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
+            PressedColor: =Color.Black
+            PressedFill: =Color.Transparent
             Size: |-
                 =If(Or(
                 var_sample_point_selected=Blank()
