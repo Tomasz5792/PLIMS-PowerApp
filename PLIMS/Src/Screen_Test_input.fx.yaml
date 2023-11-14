@@ -413,17 +413,8 @@ Screen_Test_input As screen:
                 =If(
                 ThisItem.Result="",0,
                 
-                ThisItem.Result="R_Point",Gallery_Spec_Low.TemplateWidth*2,
-                ThisItem.Result="R_Material",Gallery_Spec_Low.TemplateWidth*2,
-                ThisItem.Result="R_Batch",Gallery_Spec_Low.TemplateWidth*2,
-                ThisItem.Result="R_Bag",Gallery_Spec_Low.TemplateWidth*2,
-                ThisItem.Result="R_Bag_Batch",Gallery_Spec_Low.TemplateWidth*2,
-                ThisItem.Result="R_Date",Gallery_Spec_Low.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Spec_Low.TemplateWidth*1,
-                ThisItem.Result="R_Comment",Gallery_Spec_Low.TemplateWidth*6,
-                
                 //otherwise
-                Gallery_Spec_Low.TemplateWidth*1)
+                Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
     Gallery_Spec_High As gallery.galleryHorizontal:
@@ -503,17 +494,8 @@ Screen_Test_input As screen:
                 =If(
                 ThisItem.Result="",0,
                 
-                ThisItem.Result="R_Point",Gallery_Spec_High.TemplateWidth*2,
-                ThisItem.Result="R_Material",Gallery_Spec_High.TemplateWidth*2,
-                ThisItem.Result="R_Batch",Gallery_Spec_High.TemplateWidth*2,
-                ThisItem.Result="R_Bag",Gallery_Spec_High.TemplateWidth*2,
-                ThisItem.Result="R_Bag_Batch",Gallery_Spec_High.TemplateWidth*2,
-                ThisItem.Result="R_Date",Gallery_Spec_High.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Spec_High.TemplateWidth*1,
-                ThisItem.Result="R_Comment",Gallery_Spec_High.TemplateWidth*6,
-                
                 //otherwise
-                Gallery_Spec_High.TemplateWidth*1)
+                Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
     Gallery_Tests_Main As gallery.galleryHorizontal:
@@ -561,7 +543,8 @@ Screen_Test_input As screen:
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
             =If(
-            ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None);,
+            ThisItem.Test="","",   
+            ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
             
             Navigate(Screen_Under_Construction,ScreenTransition.None))
         ShowScrollbar: =false
@@ -596,7 +579,7 @@ Screen_Test_input As screen:
             Text: =ThisItem.Test
             Width: |-
                 =If(
-                ThisItem.Result="",0,
+                ThisItem.Test="",0,
                 
                 //otherwise
                 Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
@@ -839,17 +822,8 @@ Screen_Test_input As screen:
                 =If(
                 ThisItem.Result="",0,
                 
-                ThisItem.Result="R_Point",Gallery_Units.TemplateWidth*2,
-                ThisItem.Result="R_Material",Gallery_Units.TemplateWidth*2,
-                ThisItem.Result="R_Batch",Gallery_Units.TemplateWidth*2,
-                ThisItem.Result="R_Bag",Gallery_Units.TemplateWidth*2,
-                ThisItem.Result="R_Bag_Batch",Gallery_Units.TemplateWidth*2,
-                ThisItem.Result="R_Date",Gallery_Units.TemplateWidth*2,
-                ThisItem.Result="R_Time",Gallery_Units.TemplateWidth*1,
-                ThisItem.Result="R_Comment",Gallery_Units.TemplateWidth*6,
-                
                 //otherwise
-                Gallery_Units.TemplateWidth*1)
+                Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
     Gallery_Results_Main As gallery.galleryVertical:
@@ -1383,17 +1357,8 @@ Screen_Test_input As screen:
                     =If(
                     ThisItem.Result="",0,
                     
-                    ThisItem.Result="R_Point",Gallery_Tests_Inner.TemplateWidth*2,
-                    ThisItem.Result="R_Material",Gallery_Tests_Inner.TemplateWidth*2,
-                    ThisItem.Result="R_Batch",Gallery_Tests_Inner.TemplateWidth*2,
-                    ThisItem.Result="R_Bag",Gallery_Tests_Inner.TemplateWidth*2,
-                    ThisItem.Result="R_Bag_Batch",Gallery_Tests_Inner.TemplateWidth*2,
-                    ThisItem.Result="R_Date",Gallery_Tests_Inner.TemplateWidth*2,
-                    ThisItem.Result="R_Time",Gallery_Tests_Inner.TemplateWidth*1,
-                    ThisItem.Result="R_Comment",Gallery_Tests_Inner.TemplateWidth*6,
-                    
                     //otherwise
-                    Gallery_Tests_Inner.TemplateWidth*1)
+                    Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
                 ZIndex: =1
 
         Label_Inclusions_Large As label:
