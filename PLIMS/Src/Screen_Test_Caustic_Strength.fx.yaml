@@ -62,55 +62,58 @@ Screen_Test_Caustic_Strength As screen:
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =54
         Width: =1366
         Y: =197
         ZIndex: =1
 
-        Label3 As label:
-            Height: =54
-            OnSelect: =Select(Parent)
-            Size: =Text_size
-            Text: =ThisItem.Material
-            Width: =118
-            ZIndex: =1
-
         Label3_1 As label:
+            Align: =Align.Center
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =ThisItem.Sample_Point
-            Width: =118
-            X: =131
-            ZIndex: =2
+            Width: =Label_Main_pH.Width
+            X: =Label_Main_pH.Width
+            ZIndex: =1
 
         Label3_2 As label:
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =ThisItem.'Date_&_Time'
-            Width: =118
-            X: =328
-            ZIndex: =3
+            Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
+            Width: =Label_Main_pH.Width
+            X: =Label_Main_pH.Width*2
+            ZIndex: =2
 
         Label3_3 As label:
+            Align: =Align.Center
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =ThisItem.'Date_&_Time'
-            Width: =118
-            X: =468
-            ZIndex: =4
+            Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
+            Width: =Label_Main_pH.Width
+            X: =Label_Main_pH.Width*3
+            ZIndex: =3
 
         Label3_4 As label:
+            Align: =Align.Center
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =ThisItem.'Caustic_Strength_Result_%'
-            Width: =118
-            X: =776
+            Width: =Label_Main_pH.Width
+            X: =Label_Main_pH.Width*5
+            ZIndex: =4
+
+        Label_Main_pH As label:
+            Align: =Align.Center
+            Height: =54
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =ThisItem.Material
+            Width: =Gallery_Title_Caustic.Width/Gallery_Title_Caustic.AllItemsCount
             ZIndex: =5
 
     Gallery_Spec_Low_1 As gallery.galleryHorizontal:
