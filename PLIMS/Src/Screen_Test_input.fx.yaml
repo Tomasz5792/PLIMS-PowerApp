@@ -561,7 +561,7 @@ Screen_Test_input As screen:
             BorderThickness: =2
             Color: =Color.White
             Height: =If(ThisItem.Result="",0,Gallery_Tests_Main.TemplateHeight)
-            HoverBorderColor: =Self.HoverFill
+            HoverBorderColor: =Colour_Viridor_Purple
             HoverFill: =If(ThisItem.Test="",Color.Transparent,Colour_Viridor_Purple)
             LineHeight: =1
             OnSelect: =Select(Parent)
