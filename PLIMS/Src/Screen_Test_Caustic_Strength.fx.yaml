@@ -116,6 +116,39 @@ Screen_Test_Caustic_Strength As screen:
             Width: =Gallery_Title_Caustic.Width/Gallery_Title_Caustic.AllItemsCount
             ZIndex: =5
 
+        TextInput1 As text:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            Clear: =true
+            Default: =""
+            Height: =54
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Label_Main_pH.Width
+            X: =Label_Main_pH.Width*4
+            ZIndex: =7
+
+        TextInput1_1 As text:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Clear: =true
+            Default: =""
+            EnableSpellCheck: =true
+            Height: =54
+            Mode: =TextMode.MultiLine
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Label_Main_pH.Width*3
+            X: =Label_Main_pH.Width*6
+            ZIndex: =8
+
     Gallery_Spec_Low_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 0, 1)
