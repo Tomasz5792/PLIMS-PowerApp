@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 372,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -133,7 +133,6 @@
     "Screen_Start",
     "Screen_Test_input",
     "Screen_Test_Caustic_Strength",
-    "Screen_Under_Construction",
-    "Ifs for later"
+    "Screen_Under_Construction"
   ]
 }

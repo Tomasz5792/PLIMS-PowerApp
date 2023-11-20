@@ -339,7 +339,11 @@ Screen_Test_input As screen:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
-            Color: =Color.Black
+            Color: |-
+                =If(
+                ThisItem.Test="Error",Color.Transparent,
+                
+                Color.Black)
             Height: =If(ThisItem.Result="",0,Gallery_Spec_Low.TemplateHeight)
             LineHeight: =1
             OnSelect: =Select(Parent)
@@ -420,7 +424,11 @@ Screen_Test_input As screen:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
-            Color: =Color.Black
+            Color: |-
+                =If(
+                ThisItem.Test="Error",Color.Transparent,
+                
+                Color.Black)
             Height: =If(ThisItem.Result="",0,Gallery_Spec_High.TemplateHeight)
             LineHeight: =1
             OnSelect: =Select(Parent)
@@ -500,7 +508,14 @@ Screen_Test_input As screen:
             Align: =Align.Center
             BorderColor: =Color.Transparent
             BorderThickness: =2
-            Color: =Color.Black
+            Color: |+
+                =If(
+                ThisItem.Test="Error",Color.Transparent,
+                
+                Color.Black)
+                
+                
+                
             Height: =If(ThisItem.Result="",0,Gallery_Units.TemplateHeight)
             LineHeight: =0.8
             OnSelect: =Select(Parent)
@@ -1089,6 +1104,7 @@ Screen_Test_input As screen:
                 Color: |-
                     =If(
                     ThisItem.Result="",Color.Transparent,
+                    ThisItem.Test="Error",Color.Transparent,
                     
                     //Information
                     And(ThisItem.Result="R_Point",Label_Sample_Point.Text="Not Tested"),Colour_Not_Tested,
@@ -1139,8 +1155,7 @@ Screen_Test_input As screen:
                     
                     Color.Black)
                 Fill: |-
-                    =//And(xxxxx,yyyyy="Not Tested"),Colour_Not_Tested,
-                    
+                    =//Fill If
                     If(
                     ThisItem.Result="",Color.Transparent,
                     
@@ -1768,6 +1783,7 @@ Screen_Test_input As screen:
             ZIndex: =1
 
     Gallery_Tests_Main As gallery.galleryHorizontal:
+        BorderStyle: =BorderStyle.None
         DelayItemLoading: =true
         Fill: |+
             =If(Label_All_Test_Filter.Text="true",Color.Transparent,Colour_Viridor_Green)
@@ -1831,7 +1847,11 @@ Screen_Test_input As screen:
             BorderColor: =Color.Transparent
             BorderThickness: =2
             Color: |+
-                =If(Label_All_Test_Filter.Text="true",Color.Transparent,Color.White)
+                =If(
+                Label_All_Test_Filter.Text="true",Color.Transparent,
+                ThisItem.Test="Error",Color.Transparent,
+                
+                Color.White)
                 
                 
                 
@@ -1932,6 +1952,7 @@ Screen_Test_input As screen:
             Fill: =RGBA(204, 231, 246, 1)
             Height: =44
             Text: =var_filter_selected
+            Visible: =false
             Width: =141
             X: =1025
             ZIndex: =19
@@ -1940,6 +1961,7 @@ Screen_Test_input As screen:
             Fill: =RGBA(204, 231, 246, 1)
             Height: =44
             Text: =var_sample_point_selected
+            Visible: =false
             Width: =131
             X: =889
             ZIndex: =20
@@ -1948,6 +1970,7 @@ Screen_Test_input As screen:
             Fill: =RGBA(204, 231, 246, 1)
             Height: =44
             Text: =var_material_selected
+            Visible: =false
             Width: =131
             X: =749
             ZIndex: =21
