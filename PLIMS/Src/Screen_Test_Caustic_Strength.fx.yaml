@@ -111,7 +111,7 @@ Screen_Test_Caustic_Strength As screen:
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =ThisItem.'Caustic_Strength_Result_%'
+            Text: =Text(Round(TextInput_Titration*0.5*4/100,2),"0.00")
             Width: =Label_Main_pH.Width
             X: =Label_Main_pH.Width*5
             ZIndex: =4
@@ -125,10 +125,11 @@ Screen_Test_Caustic_Strength As screen:
             Width: =Gallery_Title_Caustic.Width/Gallery_Title_Caustic.AllItemsCount
             ZIndex: =5
 
-        TextInput1 As text:
+        TextInput_Titration As text:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
-            Default: =""
+            Default: =ThisItem.Caustic_Strength_Titration_mL
+            Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
             OnSelect: =Select(Parent)
@@ -145,7 +146,7 @@ Screen_Test_Caustic_Strength As screen:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
-            Default: =""
+            Default: =ThisItem.Caustic_Strength_Comment
             EnableSpellCheck: =true
             Height: =54
             HoverColor: =Color.Black
@@ -156,10 +157,19 @@ Screen_Test_Caustic_Strength As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =Text_size
-            Width: =Label_Main_pH.Width*3
+            Size: =Text_size_2
+            Width: =392
             X: =Label_Main_pH.Width*6
             ZIndex: =8
+
+        ButtonCanvas2 As Button:
+            DisplayMode: =DisplayMode.Edit
+            Height: =54
+            OnSelect: =Select(Parent)
+            Width: =28
+            X: =0
+            Y: =0
+            ZIndex: =9
 
     Gallery_Spec_Low_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
