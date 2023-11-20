@@ -336,6 +336,14 @@ Screen_Test_Caustic_Strength As screen:
                 Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
+    Button1 As button:
+        Height: =56
+        Text: ="Button"
+        Width: =253
+        X: =1020
+        Y: =690
+        ZIndex: =11
+
     Title_pH As group:
         Height: =5
         Width: =5
