@@ -17013,66 +17013,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Colour_Fail"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Colour_Fail",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Colour_Fail",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Colour_Pass"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Colour_Pass",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Colour_Pass",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Colour_Testing"
                 }
               ],
