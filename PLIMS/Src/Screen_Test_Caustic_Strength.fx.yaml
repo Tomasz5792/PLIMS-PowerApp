@@ -13,7 +13,7 @@ Screen_Test_Caustic_Strength As screen:
     Gallery2 As gallery.galleryVertical:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_GreenTint
-        Height: =571
+        Height: =514
         Items: |
             =Switch(var_filter_selected,
             
@@ -148,6 +148,8 @@ Screen_Test_Caustic_Strength As screen:
             Default: =""
             EnableSpellCheck: =true
             Height: =54
+            HoverColor: =Color.Black
+            HoverFill: =Colour_Viridor_PurpleTint
             Mode: =TextMode.MultiLine
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
@@ -336,13 +338,51 @@ Screen_Test_Caustic_Strength As screen:
                 Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
             ZIndex: =1
 
-    Button1 As button:
-        Height: =56
-        Text: ="Button"
-        Width: =253
-        X: =1020
-        Y: =690
+    Gallery_Tests_Main_1 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_Green
+        Height: =57
+        Items: =["Save and exit"]
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =If(
+            ThisItem.Test="","",   
+            ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
+            
+            Navigate(Screen_Under_Construction,ScreenTransition.None))
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Tests_Main_1.Width/Gallery_Tests_Main_1.AllItemsCount
+        Width: =1366
+        Y: =711
         ZIndex: =11
+
+        Label5_11 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.White
+            Height: =57
+            HoverBorderColor: =Color.Transparent
+            HoverFill: =Colour_Viridor_Purple
+            LineHeight: =0.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.White
+            PressedFill: =Color.Transparent
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),15,18)
+            Text: =ThisItem.Value
+            Width: =1366
+            ZIndex: =1
 
     Title_pH As group:
         Height: =5
