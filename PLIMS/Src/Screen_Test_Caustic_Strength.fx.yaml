@@ -162,6 +162,7 @@ Screen_Test_Caustic_Strength As screen:
             ZIndex: =8
 
         ButtonCanvas2 As Button:
+            BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
             Height: =54
             OnSelect: =Select(Parent)

@@ -1086,11 +1086,56 @@ Screen_Test_input As screen:
                 Align: =Align.Center
                 BorderColor: =Color.Transparent
                 BorderThickness: =2
+                Color: =Color.Black
                 Fill: |-
                     =If(
-                    ThisItem.Result="",RGBA(0,0,0,0),
+                    ThisItem.Result="",Color.Transparent,
                     
+                    //Information
+                    //And(xxxxx,yyyyy="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Point",Label_Sample_Point.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Material",Label_Material.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Date",Label_Date.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Time",Label_Time.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Batch",Label_Batch_Number.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Bag",Label_Bag_Number.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Bag_Batch",Label_Bag_Batch_Number.Text="Not Tested"),Colour_Not_Tested,
+                    
+                    //Tests
+                    And(ThisItem.Result="R_Caustic",Label_Caustic.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_IV",Label_IV_MFI.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_MFI",Label_IV_MFI.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_IV_MFI",Label_IV_MFI.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Ext_IV",Label_Extruder_IV.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_AA",Label_AA.Text="Not Tested"),Colour_Not_Tested,
+                    //ThisItem.Result="R_Limonene",Label_Limonene.Text,
+                    //ThisItem.Result="R_GC",Label_GC.Text,
+                    //ThisItem.Result="R_Fines",Label_Fines.Text,
+                    //ThisItem.Result="R_Moisture",Label_Moisture.Text,
+                    //ThisItem.Result="R_Bulk",Label_Bulk_Density.Text,
+                    //ThisItem.Result="R_Mat_Den",Label_Material_Density.Text,
+                    
+                    //Composition
+                    //ThisItem.Result="R_Metal",Label_Metal.Text,
+                    //ThisItem.Result="R_Glass",Label_Glass.Text,
+                    //ThisItem.Result="R_PET",Label_PET.Text,
+                    //ThisItem.Result="R_PVC",Label_PVC.Text,
+                    //ThisItem.Result="R_Float",Label_Float_Sink.Text,
+                    //ThisItem.Result="R_Comp",Label_Composition.Text,
+                    //ThisItem.Result="R_pH",Label_pH.Text,
+                    
+                    //Tests
+                    //ThisItem.Result="R_L",Label_L.Text,
+                    //ThisItem.Result="R_a",Label_a.Text,
+                    //ThisItem.Result="R_b",Label_b.Text,
+                    //ThisItem.Result="R_Lab",Label_Lab.Text,
+                    //ThisItem.Result="R_Ext_b*",Label_Ext_b.Text,
+                    //ThisItem.Result="R_Count_1g",Label_Pellet_Count_1g.Text,
+                    //ThisItem.Result="R_Count_5g",Label_Pellet_Count_5g.Text,
+                    //ThisItem.Result="R_Vis",Label_Visual_Inspection.Text,
+                    //ThisItem.Result="R_Med_Inc",Label_Inclusions_Medium.Text,
+                    //ThisItem.Result="R_Lar_Inc",Label_Inclusions_Large.Text,
+                    //ThisItem.Result="R_All_Inc",Label_Inclusions.Text,
                     
                     Colour_Viridor_GreenTint)
                 Height: =If(ThisItem.Result="",0,Gallery_Tests_Inner.TemplateHeight)
@@ -1103,7 +1148,7 @@ Screen_Test_input As screen:
                 PressedColor: =Color.White
                 PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
                 Size: =If(var_sample_point_selected=Blank(),15,Text_size)
-                Text: |-
+                Text: |
                     =If(
                     ThisItem.Result="R_Point",Label_Sample_Point.Text,
                     ThisItem.Result="R_Material",Label_Material.Text,
@@ -1144,7 +1189,7 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Vis",Label_Visual_Inspection.Text,
                     ThisItem.Result="R_Med_Inc",Label_Inclusions_Medium.Text,
                     ThisItem.Result="R_Lar_Inc",Label_Inclusions_Large.Text,
-                    //Label_Inclusions_Large
+                    
                     ThisItem.Result="R_All_Inc",Label_Inclusions.Text,
                     ThisItem.Result="R_Cryst",Label_Crystalisation.Text,
                     
@@ -1152,7 +1197,6 @@ Screen_Test_input As screen:
                     
                     
                     ThisItem.Result)
-                    //Label_Date&Time
                 Width: |-
                     =If(
                     ThisItem.Result="",0,

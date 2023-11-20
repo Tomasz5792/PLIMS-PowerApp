@@ -726,7 +726,7 @@ App As appinfo:
         ]);
         
         Set(Var_Start,"Loaded");
-    Theme: =PowerAppsTheme
+    Theme: =GreenTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
