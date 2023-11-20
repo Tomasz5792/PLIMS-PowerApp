@@ -16,6 +16,8 @@ App As appinfo:
         
         //Variables
         Set(var_filter_selected,"All_All");  //setting filter
+        Set(var_material_selected,"All");  //setting filter
+        
         
         //Loading Collections
         // For All_All
