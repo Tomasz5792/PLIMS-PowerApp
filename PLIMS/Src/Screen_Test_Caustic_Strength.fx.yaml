@@ -128,14 +128,15 @@ Screen_Test_Caustic_Strength As screen:
         TextInput1 As text:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
-            Clear: =true
             Default: =""
             Height: =54
+            HoverFill: =Colour_Viridor_PurpleTint
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
+            Size: =Text_size
             Width: =Label_Main_pH.Width
             X: =Label_Main_pH.Width*4
             ZIndex: =7
@@ -144,7 +145,6 @@ Screen_Test_Caustic_Strength As screen:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
-            Clear: =true
             Default: =""
             EnableSpellCheck: =true
             Height: =54
@@ -156,6 +156,7 @@ Screen_Test_Caustic_Strength As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
+            Size: =Text_size
             Width: =Label_Main_pH.Width*3
             X: =Label_Main_pH.Width*6
             ZIndex: =8
@@ -344,12 +345,7 @@ Screen_Test_Caustic_Strength As screen:
         Height: =57
         Items: =["Save and exit"]
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: |-
-            =If(
-            ThisItem.Test="","",   
-            ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
-            
-            Navigate(Screen_Under_Construction,ScreenTransition.None))
+        OnSelect: =
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Tests_Main_1.Width/Gallery_Tests_Main_1.AllItemsCount
