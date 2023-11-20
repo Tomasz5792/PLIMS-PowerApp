@@ -15,10 +15,9 @@ App As appinfo:
         Set(Text_size,17);Set(Text_size_2,15);Set(Text_size_Menu,20);Set(Text_size_Title,25);Set(Text_size_large,40);Set(Border_Thickness,1.2);
         
         //Variables
-        Set(var_filter_selected,"All_Sampling_Silo");  //setting filter
+        Set(var_filter_selected,"All_All");  //setting filter
         
         //Loading Collections
-        
         // For All_All
         ClearCollect(col_All_All, [
         {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
