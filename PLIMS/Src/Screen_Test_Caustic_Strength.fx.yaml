@@ -1,6 +1,15 @@
 Screen_Test_Caustic_Strength As screen:
     Fill: =Colour_Viridor_White
 
+    Label2 As label:
+        BorderStyle: =BorderStyle.None
+        Fill: =Color.Yellow
+        Height: =59
+        Text: =
+        Width: =1366
+        Y: =138
+        ZIndex: =1
+
     Gallery2 As gallery.galleryVertical:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_GreenTint
@@ -66,7 +75,7 @@ Screen_Test_Caustic_Strength As screen:
         TemplateSize: =54
         Width: =1366
         Y: =197
-        ZIndex: =1
+        ZIndex: =2
 
         Label3_1 As label:
             Align: =Align.Center
@@ -160,7 +169,7 @@ Screen_Test_Caustic_Strength As screen:
         TemplateSize: =Gallery_Spec_Low_1.Width/Gallery_Spec_Low_1.AllItemsCount
         Width: =1366
         Y: =168
-        ZIndex: =6
+        ZIndex: =7
 
         Label5_5 As label:
             Align: =Align.Center
@@ -203,7 +212,7 @@ Screen_Test_Caustic_Strength As screen:
         TemplateSize: =Gallery_Spec_High_1.Width/Gallery_Spec_High_1.AllItemsCount
         Width: =1366
         Y: =138
-        ZIndex: =7
+        ZIndex: =8
 
         Label5_6 As label:
             Align: =Align.Center
@@ -246,7 +255,7 @@ Screen_Test_Caustic_Strength As screen:
         TemplateSize: =Gallery_Units_1.Width/Gallery_Units_1.AllItemsCount
         Width: =1366
         Y: =109
-        ZIndex: =8
+        ZIndex: =9
 
         Label5_8 As label:
             Align: =Align.Center
@@ -344,7 +353,7 @@ Screen_Test_Caustic_Strength As screen:
             Size: =Text_size_Title
             Text: ="Caustic Strengh"
             Width: =1366
-            ZIndex: =1
+            ZIndex: =3
 
         Button_Back_11 As icon.CancelBadge:
             Color: =Color.White
@@ -357,7 +366,7 @@ Screen_Test_Caustic_Strength As screen:
             Width: =38
             X: =1322
             Y: =7
-            ZIndex: =2
+            ZIndex: =4
 
         Button_Home_4 As icon.CancelBadge:
             Color: =Color.White
@@ -370,7 +379,7 @@ Screen_Test_Caustic_Strength As screen:
             Width: =38
             X: =Button_Back_11.X-50
             Y: =Button_Back_11.Y
-            ZIndex: =3
+            ZIndex: =5
 
         Refresh_Data_3 As icon.CancelBadge:
             Color: =Color.White
@@ -384,5 +393,5 @@ Screen_Test_Caustic_Strength As screen:
             Width: =34
             X: =Button_Back_11.X-50*2
             Y: =10
-            ZIndex: =4
+            ZIndex: =6
 
