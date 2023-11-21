@@ -133,7 +133,7 @@ Screen_Test_Caustic_Strength As screen:
             Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
-            OnChange: =Select(Button1)
+            OnChange: =Select(Button_Update_Caustic)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
@@ -154,7 +154,7 @@ Screen_Test_Caustic_Strength As screen:
             HoverColor: =Color.Black
             HoverFill: =Colour_Viridor_PurpleTint
             Mode: =TextMode.MultiLine
-            OnChange: =Select(Button1)
+            OnChange: =Select(Button_Update_Caustic)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
@@ -165,7 +165,7 @@ Screen_Test_Caustic_Strength As screen:
             X: =Label_Caustic_Material_Main.Width*6
             ZIndex: =8
 
-        Button1 As button:
+        Button_Update_Caustic As button:
             Height: =54
             OnSelect: |-
                 =If(IsBlank(LookUp(col_Test_Updates,ID=ThisItem.ID)),
@@ -387,7 +387,9 @@ Screen_Test_Caustic_Strength As screen:
                 Notify("Results Saved",NotificationType.Success,2000);
                 
                 //clear collection
-                Clear(col_Test_Updates)
+                Clear(col_Test_Updates);
+                
+                Back();
                 
             PaddingBottom: =0
             PaddingLeft: =0
