@@ -171,7 +171,7 @@ Screen_Test_Caustic_Strength As screen:
                 =If(IsBlank(LookUp(col_Caustic_Updates,ID=ThisItem.ID)),
                 Collect(col_Caustic_Updates,ThisItem));
                 
-                UpdateIf(col_Caustic_Updates,ID=ThisItem.ID,{Caustic_Strength_Titration_mL:Value(TextInput_Caustic_Titration.Text),'Caustic_Strength_Result_%':Label_Caustic_Result.Text,Caustic_Strength_Comment:TextInput_Caustic_Comment.Text})
+                UpdateIf(col_Caustic_Updates,ID=ThisItem.ID,{Caustic_Strength_Titration_mL:TextInput_Caustic_Titration.Text,'Caustic_Strength_Result_%':Label_Caustic_Result.Text,Caustic_Strength_Comment:TextInput_Caustic_Comment.Text})
             Text: ="Button"
             Width: =48
             X: =1318
