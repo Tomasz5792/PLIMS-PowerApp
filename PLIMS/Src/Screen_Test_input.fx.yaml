@@ -1829,7 +1829,13 @@ Screen_Test_input As screen:
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
             =If(
-            ThisItem.Test="","",   
+            ThisItem.Test="","",  
+            
+            ThisItem.Test="Date",Navigate(Screen_Test_Information,ScreenTransition.None),
+            ThisItem.Test="Time",Navigate(Screen_Test_Information,ScreenTransition.None),
+            ThisItem.Test="Batch Number",Navigate(Screen_Test_Information,ScreenTransition.None),
+            ThisItem.Test="Bag Number",Navigate(Screen_Test_Information,ScreenTransition.None),
+            
             ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
             
             Navigate(Screen_Under_Construction,ScreenTransition.None))
