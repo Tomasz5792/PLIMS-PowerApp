@@ -168,11 +168,12 @@ Screen_Test_Caustic_Strength As screen:
         Button1 As button:
             Height: =54
             OnSelect: |-
-                =If(IsBlank(LookUp(col_Caustic_Updates,ID=ThisItem.ID)),
-                Collect(col_Caustic_Updates,ThisItem));
+                =If(IsBlank(LookUp(col_Test_Updates,ID=ThisItem.ID)),
+                Collect(col_Test_Updates,ThisItem));
                 
-                UpdateIf(col_Caustic_Updates,ID=ThisItem.ID,{Caustic_Strength_Titration_mL:TextInput_Caustic_Titration.Text,'Caustic_Strength_Result_%':Label_Caustic_Result.Text,Caustic_Strength_Comment:TextInput_Caustic_Comment.Text})
+                UpdateIf(col_Test_Updates,ID=ThisItem.ID,{Caustic_Strength_Titration_mL:TextInput_Caustic_Titration.Text,'Caustic_Strength_Result_%':Label_Caustic_Result.Text,Caustic_Strength_Comment:TextInput_Caustic_Comment.Text})
             Text: ="Button"
+            Visible: =false
             Width: =48
             X: =1318
             ZIndex: =10
@@ -379,14 +380,14 @@ Screen_Test_Caustic_Strength As screen:
             HoverFill: =Colour_Viridor_Purple
             LineHeight: =0.8
             OnSelect: |+
-                =Patch('Test Results',ShowColumns(col_Caustic_Updates,"ID","field_10","field_11","field_12"));
+                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_10","field_11","field_12"));
                 //"Caustic_Strength_Titration_mL","Caustic_Strength_Result_%","Caustic_Strength_Comment"
                 
                 //Notify
-                Notify("Results Saved",NotificationType.Success,3000);
+                Notify("Results Saved",NotificationType.Success,2000);
                 
                 //clear collection
-                Clear(col_Caustic_Updates)
+                Clear(col_Test_Updates)
                 
             PaddingBottom: =0
             PaddingLeft: =0
