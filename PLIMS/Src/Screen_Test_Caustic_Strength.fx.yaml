@@ -397,13 +397,7 @@ Screen_Test_Caustic_Strength As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =Color.Transparent
-            Size: |-
-                =If(Or(
-                var_sample_point_selected=Blank()
-                ,var_sample_point_selected="Post Extruder"
-                ,var_sample_point_selected="Pellet Bag"
-                ,var_sample_point_selected="Sampling Silo"
-                ),15,18)
+            Size: =20
             Text: =ThisItem.Value
             Width: =1366
             ZIndex: =1
@@ -423,7 +417,7 @@ Screen_Test_Caustic_Strength As screen:
             Height: =51
             PaddingLeft: =14
             Size: =Text_size_Title
-            Text: ="Caustic Strengh"
+            Text: =Concatenate("Caustic Strengh - ",var_material_selected," ",var_sample_point_selected)
             Width: =1366
             ZIndex: =3
 
@@ -432,7 +426,9 @@ Screen_Test_Caustic_Strength As screen:
             Height: =38
             HoverColor: =Colour_Viridor_Purple
             Icon: =Icon.BackArrow
-            OnSelect: =Back()
+            OnSelect: |-
+                =Back();
+                Clear(col_Test_Updates);
             PressedColor: =Colour_Viridor_GreenTint
             Tooltip: ="Back"
             Width: =38
@@ -445,7 +441,9 @@ Screen_Test_Caustic_Strength As screen:
             Height: =38
             HoverColor: =Colour_Viridor_Purple
             Icon: =Icon.Home
-            OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
+            OnSelect: |-
+                =Navigate(Screen_Start,ScreenTransition.None);
+                Clear(col_Test_Updates);
             PressedColor: =Colour_Viridor_GreenTint
             Tooltip: ="Home"
             Width: =38
@@ -466,10 +464,4 @@ Screen_Test_Caustic_Strength As screen:
             X: =Button_Back_11.X-50*2
             Y: =10
             ZIndex: =6
-
-    Label3 As label:
-        Fill: =RGBA(180, 214, 250, 1)
-        Text: =
-        X: =330
-        ZIndex: =13
 

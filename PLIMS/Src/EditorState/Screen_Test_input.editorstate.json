@@ -5184,7 +5184,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label_All_Test_Filter",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -19969,7 +19969,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Test_2",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20264,7 +20264,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Test_3",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20591,7 +20591,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Test_Button_add_samples",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
