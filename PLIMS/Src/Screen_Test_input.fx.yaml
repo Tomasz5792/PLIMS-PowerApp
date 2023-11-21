@@ -1450,8 +1450,6 @@ Screen_Test_input As screen:
         Icon: =Icon.Add
         OnSelect: |
             =Set(var_add_sample_visible,true);
-            Set(var_sample_point_selected_All,Blank());
-            Set(var_material_selected,"All");
         PressedColor: =Colour_Viridor_GreenTint
         Rotation: =90
         Tooltip: ="Toggle adding samples on."

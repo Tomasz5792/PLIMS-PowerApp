@@ -22,83 +22,8 @@
       "Test Results"
     ],
     "dependencies": {},
-    "dependents": [
-      "0963188c-daee-4a81-b927-839a72752c81",
-      "b99dad02-aa3d-49fc-8123-1452e914c741"
-    ],
+    "dependents": [],
     "id": "0710b7fd-091c-4334-953f-c692b65a8149"
-  },
-  "0963188c-daee-4a81-b927-839a72752c81": {
-    "appActions": [],
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "0710b7fd-091c-4334-953f-c692b65a8149": {
-          "value": "shared_sharepointonline"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "7994e95c-25d8-4d44-b6de-c0dfea3a3a0e"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "0710b7fd-091c-4334-953f-c692b65a8149"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "7994e95c-25d8-4d44-b6de-c0dfea3a3a0e"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "AddPDFtoSharepointList"
-    ],
-    "dependencies": {
-      "shared_sharepointonline": "0710b7fd-091c-4334-953f-c692b65a8149"
-    },
-    "dependents": [],
-    "id": "0963188c-daee-4a81-b927-839a72752c81"
-  },
-  "b99dad02-aa3d-49fc-8123-1452e914c741": {
-    "appActions": [],
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "0710b7fd-091c-4334-953f-c692b65a8149": {
-          "value": "shared_sharepointonline"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "041c8211-7666-475e-af3f-388c73811332"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "0710b7fd-091c-4334-953f-c692b65a8149"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "041c8211-7666-475e-af3f-388c73811332"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "AddSignaturetoSharepointList"
-    ],
-    "dependencies": {
-      "shared_sharepointonline": "0710b7fd-091c-4334-953f-c692b65a8149"
-    },
-    "dependents": [],
-    "id": "b99dad02-aa3d-49fc-8123-1452e914c741"
   },
   "d1ea80bf-1ad3-47c3-a3f4-abf1be99ed07": {
     "appActions": [

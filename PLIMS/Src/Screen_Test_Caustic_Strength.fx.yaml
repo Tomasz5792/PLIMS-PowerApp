@@ -77,46 +77,47 @@ Screen_Test_Caustic_Strength As screen:
         Y: =197
         ZIndex: =2
 
-        Label3_1 As label:
+        Label_Caustic_Sample_Point As label:
             Align: =Align.Center
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =ThisItem.Sample_Point
-            Width: =Label_Main_pH.Width
-            X: =Label_Main_pH.Width
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width
             ZIndex: =1
 
-        Label3_2 As label:
+        Label_Caustic_Date As label:
+            Align: =Align.Center
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
-            Width: =Label_Main_pH.Width
-            X: =Label_Main_pH.Width*2
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width*2
             ZIndex: =2
 
-        Label3_3 As label:
+        Label_Caustic_Time As label:
             Align: =Align.Center
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
-            Width: =Label_Main_pH.Width
-            X: =Label_Main_pH.Width*3
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width*3
             ZIndex: =3
 
-        Label3_4 As label:
+        Label_Caustic_Result As label:
             Align: =Align.Center
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =If(IsBlank(TextInput_Titration),"Not Tested",Text(Round(TextInput_Titration*0.5*4/100,2),"0.00"))
-            Width: =Label_Main_pH.Width
-            X: =Label_Main_pH.Width*5
+            Text: =If(IsBlank(TextInput_Caustic_Titration),"Not Tested",Text(Round(TextInput_Caustic_Titration*0.5*4/100,2),"0.00"))
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width*5
             ZIndex: =4
 
-        Label_Main_pH As label:
+        Label_Caustic_Material_Main As label:
             Align: =Align.Center
             Height: =54
             OnSelect: =Select(Parent)
@@ -125,23 +126,25 @@ Screen_Test_Caustic_Strength As screen:
             Width: =Gallery_Title_Caustic.Width/Gallery_Title_Caustic.AllItemsCount
             ZIndex: =5
 
-        TextInput_Titration As text:
+        TextInput_Caustic_Titration As text:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
             Default: =ThisItem.Caustic_Strength_Titration_mL
+            Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
+            OnChange: =Select(Button1)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =Text_size
-            Width: =Label_Main_pH.Width
-            X: =Label_Main_pH.Width*4
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width*4
             ZIndex: =7
 
-        TextInput1_1 As text:
+        TextInput_Caustic_Comment As text:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
@@ -151,25 +154,28 @@ Screen_Test_Caustic_Strength As screen:
             HoverColor: =Color.Black
             HoverFill: =Colour_Viridor_PurpleTint
             Mode: =TextMode.MultiLine
+            OnChange: =Select(Button1)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =Text_size_2
-            Width: =392
-            X: =Label_Main_pH.Width*6
+            Width: =Label_Caustic_Material_Main.Width*3
+            X: =Label_Caustic_Material_Main.Width*6
             ZIndex: =8
 
-        ButtonCanvas2 As Button:
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
+        Button1 As button:
             Height: =54
-            OnSelect: =Select(Parent)
-            Width: =28
-            X: =0
-            Y: =0
-            ZIndex: =9
+            OnSelect: |-
+                =If(IsBlank(LookUp(col_Caustic_Updates,ID=ThisItem.ID)),
+                Collect(col_Caustic_Updates,ThisItem));
+                
+                UpdateIf(col_Caustic_Updates,ID=ThisItem.ID,{Caustic_Strength_Titration_mL:Value(TextInput_Caustic_Titration.Text),'Caustic_Strength_Result_%':Label_Caustic_Result.Text,Caustic_Strength_Comment:TextInput_Caustic_Comment.Text})
+            Text: ="Button"
+            Width: =48
+            X: =1318
+            ZIndex: =10
 
     Gallery_Spec_Low_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -448,4 +454,10 @@ Screen_Test_Caustic_Strength As screen:
             X: =Button_Back_11.X-50*2
             Y: =10
             ZIndex: =6
+
+    Label3 As label:
+        Fill: =RGBA(180, 214, 250, 1)
+        Text: =
+        X: =330
+        ZIndex: =13
 
