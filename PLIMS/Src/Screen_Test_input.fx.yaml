@@ -1868,8 +1868,8 @@ Screen_Test_input As screen:
             LineHeight: =0.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
+            PaddingLeft: =1
+            PaddingRight: =1
             PaddingTop: =0
             PressedColor: =Color.Transparent
             PressedFill: =Color.Transparent
