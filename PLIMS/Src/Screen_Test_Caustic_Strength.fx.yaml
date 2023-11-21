@@ -378,7 +378,10 @@ Screen_Test_Caustic_Strength As screen:
             HoverBorderColor: =Color.Transparent
             HoverFill: =Colour_Viridor_Purple
             LineHeight: =0.8
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Patch('Test Results',ShowColumns(col_Caustic_Updates,"ID"));
+                
+                //"Caustic_Strength_Titration_mL","Caustic_Strength_Result_%","Caustic_Strength_Comment"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
