@@ -176,7 +176,7 @@ Screen_Add_Samples As screen:
         OnSelect: |+
             =//if to set clicked value as true for use in add sample If and fill colour if.
             If(
-            ThisItem.Name = "PET Wash", Set(var_selected_PET_Wash, !var_selected_PET_Wash),
+            ThisItem.Name = "PET Wash A2:304", Set(var_selected_PET_A2_304, !var_selected_PET_A2_304),
             ThisItem.Name = "PET Wash Other", Set(var_selected_PET_Wash_Other, !var_selected_PET_Wash_Other),
             ThisItem.Name = "HDPE Nat Wash BS:302", Set(var_selected_HDPE_Nat_Wash_BS_302, !var_selected_HDPE_Nat_Wash_BS_302),
             ThisItem.Name = "HDPE Nat Wash Other", Set(var_selected_HDPE_Nat_Wash_Other, !var_selected_HDPE_Nat_Wash_Other),
@@ -211,7 +211,21 @@ Screen_Add_Samples As screen:
             ThisItem.Name = "HDPE Natural Pellet Bag Non-Deo", Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, !var_selected_HDPE_Natural_Pellet_Bag_Non_Deo),
             ThisItem.Name = "", Set(var_selected_Blank_2, !var_selected_Blank_2),
             ThisItem.Name = "HDPE Self Coloured Pellet Bag Non-Deo", Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, !var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo),
-            ThisItem.Name = "PP Pellet Bag Non-Deo", Set(var_selected_PP_Pellet_Bag_Non_Deo, !var_selected_PP_Pellet_Bag_Non_Deo)
+            ThisItem.Name = "PP Pellet Bag Non-Deo", Set(var_selected_PP_Pellet_Bag_Non_Deo, !var_selected_PP_Pellet_Bag_Non_Deo),
+            ThisItem.Name = "PET Pellet Bag Post SSP", Set(var_selected_PET_Pellet_Bag_Post_SSP, !var_selected_PET_Pellet_Bag_Post_SSP),
+            ThisItem.Name = "HDPE Natural Pellet Bag Deodorised", Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, !var_selected_HDPE_Natural_Pellet_Bag_Deodorised),
+            ThisItem.Name = "HDPE Self Coloured Pellet Bag Deodorised", Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, !var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised),
+            ThisItem.Name = "PP Pellet Bag Deodorised", Set(var_selected_PP_Pellet_Bag_Deodorised, !var_selected_PP_Pellet_Bag_Deodorised),
+            ThisItem.Name = "PET Sampling Silo 5.01", Set(var_selected_PET_Sampling_Silo_5_01, !var_selected_PET_Sampling_Silo_5_01),
+            ThisItem.Name = "HDPE Natural Sampling Silo 1.01", Set(var_selected_HDPE_Natural_Sampling_Silo_1_01, !var_selected_HDPE_Natural_Sampling_Silo_1_01),
+            ThisItem.Name = "HDPE Natural Sampling Silo 2.01", Set(var_selected_HDPE_Natural_Sampling_Silo_2_01, !var_selected_HDPE_Natural_Sampling_Silo_2_01),
+            ThisItem.Name = "HDPE Self Coloured Sampling Silo 3.01", Set(var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01, !var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01),
+            ThisItem.Name = "PP Sampling Silo 4.01", Set(var_selected_PP_Sampling_Silo_4_01, !var_selected_PP_Sampling_Silo_4_01),
+            ThisItem.Name = "PET Sampling Silo 5.02", Set(var_selected_PET_Sampling_Silo_5_02, !var_selected_PET_Sampling_Silo_5_02),
+            ThisItem.Name = "HDPE Natural Sampling Silo 1.02", Set(var_selected_HDPE_Natural_Sampling_Silo_1_02, !var_selected_HDPE_Natural_Sampling_Silo_1_02),
+            ThisItem.Name = "HDPE Natural Sampling Silo 2.02", Set(var_selected_HDPE_Natural_Sampling_Silo_2_02, !var_selected_HDPE_Natural_Sampling_Silo_2_02),
+            ThisItem.Name = "HDPE Self Coloured Sampling Silo 3.02", Set(var_selected_HDPE_Self_Coloured_Sampling_Silo_3_02, !var_selected_HDPE_Self_Coloured_Sampling_Silo_3_02),
+            ThisItem.Name = "PP Sampling Silo 4.02", Set(var_selected_PP_Sampling_Silo_4_02, !var_selected_PP_Sampling_Silo_4_02)
             
             )
             
@@ -228,51 +242,65 @@ Screen_Add_Samples As screen:
             Color: =If(Label_Sampling_Point_2.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
             Fill: |+
                 =If(
-                    ThisItem.Name="Full",Colour_Viridor_GreenTint,
-                    ThisItem.Name="Half",Colour_Viridor_GreenTint,
-                    ThisItem.Name="Clear",Colour_Viridor_GreenTint,
-                    ThisItem.Name="Add Samples",Colour_Viridor_Purple,
-                    ThisItem.Name = "PET Wash" && var_selected_PET_Wash,Colour_Viridor_Purple,
-                    ThisItem.Name = "PET Flake Bag" && var_selected_PET_Flake_Bag,Colour_Viridor_Purple,
-                    ThisItem.Name = "SSP 1" && var_selected_SSP_1,Colour_Viridor_Purple,
-                    ThisItem.Name = "PET Pellet Bag" && var_selected_PET_Pellet_Bag,Colour_Viridor_Purple,
-                    ThisItem.Name = "PET Sampling Silo" && var_selected_PET_Sampling_Silo,Colour_Viridor_Purple,
-                    //ThisItem.Name = "Full" && var_selected_Full,Colour_Viridor_Purple,
-                    ThisItem.Name = "PET Post Flake Sorter" && var_selected_PET_Post_Flake_Sorter,Colour_Viridor_Purple,
-                    ThisItem.Name = "PET Post Extruder" && var_selected_PET_Post_Extruder,Colour_Viridor_Purple,
-                    ThisItem.Name = "SSP 2" && var_selected_SSP_2,Colour_Viridor_Purple,
-                    ThisItem.Name = "HDPE Natural Wash" && var_selected_HDPE_Natural_Wash,Colour_Viridor_Purple,
-                    ThisItem.Name = "Natural Hopper 1" && var_selected_Natural_Hopper_1,Colour_Viridor_Purple,
-                    ThisItem.Name = "Natural Extruder 1" && var_selected_Natural_Extruder_1,Colour_Viridor_Purple,
-                    ThisItem.Name = "Extruder 1 1/2 Test" && var_selected_Extruder_1_1_2_Test,Colour_Viridor_Purple,
-                    ThisItem.Name = "HDPE Natural Pellet Bag" && var_selected_HDPE_Natural_Pellet_Bag,Colour_Viridor_Purple,
-                    ThisItem.Name = "HDPE Natural Sampling Silo" && var_selected_HDPE_Natural_Sampling_Silo,Colour_Viridor_Purple,
-                    //ThisItem.Name = "Half" && var_selected_Half,Colour_Viridor_Purple,
-                    ThisItem.Name = "Natural Hopper 2" && var_selected_Natural_Hopper_2,Colour_Viridor_Purple,
-                    ThisItem.Name = "Natural Extruder 2" && var_selected_Natural_Extruder_2,Colour_Viridor_Purple,
-                    ThisItem.Name = "Extruder 2 1/2 Test" && var_selected_Extruder_2_1_2_Test,Colour_Viridor_Purple,
-                    //ThisItem.Name = "Wash" && var_selected_Wash,Colour_Viridor_Purple,
-                    ThisItem.Name = "HDPE Self Coloured Wash" && var_selected_HDPE_Self_Coloured_Wash,Colour_Viridor_Purple,
-                    ThisItem.Name = "Self Coloured Hopper 3" && var_selected_Self_Coloured_Hopper_3,Colour_Viridor_Purple,
-                    ThisItem.Name = "Self Coloured Extruder 3" && var_selected_Self_Coloured_Extruder_3,Colour_Viridor_Purple,
-                    ThisItem.Name = "Extruder 3 1/2 Test" && var_selected_Extruder_3_1_2_Test,Colour_Viridor_Purple,
-                    ThisItem.Name = "HDPE Self Coloured Pellet Bag" && var_selected_HDPE_Self_Coloured_Pellet_Bag,Colour_Viridor_Purple,
-                    ThisItem.Name = "HDPE Self Coloured Sampling Silo" && var_selected_HDPE_Self_Coloured_Sampling_Silo,Colour_Viridor_Purple,
-                    //ThisItem.Name = "Add Samples" && var_selected_Add_Samples,Colour_Viridor_Purple,
-                    ThisItem.Name = "PP Wash" && var_selected_PP_Wash,Colour_Viridor_Purple,
-                    ThisItem.Name = "PP Hopper 4" && var_selected_PP_Hopper_4,Colour_Viridor_Purple,
-                    ThisItem.Name = "PP Extruder 4" && var_selected_PP_Extruder_4,Colour_Viridor_Purple,
-                    ThisItem.Name = "Extruder 4 1/2 Test" && var_selected_Extruder_4_1_2_Test,Colour_Viridor_Purple,
-                    ThisItem.Name = "PP Pellet Bag" && var_selected_PP_Pellet_Bag,Colour_Viridor_Purple,
-                    ThisItem.Name = "PP Sampling Silo" && var_selected_PP_Sampling_Silo,Colour_Viridor_Purple,
-                    Color.Transparent
+                ThisItem.Name = "PET Wash A2:304" && var_selected_PET_A2_304,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Wash Other" && var_selected_PET_Wash_Other,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Nat Wash BS:302" && var_selected_HDPE_Nat_Wash_BS_302,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Nat Wash Other" && var_selected_HDPE_Nat_Wash_Other,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Wash" && var_selected_HDPE_Self_Coloured_Wash,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Wash" && var_selected_PP_Wash,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Wash Silo 603" && var_selected_PET_Post_Wash_Silo_603,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Wash Silo 604" && var_selected_PET_Post_Wash_Silo_604,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Hopper 1" && var_selected_HDPE_Natural_Hopper_1,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Hopper 2" && var_selected_HDPE_Natural_Hopper_2,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Hopper 3" && var_selected_HDPE_Self_Coloured_Hopper_3,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Hopper 4" && var_selected_PP_Hopper_4,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Flake Sorter 705" && var_selected_PET_Post_Flake_Sorter_705,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Flake Sorter 706" && var_selected_PET_Post_Flake_Sorter_706,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Hopper 1 1/2 Test" && var_selected_HDPE_Natural_Hopper_1_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Hopper 2 1/2 Test" && var_selected_HDPE_Natural_Hopper_2_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Hopper 3 1/2 Test" && var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Hopper 4 1/2 Test" && var_selected_PP_Hopper_4_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Extruder" && var_selected_PET_Post_Extruder,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Flake Bag" && var_selected_PET_Flake_Bag,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Post Extruder 1" && var_selected_HDPE_Natural_Post_Extruder_1,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Post Extruder 2" && var_selected_HDPE_Natural_Post_Extruder_2,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Post Extruder 3" && var_selected_HDPE_Self_Coloured_Post_Extruder_3,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Post Extruder 4" && var_selected_PP_Post_Extruder_4,Colour_Viridor_Purple,
+                ThisItem.Name = "PET SSP 1" && var_selected_PET_SSP_1,Colour_Viridor_Purple,
+                ThisItem.Name = "PET SSP 2" && var_selected_PET_SSP_2,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Post Extruder 1 1/2 Test" && var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Post Extruder 2 1/2 Test" && var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Post Extruder 3 1/2 Test" && var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Post Extruder 4 1/2 Test" && var_selected_PP_Post_Extruder_4_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Pellet Bag Pre-SSP" && var_selected_PET_Pellet_Bag_Pre_SSP,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Pellet Bag Non-Deo" && var_selected_HDPE_Natural_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
+                
+                ThisItem.Name = "HDPE Self Coloured Pellet Bag Non-Deo" && var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Pellet Bag Non-Deo" && var_selected_PP_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Pellet Bag Post SSP" && var_selected_PET_Pellet_Bag_Post_SSP,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Pellet Bag Deodorised" && var_selected_HDPE_Natural_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Pellet Bag Deodorised" && var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Pellet Bag Deodorised" && var_selected_PP_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Sampling Silo 5.01" && var_selected_PET_Sampling_Silo_5_01,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Sampling Silo 1.01" && var_selected_HDPE_Natural_Sampling_Silo_1_01,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Sampling Silo 2.01" && var_selected_HDPE_Natural_Sampling_Silo_2_01,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Sampling Silo 3.01" && var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Sampling Silo 4.01" && var_selected_PP_Sampling_Silo_4_01,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Sampling Silo 5.02" && var_selected_PET_Sampling_Silo_5_02,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Sampling Silo 1.02" && var_selected_HDPE_Natural_Sampling_Silo_1_02,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Sampling Silo 2.02" && var_selected_HDPE_Natural_Sampling_Silo_2_02,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Sampling Silo 3.02" && var_selected_HDPE_Self_Coloured_Sampling_Silo_3_02,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Sampling Silo 4.02" && var_selected_PP_Sampling_Silo_4_02,Colour_Viridor_Purple,
+                
+                
+                Color.Transparent
                 )
                 
             Height: =Gallery_Add_Samples.TemplateHeight
             HoverColor: =Colour_Viridor_White
             HoverFill: |
                 =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
-            LineHeight: =0.8
+            LineHeight: =0.85
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -280,7 +308,7 @@ Screen_Add_Samples As screen:
             PaddingTop: =0
             PressedColor: =If(ThisItem.Name="",Color.Transparent,Color.White)
             PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =16
+            Size: =17
             Text: =ThisItem.Text
             Width: =Gallery_Add_Samples.TemplateWidth*ThisItem.Width
             ZIndex: =1
@@ -374,7 +402,7 @@ Screen_Add_Samples As screen:
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
-            Size: =16
+            Size: =17
             Text: =ThisItem.'Material_Filter (field_1)'
             Width: =Gallery_Test_Title_2.Width/Gallery_Test_Title_2.AllItemsCount
             ZIndex: =2
@@ -384,6 +412,9 @@ Screen_Add_Samples As screen:
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingTop: =0
             Size: =Label_Test_Material_Main_2.Size
             Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
             Width: =Label_Test_Material_Main_2.Width
@@ -422,6 +453,15 @@ Screen_Add_Samples As screen:
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width*2
             ZIndex: =9
+
+        Icon1 As icon.Erase:
+            Color: =RGBA(255, 0, 0, 1)
+            Height: =35
+            Icon: =Icon.Trash
+            OnSelect: =Remove('Test Results',ThisItem)
+            Width: =35
+            X: =643
+            ZIndex: =10
 
     Test_Button_add_samples As button:
         Height: =44
@@ -624,4 +664,63 @@ Screen_Add_Samples As screen:
             Text: =ThisItem.Text
             Width: =Parent.TemplateWidth
             ZIndex: =1
+
+    var_selected As label:
+        Fill: =RGBA(180, 214, 250, 1)
+        Text: |-
+            ="
+            var_selected_PET_Wash
+            var_selected_PET_Wash_Other
+            var_selected_HDPE_Nat_Wash_BS_302
+            var_selected_HDPE_Nat_Wash_Other
+            var_selected_HDPE_Self_Coloured_Wash
+            var_selected_PP_Wash
+            var_selected_PET_Post_Wash_Silo_603
+            var_selected_PET_Post_Wash_Silo_604
+            var_selected_HDPE_Natural_Hopper_1
+            var_selected_HDPE_Natural_Hopper_2
+            var_selected_HDPE_Self_Coloured_Hopper_3
+            var_selected_PP_Hopper_4
+            var_selected_PET_Post_Flake_Sorter_705
+            var_selected_PET_Post_Flake_Sorter_706
+            var_selected_HDPE_Natural_Hopper_1_1_2_Test
+            var_selected_HDPE_Natural_Hopper_2_1_2_Test
+            var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test
+            var_selected_PP_Hopper_4_1_2_Test
+            var_selected_PET_Post_Extruder
+            var_selected_PET_Flake_Bag
+            var_selected_HDPE_Natural_Post_Extruder_1
+            var_selected_HDPE_Natural_Post_Extruder_2
+            var_selected_HDPE_Self_Coloured_Post_Extruder_3
+            var_selected_PP_Post_Extruder_4
+            var_selected_PET_SSP_1
+            var_selected_PET_SSP_2
+            var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test
+            var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test
+            var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test
+            var_selected_PP_Post_Extruder_4_1_2_Test
+            var_selected_PET_Pellet_Bag_Pre_SSP
+            var_selected_Blank_1
+            var_selected_HDPE_Natural_Pellet_Bag_Non_Deo
+            var_selected_Blank_2
+            var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo
+            var_selected_PP_Pellet_Bag_Non_Deo
+            var_selected_PET_Pellet_Bag_Post_SSP
+            var_selected_HDPE_Natural_Pellet_Bag_Deodorised
+            var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised
+            var_selected_PP_Pellet_Bag_Deodorised
+            var_selected_PET_Sampling_Silo_5_01
+            var_selected_HDPE_Natural_Sampling_Silo_1_01
+            var_selected_HDPE_Natural_Sampling_Silo_2_01
+            var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01
+            var_selected_PP_Sampling_Silo_4_01
+            var_selected_PET_Sampling_Silo_5_02
+            var_selected_HDPE_Natural_Sampling_Silo_1_02
+            var_selected_HDPE_Natural_Sampling_Silo_2_02
+            var_selected_HDPE_Self_Coloured_Sampling_Silo_3_02
+            var_selected_PP_Sampling_Silo_4_02
+            "
+        Visible: =false
+        X: =266
+        ZIndex: =15
 
