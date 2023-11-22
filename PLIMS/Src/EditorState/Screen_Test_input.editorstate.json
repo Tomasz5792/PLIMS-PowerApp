@@ -1111,7 +1111,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery_Select_Material",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17653,7 +17653,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Select_Button_Background",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

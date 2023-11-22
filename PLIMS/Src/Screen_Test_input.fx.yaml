@@ -111,10 +111,10 @@ Screen_Test_input As screen:
             ,Set(var_filter_selected,"Error")));
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =56
+        TemplateSize: =54
         Width: =1366
         WrapCount: =5
-        Y: =50
+        Y: =51
         ZIndex: =2
 
         Label1_5 As label:

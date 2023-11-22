@@ -3,22 +3,24 @@ Screen_Start As screen:
 
     "Gallery_CoA_Selected_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
-        Height: =456
+        Height: =Gallery_CoA_Selected_1.Width/3*2
         Items: |+
             =["Add Sample","Test Input"]
             
             
         Layout: =Layout.Vertical
         OnSelect: |+
-            =Navigate(Screen_Test_input,ScreenTransition.None);
-            Set(var_add_sample_visible,false);
+            =
+            Navigate(Screen_Test_input,ScreenTransition.None);
+            
+            
             Set(var_menu_1_select,ThisItem.Value);
             
         TemplatePadding: =0
         TemplateSize: =Gallery_CoA_Selected_1.Height/2
         Width: =683
         WrapCount: =3
-        Y: =102
+        Y: =108
         ZIndex: =1
 
         Label1 As label:
@@ -45,7 +47,7 @@ Screen_Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 155, 62, 100)
         Font: =Font.'Segoe UI'
-        Height: =51
+        Height: =54
         PaddingLeft: =20
         Size: =25
         Text: ="Laboratory Information Managment System"
@@ -55,7 +57,7 @@ Screen_Start As screen:
     "Gallery_CoA_Scanner_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_GreenTint
-        Height: =405
+        Height: =401
         Items: =["Under Construction","Under Construction"]
         Layout: =Layout.Vertical
         OnSelect: =//If(ThisItem.Value="Add Samples",Navigate(Screen_Create_Sample,ScreenTransition.None));
@@ -64,7 +66,7 @@ Screen_Start As screen:
         Width: =683
         WrapCount: =3
         X: =683
-        Y: =153
+        Y: =162
         ZIndex: =3
 
         Label1_1 As label:
@@ -88,12 +90,12 @@ Screen_Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =Colour_Viridor_Purple
         Font: =Font.'Segoe UI'
-        Height: =51
+        Height: =54
         PaddingLeft: =20
         Size: =25
         Text: ="Test Input"
         Width: =1366
-        Y: =51
+        Y: =54
         ZIndex: =4
 
     Title_4 As label:
@@ -101,13 +103,13 @@ Screen_Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 155, 62, 100)
         Font: =Font.'Segoe UI'
-        Height: =51
+        Height: =54
         PaddingLeft: =20
         Size: =25
         Text: ="Under Construction"
         Width: =683
         X: =683
-        Y: =102
+        Y: =108
         ZIndex: =5
 
     Button_Back_3 As icon.CancelBadge:
@@ -126,7 +128,7 @@ Screen_Start As screen:
     "Gallery_Other_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_PinkTint
-        Height: =159
+        Height: =151
         Items: =["Under Construction"]
         Layout: =Layout.Vertical
         OnSelect: =Set(Var_Product_Menu_2,ThisItem)
@@ -134,7 +136,7 @@ Screen_Start As screen:
         TemplateSize: =Gallery_Other_1.Height
         Width: =1366
         WrapCount: =6
-        Y: =609
+        Y: =617
         ZIndex: =7
 
         Label1_4 As label:
@@ -156,12 +158,12 @@ Screen_Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =Colour_Viridor_Pink
         Font: =Font.'Segoe UI'
-        Height: =51
+        Height: =54
         PaddingLeft: =20
-        Size: =30
+        Size: =25
         Text: ="Under Construction"
         Width: =1366
-        Y: =558
+        Y: =563
         ZIndex: =8
 
     Loading As label:
