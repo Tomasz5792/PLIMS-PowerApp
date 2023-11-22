@@ -315,7 +315,7 @@ Screen_Add_Samples As screen:
             PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
             Size: =17
             Text: =ThisItem.Text
-            Width: =Gallery_Add_Samples.TemplateWidth*ThisItem.Width
+            Width: =Gallery_Add_Samples.TemplateWidth*ThisItem.Width+2
             ZIndex: =1
 
     Title_Test_2 As group:
