@@ -3,9 +3,9 @@ Screen_Start As screen:
 
     "Gallery_CoA_Selected_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
-        Height: =410
+        Height: =456
         Items: |+
-            =["Test Input"]
+            =["Add Sample","Test Input"]
             
             
         Layout: =Layout.Vertical
@@ -18,14 +18,14 @@ Screen_Start As screen:
         TemplateSize: =Gallery_CoA_Selected_1.Height/2
         Width: =683
         WrapCount: =3
-        Y: =148
+        Y: =102
         ZIndex: =1
 
         Label1 As label:
             Align: =Align.Center
             Color: =If(ThisItem.Value=var_menu_1_select,Colour_Viridor_White,Colour_Viridor_Grey3)
             Fill: =If(ThisItem.Value=var_menu_1_select,Colour_Viridor_Purple,RGBA(0, 0, 0, 0))
-            Height: =205
+            Height: =228
             HoverColor: =Colour_Viridor_White
             HoverFill: =Colour_Viridor_Green
             OnSelect: =Select(Parent)
@@ -35,7 +35,7 @@ Screen_Start As screen:
             PaddingTop: =10
             PressedColor: =Colour_Viridor_White
             PressedFill: =Colour_Viridor_Purple
-            Size: =30
+            Size: =25
             Text: =ThisItem.Value
             Width: =227.66666666666666
             ZIndex: =1
@@ -45,9 +45,9 @@ Screen_Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 155, 62, 100)
         Font: =Font.'Segoe UI'
-        Height: =74
+        Height: =51
         PaddingLeft: =20
-        Size: =30
+        Size: =25
         Text: ="Laboratory Information Managment System"
         Width: =1366
         ZIndex: =2
@@ -55,7 +55,7 @@ Screen_Start As screen:
     "Gallery_CoA_Scanner_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_GreenTint
-        Height: =336
+        Height: =405
         Items: =["Under Construction","Under Construction"]
         Layout: =Layout.Vertical
         OnSelect: =//If(ThisItem.Value="Add Samples",Navigate(Screen_Create_Sample,ScreenTransition.None));
@@ -64,7 +64,7 @@ Screen_Start As screen:
         Width: =683
         WrapCount: =3
         X: =683
-        Y: =222
+        Y: =153
         ZIndex: =3
 
         Label1_1 As label:
@@ -72,13 +72,13 @@ Screen_Start As screen:
             BorderStyle: =BorderStyle.None
             Color: =Colour_Viridor_Grey3
             Fill: =Color.Transparent
-            Height: =168
+            Height: =202.5
             HoverColor: =Color.White
             HoverFill: =Colour_Viridor_Purple
             OnSelect: |+
                 =Select(Parent);
                 
-            Size: =30
+            Size: =25
             Text: =ThisItem.Value
             Width: =227.66666666666666
             ZIndex: =1
@@ -88,12 +88,12 @@ Screen_Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =Colour_Viridor_Purple
         Font: =Font.'Segoe UI'
-        Height: =74
+        Height: =51
         PaddingLeft: =20
-        Size: =30
+        Size: =25
         Text: ="Test Input"
         Width: =1366
-        Y: =74
+        Y: =51
         ZIndex: =4
 
     Title_4 As label:
@@ -101,32 +101,32 @@ Screen_Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 155, 62, 100)
         Font: =Font.'Segoe UI'
-        Height: =74
+        Height: =51
         PaddingLeft: =20
-        Size: =30
+        Size: =25
         Text: ="Under Construction"
         Width: =683
         X: =683
-        Y: =148
+        Y: =102
         ZIndex: =5
 
     Button_Back_3 As icon.CancelBadge:
         Color: =Color.White
-        Height: =42
+        Height: =38
         HoverColor: =Colour_Viridor_Purple
         Icon: =Icon.BackArrow
         OnSelect: =Back()
         PressedColor: =Color.Transparent
         Tooltip: ="Back"
-        Width: =42
-        X: =1304
-        Y: =16
+        Width: =38
+        X: =1322
+        Y: =7
         ZIndex: =6
 
     "Gallery_Other_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_PinkTint
-        Height: =136
+        Height: =159
         Items: =["Under Construction"]
         Layout: =Layout.Vertical
         OnSelect: =Set(Var_Product_Menu_2,ThisItem)
@@ -134,7 +134,7 @@ Screen_Start As screen:
         TemplateSize: =Gallery_Other_1.Height
         Width: =1366
         WrapCount: =6
-        Y: =632
+        Y: =609
         ZIndex: =7
 
         Label1_4 As label:
@@ -142,11 +142,11 @@ Screen_Start As screen:
             BorderStyle: =BorderStyle.None
             Color: =Colour_Viridor_Grey3
             Fill: =Color.Transparent
-            Height: =136
+            Height: =159
             HoverColor: =Color.White
             HoverFill: =Colour_Viridor_Pink
             OnSelect: =Select(Parent)
-            Size: =30
+            Size: =25
             Text: =ThisItem.Value
             Width: =227.66666666666666
             ZIndex: =1
@@ -156,7 +156,7 @@ Screen_Start As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =Colour_Viridor_Pink
         Font: =Font.'Segoe UI'
-        Height: =74
+        Height: =51
         PaddingLeft: =20
         Size: =30
         Text: ="Under Construction"
