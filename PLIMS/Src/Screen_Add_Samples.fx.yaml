@@ -96,27 +96,26 @@ Screen_Add_Samples As screen:
         Fill: =Colour_Viridor_PurpleTint
         Height: =619
         Items: |-
-            =//{Name: "11111", Text: "11111", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},{Name: "55555", Text: "55555", Height: 1},
+            =//{Name: "11111", Text: "11111", Height: 1, Width: 1},{Name: "22222", Text: "22222", Height: 1, Width: 1},{Name: "33333", Text: "33333", Height: 1, Width: 1},{Name: "44444", Text: "44444", Height: 1, Width: 1},{Name: "55555", Text: "55555", Height: 1, Width: 1},{Name: "666666", Text: "666666", Height: 1, Width: 1},
             
             [
-            {Name: "PET Wash", Text: "PET Wash", Height: 1},{Name: "HDPE Natural Wash", Text: "HDPE Natural Wash", Height: 1},{Name: "HDPE Self Coloured Wash", Text: "HDPE Self Coloured Wash", Height: 1},{Name: "PP Wash", Text: "PP Wash", Height: 1},
+            {Name: "PET Wash A2:304", Text: "PET Wash A2:304", Height: 1, Width: 1},{Name: "PET Wash Other", Text: "PET Wash Other", Height: 1, Width: 1},{Name: "HDPE Natural Wash BS:302", Text: "HDPE Natural Wash BS:302", Height: 1, Width: 1},{Name: "HDPE Natural Wash Other", Text: "HDPE Natural Wash Other", Height: 1, Width: 1},{Name: "HDPE Self Coloured Wash", Text: "HDPE Self Coloured Wash", Height: 1, Width: 1},{Name: "PP Wash", Text: "PP Wash", Height: 1, Width: 1},
             
-            {Name: "11111", Text: "PET Post Wash Silo", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},
+            {Name: "PET Post Wash Silo 403", Text: "PET Post Wash Silo 603", Height: 1, Width: 1},{Name: "PET Post Wash Silo 604", Text: "PET Post Wash Silo 404", Height: 1, Width: 1},{Name: "HDPE Natural Hopper 1", Text: "HDPE Natural Hopper 1", Height: 1, Width: 1},{Name: "HDPE Natural Hopper 2", Text: "HDPE Natural Hopper 2", Height: 1, Width: 1},{Name: "HDPE Self Coloured Hopper 3", Text: "HDPE Self Coloured Hopper 3", Height: 1, Width: 1},{Name: "PP Hopper 4", Text: "PP Hopper 4", Height: 1, Width: 1},
             
-            {Name: "11111", Text: "11111", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},
+            {Name: "PET Post Flake Sorter 705", Text: "PET Post Flake Sorter 705", Height: 1, Width: 1},{Name: "PET Post Flake Sorter 706", Text: "PET Post Flake Sorter 706", Height: 1, Width: 1},{Name: "HDPE Natural Hopper 1 1/2 Test", Text: "HDPE Natural Hopper 1 1/2 Test", Height: 1, Width: 1},{Name: "HDPE Natural Hopper 2 1/2 Test", Text: "HDPE Natural Hopper 2 1/2 Test", Height: 1, Width: 1},{Name: "HDPE Self Coloured Hopper 3 1/2 Test", Text: "HDPE Self Coloured Hopper 3 1/2 Test", Height: 1, Width: 1},{Name: "PP Hopper 4 1/2 Test", Text: "PP Hopper 4 1/2 Test", Height: 1, Width: 1},
             
-            {Name: "11111", Text: "11111", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},
+            {Name: "PET Post Extruder", Text: "PET Post Extruder", Height: 1, Width: 1},{Name: "", Text: "", Height: 1, Width: 1},{Name: "HDPE Natural Post Extruder 1", Text: "HDPE Natural Post Extruder 1", Height: 1, Width: 1},{Name: "HDPE Natural Post Extruder 2", Text: "HDPE Natural Post Extruder 2", Height: 1, Width: 1},{Name: "HDPE Self Coloured Post Extruder 3", Text: "HDPE Self Coloured Post Extruder 3", Height: 1, Width: 1},{Name: "PP Post Extruder 4", Text: "PP Post Extruder 4", Height: 1, Width: 1},
             
-            {Name: "11111", Text: "11111", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},
+            {Name: "PET SSP 1", Text: "PET SSP 1", Height: 1, Width: 1},{Name: "PET SSP 2", Text: "PET SSP 2", Height: 1, Width: 1},{Name: "HDPE Natural Post Extruder 1 1/2 Test", Text: "HDPE Natural Post Extruder 1 1/2 Test", Height: 1, Width: 1},{Name: "HDPE Natural Post Extruder 2 1/2 Test", Text: "HDPE Natural Post Extruder 2 1/2 Test", Height: 1, Width: 1},{Name: "HDPE Self Coloured Post Extruder 3 1/2 Test", Text: "HDPE Self Coloured Post Extruder 3 1/2 Test", Height: 1, Width: 1},{Name: "PP Post Extruder 4 1/2 Test", Text: "PP Post Extruder 4 1/2 Test", Height: 1, Width: 1},
             
-            {Name: "11111", Text: "11111", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},
+            {Name: "11111", Text: "11111", Height: 1, Width: 1},{Name: "22222", Text: "22222", Height: 1, Width: 1},{Name: "33333", Text: "33333", Height: 1, Width: 1},{Name: "44444", Text: "44444", Height: 1, Width: 1},{Name: "55555", Text: "55555", Height: 1, Width: 1},{Name: "666666", Text: "666666", Height: 1, Width: 1},
             
-            {Name: "11111", Text: "11111", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},
+            {Name: "11111", Text: "11111", Height: 1, Width: 1},{Name: "22222", Text: "22222", Height: 1, Width: 1},{Name: "33333", Text: "33333", Height: 1, Width: 1},{Name: "44444", Text: "44444", Height: 1, Width: 1},{Name: "55555", Text: "55555", Height: 1, Width: 1},{Name: "666666", Text: "666666", Height: 1, Width: 1},
             
-            {Name: "11111", Text: "11111", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},
+            {Name: "11111", Text: "11111", Height: 1, Width: 1},{Name: "22222", Text: "22222", Height: 1, Width: 1},{Name: "33333", Text: "33333", Height: 1, Width: 1},{Name: "44444", Text: "44444", Height: 1, Width: 1},{Name: "55555", Text: "55555", Height: 1, Width: 1},{Name: "666666", Text: "666666", Height: 1, Width: 1},
             
-            {Name: "11111", Text: "11111", Height: 1},{Name: "22222", Text: "22222", Height: 1},{Name: "33333", Text: "33333", Height: 1},{Name: "44444", Text: "44444", Height: 1},
-            
+            {Name: "11111", Text: "11111", Height: 1, Width: 1},{Name: "22222", Text: "22222", Height: 1, Width: 1},{Name: "33333", Text: "33333", Height: 1, Width: 1},{Name: "44444", Text: "44444", Height: 1, Width: 1},{Name: "55555", Text: "55555", Height: 1, Width: 1},{Name: "666666", Text: "666666", Height: 1, Width: 1},
             ]
         Layout: =Layout.Vertical
         OnSelect: |+
@@ -166,8 +165,8 @@ Screen_Add_Samples As screen:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Add_Samples.Height/9
-        Width: =Parent.Width/5*2
-        WrapCount: =5
+        Width: =Parent.Width/5*2.5
+        WrapCount: =6
         Y: =51
         ZIndex: =11
 
@@ -220,7 +219,7 @@ Screen_Add_Samples As screen:
             HoverColor: =Colour_Viridor_White
             HoverFill: |
                 =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
-            LineHeight: =1
+            LineHeight: =0.9
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -228,7 +227,7 @@ Screen_Add_Samples As screen:
             PaddingTop: =0
             PressedColor: =If(ThisItem.Name="",Color.Transparent,Color.White)
             PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =If(ThisItem.Name="PET Post Flake Sorter",14,18)
+            Size: =14
             Text: =ThisItem.Text
             Width: =Gallery_Add_Samples.TemplateWidth
             ZIndex: =1
@@ -309,8 +308,9 @@ Screen_Add_Samples As screen:
         Label_Test_Sample_Point_2 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
-            Size: =Text_size
+            Size: =Label_Test_Material_Main_2.Size
             Text: =ThisItem.Material
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width
@@ -319,8 +319,9 @@ Screen_Add_Samples As screen:
         Label_Test_Material_Main_2 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
-            Size: =Text_size
+            Size: =15
             Text: =ThisItem.'Material_Filter (field_1)'
             Width: =Gallery_Test_Title_2.Width/Gallery_Test_Title_2.AllItemsCount
             ZIndex: =2
@@ -328,8 +329,9 @@ Screen_Add_Samples As screen:
         Label_Test_Date_2 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
-            Size: =Text_size
+            Size: =Label_Test_Material_Main_2.Size
             Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width*4
@@ -338,8 +340,9 @@ Screen_Add_Samples As screen:
         Label_Test_Time_2 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
-            Size: =Text_size
+            Size: =Label_Test_Material_Main_2.Size
             Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width*5
@@ -348,8 +351,9 @@ Screen_Add_Samples As screen:
         Label_Test_Sample_Point_3 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
-            Size: =Text_size
+            Size: =Label_Test_Material_Main_2.Size
             Text: =ThisItem.Sample_Point
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width*3
@@ -358,8 +362,9 @@ Screen_Add_Samples As screen:
         Label_Test_Sample_Point_4 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
-            Size: =Text_size
+            Size: =Label_Test_Material_Main_2.Size
             Text: =ThisItem.Sample_Point_Filter
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width*2
