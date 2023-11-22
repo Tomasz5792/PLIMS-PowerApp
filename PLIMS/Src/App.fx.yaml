@@ -12,6 +12,8 @@ App As appinfo:
         //Testing colours
         Set(Colour_Not_Tested,Color.Gray);Set(Colour_To_Test,RGBA(179,225,199,255));Set(Colour_Testing,RGBA(219,186,226,255));
         Set(Colour_Pass,RGBA(153,255,153,100)); Set(Colour_Fail,RGBA(225,153,153,100));
+        //Pellet Colours
+        Set(Colour_Pellet_PET,RGBA(227,232,223,100)); Set(Colour_Pellet_HDPE_Natural,RGBA(224,229,215,100)); Set(Colour_Pellet_HDPE_Self_Coloured,RGBA(172,189,181,100)); Set(Colour_Pellet_PP,RGBA(189,187,185,100)); 
         
         //Text size
         Set(Text_size,17);Set(Text_size_2,15);Set(Text_size_Menu,20);Set(Text_size_Title,25);Set(Text_size_large,40);Set(Border_Thickness,1.2);
