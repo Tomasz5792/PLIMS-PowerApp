@@ -298,61 +298,7 @@ Screen_Add_Samples As screen:
         DelayItemLoading: =true
         Fill: =Colour_Viridor_GreenTint
         Height: =630
-        Items: |
-            =Switch(var_filter_selected,
-            
-            //"All"
-                "All_All", 'Test Results',
-                "All_Wash", Filter('Test Results',Sample_Point_Filter="Wash"),
-                "All_Flake_Bag", Filter('Test Results',Sample_Point_Filter="Flake Bag"),
-                "All_Post_Flake_Sorter", Filter('Test Results',Sample_Point_Filter="Post Flake Sorter"),
-                "All_Post_Extruder", Filter('Test Results',Sample_Point_Filter="Post Extruder"),
-                "All_SSP", Filter('Test Results',Sample_Point_Filter="SSP"),
-                "All_Pellet_Bag", Filter('Test Results',Sample_Point_Filter="Pellet Bag"),
-                "All_Sampling_Silo", Filter('Test Results',Sample_Point_Filter="Sampling Silo"),
-            
-            //"PET"
-                "PET_All", Filter('Test Results','Material_Filter (field_1)'="PET"),
-                "PET_Wash", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Wash"),
-                "PET_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Flake Bag"),
-                "PET_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Flake Sorter"),
-                "PET_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Extruder"),
-                "PET_SSP", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="SSP"),
-                "PET_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Pellet Bag"),
-                "PET_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Sampling Silo"),
-            
-            //"HDPE Natural"  
-                "HDPE_Nat_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"),
-                "HDPE_Nat_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Wash"),
-                "HDPE_Nat_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Flake Bag"),
-                "HDPE_Nat_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Flake Sorter"),
-                "HDPE_Nat_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Extruder"),
-                "HDPE_Nat_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="SSP"),
-                "HDPE_Nat_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Pellet Bag"),
-                "HDPE_Nat_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Sampling Silo"),
-            
-            //"HDPE Self Coloured" 
-                "HDPE_SC_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"),
-                "HDPE_SC_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Wash"),
-                "HDPE_SC_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Flake Bag"),
-                "HDPE_SC_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Flake Sorter"),
-                "HDPE_SC_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Extruder"),
-                "HDPE_SC_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="SSP"),
-                "HDPE_SC_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Pellet Bag"),
-                "HDPE_SC_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Sampling Silo"),
-            
-            //"PP"
-                "PP_All", Filter('Test Results','Material_Filter (field_1)'="PP"),
-                "PP_Wash", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Wash"),
-                "PP_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Flake Bag"),
-                "PP_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Flake Sorter"),
-                "PP_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Extruder"),
-                "PP_SSP", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="SSP"),
-                "PP_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Pellet Bag"),
-                "PP_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Sampling Silo"),
-                
-                'Test Results'
-            )
+        Items: =Filter('Test Results',Complete=false)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -367,7 +313,7 @@ Screen_Add_Samples As screen:
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =ThisItem.Material2
+            Text: =ThisItem.Material
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width
             ZIndex: =1
@@ -420,4 +366,61 @@ Screen_Add_Samples As screen:
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width*2
             ZIndex: =9
+
+    Test_Button_add_samples As button:
+        Height: =44
+        OnSelect: |-
+            =Patch('Test Results', Defaults('Test Results'), {
+                Title: "Not Tested",
+                Material: "Not Tested",
+                'Material_Filter (field_1)': "Not Tested",
+                Sample_Point: "Not Tested",
+                Sample_Point_Filter: "Not Tested",
+                'Date_&_Time': Now(),
+                Batch_Number: "Not Tested",
+                Bag_Number: "Not Tested",
+                Unique_No_Batch_Bag: "Not Tested",
+            
+                'Caustic_Strength_Result_%': "Not Tested",
+                IV_MFI_Result: "Not Tested",
+                IV_Extruder_Value_Result: "Not Tested",
+                GC_Acetaldehyde_Result_ppm: "Not Tested",
+                GC_Limonene_Result_ppm: "Not Tested",
+                GC_Benzene_Result_ppm: "Not Tested",
+                GC_Result_Pass_Fail: "Not Tested",
+                'Fines_Result_%': "Not Tested",
+                'Moisture_Result_%': "Not Tested",
+                'Bulk_Density_Result_kg/m3': "Not Tested",
+                'Material_Density_Result_kg/m3': "Not Tested",
+                Comp_White_Result_ppm: "Not Tested",
+                'Comp_White_Result_%': "Not Tested",
+                Comp_Colour_Result_ppm: "Not Tested",
+                'Comp_Colour_Result_%': "Not Tested",
+                'Comp_Colour+White_Result_ppm': "Not Tested",
+                Comp_Float_Sink_Glass_Result_ppm: "Not Tested",
+                'Comp_Glass+Inorganic_Result_ppm': "Not Tested",
+                Comp_Float_Sink_Metal_Result_ppm: "Not Tested",
+                Comp_Float_Sink_PVC_Result_ppm: "Not Tested",
+                Comp_PO_Result_ppm: "Not Tested",
+                Comp_Glue_Result_ppm: "Not Tested",
+                Float_Sink_Pass_Fail: "Not Tested",
+                Comp_Pass_Fail: "Not Tested",
+                pH_Result: "Not Tested",
+                Lab_L_Result: "Not Tested",
+                Lab_a_Result: "Not Tested",
+                Lab_b_Result: "Not Tested",
+                Lab_Result_Pass_Fail: "Not Tested",
+                Extruder_b_Value_Result: "Not Tested",
+                Pellet_Count_Result_1g: "Not Tested",
+                Pellet_Count_Result_5g: "Not Tested",
+                'Black_Inclusions_Medium_Result_#': "Not Tested",
+                'Black_Inclusions_Large_Result_#': "Not Tested",
+                Black_Inclusions_Pass_Fail: "Not Tested",
+                Crystallisation_Result: "Not Tested",
+                Visual_Inspection_Result_Pass_Fail: "Not Tested"
+            })
+        Text: ="+ Samples"
+        Width: =123
+        X: =756
+        ZIndex: =13
 
