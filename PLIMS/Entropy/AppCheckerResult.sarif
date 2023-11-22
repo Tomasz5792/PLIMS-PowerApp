@@ -3194,137 +3194,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Border_Thickness"
+                  "fullyQualifiedName": "App.Colour_To_Test"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Border_Thickness",
+                  "fullyQualifiedName": "App.Colour_To_Test",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Border_Thickness",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Colour_Pellet_PP"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Colour_Pellet_PP",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Colour_Pellet_PP",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Colour_Pellet_HDPE_Self_Coloured"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Colour_Pellet_HDPE_Self_Coloured",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Colour_Pellet_HDPE_Self_Coloured",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Colour_Pellet_HDPE_Natural"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Colour_Pellet_HDPE_Natural",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Colour_Pellet_HDPE_Natural",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Colour_Pellet_PET"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Colour_Pellet_PET",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Colour_Pellet_PET",
+                "member": "Colour_To_Test",
                 "module": "App",
                 "type": "App"
               }
@@ -3374,17 +3254,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Colour_To_Test"
+                  "fullyQualifiedName": "App.Border_Thickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Colour_To_Test",
+                  "fullyQualifiedName": "App.Border_Thickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Colour_To_Test",
+                "member": "Border_Thickness",
                 "module": "App",
                 "type": "App"
               }

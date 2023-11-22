@@ -104,7 +104,7 @@ Screen_Add_Samples As screen:
             A2:304", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Wash Other", Text: "PET
             Wash
             Other", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Nat Wash BS:302", Text: "HDPE Nat Wash
-            BS:302", Height: 1, Width: 1, Colour: "HDPE"},{Name: "HDPE Nat Wash Other", Text: "HDPE Nat Wash
+            BS:302", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Nat Wash Other", Text: "HDPE Nat Wash
             Other", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Wash", Text: "HDPE Self Coloured
             Wash", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Wash", Text: "PP
             Wash", Height: 1, Width: 1, Colour: "PP"},
@@ -113,64 +113,64 @@ Screen_Add_Samples As screen:
             Post Wash
             603", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Post Wash Silo 604", Text: "PET
             Post Wash
-            604", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 1", Text: "HDPE Natural Hopper 1", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 2", Text: "HDPE Natural Hopper 2", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Self Coloured Hopper 3", Text: "HDPE
-            Self Col. Hopper 3", Height: 1, Width: 1, Colour: "PET"},{Name: "PP Hopper 4", Text: "PP
-            Hopper 4", Height: 1, Width: 1, Colour: "PET"},
+            604", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 1", Text: "HDPE Natural Hopper 1", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2", Text: "HDPE Natural Hopper 2", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3", Text: "HDPE
+            Self Col. Hopper 3", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4", Text: "PP
+            Hopper 4", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET Post Flake Sorter 705", Text: "PET
             Post Flake Sorter 705", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Post Flake Sorter 706", Text: "PET
-            Post Flake Sorter 706", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 1 1/2 Test", Text: "Hopper 1 1/2 Test", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 2 1/2 Test", Text: "Hopper 2 1/2 Test", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Self Coloured Hopper 3 1/2 Test", Text: "Hopper 3 1/2 Test", Height: 1, Width: 1, Colour: "PET"},{Name: "PP Hopper 4 1/2 Test", Text: "Hopper 4 1/2 Test", Height: 1, Width: 1, Colour: "PET"},
+            Post Flake Sorter 706", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 1 1/2 Test", Text: "Hopper 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2 1/2 Test", Text: "Hopper 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3 1/2 Test", Text: "Hopper 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4 1/2 Test", Text: "Hopper 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET Post Extruder", Text: "PET
             Post Extruder", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Flake Bag", Text: "PET
             Flake Bag", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 1", Text: "HDPE
             Natural
-            Extruder 1", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 2", Text: "HDPE
+            Extruder 1", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2", Text: "HDPE
             Natural
-            Extruder 2", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Self Coloured Post Extruder 3", Text: "HDPE
+            Extruder 2", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Post Extruder 3", Text: "HDPE
             Self Col.
-            Extruder 3", Height: 1, Width: 1, Colour: "PET"},{Name: "PP Post Extruder 4", Text: "PP
-            Extruder 4", Height: 1, Width: 1, Colour: "PET"},
+            Extruder 3", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Post Extruder 4", Text: "PP
+            Extruder 4", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET SSP 1", Text: "PET
             SSP 1", Height: 1, Width: 1, Colour: "PET"},{Name: "PET SSP 2", Text: "PET
-            SSP 2", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 1 1/2 Test", Text: "Extruder 1 1/2 Test", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 2 1/2 Test", Text: "Extruder 2 1/2 Test", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Self Coloured Post Extruder 3 1/2 Test", Text: "Extruder 3 1/2 Test", Height: 1, Width: 1, Colour: "PET"},{Name: "PP Post Extruder 4 1/2 Test", Text: "Extruder 4 1/2 Test", Height: 1, Width: 1, Colour: "PET"},
+            SSP 2", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 1 1/2 Test", Text: "Extruder 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2 1/2 Test", Text: "Extruder 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Post Extruder 3 1/2 Test", Text: "Extruder 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Post Extruder 4 1/2 Test", Text: "Extruder 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET Pellet Bag Pre-SSP", Text: "PET
             Pellet Bag
             Pre-SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Pellet Bag Non-Deo", Text: "HDPE Natural
             Pellet Bag
-            Non-Deo", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Self Coloured Pellet Bag Non-Deo", Text: "HDPE SC Pellet Bag Non-Deo", Height: 1, Width: 1, Colour: "PET"},{Name: "PP Pellet Bag Non-Deo", Text: "PP
+            Non-Deo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Pellet Bag Non-Deo", Text: "HDPE SC Pellet Bag Non-Deo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Pellet Bag Non-Deo", Text: "PP
             Pellet Bag
-            Non-Deo", Height: 1, Width: 1, Colour: "PET"},
+            Non-Deo", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET Pellet Bag Post SSP", Text: "PET
             Pellet Bag
-            Post SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Pellet Bag Deodorised", Text: "HDPE Natural
+            Post SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Natural Pellet Bag Deodorised", Text: "HDPE Natural
             Pellet Bag
-            Deo", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Self Coloured Pellet Bag Deodorised", Text: "HDPE SC Pellet Bag Deo", Height: 1, Width: 1, Colour: "PET"},{Name: "PP Pellet Bag Deodorised", Text: "PP
+            Deo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Pellet Bag Deodorised", Text: "HDPE SC Pellet Bag Deo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Pellet Bag Deodorised", Text: "PP
             Pellet Bag
-            Deo", Height: 1, Width: 1, Colour: "PET"},
+            Deo", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET Sampling Silo 5.01", Text: "PET
             Sampling
             Silo 5.01", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo 1.01", Text: "HDPE Nat
-            Sampling Silo 1.01", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo 2.01", Text: "HDPE Nat
-            Sampling Silo 2.01", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Self Coloured Sampling Silo 3.01", Text: "HDPE SC
-            Sampling Silo 3.01", Height: 1, Width: 1, Colour: "PET"},{Name: "PP Sampling Silo 4.01", Text: "PP
-            Sampling Silo 4.01", Height: 1, Width: 1, Colour: "PET"},
+            Sampling Silo 1.01", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Sampling Silo 2.01", Text: "HDPE Nat
+            Sampling Silo 2.01", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Sampling Silo 3.01", Text: "HDPE SC
+            Sampling Silo 3.01", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Sampling Silo 4.01", Text: "PP
+            Sampling Silo 4.01", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET Sampling Silo 5.02", Text: "PET
             Sampling
-            Silo 5.02", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo 1.02", Text: "HDPE Nat
+            Silo 5.02", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Natural Sampling Silo 1.02", Text: "HDPE Nat
             Sampling
-            Silo 1.02", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo 2.02", Text: "HDPE Nat
+            Silo 1.02", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Sampling Silo 2.02", Text: "HDPE Nat
             Sampling
-            Silo 2.02", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Self Coloured Sampling Silo 3.02", Text: "HDPE SC
+            Silo 2.02", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Sampling Silo 3.02", Text: "HDPE SC
             Sampling
-            Silo 3.02", Height: 1, Width: 1, Colour: "PET"},{Name: "PP Sampling Silo 4.02", Text: "PP
+            Silo 3.02", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Sampling Silo 4.02", Text: "PP
             Sampling
-            Silo 4.02", Height: 1, Width: 1, Colour: "PET"},
+            Silo 4.02", Height: 1, Width: 1, Colour: "PP"},
             ]
         Layout: =Layout.Vertical
         OnSelect: |+
@@ -242,6 +242,7 @@ Screen_Add_Samples As screen:
             Color: =If(Label_Sampling_Point_2.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
             Fill: |+
                 =If(
+                ThisItem.Name = "",Color.Transparent,
                 ThisItem.Name = "PET Wash A2:304" && var_selected_PET_A2_304,Colour_Viridor_Purple,
                 ThisItem.Name = "PET Wash Other" && var_selected_PET_Wash_Other,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Nat Wash BS:302" && var_selected_HDPE_Nat_Wash_BS_302,Colour_Viridor_Purple,
@@ -274,7 +275,6 @@ Screen_Add_Samples As screen:
                 ThisItem.Name = "PP Post Extruder 4 1/2 Test" && var_selected_PP_Post_Extruder_4_1_2_Test,Colour_Viridor_Purple,
                 ThisItem.Name = "PET Pellet Bag Pre-SSP" && var_selected_PET_Pellet_Bag_Pre_SSP,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Pellet Bag Non-Deo" && var_selected_HDPE_Natural_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
-                
                 ThisItem.Name = "HDPE Self Coloured Pellet Bag Non-Deo" && var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
                 ThisItem.Name = "PP Pellet Bag Non-Deo" && var_selected_PP_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
                 ThisItem.Name = "PET Pellet Bag Post SSP" && var_selected_PET_Pellet_Bag_Post_SSP,Colour_Viridor_Purple,
@@ -292,6 +292,11 @@ Screen_Add_Samples As screen:
                 ThisItem.Name = "HDPE Self Coloured Sampling Silo 3.02" && var_selected_HDPE_Self_Coloured_Sampling_Silo_3_02,Colour_Viridor_Purple,
                 ThisItem.Name = "PP Sampling Silo 4.02" && var_selected_PP_Sampling_Silo_4_02,Colour_Viridor_Purple,
                 
+                //Background
+                ThisItem.Colour = "PET",Colour_Pellet_PET,
+                ThisItem.Colour = "HDPENat",Colour_Pellet_HDPE_Natural,
+                ThisItem.Colour = "HDPESC",Colour_Pellet_HDPE_Self_Coloured,
+                ThisItem.Colour = "PP",Colour_Pellet_PP,
                 
                 Color.Transparent
                 )
