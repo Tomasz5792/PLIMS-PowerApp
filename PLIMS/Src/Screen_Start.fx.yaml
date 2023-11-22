@@ -10,9 +10,11 @@ Screen_Start As screen:
             
         Layout: =Layout.Vertical
         OnSelect: |+
-            =
-            Navigate(Screen_Test_input,ScreenTransition.None);
+            =If(
+            ThisItem.Value="Add Sample",Navigate(Screen_Add_Samples,ScreenTransition.None),
+            ThisItem.Value="Test Input",Navigate(Screen_Test_input,ScreenTransition.None),
             
+            Navigate(Screen_Start,ScreenTransition.None));
             
             Set(var_menu_1_select,ThisItem.Value);
             
