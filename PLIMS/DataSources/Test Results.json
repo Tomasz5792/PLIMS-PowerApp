@@ -136,6 +136,7 @@
       "field_98": "Black_Inclusions_Medium_Result_#",
       "field_99": "Black_Inclusions_Large_#",
       "ID": "ID",
+      "Material_Filter": "Material_Filter",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Title": "Title"
