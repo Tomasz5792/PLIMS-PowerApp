@@ -28,44 +28,44 @@ Screen_Test_Information As screen:
                 "All_Sampling_Silo", Filter('Test Results',Sample_Point_Filter="Sampling Silo"),
             
             //"PET"
-                "PET_All", Filter('Test Results',Material="PET"),
-                "PET_Wash", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Wash"),
-                "PET_Flake_Bag", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Flake Bag"),
-                "PET_Post_Flake_Sorter", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Post Flake Sorter"),
-                "PET_Post_Extruder", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Post Extruder"),
-                "PET_SSP", Filter('Test Results',Material="PET"&&Sample_Point_Filter="SSP"),
-                "PET_Pellet_Bag", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Pellet Bag"),
-                "PET_Sampling_Silo", Filter('Test Results',Material="PET"&&Sample_Point_Filter="Sampling Silo"),
+                "PET_All", Filter('Test Results','Material_Filter (field_1)'="PET"),
+                "PET_Wash", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Wash"),
+                "PET_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Flake Bag"),
+                "PET_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Flake Sorter"),
+                "PET_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Extruder"),
+                "PET_SSP", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="SSP"),
+                "PET_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Pellet Bag"),
+                "PET_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Sampling Silo"),
             
             //"HDPE Natural"  
-                "HDPE_Nat_All", Filter('Test Results',Material="HDPE Natural"),
-                "HDPE_Nat_Wash", Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Wash"),
-                "HDPE_Nat_Flake_Bag", Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Flake Bag"),
-                "HDPE_Nat_Post_Flake_Sorter", Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Post Flake Sorter"),
-                "HDPE_Nat_Post_Extruder", Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Post Extruder"),
-                "HDPE_Nat_SSP", Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="SSP"),
-                "HDPE_Nat_Pellet_Bag", Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Pellet Bag"),
-                "HDPE_Nat_Sampling_Silo", Filter('Test Results',Material="HDPE Natural"&&Sample_Point_Filter="Sampling Silo"),
+                "HDPE_Nat_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"),
+                "HDPE_Nat_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Wash"),
+                "HDPE_Nat_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Flake Bag"),
+                "HDPE_Nat_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Flake Sorter"),
+                "HDPE_Nat_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Extruder"),
+                "HDPE_Nat_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="SSP"),
+                "HDPE_Nat_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Pellet Bag"),
+                "HDPE_Nat_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Sampling Silo"),
             
             //"HDPE Self Coloured" 
-                "HDPE_SC_All", Filter('Test Results',Material="HDPE Self Coloured"),
-                "HDPE_SC_Wash", Filter('Test Results',Material="HDPE Self Coloured"&&Sample_Point_Filter="Wash"),
-                "HDPE_SC_Flake_Bag", Filter('Test Results',Material="HDPE Self Coloured"&&Sample_Point_Filter="Flake Bag"),
-                "HDPE_SC_Post_Flake_Sorter", Filter('Test Results',Material="HDPE Self Coloured"&&Sample_Point_Filter="Post Flake Sorter"),
-                "HDPE_SC_Post_Extruder", Filter('Test Results',Material="HDPE Self Coloured"&&Sample_Point_Filter="Post Extruder"),
-                "HDPE_SC_SSP", Filter('Test Results',Material="HDPE Self Coloured"&&Sample_Point_Filter="SSP"),
-                "HDPE_SC_Pellet_Bag", Filter('Test Results',Material="HDPE Self Coloured"&&Sample_Point_Filter="Pellet Bag"),
-                "HDPE_SC_Sampling_Silo", Filter('Test Results',Material="HDPE Self Coloured"&&Sample_Point_Filter="Sampling Silo"),
+                "HDPE_SC_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"),
+                "HDPE_SC_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Wash"),
+                "HDPE_SC_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Flake Bag"),
+                "HDPE_SC_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Flake Sorter"),
+                "HDPE_SC_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Extruder"),
+                "HDPE_SC_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="SSP"),
+                "HDPE_SC_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Pellet Bag"),
+                "HDPE_SC_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Sampling Silo"),
             
             //"PP"
-                "PP_All", Filter('Test Results',Material="PP"),
-                "PP_Wash", Filter('Test Results',Material="PP"&&Sample_Point_Filter="Wash"),
-                "PP_Flake_Bag", Filter('Test Results',Material="PP"&&Sample_Point_Filter="Flake Bag"),
-                "PP_Post_Flake_Sorter", Filter('Test Results',Material="PP"&&Sample_Point_Filter="Post Flake Sorter"),
-                "PP_Post_Extruder", Filter('Test Results',Material="PP"&&Sample_Point_Filter="Post Extruder"),
-                "PP_SSP", Filter('Test Results',Material="PP"&&Sample_Point_Filter="SSP"),
-                "PP_Pellet_Bag", Filter('Test Results',Material="PP"&&Sample_Point_Filter="Pellet Bag"),
-                "PP_Sampling_Silo", Filter('Test Results',Material="PP"&&Sample_Point_Filter="Sampling Silo"),
+                "PP_All", Filter('Test Results','Material_Filter (field_1)'="PP"),
+                "PP_Wash", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Wash"),
+                "PP_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Flake Bag"),
+                "PP_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Flake Sorter"),
+                "PP_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Extruder"),
+                "PP_SSP", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="SSP"),
+                "PP_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Pellet Bag"),
+                "PP_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Sampling Silo"),
                 
                 'Test Results'
             )
@@ -92,7 +92,7 @@ Screen_Test_Information As screen:
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =ThisItem.Material
+            Text: =ThisItem.'Material_Filter (field_1)'
             Width: =Gallery_Test_Title_1.Width/Gallery_Test_Title_1.AllItemsCount
             ZIndex: =2
 

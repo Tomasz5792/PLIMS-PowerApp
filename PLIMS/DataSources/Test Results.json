@@ -29,7 +29,7 @@
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
-      "field_1": "Material",
+      "field_1": "Material_Filter (field_1)",
       "field_10": "Caustic_Strength_Titration_mL",
       "field_100": "Black_Inclusions_Large_Result_#",
       "field_101": "Black_Inclusions_Pass_Fail",
@@ -136,7 +136,7 @@
       "field_98": "Black_Inclusions_Medium_Result_#",
       "field_99": "Black_Inclusions_Large_#",
       "ID": "ID",
-      "Material_Filter": "Material_Filter",
+      "Material_Filter": "Material2",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Title": "Title"

@@ -131,10 +131,10 @@
   },
   "ScreenOrder": [
     "Screen_Start",
+    "Screen_Add_Samples",
     "Screen_Test_input",
     "Screen_Test_Caustic_Strength",
     "Screen_Test_Information",
-    "Screen_Add_Samples",
     "Screen_Under_Construction"
   ]
 }
