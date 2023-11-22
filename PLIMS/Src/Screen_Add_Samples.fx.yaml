@@ -1,0 +1,154 @@
+Screen_Add_Samples As screen:
+    Fill: =Colour_Viridor_White
+
+    Gallery_Units_3 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Color.AliceBlue
+        Height: =58/2
+        Items: =Gallery_Test_Title_2.AllItems
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Units_3.Width/Gallery_Units_3.AllItemsCount
+        Width: =1366/3*2
+        X: =455
+        Y: =109
+        ZIndex: =9
+
+        Label5_17 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.Black
+            Height: =If(ThisItem.Test="",0,Gallery_Units_3.TemplateHeight)
+            LineHeight: =0.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.Black
+            PressedFill: =Color.Transparent
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),12,14)
+            Text: |
+                =ThisItem.Unit
+            Width: |-
+                =If(
+                ThisItem.Test="",0,
+                
+                //otherwise
+                Gallery_Test_Title_2.TemplateWidth*ThisItem.Width)
+            ZIndex: =1
+
+    Gallery_Test_Title_2 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_Purple
+        Height: =58
+        Items: |-
+            =[
+            {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1}, 
+            {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
+            {Test:"Date", Unit:"dd mm yyyy", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
+            {Test:"Time", Unit:"hh:mm", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1},
+            {Test:"Batch Number", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:2}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
+            {Test:"Bag Number", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
+            ]
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Test_Title_2.Width/Gallery_Test_Title_2.AllItemsCount
+        Width: =1366/3*2
+        X: =455
+        Y: =51
+        ZIndex: =10
+
+        Label5_16 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.White
+            Height: =If(ThisItem.Test="",0,Gallery_Test_Title_2.TemplateHeight)
+            LineHeight: =0.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.White
+            PressedFill: =Color.Transparent
+            Size: =18
+            Text: =ThisItem.Test
+            Width: |-
+                =If(
+                ThisItem.Test="",0,
+                
+                //otherwise
+                Gallery_Test_Title_2.TemplateWidth*ThisItem.Width)
+            ZIndex: =1
+
+    Title_Test_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+        Title_Test_Input_4 As label:
+            Align: =TextPosition.Left
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 155, 62, 100)
+            Font: =Font.'Segoe UI'
+            Height: =51
+            PaddingLeft: =14
+            Size: =Text_size_Title
+            Text: ="Add Samples"
+            Width: =1366
+            ZIndex: =3
+
+        Button_Back_13 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.BackArrow
+            OnSelect: =Back()
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Back"
+            Width: =38
+            X: =1322
+            Y: =7
+            ZIndex: =4
+
+        Button_Home_6 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Home"
+            Width: =38
+            X: =Button_Back_13.X-50
+            Y: =Button_Back_13.Y
+            ZIndex: =5
+
+        Refresh_Data_5 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =34
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Reload
+            OnSelect: =Refresh('Test Results')
+            PressedColor: =Colour_Viridor_GreenTint
+            Rotation: =90
+            Tooltip: ="Refresh data."
+            Width: =34
+            X: =Button_Back_13.X-50*2
+            Y: =10
+            ZIndex: =6
+

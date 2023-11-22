@@ -1361,10 +1361,9 @@ Screen_Test_input As screen:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Add_Samples.Height/10
-        Visible: =var_add_sample_visible
         Width: =1366
         WrapCount: =7
-        Y: =50
+        Y: =345
         ZIndex: =12
 
         Label_Sampling_Point_2 As label:
@@ -1442,36 +1441,6 @@ Screen_Test_input As screen:
             Text: =ThisItem.Text
             Width: =Parent.TemplateWidth
             ZIndex: =1
-
-    Show_add_sample As icon.CancelBadge:
-        Color: =Color.White
-        Height: =40
-        HoverColor: =Colour_Viridor_Purple
-        Icon: =Icon.Add
-        OnSelect: |
-            =Set(var_add_sample_visible,true);
-        PressedColor: =Colour_Viridor_GreenTint
-        Rotation: =90
-        Tooltip: ="Toggle adding samples on."
-        Width: =40
-        X: =Button_Back_9.X-50*3
-        Y: =7
-        ZIndex: =13
-
-    Hide_add_sample As icon.CancelBadge:
-        Color: =Color.White
-        Height: =40
-        HoverColor: =Colour_Viridor_Purple
-        Icon: =Icon.Add
-        OnSelect: =Set(var_add_sample_visible,false);
-        PressedColor: =Colour_Viridor_GreenTint
-        Rotation: =90
-        Tooltip: ="Toggle adding samples off."
-        Visible: =var_add_sample_visible
-        Width: =40
-        X: =Show_add_sample.X
-        Y: =Show_add_sample.Y
-        ZIndex: =15
 
     Test_Button_add_samples As button:
         Height: =44
