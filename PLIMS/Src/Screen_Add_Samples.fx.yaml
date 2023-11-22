@@ -332,7 +332,7 @@ Screen_Add_Samples As screen:
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
+            Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yyyy")
             Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width*4
             ZIndex: =6
