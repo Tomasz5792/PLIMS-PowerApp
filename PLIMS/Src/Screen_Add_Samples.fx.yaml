@@ -94,7 +94,7 @@ Screen_Add_Samples As screen:
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
-        Height: =619
+        Height: =659
         Items: |-
             =//{Name: "11111", Text: "11111", Height: 1, Width: 1, Colour: "PET"},{Name: "22222", Text: "22222", Height: 1, Width: 1, Colour: "PET"},{Name: "33333", Text: "33333", Height: 1, Width: 1, Colour: "PET"},{Name: "44444", Text: "44444", Height: 1, Width: 1, Colour: "PET"},{Name: "55555", Text: "55555", Height: 1, Width: 1, Colour: "PET"},{Name: "666666", Text: "666666", Height: 1, Width: 1, Colour: "PET"},
             
@@ -301,7 +301,10 @@ Screen_Add_Samples As screen:
                 Color.Transparent
                 )
                 
-            Height: =Gallery_Add_Samples.TemplateHeight
+            Height: |-
+                =If(
+                ThisItem.Name="",0,
+                Gallery_Add_Samples.TemplateHeight+1)
             HoverColor: =Colour_Viridor_White
             HoverFill: |
                 =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
@@ -315,7 +318,10 @@ Screen_Add_Samples As screen:
             PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
             Size: =17
             Text: =ThisItem.Text
-            Width: =Gallery_Add_Samples.TemplateWidth*ThisItem.Width+2
+            Width: |-
+                =If(
+                ThisItem.Name="",0,
+                Gallery_Add_Samples.TemplateWidth*ThisItem.Width+2)
             ZIndex: =1
 
     Title_Test_2 As group:
@@ -727,4 +733,95 @@ Screen_Add_Samples As screen:
         Visible: =false
         X: =266
         ZIndex: =15
+
+    "Gallery_Add_Samples_3 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
+        Fill: =Colour_Viridor_PurpleTint
+        Height: =58
+        Items: |-
+            =[
+            {Name:"Full", Text:"Full"},
+            {Name:"Half", Text:"Half"},
+            {Name:"Clear", Text:"Clear"},
+            {Name:"Add Samples", Text:"Add Samples"},
+            ]
+        Layout: =Layout.Vertical
+        OnSelect: =
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =58
+        Width: =683
+        WrapCount: =4
+        Y: =710
+        ZIndex: =17
+
+        Label_Sampling_Point_5 As label:
+            Align: =Align.Center
+            Color: =If(Label_Sampling_Point_5.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
+            Fill: =If(ThisItem.Name="Add Samples",Colour_Viridor_Purple,Colour_Viridor_GreenTint)
+            Height: =58
+            HoverColor: =Colour_Viridor_White
+            HoverFill: |
+                =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =If(ThisItem.Text="",Color.Transparent,Color.White)
+            PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
+            Size: =18
+            Text: =ThisItem.Text
+            Width: =170.75
+            ZIndex: =1
+
+    Label5 As label:
+        Fill: =Colour_Viridor_Green
+        Height: =1
+        Text: =
+        Width: =683
+        Y: =564
+        ZIndex: =18
+
+    Label5_4 As label:
+        Fill: =Colour_Viridor_Green
+        Height: =1
+        Text: =
+        Width: =683
+        Y: =123
+        ZIndex: =19
+
+    Label5_18 As label:
+        Fill: =Colour_Viridor_Green
+        Height: =1
+        Text: =
+        Width: =455
+        X: =228
+        Y: =270
+        ZIndex: =20
+
+    Label5_19 As label:
+        Fill: =Colour_Viridor_Green
+        Height: =1
+        Text: =
+        Width: =683
+        Y: =489
+        ZIndex: =21
+
+    Label5_20 As label:
+        Fill: =Colour_Viridor_Green
+        Height: =1
+        Text: =
+        Width: =683/6
+        Y: =271
+        ZIndex: =22
+
+    Label5_21 As label:
+        Fill: =Colour_Viridor_Green
+        Height: =1
+        Text: =
+        Width: =683/6
+        X: =113
+        Y: =343
+        ZIndex: =23
 
