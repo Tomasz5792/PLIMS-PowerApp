@@ -821,7 +821,25 @@ Screen_Add_Samples As screen:
         Height: =1
         Text: =
         Width: =683/6
-        X: =113
-        Y: =343
+        X: =114
+        Y: =344
         ZIndex: =23
+
+    Label5_22 As label:
+        Fill: =Colour_Viridor_Green
+        Height: =74
+        Text: =
+        Width: =1
+        X: =114
+        Y: =271
+        ZIndex: =24
+
+    Label5_23 As label:
+        Fill: =Colour_Viridor_Green
+        Height: =74
+        Text: =
+        Width: =1
+        X: =227
+        Y: =270
+        ZIndex: =25
 
