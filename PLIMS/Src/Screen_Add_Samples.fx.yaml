@@ -107,19 +107,19 @@ Screen_Add_Samples As screen:
             Wash", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Wash", Text: "PP
             Wash", Height: 1, Width: 1, Colour: "PP"},
             
-            {Name: "PET Post Wash Silo 603", Text: "PET
+            {Name: "PET Post Wash Silo", Text: "PET
             Post Wash
             Silo", Height: 1, Width: 2, Colour: "PET"},{},{Name: "HDPE Natural Hopper 1", Text: "HDPE Natural Hopper 1", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2", Text: "HDPE Natural Hopper 2", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3", Text: "HDPE
             Self Col. Hopper 3", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4", Text: "PP
             Hopper 4", Height: 1, Width: 1, Colour: "PP"},
             
-            {Name: "PET Post Flake Sorter 705", Text: "PET
+            {Name: "PET Post Flake Sorter", Text: "PET
             Post Flake Sorter
-            Silo", Height: 1, Width: 2, Colour: "PET"},{},{Name: "HDPE Natural Hopper 1 1/2 Test", Text: "Hopper 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2 1/2 Test", Text: "Hopper 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3 1/2 Test", Text: "Hopper 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4 1/2 Test", Text: "Hopper 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
+            Silo", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Flake Bag", Text: "PET
+            Flake Bag", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 1 1/2 Test", Text: "Hopper 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2 1/2 Test", Text: "Hopper 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3 1/2 Test", Text: "Hopper 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4 1/2 Test", Text: "Hopper 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET Post Extruder", Text: "PET
-            Post Extruder", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Flake Bag", Text: "PET
-            Flake Bag", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 1", Text: "HDPE
+            Post Extruder", Height: 1, Width: 2, Colour: "PET"},{},{Name: "HDPE Natural Post Extruder 1", Text: "HDPE
             Natural
             Extruder 1", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2", Text: "HDPE
             Natural
@@ -148,13 +148,12 @@ Screen_Add_Samples As screen:
             Pellet Bag
             Deo", Height: 1, Width: 1, Colour: "PP"},
             
-            {Name: "PET Sampling Silo 5.01", Text: "PET
+            {Name: "PET Sampling Silo", Text: "PET
             Sampling
-            Silo", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo 1.01", Text: "HDPE Nat
-            Sampling Silo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Sampling Silo 3.01", Text: "HDPE SC
-            Sampling Silo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Sampling Silo 4.01", Text: "PP
+            Silo", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo", Text: "HDPE Nat
+            Sampling Silo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Sampling Silo", Text: "HDPE SC
+            Sampling Silo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Sampling Silo", Text: "PP
             Sampling Silo", Height: 1, Width: 1, Colour: "PP"},
-            
             ]
         Layout: =Layout.Vertical
         OnSelect: |+
@@ -166,14 +165,12 @@ Screen_Add_Samples As screen:
             ThisItem.Name = "HDPE Nat Wash Other", Set(var_selected_HDPE_Nat_Wash_Other, !var_selected_HDPE_Nat_Wash_Other),
             ThisItem.Name = "HDPE Self Coloured Wash", Set(var_selected_HDPE_Self_Coloured_Wash, !var_selected_HDPE_Self_Coloured_Wash),
             ThisItem.Name = "PP Wash", Set(var_selected_PP_Wash, !var_selected_PP_Wash),
-            ThisItem.Name = "PET Post Wash Silo 603", Set(var_selected_PET_Post_Wash_Silo_603, !var_selected_PET_Post_Wash_Silo_603),
-            //ThisItem.Name = "PET Post Wash Silo 604", Set(var_selected_PET_Post_Wash_Silo_604, !var_selected_PET_Post_Wash_Silo_604),
+            ThisItem.Name = "PET Post Wash Silo", Set(var_selected_PET_Post_Wash_Silo_603, !var_selected_PET_Post_Wash_Silo_603),
             ThisItem.Name = "HDPE Natural Hopper 1", Set(var_selected_HDPE_Natural_Hopper_1, !var_selected_HDPE_Natural_Hopper_1),
             ThisItem.Name = "HDPE Natural Hopper 2", Set(var_selected_HDPE_Natural_Hopper_2, !var_selected_HDPE_Natural_Hopper_2),
             ThisItem.Name = "HDPE Self Coloured Hopper 3", Set(var_selected_HDPE_Self_Coloured_Hopper_3, !var_selected_HDPE_Self_Coloured_Hopper_3),
             ThisItem.Name = "PP Hopper 4", Set(var_selected_PP_Hopper_4, !var_selected_PP_Hopper_4),
-            ThisItem.Name = "PET Post Flake Sorter 705", Set(var_selected_PET_Post_Flake_Sorter_705, !var_selected_PET_Post_Flake_Sorter_705),
-            //ThisItem.Name = "PET Post Flake Sorter 706", Set(var_selected_PET_Post_Flake_Sorter_706, !var_selected_PET_Post_Flake_Sorter_706),
+            ThisItem.Name = "PET Post Flake Sorter", Set(var_selected_PET_Post_Flake_Sorter_705, !var_selected_PET_Post_Flake_Sorter_705),
             ThisItem.Name = "HDPE Natural Hopper 1 1/2 Test", Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, !var_selected_HDPE_Natural_Hopper_1_1_2_Test),
             ThisItem.Name = "HDPE Natural Hopper 2 1/2 Test", Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, !var_selected_HDPE_Natural_Hopper_2_1_2_Test),
             ThisItem.Name = "HDPE Self Coloured Hopper 3 1/2 Test", Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, !var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test),
@@ -201,11 +198,11 @@ Screen_Add_Samples As screen:
             ThisItem.Name = "HDPE Self Coloured Pellet Bag Deodorised", Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, !var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised),
             ThisItem.Name = "PP Pellet Bag Deodorised", Set(var_selected_PP_Pellet_Bag_Deodorised, !var_selected_PP_Pellet_Bag_Deodorised),
             
-            ThisItem.Name = "PET Sampling Silo 5.01", Set(var_selected_PET_Sampling_Silo_5_01, !var_selected_PET_Sampling_Silo_5_01),
-            ThisItem.Name = "HDPE Natural Sampling Silo 1.01", Set(var_selected_HDPE_Natural_Sampling_Silo_1_01, !var_selected_HDPE_Natural_Sampling_Silo_1_01),
-            ThisItem.Name = "HDPE Natural Sampling Silo 2.01", Set(var_selected_HDPE_Natural_Sampling_Silo_2_01, !var_selected_HDPE_Natural_Sampling_Silo_2_01),
-            ThisItem.Name = "HDPE Self Coloured Sampling Silo 3.01", Set(var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01, !var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01),
-            ThisItem.Name = "PP Sampling Silo 4.01", Set(var_selected_PP_Sampling_Silo_4_01, !var_selected_PP_Sampling_Silo_4_01)
+            ThisItem.Name = "PET Sampling Silo", Set(var_selected_PET_Sampling_Silo, !var_selected_PET_Sampling_Silo),
+            ThisItem.Name = "HDPE Natural Sampling Silo", Set(var_selected_HDPE_Natural_Sampling_Silo, !var_selected_HDPE_Natural_Sampling_Silo),
+            ThisItem.Name = "HDPE Natural Sampling Silo", Set(var_selected_HDPE_Natural_Sampling_Silo, !var_selected_HDPE_Natural_Sampling_Silo),
+            ThisItem.Name = "HDPE Self Coloured Sampling Silo", Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, !var_selected_HDPE_Self_Coloured_Sampling_Silo),
+            ThisItem.Name = "PP Sampling Silo", Set(var_selected_PP_Sampling_Silo, !var_selected_PP_Sampling_Silo)
             
             
             
@@ -231,14 +228,12 @@ Screen_Add_Samples As screen:
                 ThisItem.Name = "HDPE Nat Wash Other" && var_selected_HDPE_Nat_Wash_Other,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Self Coloured Wash" && var_selected_HDPE_Self_Coloured_Wash,Colour_Viridor_Purple,
                 ThisItem.Name = "PP Wash" && var_selected_PP_Wash,Colour_Viridor_Purple,
-                ThisItem.Name = "PET Post Wash Silo 603" && var_selected_PET_Post_Wash_Silo_603,Colour_Viridor_Purple,
-                //ThisItem.Name = "PET Post Wash Silo 604" && var_selected_PET_Post_Wash_Silo_604,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Wash Silo" && var_selected_PET_Post_Wash_Silo_603,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Hopper 1" && var_selected_HDPE_Natural_Hopper_1,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Hopper 2" && var_selected_HDPE_Natural_Hopper_2,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Self Coloured Hopper 3" && var_selected_HDPE_Self_Coloured_Hopper_3,Colour_Viridor_Purple,
                 ThisItem.Name = "PP Hopper 4" && var_selected_PP_Hopper_4,Colour_Viridor_Purple,
-                ThisItem.Name = "PET Post Flake Sorter 705" && var_selected_PET_Post_Flake_Sorter_705,Colour_Viridor_Purple,
-                //ThisItem.Name = "PET Post Flake Sorter 706" && var_selected_PET_Post_Flake_Sorter_706,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Flake Sorter" && var_selected_PET_Post_Flake_Sorter_705,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Hopper 1 1/2 Test" && var_selected_HDPE_Natural_Hopper_1_1_2_Test,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Hopper 2 1/2 Test" && var_selected_HDPE_Natural_Hopper_2_1_2_Test,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Self Coloured Hopper 3 1/2 Test" && var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test,Colour_Viridor_Purple,
@@ -263,11 +258,11 @@ Screen_Add_Samples As screen:
                 ThisItem.Name = "HDPE Natural Pellet Bag Deodorised" && var_selected_HDPE_Natural_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Self Coloured Pellet Bag Deodorised" && var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
                 ThisItem.Name = "PP Pellet Bag Deodorised" && var_selected_PP_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
-                ThisItem.Name = "PET Sampling Silo 5.01" && var_selected_PET_Sampling_Silo_5_01,Colour_Viridor_Purple,
-                ThisItem.Name = "HDPE Natural Sampling Silo 1.01" && var_selected_HDPE_Natural_Sampling_Silo_1_01,Colour_Viridor_Purple,
-                ThisItem.Name = "HDPE Natural Sampling Silo 2.01" && var_selected_HDPE_Natural_Sampling_Silo_2_01,Colour_Viridor_Purple,
-                ThisItem.Name = "HDPE Self Coloured Sampling Silo 3.01" && var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01,Colour_Viridor_Purple,
-                ThisItem.Name = "PP Sampling Silo 4.01" && var_selected_PP_Sampling_Silo_4_01,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Sampling Silo" && var_selected_PET_Sampling_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Sampling Silo" && var_selected_HDPE_Natural_Sampling_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Sampling Silo" && var_selected_HDPE_Natural_Sampling_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Sampling Silo" && var_selected_HDPE_Self_Coloured_Sampling_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Sampling Silo" && var_selected_PP_Sampling_Silo,Colour_Viridor_Purple,
                 
                 
                 //Background
