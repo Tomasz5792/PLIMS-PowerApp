@@ -763,10 +763,14 @@ Screen_Add_Samples As screen:
         Height: =116
         Items: |-
             =[
-            {Name:"Full", Text:"Full"},
-            {Name:"Half", Text:"Half"},
-            {Name:"Clear", Text:"Clear"},
-            {Name:"Add Samples", Text:"Add Samples"},
+            {Name:"1st", Text:"1st", Height: 1},
+            {Name:"Full", Text:"Full", Height: 1},
+            {Name:"Half", Text:"Half", Height: 1},
+            {Name:"Add Samples", Text:"Add Samples", Height: 2},
+            {Name:"Wash", Text:"Wash", Height: 1},
+            {},
+            {Name:"Clear", Text:"Clear", Height: 1},
+            {},
             ]
         Layout: =Layout.Vertical
         OnSelect: |-
@@ -777,7 +781,7 @@ Screen_Add_Samples As screen:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =58
-        Width: =Parent.Width/5*2.5+1
+        Width: =Parent.Width/5*2.5+2
         WrapCount: =4
         Y: =652
         ZIndex: =17
@@ -786,7 +790,7 @@ Screen_Add_Samples As screen:
             Align: =Align.Center
             Color: =If(Label_Sampling_Point_5.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
             Fill: =If(ThisItem.Name="Add Samples",Colour_Viridor_Purple,Colour_Viridor_GreenTint)
-            Height: =58
+            Height: =58*ThisItem.Height
             HoverColor: =Colour_Viridor_White
             HoverFill: |
                 =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
@@ -800,7 +804,7 @@ Screen_Add_Samples As screen:
             PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
             Size: =18
             Text: =ThisItem.Text
-            Width: =170.75
+            Width: =Parent.Width/4
             ZIndex: =1
 
     Refresh_Data_6 As icon.CancelBadge:
