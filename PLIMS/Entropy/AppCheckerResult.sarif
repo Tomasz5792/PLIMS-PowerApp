@@ -3224,6 +3224,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen_Add_Samples.Refresh_Data_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Add_Samples.Refresh_Data_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Add_Samples",
+                "type": "Screen_Add_Samples.Refresh_Data_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen_Add_Samples.Refresh_Data_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Add_Samples.Refresh_Data_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen_Add_Samples",
+                "type": "Screen_Add_Samples.Refresh_Data_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Colour_To_Test"
                 }
               ],
@@ -3385,36 +3445,6 @@
               },
               "properties": {
                 "member": "Var_Product_Menu_2",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.var_selected_PET_Post_Wash_Silo"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.var_selected_PET_Post_Wash_Silo",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "var_selected_PET_Post_Wash_Silo",
                 "module": "App",
                 "type": "App"
               }

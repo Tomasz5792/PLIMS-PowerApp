@@ -228,12 +228,12 @@ Screen_Add_Samples As screen:
                 ThisItem.Name = "HDPE Nat Wash Other" && var_selected_HDPE_Nat_Wash_Other,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Self Coloured Wash" && var_selected_HDPE_Self_Coloured_Wash,Colour_Viridor_Purple,
                 ThisItem.Name = "PP Wash" && var_selected_PP_Wash,Colour_Viridor_Purple,
-                ThisItem.Name = "PET Post Wash Silo" && var_selected_PET_Post_Wash_Silo_603,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Wash Silo" && var_selected_PET_Post_Wash_Silo,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Hopper 1" && var_selected_HDPE_Natural_Hopper_1,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Hopper 2" && var_selected_HDPE_Natural_Hopper_2,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Self Coloured Hopper 3" && var_selected_HDPE_Self_Coloured_Hopper_3,Colour_Viridor_Purple,
                 ThisItem.Name = "PP Hopper 4" && var_selected_PP_Hopper_4,Colour_Viridor_Purple,
-                ThisItem.Name = "PET Post Flake Sorter" && var_selected_PET_Post_Flake_Sorter_705,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Flake Sorter" && var_selected_PET_Post_Flake_Sorter,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Hopper 1 1/2 Test" && var_selected_HDPE_Natural_Hopper_1_1_2_Test,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Natural Hopper 2 1/2 Test" && var_selected_HDPE_Natural_Hopper_2_1_2_Test,Colour_Viridor_Purple,
                 ThisItem.Name = "HDPE Self Coloured Hopper 3 1/2 Test" && var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test,Colour_Viridor_Purple,
@@ -294,7 +294,7 @@ Screen_Add_Samples As screen:
             Width: |-
                 =If(
                 ThisItem.Name="",0,
-                Gallery_Add_Samples.TemplateWidth*ThisItem.Width+2)
+                Gallery_Add_Samples.TemplateWidth*ThisItem.Width+1)
             ZIndex: =1
 
     Title_Test_2 As group:
@@ -751,4 +751,20 @@ Screen_Add_Samples As screen:
             Text: =ThisItem.Text
             Width: =170.75
             ZIndex: =1
+
+    Refresh_Data_6 As icon.CancelBadge:
+        Color: =Color.White
+        Height: =34
+        HoverColor: =Colour_Viridor_Purple
+        Icon: |-
+            =If(var_sampling_point_filter=true,
+            Icon.FilterFlatFilled,
+            Icon.FilterFlat)
+        OnSelect: =Set(var_sampling_point_filter,!var_sampling_point_filter)
+        PressedColor: =Colour_Viridor_GreenTint
+        Tooltip: ="Refresh data."
+        Width: =34
+        X: =416
+        Y: =6
+        ZIndex: =18
 
