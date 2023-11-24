@@ -133,6 +133,22 @@ Screen_Add_Samples As screen:
             SSP 1", Height: 1, Width: 1, Colour: "PET"},{Name: "PET SSP 2", Text: "PET
             SSP 2", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 1 1/2 Test", Text: "Extruder 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2 1/2 Test", Text: "Extruder 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Post Extruder 3 1/2 Test", Text: "Extruder 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Post Extruder 4 1/2 Test", Text: "Extruder 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
             
+            {Name: "PET Pellet Bag Pre-SSP", Text: "PET
+            Pellet Bag
+            Pre-SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Pellet Bag Non-Deo", Text: "HDPE Natural
+            Pellet Bag
+            Non-Deo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Pellet Bag Non-Deo", Text: "HDPE SC Pellet Bag Non-Deo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Pellet Bag Non-Deo", Text: "PP
+            Pellet Bag
+            Non-Deo", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Pellet Bag Post SSP", Text: "PET
+            Pellet Bag
+            Post SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Natural Pellet Bag Deodorised", Text: "HDPE Natural
+            Pellet Bag
+            Deo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Pellet Bag Deodorised", Text: "HDPE SC Pellet Bag Deo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Pellet Bag Deodorised", Text: "PP
+            Pellet Bag
+            Deo", Height: 1, Width: 1, Colour: "PP"},
+            
             {Name: "PET Sampling Silo", Text: "PET
             Sampling
             Silo", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo", Text: "HDPE Nat
@@ -176,22 +192,6 @@ Screen_Add_Samples As screen:
             {Name: "PET SSP 1", Text: "PET
             SSP 1", Height: 1, Width: 1, Colour: "PET"},{Name: "PET SSP 2", Text: "PET
             SSP 2", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 1 1/2 Test", Text: "Extruder 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2 1/2 Test", Text: "Extruder 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Post Extruder 3 1/2 Test", Text: "Extruder 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Post Extruder 4 1/2 Test", Text: "Extruder 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
-            
-            {Name: "PET Pellet Bag Pre-SSP", Text: "PET
-            Pellet Bag
-            Pre-SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Pellet Bag Non-Deo", Text: "HDPE Natural
-            Pellet Bag
-            Non-Deo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Pellet Bag Non-Deo", Text: "HDPE SC Pellet Bag Non-Deo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Pellet Bag Non-Deo", Text: "PP
-            Pellet Bag
-            Non-Deo", Height: 1, Width: 1, Colour: "PP"},
-            
-            {Name: "PET Pellet Bag Post SSP", Text: "PET
-            Pellet Bag
-            Post SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Natural Pellet Bag Deodorised", Text: "HDPE Natural
-            Pellet Bag
-            Deo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Pellet Bag Deodorised", Text: "HDPE SC Pellet Bag Deo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Pellet Bag Deodorised", Text: "PP
-            Pellet Bag
-            Deo", Height: 1, Width: 1, Colour: "PP"},
             
             {Name: "PET Sampling Silo", Text: "PET
             Sampling
@@ -804,8 +804,8 @@ Screen_Add_Samples As screen:
         HoverColor: =Colour_Viridor_Purple
         Icon: |-
             =If(var_sampling_point_filter=true,
-            Icon.FilterFlat,
-            Icon.FilterFlatFilled)
+            Icon.FilterFlatFilled,
+            Icon.FilterFlat)
         OnSelect: =Set(var_sampling_point_filter,!var_sampling_point_filter)
         PressedColor: =Colour_Viridor_GreenTint
         Tooltip: ="Refresh data."
