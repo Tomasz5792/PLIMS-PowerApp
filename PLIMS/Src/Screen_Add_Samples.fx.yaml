@@ -94,7 +94,7 @@ Screen_Add_Samples As screen:
 
     "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
-        Height: =659
+        Height: =659-58
         Items: |-
             =[
             {Name: "PET Wash A2:304", Text: "PET
@@ -210,8 +210,8 @@ Screen_Add_Samples As screen:
             
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =Gallery_Add_Samples.Height/9
-        Width: =Parent.Width/5*2.5
+        TemplateSize: =Gallery_Add_Samples.Height/8
+        Width: =Parent.Width/5*2.5+1
         WrapCount: =6
         Y: =51
         ZIndex: =11
@@ -709,7 +709,7 @@ Screen_Add_Samples As screen:
 
     "Gallery_Add_Samples_3 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
-        Height: =58
+        Height: =116
         Items: |-
             =[
             {Name:"Full", Text:"Full"},
@@ -718,13 +718,17 @@ Screen_Add_Samples As screen:
             {Name:"Add Samples", Text:"Add Samples"},
             ]
         Layout: =Layout.Vertical
-        OnSelect: =
+        OnSelect: |-
+            =If(
+            ThisItem.Name="Clear",
+            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, false); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);
+            )
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =58
-        Width: =683
+        Width: =Parent.Width/5*2.5+1
         WrapCount: =4
-        Y: =710
+        Y: =652
         ZIndex: =17
 
         Label_Sampling_Point_5 As label:

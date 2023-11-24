@@ -3404,6 +3404,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.var_selected_PET_Post_Wash_Silo"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.var_selected_PET_Post_Wash_Silo",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "var_selected_PET_Post_Wash_Silo",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.CoA_Banner"
                 }
               ],
