@@ -39,7 +39,7 @@ Screen_Start As screen:
             PaddingTop: =10
             PressedColor: =Colour_Viridor_White
             PressedFill: =Colour_Viridor_Purple
-            Size: =25
+            Size: =30
             Text: =ThisItem.Value
             Width: =227.66666666666666
             ZIndex: =1
@@ -51,7 +51,7 @@ Screen_Start As screen:
         Font: =Font.'Segoe UI'
         Height: =54
         PaddingLeft: =20
-        Size: =25
+        Size: =30
         Text: ="Laboratory Information Managment System"
         Width: =1366
         ZIndex: =2
@@ -76,13 +76,13 @@ Screen_Start As screen:
             BorderStyle: =BorderStyle.None
             Color: =Colour_Viridor_Grey3
             Fill: =Color.Transparent
-            Height: =202.5
+            Height: =200.5
             HoverColor: =Color.White
             HoverFill: =Colour_Viridor_Purple
             OnSelect: |+
                 =Select(Parent);
                 
-            Size: =25
+            Size: =30
             Text: =ThisItem.Value
             Width: =227.66666666666666
             ZIndex: =1
@@ -94,7 +94,7 @@ Screen_Start As screen:
         Font: =Font.'Segoe UI'
         Height: =54
         PaddingLeft: =20
-        Size: =25
+        Size: =30
         Text: ="Test Input"
         Width: =1366
         Y: =54
@@ -107,7 +107,7 @@ Screen_Start As screen:
         Font: =Font.'Segoe UI'
         Height: =54
         PaddingLeft: =20
-        Size: =25
+        Size: =30
         Text: ="Under Construction"
         Width: =683
         X: =683
@@ -123,8 +123,8 @@ Screen_Start As screen:
         PressedColor: =Color.Transparent
         Tooltip: ="Back"
         Width: =38
-        X: =1322
-        Y: =7
+        X: =1320
+        Y: =9
         ZIndex: =6
 
     "Gallery_Other_1 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
@@ -146,11 +146,11 @@ Screen_Start As screen:
             BorderStyle: =BorderStyle.None
             Color: =Colour_Viridor_Grey3
             Fill: =Color.Transparent
-            Height: =159
+            Height: =151
             HoverColor: =Color.White
             HoverFill: =Colour_Viridor_Pink
             OnSelect: =Select(Parent)
-            Size: =25
+            Size: =30
             Text: =ThisItem.Value
             Width: =227.66666666666666
             ZIndex: =1
@@ -162,7 +162,7 @@ Screen_Start As screen:
         Font: =Font.'Segoe UI'
         Height: =54
         PaddingLeft: =20
-        Size: =25
+        Size: =30
         Text: ="Under Construction"
         Width: =1366
         Y: =563
