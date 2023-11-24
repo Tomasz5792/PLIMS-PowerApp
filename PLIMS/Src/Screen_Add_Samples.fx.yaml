@@ -256,7 +256,12 @@ Screen_Add_Samples As screen:
             
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =Gallery_Add_Samples.Height/8
+        TemplateSize: |+
+            =If(var_sampling_point_filter=true,
+            Gallery_Add_Samples.Height/8,
+            Gallery_Add_Samples.Height/6)
+            
+            
         Width: =Parent.Width/5*2.5+1
         WrapCount: =6
         Y: =51
@@ -810,7 +815,7 @@ Screen_Add_Samples As screen:
         PressedColor: =Colour_Viridor_GreenTint
         Tooltip: ="Refresh data."
         Width: =34
-        X: =416
-        Y: =6
+        X: =218
+        Y: =10
         ZIndex: =18
 
