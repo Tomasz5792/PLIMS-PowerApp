@@ -104,6 +104,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button_Back_10",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -357,6 +358,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button_Home_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -618,6 +620,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Refresh_Data_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -793,6 +796,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Screen_Under_Construction",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -971,6 +975,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Title_Test_Input_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
