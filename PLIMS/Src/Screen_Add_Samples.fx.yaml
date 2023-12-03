@@ -13,7 +13,7 @@ Screen_Add_Samples As screen:
         Width: =Parent.Width-Gallery_Add_Samples.Width
         X: =Gallery_Add_Samples.Width
         Y: =109
-        ZIndex: =9
+        ZIndex: =5
 
         Label5_17 As label:
             Align: =Align.Center
@@ -66,7 +66,7 @@ Screen_Add_Samples As screen:
         Width: =Parent.Width-Gallery_Add_Samples.Width
         X: =Gallery_Add_Samples.Width
         Y: =51
-        ZIndex: =10
+        ZIndex: =6
 
         Label5_16 As label:
             Align: =Align.Center
@@ -265,7 +265,7 @@ Screen_Add_Samples As screen:
         Width: =Parent.Width/5*2.5+1
         WrapCount: =6
         Y: =51
-        ZIndex: =11
+        ZIndex: =7
 
         Label_Sampling_Point_2 As label:
             Align: =Align.Center
@@ -348,6 +348,210 @@ Screen_Add_Samples As screen:
                 Gallery_Add_Samples.TemplateWidth*ThisItem.Width+1)
             ZIndex: =1
 
+    Test_Button_add_samples As button:
+        Height: =44
+        OnSelect: |-
+            =Patch('Test Results', Defaults('Test Results'), {
+                Title: "Not Tested",
+                Material: "Not Tested",
+                'Material_Filter (field_1)': "Not Tested",
+                Sample_Point: "Not Tested",
+                Sample_Point_Filter: "Not Tested",
+                Specification_Filter: "Not Tested",
+                'Date_&_Time': Now(),
+                Batch_Number: "Not Tested",
+                Bag_Number: "Not Tested",
+                Unique_No_Batch_Bag: "Not Tested",
+            
+                'Caustic_Strength_Result_%': "Not Tested",
+                IV_MFI_Result: "Not Tested",
+                IV_Extruder_Value_Result: "Not Tested",
+                GC_Acetaldehyde_Result_ppm: "Not Tested",
+                GC_Limonene_Result_ppm: "Not Tested",
+                GC_Benzene_Result_ppm: "Not Tested",
+                GC_Result_Pass_Fail: "Not Tested",
+                'Fines_Result_%': "Not Tested",
+                'Moisture_Result_%': "Not Tested",
+                'Bulk_Density_Result_kg/m3': "Not Tested",
+                'Material_Density_Result_kg/m3': "Not Tested",
+                Comp_White_Result_ppm: "Not Tested",
+                'Comp_White_Result_%': "Not Tested",
+                Comp_Colour_Result_ppm: "Not Tested",
+                'Comp_Colour_Result_%': "Not Tested",
+                'Comp_Colour+White_Result_ppm': "Not Tested",
+                Comp_Float_Sink_Glass_Result_ppm: "Not Tested",
+                'Comp_Glass+Inorganic_Result_ppm': "Not Tested",
+                Comp_Float_Sink_Metal_Result_ppm: "Not Tested",
+                Comp_Float_Sink_PVC_Result_ppm: "Not Tested",
+                Comp_PO_Result_ppm: "Not Tested",
+                Comp_Glue_Result_ppm: "Not Tested",
+                Float_Sink_Pass_Fail: "Not Tested",
+                Comp_Pass_Fail: "Not Tested",
+                pH_Result: "Not Tested",
+                Lab_L_Result: "Not Tested",
+                Lab_a_Result: "Not Tested",
+                Lab_b_Result: "Not Tested",
+                Lab_Result_Pass_Fail: "Not Tested",
+                Extruder_b_Value_Result: "Not Tested",
+                Pellet_Count_Result_1g: "Not Tested",
+                Pellet_Count_Result_5g: "Not Tested",
+                'Black_Inclusions_Medium_Result_#': "Not Tested",
+                'Black_Inclusions_Large_Result_#': "Not Tested",
+                Black_Inclusions_Pass_Fail: "Not Tested",
+                Crystallisation_Result: "Not Tested",
+                Visual_Inspection_Result_Pass_Fail: "Not Tested"
+            })
+        Text: ="+ Samples"
+        Width: =123
+        X: =756
+        ZIndex: =8
+
+    var_selected As label:
+        Fill: =RGBA(180, 214, 250, 1)
+        Text: |-
+            ="
+            var_selected_PET_Wash
+            var_selected_PET_Wash_Other
+            var_selected_HDPE_Nat_Wash_BS_302
+            var_selected_HDPE_Nat_Wash_Other
+            var_selected_HDPE_Self_Coloured_Wash
+            var_selected_PP_Wash
+            var_selected_PET_Post_Wash_Silo_603
+            var_selected_PET_Post_Wash_Silo_604
+            var_selected_HDPE_Natural_Hopper_1
+            var_selected_HDPE_Natural_Hopper_2
+            var_selected_HDPE_Self_Coloured_Hopper_3
+            var_selected_PP_Hopper_4
+            var_selected_PET_Post_Flake_Sorter_705
+            var_selected_PET_Post_Flake_Sorter_706
+            var_selected_HDPE_Natural_Hopper_1_1_2_Test
+            var_selected_HDPE_Natural_Hopper_2_1_2_Test
+            var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test
+            var_selected_PP_Hopper_4_1_2_Test
+            var_selected_PET_Post_Extruder
+            var_selected_PET_Flake_Bag
+            var_selected_HDPE_Natural_Post_Extruder_1
+            var_selected_HDPE_Natural_Post_Extruder_2
+            var_selected_HDPE_Self_Coloured_Post_Extruder_3
+            var_selected_PP_Post_Extruder_4
+            var_selected_PET_SSP_1
+            var_selected_PET_SSP_2
+            var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test
+            var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test
+            var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test
+            var_selected_PP_Post_Extruder_4_1_2_Test
+            var_selected_PET_Pellet_Bag_Pre_SSP
+            var_selected_Blank_1
+            var_selected_HDPE_Natural_Pellet_Bag_Non_Deo
+            var_selected_Blank_2
+            var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo
+            var_selected_PP_Pellet_Bag_Non_Deo
+            var_selected_PET_Pellet_Bag_Post_SSP
+            var_selected_HDPE_Natural_Pellet_Bag_Deodorised
+            var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised
+            var_selected_PP_Pellet_Bag_Deodorised
+            var_selected_PET_Sampling_Silo_5_01
+            var_selected_HDPE_Natural_Sampling_Silo_1_01
+            var_selected_HDPE_Natural_Sampling_Silo_2_01
+            var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01
+            var_selected_PP_Sampling_Silo_4_01
+            var_selected_PET_Sampling_Silo_5_02
+            var_selected_HDPE_Natural_Sampling_Silo_1_02
+            var_selected_HDPE_Natural_Sampling_Silo_2_02
+            var_selected_HDPE_Self_Coloured_Sampling_Silo_3_02
+            var_selected_PP_Sampling_Silo_4_02
+            "
+        Visible: =false
+        X: =266
+        ZIndex: =9
+
+    "Gallery_Add_Samples_3 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
+        Fill: =Colour_Viridor_PurpleTint
+        Height: =116
+        Items: |-
+            =[
+            {Name:"All", Text:"All", Height: 1},
+            {Name:"Full", Text:"Full", Height: 1},
+            {Name:"Half", Text:"Half", Height: 1},
+            {Name:"Add Samples", Text:"Add Samples", Height: 2},
+            {Name:"Wash", Text:"Wash", Height: 1},
+            {},
+            {Name:"Clear", Text:"Clear", Height: 1},
+            {},
+            ]
+        Layout: =Layout.Vertical
+        OnSelect: |-
+            =If(
+            ThisItem.Name="Clear",
+            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, false); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="All",
+            Set(var_selected_PET_A2_304, true); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, true); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, true); Set(var_selected_HDPE_Natural_Hopper_2, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3, true); Set(var_selected_PP_Hopper_4, true); Set(var_selected_PET_Post_Flake_Sorter, true); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, true); Set(var_selected_HDPE_Natural_Post_Extruder_2, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, true); Set(var_selected_PP_Post_Extruder_4, true); Set(var_selected_PET_SSP_1, true); Set(var_selected_PET_SSP_2, true); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="Full",
+            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, true); Set(var_selected_HDPE_Natural_Hopper_2, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3, true); Set(var_selected_PP_Hopper_4, true); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, true); Set(var_selected_HDPE_Natural_Post_Extruder_2, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, true); Set(var_selected_PP_Post_Extruder_4, true); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="Half",
+            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, true); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, true); Set(var_selected_PP_Hopper_4_1_2_Test, true); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, true); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, true); Set(var_selected_PP_Post_Extruder_4_1_2_Test, true); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="Wash",
+            Set(var_selected_PET_A2_304, true); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, true); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, false); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="Add Samples",
+            
+            If(var_selected_PET_A2_304,
+            Patch('Test Results', Defaults('Test Results'), 
+            {Title: "Not Tested", Material: "Not Tested", 'Material_Filter (field_1)': "Not Tested", Sample_Point: "Not Tested", Sample_Point_Filter: "Not Tested", Specification_Filter: "Not Tested", 'Date_&_Time': Now(), Batch_Number: "Not Tested", Bag_Number: "Not Tested", Unique_No_Batch_Bag: "Not Tested",
+            'Caustic_Strength_Result_%': "Not Tested", IV_MFI_Result: "Not Tested", IV_Extruder_Value_Result: "Not Tested", GC_Acetaldehyde_Result_ppm: "Not Tested", GC_Limonene_Result_ppm: "Not Tested", GC_Benzene_Result_ppm: "Not Tested", GC_Result_Pass_Fail: "Not Tested", 'Fines_Result_%': "Not Tested", 'Moisture_Result_%': "Not Tested", 'Bulk_Density_Result_kg/m3': "Not Tested", 'Material_Density_Result_kg/m3': "Not Tested", Comp_White_Result_ppm: "Not Tested", 'Comp_White_Result_%': "Not Tested", Comp_Colour_Result_ppm: "Not Tested", 'Comp_Colour_Result_%': "Not Tested", 'Comp_Colour+White_Result_ppm': "Not Tested", Comp_Float_Sink_Glass_Result_ppm: "Not Tested", 'Comp_Glass+Inorganic_Result_ppm': "Not Tested", Comp_Float_Sink_Metal_Result_ppm: "Not Tested", Comp_Float_Sink_PVC_Result_ppm: "Not Tested", Comp_PO_Result_ppm: "Not Tested", Comp_Glue_Result_ppm: "Not Tested", Float_Sink_Pass_Fail: "Not Tested", Comp_Pass_Fail: "Not Tested", pH_Result: "Not Tested", Lab_L_Result: "Not Tested", Lab_a_Result: "Not Tested", Lab_b_Result: "Not Tested", Lab_Result_Pass_Fail: "Not Tested", Extruder_b_Value_Result: "Not Tested", Pellet_Count_Result_1g: "Not Tested", Pellet_Count_Result_5g: "Not Tested", 'Black_Inclusions_Medium_Result_#': "Not Tested", 'Black_Inclusions_Large_Result_#': "Not Tested", Black_Inclusions_Pass_Fail: "Not Tested", Crystallisation_Result: "Not Tested", Visual_Inspection_Result_Pass_Fail: "Not Tested"}));
+            
+            
+            
+            )
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =58
+        Width: =Parent.Width/5*2.5+2
+        WrapCount: =4
+        Y: =652
+        ZIndex: =10
+
+        Label_Sampling_Point_5 As label:
+            Align: =Align.Center
+            Color: =If(Label_Sampling_Point_5.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
+            Fill: =If(ThisItem.Name="Add Samples",Colour_Viridor_Purple,Colour_Viridor_GreenTint)
+            Height: =58*ThisItem.Height
+            HoverColor: =Colour_Viridor_White
+            HoverFill: |
+                =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =If(ThisItem.Text="",Color.Transparent,Color.White)
+            PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
+            Size: =18
+            Text: =ThisItem.Text
+            Width: =Parent.Width/4
+            ZIndex: =1
+
+    Refresh_Data_6 As icon.CancelBadge:
+        Color: =Color.White
+        Height: =34
+        HoverColor: =Colour_Viridor_Purple
+        Icon: |-
+            =If(var_sampling_point_filter=true,
+            Icon.FilterFlatFilled,
+            Icon.FilterFlat)
+        OnSelect: =Set(var_sampling_point_filter,!var_sampling_point_filter)
+        PressedColor: =Colour_Viridor_GreenTint
+        Tooltip: ="Refresh data."
+        Width: =34
+        X: =218
+        Y: =10
+        ZIndex: =11
+
     Title_Test_2 As group:
         Height: =5
         Width: =5
@@ -365,7 +569,7 @@ Screen_Add_Samples As screen:
             Size: =Text_size_Title
             Text: ="Add Samples"
             Width: =1366
-            ZIndex: =3
+            ZIndex: =1
 
         Button_Back_13 As icon.CancelBadge:
             Color: =Color.White
@@ -378,7 +582,7 @@ Screen_Add_Samples As screen:
             Width: =38
             X: =1322
             Y: =7
-            ZIndex: =4
+            ZIndex: =2
 
         Button_Home_6 As icon.CancelBadge:
             Color: =Color.White
@@ -391,7 +595,7 @@ Screen_Add_Samples As screen:
             Width: =38
             X: =Button_Back_13.X-50
             Y: =Button_Back_13.Y
-            ZIndex: =5
+            ZIndex: =3
 
         Refresh_Data_5 As icon.CancelBadge:
             Color: =Color.White
@@ -405,7 +609,7 @@ Screen_Add_Samples As screen:
             Width: =34
             X: =Button_Back_13.X-50*2
             Y: =10
-            ZIndex: =6
+            ZIndex: =4
 
     Gallery_Test_Results_2 As gallery.galleryVertical:
         DelayItemLoading: =true
@@ -497,206 +701,4 @@ Screen_Add_Samples As screen:
             Width: =35
             X: =643
             ZIndex: =10
-
-    Test_Button_add_samples As button:
-        Height: =44
-        OnSelect: |-
-            =Patch('Test Results', Defaults('Test Results'), {
-                Title: "Not Tested",
-                Material: "Not Tested",
-                'Material_Filter (field_1)': "Not Tested",
-                Sample_Point: "Not Tested",
-                Sample_Point_Filter: "Not Tested",
-                Specification_Filter: "Not Tested",
-                'Date_&_Time': Now(),
-                Batch_Number: "Not Tested",
-                Bag_Number: "Not Tested",
-                Unique_No_Batch_Bag: "Not Tested",
-            
-                'Caustic_Strength_Result_%': "Not Tested",
-                IV_MFI_Result: "Not Tested",
-                IV_Extruder_Value_Result: "Not Tested",
-                GC_Acetaldehyde_Result_ppm: "Not Tested",
-                GC_Limonene_Result_ppm: "Not Tested",
-                GC_Benzene_Result_ppm: "Not Tested",
-                GC_Result_Pass_Fail: "Not Tested",
-                'Fines_Result_%': "Not Tested",
-                'Moisture_Result_%': "Not Tested",
-                'Bulk_Density_Result_kg/m3': "Not Tested",
-                'Material_Density_Result_kg/m3': "Not Tested",
-                Comp_White_Result_ppm: "Not Tested",
-                'Comp_White_Result_%': "Not Tested",
-                Comp_Colour_Result_ppm: "Not Tested",
-                'Comp_Colour_Result_%': "Not Tested",
-                'Comp_Colour+White_Result_ppm': "Not Tested",
-                Comp_Float_Sink_Glass_Result_ppm: "Not Tested",
-                'Comp_Glass+Inorganic_Result_ppm': "Not Tested",
-                Comp_Float_Sink_Metal_Result_ppm: "Not Tested",
-                Comp_Float_Sink_PVC_Result_ppm: "Not Tested",
-                Comp_PO_Result_ppm: "Not Tested",
-                Comp_Glue_Result_ppm: "Not Tested",
-                Float_Sink_Pass_Fail: "Not Tested",
-                Comp_Pass_Fail: "Not Tested",
-                pH_Result: "Not Tested",
-                Lab_L_Result: "Not Tested",
-                Lab_a_Result: "Not Tested",
-                Lab_b_Result: "Not Tested",
-                Lab_Result_Pass_Fail: "Not Tested",
-                Extruder_b_Value_Result: "Not Tested",
-                Pellet_Count_Result_1g: "Not Tested",
-                Pellet_Count_Result_5g: "Not Tested",
-                'Black_Inclusions_Medium_Result_#': "Not Tested",
-                'Black_Inclusions_Large_Result_#': "Not Tested",
-                Black_Inclusions_Pass_Fail: "Not Tested",
-                Crystallisation_Result: "Not Tested",
-                Visual_Inspection_Result_Pass_Fail: "Not Tested"
-            })
-        Text: ="+ Samples"
-        Width: =123
-        X: =756
-        ZIndex: =13
-
-    var_selected As label:
-        Fill: =RGBA(180, 214, 250, 1)
-        Text: |-
-            ="
-            var_selected_PET_Wash
-            var_selected_PET_Wash_Other
-            var_selected_HDPE_Nat_Wash_BS_302
-            var_selected_HDPE_Nat_Wash_Other
-            var_selected_HDPE_Self_Coloured_Wash
-            var_selected_PP_Wash
-            var_selected_PET_Post_Wash_Silo_603
-            var_selected_PET_Post_Wash_Silo_604
-            var_selected_HDPE_Natural_Hopper_1
-            var_selected_HDPE_Natural_Hopper_2
-            var_selected_HDPE_Self_Coloured_Hopper_3
-            var_selected_PP_Hopper_4
-            var_selected_PET_Post_Flake_Sorter_705
-            var_selected_PET_Post_Flake_Sorter_706
-            var_selected_HDPE_Natural_Hopper_1_1_2_Test
-            var_selected_HDPE_Natural_Hopper_2_1_2_Test
-            var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test
-            var_selected_PP_Hopper_4_1_2_Test
-            var_selected_PET_Post_Extruder
-            var_selected_PET_Flake_Bag
-            var_selected_HDPE_Natural_Post_Extruder_1
-            var_selected_HDPE_Natural_Post_Extruder_2
-            var_selected_HDPE_Self_Coloured_Post_Extruder_3
-            var_selected_PP_Post_Extruder_4
-            var_selected_PET_SSP_1
-            var_selected_PET_SSP_2
-            var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test
-            var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test
-            var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test
-            var_selected_PP_Post_Extruder_4_1_2_Test
-            var_selected_PET_Pellet_Bag_Pre_SSP
-            var_selected_Blank_1
-            var_selected_HDPE_Natural_Pellet_Bag_Non_Deo
-            var_selected_Blank_2
-            var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo
-            var_selected_PP_Pellet_Bag_Non_Deo
-            var_selected_PET_Pellet_Bag_Post_SSP
-            var_selected_HDPE_Natural_Pellet_Bag_Deodorised
-            var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised
-            var_selected_PP_Pellet_Bag_Deodorised
-            var_selected_PET_Sampling_Silo_5_01
-            var_selected_HDPE_Natural_Sampling_Silo_1_01
-            var_selected_HDPE_Natural_Sampling_Silo_2_01
-            var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01
-            var_selected_PP_Sampling_Silo_4_01
-            var_selected_PET_Sampling_Silo_5_02
-            var_selected_HDPE_Natural_Sampling_Silo_1_02
-            var_selected_HDPE_Natural_Sampling_Silo_2_02
-            var_selected_HDPE_Self_Coloured_Sampling_Silo_3_02
-            var_selected_PP_Sampling_Silo_4_02
-            "
-        Visible: =false
-        X: =266
-        ZIndex: =15
-
-    "Gallery_Add_Samples_3 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
-        Fill: =Colour_Viridor_PurpleTint
-        Height: =116
-        Items: |-
-            =[
-            {Name:"All", Text:"All", Height: 1},
-            {Name:"Full", Text:"Full", Height: 1},
-            {Name:"Half", Text:"Half", Height: 1},
-            {Name:"Add Samples", Text:"Add Samples", Height: 2},
-            {Name:"Wash", Text:"Wash", Height: 1},
-            {},
-            {Name:"Clear", Text:"Clear", Height: 1},
-            {},
-            ]
-        Layout: =Layout.Vertical
-        OnSelect: |-
-            =If(
-            ThisItem.Name="Clear",
-            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, false); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
-            
-            ThisItem.Name="All",
-            Set(var_selected_PET_A2_304, true); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, true); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, true); Set(var_selected_HDPE_Natural_Hopper_2, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3, true); Set(var_selected_PP_Hopper_4, true); Set(var_selected_PET_Post_Flake_Sorter, true); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, true); Set(var_selected_HDPE_Natural_Post_Extruder_2, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, true); Set(var_selected_PP_Post_Extruder_4, true); Set(var_selected_PET_SSP_1, true); Set(var_selected_PET_SSP_2, true); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
-            
-            ThisItem.Name="Full",
-            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, true); Set(var_selected_HDPE_Natural_Hopper_2, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3, true); Set(var_selected_PP_Hopper_4, true); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, true); Set(var_selected_HDPE_Natural_Post_Extruder_2, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, true); Set(var_selected_PP_Post_Extruder_4, true); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
-            
-            ThisItem.Name="Half",
-            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, true); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, true); Set(var_selected_PP_Hopper_4_1_2_Test, true); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, true); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, true); Set(var_selected_PP_Post_Extruder_4_1_2_Test, true); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
-            
-            ThisItem.Name="Wash",
-            Set(var_selected_PET_A2_304, true); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, true); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, false); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
-            
-            ThisItem.Name="Add Samples",
-            
-            Patch('Test Results', Defaults('Test Results'), 
-            {Title: "Not Tested", Material: "Not Tested", 'Material_Filter (field_1)': "Not Tested", Sample_Point: "Not Tested", Sample_Point_Filter: "Not Tested", Specification_Filter: "Not Tested", 'Date_&_Time': Now(), Batch_Number: "Not Tested", Bag_Number: "Not Tested", Unique_No_Batch_Bag: "Not Tested",
-            'Caustic_Strength_Result_%': "Not Tested", IV_MFI_Result: "Not Tested", IV_Extruder_Value_Result: "Not Tested", GC_Acetaldehyde_Result_ppm: "Not Tested", GC_Limonene_Result_ppm: "Not Tested", GC_Benzene_Result_ppm: "Not Tested", GC_Result_Pass_Fail: "Not Tested", 'Fines_Result_%': "Not Tested", 'Moisture_Result_%': "Not Tested", 'Bulk_Density_Result_kg/m3': "Not Tested", 'Material_Density_Result_kg/m3': "Not Tested", Comp_White_Result_ppm: "Not Tested", 'Comp_White_Result_%': "Not Tested", Comp_Colour_Result_ppm: "Not Tested", 'Comp_Colour_Result_%': "Not Tested", 'Comp_Colour+White_Result_ppm': "Not Tested", Comp_Float_Sink_Glass_Result_ppm: "Not Tested", 'Comp_Glass+Inorganic_Result_ppm': "Not Tested", Comp_Float_Sink_Metal_Result_ppm: "Not Tested", Comp_Float_Sink_PVC_Result_ppm: "Not Tested", Comp_PO_Result_ppm: "Not Tested", Comp_Glue_Result_ppm: "Not Tested", Float_Sink_Pass_Fail: "Not Tested", Comp_Pass_Fail: "Not Tested", pH_Result: "Not Tested", Lab_L_Result: "Not Tested", Lab_a_Result: "Not Tested", Lab_b_Result: "Not Tested", Lab_Result_Pass_Fail: "Not Tested", Extruder_b_Value_Result: "Not Tested", Pellet_Count_Result_1g: "Not Tested", Pellet_Count_Result_5g: "Not Tested", 'Black_Inclusions_Medium_Result_#': "Not Tested", 'Black_Inclusions_Large_Result_#': "Not Tested", Black_Inclusions_Pass_Fail: "Not Tested", Crystallisation_Result: "Not Tested", Visual_Inspection_Result_Pass_Fail: "Not Tested"
-            })
-            
-            )
-        ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: =58
-        Width: =Parent.Width/5*2.5+2
-        WrapCount: =4
-        Y: =652
-        ZIndex: =17
-
-        Label_Sampling_Point_5 As label:
-            Align: =Align.Center
-            Color: =If(Label_Sampling_Point_5.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
-            Fill: =If(ThisItem.Name="Add Samples",Colour_Viridor_Purple,Colour_Viridor_GreenTint)
-            Height: =58*ThisItem.Height
-            HoverColor: =Colour_Viridor_White
-            HoverFill: |
-                =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
-            LineHeight: =1
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedColor: =If(ThisItem.Text="",Color.Transparent,Color.White)
-            PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =18
-            Text: =ThisItem.Text
-            Width: =Parent.Width/4
-            ZIndex: =1
-
-    Refresh_Data_6 As icon.CancelBadge:
-        Color: =Color.White
-        Height: =34
-        HoverColor: =Colour_Viridor_Purple
-        Icon: |-
-            =If(var_sampling_point_filter=true,
-            Icon.FilterFlatFilled,
-            Icon.FilterFlat)
-        OnSelect: =Set(var_sampling_point_filter,!var_sampling_point_filter)
-        PressedColor: =Colour_Viridor_GreenTint
-        Tooltip: ="Refresh data."
-        Width: =34
-        X: =218
-        Y: =10
-        ZIndex: =18
 
