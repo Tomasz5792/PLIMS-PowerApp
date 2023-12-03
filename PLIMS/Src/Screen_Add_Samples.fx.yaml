@@ -874,3 +874,22 @@ Screen_Add_Samples As screen:
         Y: =109
         ZIndex: =14
 
+    Label3_2 As label:
+        Align: =Align.Center
+        Height: =29
+        Text: ="Material"
+        Width: =115
+        X: =796
+        Y: =109
+        ZIndex: =15
+
+    Label3_3 As label:
+        Align: =Align.Center
+        Height: =29
+        Size: =10
+        Text: ="Sample Point"
+        Width: =115
+        X: =1026
+        Y: =109
+        ZIndex: =16
+
