@@ -573,9 +573,93 @@ Screen_Add_Samples As screen:
             Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
             }));
             
+            If(var_selected_HDPE_Natural_Post_Extruder_1, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
             
+            If(var_selected_HDPE_Natural_Post_Extruder_2, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
             
+            If(var_selected_HDPE_Self_Coloured_Post_Extruder_3, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
             
+            If(var_selected_PP_Post_Extruder_4, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PET_SSP_1, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PET_SSP_2, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PP_Post_Extruder_4_1_2_Test, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PET_Pellet_Bag_Pre_SSP, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PP_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PET_Pellet_Bag_Post_SSP, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PP_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PET_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Natural_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PP_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {
+            Title: "Not Tested", Material: "Material", 'Material_Filter (field_1)': "Mat_Filter", Sample_Point: "Samp_Point", Sample_Point_Filter: "Samp_Point_Filter", Specification_Filter: "Specification_Filter", 'Date_&_Time': Now()
+            }));
             
             )
         ShowScrollbar: =false
