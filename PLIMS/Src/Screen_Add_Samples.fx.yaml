@@ -563,8 +563,13 @@ Screen_Add_Samples As screen:
             
             //Flake
             
-            If(var_selected_PET_Post_Wash_Silo, Patch('Test Results', Defaults('Test Results'), {
-            Title: "Not Tested", Material: "PET Un-sorted Flake", 'Material_Filter (field_1)': "PET", Sample_Point: "", Sample_Point_Filter: "Post Flake Sorter", Specification_Filter: "PET Post Wash Silo", 'Date_&_Time': Now()
+            If(var_selected_PET_Post_Wash_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Post_Wash_Silo", 
+            Material: "PET Un-sorted Flake", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "PET Post Wash Silo", 
+            'Date_&_Time': Now()
             }));
             
             If(var_selected_HDPE_Natural_Hopper_1, Patch('Test Results', Defaults('Test Results'), {
