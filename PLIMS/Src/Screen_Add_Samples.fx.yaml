@@ -893,3 +893,15 @@ Screen_Add_Samples As screen:
         Y: =109
         ZIndex: =16
 
+    Test_Button_add_samples_1 As button:
+        Height: =44
+        OnSelect: |-
+            =Patch('Test Results', Defaults('Test Results'), {
+                Title: "Title",
+                'Date_&_Time': Now()
+            })
+        Text: ="+ Empty"
+        Width: =123
+        X: =892
+        ZIndex: =17
+
