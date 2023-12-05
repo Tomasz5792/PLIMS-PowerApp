@@ -502,7 +502,7 @@ Screen_Add_Samples As screen:
             //Wash water
             
             If(var_selected_PET_A2_304, Patch('Test Results', Defaults('Test Results'), {Title: "PET_A2_304", 
-            Material: "PET Wash Water", 
+            Material: "Wash Water", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "A2 304", 
             Sample_Point_Filter: "Wash", 
@@ -512,7 +512,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PET_Wash_Other, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Wash_Other", 
-            Material: "PET Wash Water", 
+            Material: "Wash Water", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "See Comment", 
             Sample_Point_Filter: "Wash", 
@@ -522,7 +522,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Nat_Wash_BS_302, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Nat_Wash_BS_302", 
-            Material: "HDPE Natural Wash Water", 
+            Material: "Wash Water", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "BS 302", 
             Sample_Point_Filter: "Wash", 
@@ -532,7 +532,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Nat_Wash_Other, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Nat_Wash_Other", 
-            Material: "HDPE Natural Wash Water", 
+            Material: "Wash Water", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "See Comment", 
             Sample_Point_Filter: "Wash", 
@@ -542,7 +542,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Wash, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Wash", 
-            Material: "HDPE Self Coloured Wash Water", 
+            Material: "Wash Water", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "See Comment", 
             Sample_Point_Filter: "Wash", 
@@ -552,7 +552,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Wash, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Wash", 
-            Material: "PP Wash Water", 
+            Material: "Wash Water", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "See Comment", 
             Sample_Point_Filter: "Wash", 
@@ -564,7 +564,7 @@ Screen_Add_Samples As screen:
             //Flake
             
             If(var_selected_PET_Post_Wash_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Post_Wash_Silo", 
-            Material: "PET Un-sorted Flake", 
+            Material: "Un-sorted Flake", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -573,7 +573,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Hopper_1, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_1", 
-            Material: "HDPE Natural Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Hopper 1", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -582,7 +582,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Hopper_2, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_2", 
-            Material: "HDPE Natural Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Hopper 2", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -591,7 +591,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Hopper_3, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Hopper_3", 
-            Material: "HDPE Self Coloured Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "Hopper 3", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -600,7 +600,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Hopper_4, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Hopper_4", 
-            Material: "PP Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "Hopper 4", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -609,7 +609,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PET_Post_Flake_Sorter, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Post_Flake_Sorter", 
-            Material: "PET Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -618,7 +618,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PET_Flake_Bag, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Flake_Bag", 
-            Material: "PET Flake Bag", 
+            Material: "Flake Bag", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "Bagging Station 2005", 
             Sample_Point_Filter: "PET Flake", 
@@ -627,7 +627,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Hopper_1_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_1_1/2_Test", 
-            Material: "HDPE Natural Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Hopper 1", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -636,7 +636,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Hopper_2_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_2_1/2_Test", 
-            Material: "HDPE Natural Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Hopper 2", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -645,7 +645,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Hopper_3_1/2_Test", 
-            Material: "HDPE Self Coloured Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "Hopper 3", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -654,7 +654,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Hopper_4_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Hopper_4_1/2_Test", 
-            Material: "PP Flake", 
+            Material: "Flake", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "Hopper 4", 
             Sample_Point_Filter: "Post Flake Sorter", 
@@ -665,7 +665,7 @@ Screen_Add_Samples As screen:
             //Pellets
             
             If(var_selected_PET_Post_Extruder, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Post_Extruder", 
-            Material: "PET Pellet Std pre-SSP", 
+            Material: "Pellet Std pre-SSP", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "Post Extruder", 
             Sample_Point_Filter: "Post Extruder", 
@@ -674,7 +674,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Post_Extruder_1, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Post_Extruder_1", 
-            Material: "HDPE Natural Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Post Extruder 1", 
             Sample_Point_Filter: "Post Extruder", 
@@ -683,7 +683,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Post_Extruder_2, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Post_Extruder_2", 
-            Material: "HDPE Natural Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Post Extruder 2", 
             Sample_Point_Filter: "Post Extruder", 
@@ -692,7 +692,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Post_Extruder_3, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Post_Extruder_3", 
-            Material: "HDPE Self Coloured Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "Post Extruder 3", 
             Sample_Point_Filter: "Post Extruder", 
@@ -701,7 +701,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Post_Extruder_4, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Post_Extruder_4", 
-            Material: "PP Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "Post Extruder 3", 
             Sample_Point_Filter: "Post Extruder", 
@@ -710,7 +710,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PET_SSP_1, Patch('Test Results', Defaults('Test Results'), {Title: "PET_SSP_1", 
-            Material: "PET Pellet Std", 
+            Material: "Pellet Std", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "SSP 1", 
             Sample_Point_Filter: "SSP", 
@@ -719,7 +719,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PET_SSP_2, Patch('Test Results', Defaults('Test Results'), {Title: "PET_SSP_2", 
-            Material: "PET Pellet Std", 
+            Material: "Pellet Std", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "SSP 2", 
             Sample_Point_Filter: "SSP", 
@@ -728,7 +728,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Post_Extruder_1_1/2_Test", 
-            Material: "HDPE Natural Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Post Extruder 1", 
             Sample_Point_Filter: "Post Extruder", 
@@ -737,7 +737,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Post_Extruder_2_1/2_Test", 
-            Material: "HDPE Natural Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Post Extruder 2", 
             Sample_Point_Filter: "Post Extruder", 
@@ -746,7 +746,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Post_Extruder_3_1/2_Test", 
-            Material: "HDPE Self Coloured Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "Post Extruder 3", 
             Sample_Point_Filter: "Post Extruder", 
@@ -755,7 +755,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Post_Extruder_4_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Post_Extruder_4_1/2_Test", 
-            Material: "PP Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "Post Extruder 3", 
             Sample_Point_Filter: "Post Extruder", 
@@ -766,7 +766,7 @@ Screen_Add_Samples As screen:
             //Pellet Bags
             
             If(var_selected_PET_Pellet_Bag_Pre_SSP, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Pellet_Bag_Pre_SSP", 
-            Material: "PET Pellet pre-SSP", 
+            Material: "Pellet pre-SSP", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "", 
             Sample_Point_Filter: "Post Extruder", 
@@ -775,7 +775,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Pellet_Bag_Non_Deo", 
-            Material: "HDPE Natural Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "Bagging Station xxxx", 
             Sample_Point_Filter: "Post Extruder", 
@@ -784,7 +784,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Pellet_Bag_Non_Deo", 
-            Material: "HDPE Self Coloured Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "Bagging Station xxxx", 
             Sample_Point_Filter: "Post Extruder", 
@@ -793,7 +793,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Pellet_Bag_Non_Deo", 
-            Material: "PP Pellet non Deo", 
+            Material: "Pellet non Deo", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "Bagging Station xxxx", 
             Sample_Point_Filter: "Post Extruder", 
@@ -802,7 +802,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PET_Pellet_Bag_Post_SSP, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Pellet_Bag_Post_SSP", 
-            Material: "PET Pellet Std", 
+            Material: "Pellet Std", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -811,7 +811,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Pellet_Bag_Deodorised", 
-            Material: "HDPE Natural Pellet Deo", 
+            Material: "Pellet Deo", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -820,7 +820,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Pellet_Bag_Deodorised", 
-            Material: "HDPE Self Coloured Pellet Deo", 
+            Material: "Pellet Deo", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -829,7 +829,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Pellet_Bag_Deodorised", 
-            Material: "PP Pellet Deo", 
+            Material: "Pellet Deo", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -838,7 +838,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PET_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Sampling_Silo", 
-            Material: "PET Pellet Std", 
+            Material: "Pellet Std", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -847,7 +847,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Sampling_Silo", 
-            Material: "HDPE Natural Pellet Deo", 
+            Material: "Pellet Deo", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -856,7 +856,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Sampling_Silo", 
-            Material: "HDPE Self Coloured Pellet Deo", 
+            Material: "Pellet Deo", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -865,7 +865,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Sampling_Silo", 
-            Material: "PP Pellet Deo", 
+            Material: "Pellet Deo", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
