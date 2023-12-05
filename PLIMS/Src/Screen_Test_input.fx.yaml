@@ -91,7 +91,7 @@ Screen_Test_input As screen:
             Blank(),Set(var_filter_selected,"All_All"),
             "Wash",Set(var_filter_selected,"All_Wash"),
             "Flake Bag",Set(var_filter_selected,"All_Flake_Bag"),
-            "Post Flake Sorter",Set(var_filter_selected,"All_Post_Flake_Sorter"),
+            "Flake",Set(var_filter_selected,"All_Post_Flake_Sorter"),
             "Post Extruder",Set(var_filter_selected,"All_Post_Extruder"),
             "SSP",Set(var_filter_selected,"All_SSP"),
             "Pellet Bag",Set(var_filter_selected,"All_Pellet_Bag"),
@@ -104,7 +104,7 @@ Screen_Test_input As screen:
             Blank(),Set(var_filter_selected,"PET_All"),
             "Wash",Set(var_filter_selected,"PET_Wash"),
             "Flake Bag",Set(var_filter_selected,"PET_Flake_Bag"),
-            "Post Flake Sorter",Set(var_filter_selected,"PET_Post_Flake_Sorter"),
+            "Flake",Set(var_filter_selected,"PET_Post_Flake_Sorter"),
             "Post Extruder",Set(var_filter_selected,"PET_Post_Extruder"),
             "SSP",Set(var_filter_selected,"PET_SSP"),
             "Pellet Bag",Set(var_filter_selected,"PET_Pellet_Bag"),
@@ -117,7 +117,7 @@ Screen_Test_input As screen:
             Blank(),Set(var_filter_selected,"HDPE_Nat_All"),
             "Wash",Set(var_filter_selected,"HDPE_Nat_Wash"),
             "Flake Bag",Set(var_filter_selected,"All_Flake_Bag"),
-            "Post Flake Sorter",Set(var_filter_selected,"HDPE_Nat_Post_Flake_Sorter"),
+            "Flake",Set(var_filter_selected,"HDPE_Nat_Post_Flake_Sorter"),
             "Post Extruder",Set(var_filter_selected,"HDPE_Nat_Post_Extruder"),
             "SSP",Set(var_filter_selected,"All_SSP"),
             "Pellet Bag",Set(var_filter_selected,"HDPE_Nat_Pellet_Bag"),
@@ -130,7 +130,7 @@ Screen_Test_input As screen:
             Blank(),Set(var_filter_selected,"HDPE_SC_All"),
             "Wash",Set(var_filter_selected,"HDPE_SC_Wash"),
             "Flake Bag",Set(var_filter_selected,"All_Flake_Bag"),
-            "Post Flake Sorter",Set(var_filter_selected,"HDPE_SC_Post_Flake_Sorter"),
+            "Flake",Set(var_filter_selected,"HDPE_SC_Post_Flake_Sorter"),
             "Post Extruder",Set(var_filter_selected,"HDPE_SC_Post_Extruder"),
             "SSP",Set(var_filter_selected,"All_SSP"),
             "Pellet Bag",Set(var_filter_selected,"HDPE_SC_Pellet_Bag"),
@@ -143,7 +143,7 @@ Screen_Test_input As screen:
             Blank(),Set(var_filter_selected,"PP_All"),
             "Wash",Set(var_filter_selected,"PP_Wash"),
             "Flake Bag",Set(var_filter_selected,"All_Flake_Bag"),
-            "Post Flake Sorter",Set(var_filter_selected,"PP_Post_Flake_Sorter"),
+            "Flake",Set(var_filter_selected,"PP_Post_Flake_Sorter"),
             "Post Extruder",Set(var_filter_selected,"PP_Post_Extruder"),
             "SSP",Set(var_filter_selected,"All_SSP"),
             "Pellet Bag",Set(var_filter_selected,"PP_Pellet_Bag"),
@@ -192,7 +192,7 @@ Screen_Test_input As screen:
         Fill: =Color.Transparent
         Height: =55
         Items: |-
-            =["Wash","Post Flake Sorter","Post Extruder","SSP","Sampling Silo"]
+            =["Wash","Flake","Post Extruder","SSP","Sampling Silo"]
             
             //"Flake Bag", "Pellet Bag",
         Layout: =Layout.Vertical
@@ -208,7 +208,7 @@ Screen_Test_input As screen:
             Switch(ThisItem.Value
             ,"Wash",Set(var_filter_selected,"All_Wash")
             ,"Flake Bag",Set(var_filter_selected,"All_Flake_Bag")
-            ,"Post Flake Sorter",Set(var_filter_selected,"All_Post_Flake_Sorter")
+            ,"Flake",Set(var_filter_selected,"All_Post_Flake_Sorter")
             ,"Post Extruder",Set(var_filter_selected,"All_Post_Extruder")
             ,"SSP",Set(var_filter_selected,"All_SSP")
             ,"Pellet Bag",Set(var_filter_selected,"All_Pellet_Bag")
@@ -217,7 +217,7 @@ Screen_Test_input As screen:
             );
             ,Set(var_sample_point_selected,ThisItem.Value));
             
-            //["Wash","Flake Bag","Post Flake Sorter","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
+            //["Wash","Flake Bag","Flake","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
             Switch(ThisItem.Value
             ,"Wash",
             Switch(var_material_selected,
@@ -241,7 +241,7 @@ Screen_Test_input As screen:
             Set(var_filter_selected,"Error")
             )
             
-            ,"Post Flake Sorter",
+            ,"Flake",
             Switch(var_material_selected,
             Blank(),Set(var_filter_selected,"All_Post_Flake_Sorter"),
             "All",Set(var_filter_selected,"All_Post_Flake_Sorter"),
