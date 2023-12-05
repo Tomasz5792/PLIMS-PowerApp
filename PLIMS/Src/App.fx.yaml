@@ -773,8 +773,8 @@ App As appinfo:
         ClearCollect(col_PP_Sampling_Silo, [
         {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
-        {Test:"Sample Point", Unit:"U_Point", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
-        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
+        //{Test:"Sample Point", Unit:"U_Point", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
+        //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
         {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1}, 
         {Test:"Batch Number", Unit:"U_Batch", Low_Spec:"", High_Spec:"", Result:"R_Batch", Width:2},
