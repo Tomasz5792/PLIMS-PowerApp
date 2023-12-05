@@ -246,6 +246,8 @@ App As appinfo:
         
         // For PET_Wash
         ClearCollect(col_PET_Wash, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1},
+        //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
@@ -280,6 +282,8 @@ App As appinfo:
         
         // For PET_Post_Flake_Sorter
         ClearCollect(col_PET_Post_Flake_Sorter, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
@@ -295,6 +299,8 @@ App As appinfo:
         
         // For PET_Post_Extruder
         ClearCollect(col_PET_Post_Extruder, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -312,6 +318,8 @@ App As appinfo:
         
         // For PET_SSP
         ClearCollect(col_PET_SSP, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -326,6 +334,8 @@ App As appinfo:
         
         // For PET_Pellet_Bag
         ClearCollect(col_PET_Pellet_Bag, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         //{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
@@ -348,6 +358,8 @@ App As appinfo:
         
         // For PET_Sampling_Silo
         ClearCollect(col_PET_Sampling_Silo, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         //{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
@@ -402,6 +414,8 @@ App As appinfo:
         
         // For HDPE_Nat_Wash
         ClearCollect(col_HDPE_Nat_Wash, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1},
+        //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
@@ -417,6 +431,8 @@ App As appinfo:
         
         // For HDPE_Nat_Post_Flake_Sorter
         ClearCollect(col_HDPE_Nat_Post_Flake_Sorter, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
@@ -435,6 +451,8 @@ App As appinfo:
         
         // For HDPE_Nat_Post_Extruder
         ClearCollect(col_HDPE_Nat_Post_Extruder, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
@@ -456,6 +474,8 @@ App As appinfo:
         
         // For HDPE_Nat_Pellet_Bag
         ClearCollect(col_HDPE_Nat_Pellet_Bag, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         //{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
@@ -481,6 +501,8 @@ App As appinfo:
         
         // For HDPE_Nat_Sampling_Silo
         ClearCollect(col_HDPE_Nat_Sampling_Silo, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         //{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -536,6 +558,8 @@ App As appinfo:
         
         // For HDPE_SC_Wash
         ClearCollect(col_HDPE_SC_Wash, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1},
+        //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
@@ -551,6 +575,8 @@ App As appinfo:
         
         // For HDPE_SC_Post_Flake_Sorter
         ClearCollect(col_HDPE_SC_Post_Flake_Sorter, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -569,6 +595,8 @@ App As appinfo:
         
         // For HDPE_SC_Post_Extruder
         ClearCollect(col_HDPE_SC_Post_Extruder, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -590,6 +618,8 @@ App As appinfo:
         
         // For HDPE_SC_Pellet_Bag
         ClearCollect(col_HDPE_SC_Pellet_Bag, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         //{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -615,6 +645,8 @@ App As appinfo:
         
         // For HDPE_SC_Sampling_Silo
         ClearCollect(col_HDPE_SC_Sampling_Silo, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         //{Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -666,6 +698,8 @@ App As appinfo:
         
         // For PP_Wash
         ClearCollect(col_PP_Wash, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1},
+        //{Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
@@ -681,6 +715,8 @@ App As appinfo:
         
         // For PP_Post_Flake_Sorter
         ClearCollect(col_PP_Post_Flake_Sorter, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"U_Point", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -697,6 +733,8 @@ App As appinfo:
         
         // For PP_Post_Extruder
         ClearCollect(col_PP_Post_Extruder, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"U_Point", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
@@ -713,9 +751,11 @@ App As appinfo:
         
         // For PP_Pellet_Bag
         ClearCollect(col_PP_Pellet_Bag, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         //{Test:"Sample Point", Unit:"U_Point", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
-        //{Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
-        //{Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1}, 
+        {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
+        {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1}, 
         {Test:"Batch Number", Unit:"U_Batch", Low_Spec:"", High_Spec:"", Result:"R_Batch", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Bag Number", Unit:"U_Bag", Low_Spec:"", High_Spec:"", Result:"R_Bag", Width:2},
@@ -731,10 +771,12 @@ App As appinfo:
         
         // For PP_Sampling_Silo
         ClearCollect(col_PP_Sampling_Silo, [
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"U_Point", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
-        //{Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
-        //{Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1}, 
+        {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
+        {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1}, 
         {Test:"Batch Number", Unit:"U_Batch", Low_Spec:"", High_Spec:"", Result:"R_Batch", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"MFI", Unit:"U_MFI", Low_Spec:"13", High_Spec:"20", Result:"R_IV_MFI", Width:1}, 

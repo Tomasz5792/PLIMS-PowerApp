@@ -119,7 +119,7 @@ Screen_Test_input As screen:
             "Flake Bag",Set(var_filter_selected,"All_Flake_Bag"),
             "Flake",Set(var_filter_selected,"HDPE_Nat_Post_Flake_Sorter"),
             "Post Extruder",Set(var_filter_selected,"HDPE_Nat_Post_Extruder"),
-            "SSP",Set(var_filter_selected,"All_SSP"),
+            "SSP",Set(var_filter_selected,"Error"),
             "Pellet Bag",Set(var_filter_selected,"HDPE_Nat_Pellet_Bag"),
             "Sampling Silo",Set(var_filter_selected,"HDPE_Nat_Sampling_Silo"),
             Set(var_filter_selected,"Error")
@@ -132,7 +132,7 @@ Screen_Test_input As screen:
             "Flake Bag",Set(var_filter_selected,"All_Flake_Bag"),
             "Flake",Set(var_filter_selected,"HDPE_SC_Post_Flake_Sorter"),
             "Post Extruder",Set(var_filter_selected,"HDPE_SC_Post_Extruder"),
-            "SSP",Set(var_filter_selected,"All_SSP"),
+            "SSP",Set(var_filter_selected,"Error"),
             "Pellet Bag",Set(var_filter_selected,"HDPE_SC_Pellet_Bag"),
             "Sampling Silo",Set(var_filter_selected,"HDPE_SC_Sampling_Silo"),
             Set(var_filter_selected,"Error")
@@ -145,7 +145,7 @@ Screen_Test_input As screen:
             "Flake Bag",Set(var_filter_selected,"All_Flake_Bag"),
             "Flake",Set(var_filter_selected,"PP_Post_Flake_Sorter"),
             "Post Extruder",Set(var_filter_selected,"PP_Post_Extruder"),
-            "SSP",Set(var_filter_selected,"All_SSP"),
+            "SSP",Set(var_filter_selected,"Error"),
             "Pellet Bag",Set(var_filter_selected,"PP_Pellet_Bag"),
             "Sampling Silo",Set(var_filter_selected,"PP_Sampling_Silo"),
             Set(var_filter_selected,"Error")
@@ -717,6 +717,7 @@ Screen_Test_input As screen:
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        LoadingSpinnerColor: =Colour_Viridor_Purple
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =58
@@ -1137,6 +1138,7 @@ Screen_Test_input As screen:
                 
                 
             LoadingSpinner: =LoadingSpinner.Data
+            LoadingSpinnerColor: =Colour_Viridor_Purple
             ShowScrollbar: =false
             TemplatePadding: =0
             TemplateSize: =Gallery_Tests_Inner.Width/Gallery_Tests_Inner.AllItemsCount
@@ -1273,7 +1275,7 @@ Screen_Test_input As screen:
                 PressedColor: |
                     =Colour_Viridor_Purple
                 PressedFill: =If(ThisItem.Result="",Color.Transparent,Colour_Viridor_Purple)
-                Size: =If(var_sample_point_selected=Blank(),15,Text_size)
+                Size: =If(var_sample_point_selected=Blank(),16,Text_size)
                 Text: |
                     =If(
                     ThisItem.Result="R_Point",Label_Sample_Point.Text,

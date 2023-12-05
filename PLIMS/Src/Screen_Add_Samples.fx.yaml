@@ -726,7 +726,7 @@ Screen_Add_Samples As screen:
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "SSP 1", 
             Sample_Point_Filter: "SSP", 
-            Specification_Filter: "PET Pellet SSP", 
+            Specification_Filter: "PET Pellet Std SSP", 
             'Date_&_Time': Now()
             }));
             
@@ -735,7 +735,7 @@ Screen_Add_Samples As screen:
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "SSP 2", 
             Sample_Point_Filter: "SSP", 
-            Specification_Filter: "PET Pellet SSP", 
+            Specification_Filter: "PET Pellet Std SSP", 
             'Date_&_Time': Now()
             }));
             
