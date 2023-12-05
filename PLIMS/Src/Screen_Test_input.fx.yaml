@@ -1274,6 +1274,7 @@ Screen_Test_input As screen:
                 Text: |
                     =If(
                     ThisItem.Result="R_Point",Label_Sample_Point.Text,
+                    ThisItem.Result="R_Material_Filter",Label_Material_Filter.Text,
                     ThisItem.Result="R_Material",Label_Material.Text,
                     ThisItem.Result="R_Date",Label_Date.Text,
                     ThisItem.Result="R_Time",Label_Time.Text,
@@ -1327,6 +1328,15 @@ Screen_Test_input As screen:
                     //otherwise
                     Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
                 ZIndex: =1
+
+        Label_Material_Filter As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Material_Filter (field_1)'
+            Visible: =false
+            Width: =82
+            X: =181
+            ZIndex: =39
 
     Label_All_Test_Filter As label:
         Color: =RGBA(255, 255, 255, 1)
