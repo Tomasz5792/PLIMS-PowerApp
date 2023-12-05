@@ -766,7 +766,7 @@ Screen_Add_Samples As screen:
             //Pellet Bags
             
             If(var_selected_PET_Pellet_Bag_Pre_SSP, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Pellet_Bag_Pre_SSP", 
-            Material: "Pellet pre-SSP", 
+            Material: "Pellet pre-SSP Bag", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "", 
             Sample_Point_Filter: "Post Extruder", 
@@ -775,7 +775,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Pellet_Bag_Non_Deo", 
-            Material: "Pellet non Deo", 
+            Material: "Pellet non Deo Bag", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "", 
             Sample_Point_Filter: "Post Extruder", 
@@ -784,7 +784,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Pellet_Bag_Non_Deo", 
-            Material: "Pellet non Deo", 
+            Material: "Pellet non Deo Bag", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "Bagging Station 2008", 
             Sample_Point_Filter: "Post Extruder", 
@@ -793,7 +793,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Pellet_Bag_Non_Deo", 
-            Material: "Pellet non Deo", 
+            Material: "Pellet non Deo Bag", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "Bagging Station 2009", 
             Sample_Point_Filter: "Post Extruder", 
@@ -802,7 +802,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PET_Pellet_Bag_Post_SSP, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Pellet_Bag_Post_SSP", 
-            Material: "Pellet Std", 
+            Material: "Pellet Std Bag", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -811,7 +811,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Pellet_Bag_Deodorised", 
-            Material: "Pellet Deo", 
+            Material: "Pellet Deo Bag", 
             'Material_Filter (field_1)': "HDPE Natural", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -820,7 +820,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Pellet_Bag_Deodorised", 
-            Material: "Pellet Deo", 
+            Material: "Pellet Deo Bag", 
             'Material_Filter (field_1)': "HDPE Self Coloured", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 
@@ -829,7 +829,7 @@ Screen_Add_Samples As screen:
             }));
             
             If(var_selected_PP_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Pellet_Bag_Deodorised", 
-            Material: "Pellet Deo", 
+            Material: "Pellet Deo Bag", 
             'Material_Filter (field_1)': "PP", 
             Sample_Point: "", 
             Sample_Point_Filter: "Sampling Silo", 

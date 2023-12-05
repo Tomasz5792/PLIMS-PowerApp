@@ -26,8 +26,12 @@ App As appinfo:
         //Loading Collections
         // For All_All
         ClearCollect(col_All_All, [
-        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter_Plus_Material", Width:3},
-        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
+        //{Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter_Plus_Material", Width:3},
+        //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
+        {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
@@ -55,9 +59,11 @@ App As appinfo:
         
         // For All_Wash
         ClearCollect(col_All_Wash, [
-        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1}, 
+        {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter", Width:1},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
+        //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
+        //{Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment", Width:2},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
@@ -93,6 +99,8 @@ App As appinfo:
         
         // For All_Post_Flake_Sorter
         ClearCollect(col_All_Post_Flake_Sorter, [
+        {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
@@ -109,6 +117,8 @@ App As appinfo:
         
         // For All_Post_Extruder
         ClearCollect(col_All_Post_Extruder, [
+        {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
@@ -150,6 +160,8 @@ App As appinfo:
         
         // For All_Pellet_Bag
         ClearCollect(col_All_Pellet_Bag, [
+        {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
