@@ -724,7 +724,7 @@ Screen_Test_input As screen:
         Label_Material As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.'Material_Filter (field_1)'
+            Text: =ThisItem.Material
             Visible: =false
             Width: =82
             X: =42
