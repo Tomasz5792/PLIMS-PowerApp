@@ -191,7 +191,10 @@ Screen_Test_input As screen:
     "Gallery_Select_Sampling_Point As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Color.Transparent
         Height: =55
-        Items: =["Wash","Flake Bag","Post Flake Sorter","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
+        Items: |-
+            =["Wash","Post Flake Sorter","Post Extruder","SSP","Sampling Silo"]
+            
+            //"Flake Bag", "Pellet Bag",
         Layout: =Layout.Vertical
         OnSelect: |-
             =//["All_All","All_Wash","All_Flake_Bag","All_Post_Flake_Sorter","All_Post_Extruder","All_SSP","All_Pellet_Bag","All_Sampling_Silo",
@@ -298,7 +301,7 @@ Screen_Test_input As screen:
         TemplatePadding: =0
         TemplateSize: =54
         Width: =1366
-        WrapCount: =7
+        WrapCount: =Gallery_Select_Sampling_Point.AllItemsCount
         Y: =105
         ZIndex: =4
 
