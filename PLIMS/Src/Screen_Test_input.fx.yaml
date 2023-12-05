@@ -1279,6 +1279,8 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Point",Label_Sample_Point.Text,
                     ThisItem.Result="R_Material_Filter",Label_Material_Filter.Text,
                     ThisItem.Result="R_Material",Label_Material.Text,
+                    //Label_Filter+Material
+                    ThisItem.Result="R_Material_Filter_Material",Label_Filter_Plus_Material.Text,
                     ThisItem.Result="R_Date",Label_Date.Text,
                     ThisItem.Result="R_Time",Label_Time.Text,
                     ThisItem.Result="R_Batch",Label_Batch_Number.Text,
@@ -1340,6 +1342,15 @@ Screen_Test_input As screen:
             Width: =82
             X: =181
             ZIndex: =39
+
+        Label_Filter_Plus_Material As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =Concatenate(ThisItem.'Material_Filter (field_1)'," ",ThisItem.Material)
+            Visible: =false
+            Width: =210
+            X: =187
+            ZIndex: =40
 
     Label_All_Test_Filter As label:
         Color: =RGBA(255, 255, 255, 1)

@@ -26,10 +26,8 @@ App As appinfo:
         //Loading Collections
         // For All_All
         ClearCollect(col_All_All, [
-        {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter", Width:2},
-        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
-        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2},
-        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter_Plus_Material", Width:3},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2},
