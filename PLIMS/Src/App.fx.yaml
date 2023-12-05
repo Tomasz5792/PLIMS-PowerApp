@@ -144,7 +144,7 @@ App As appinfo:
         
         // For All_SSP
         ClearCollect(col_All_SSP, [
-        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
+        {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter_Plus_Material", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
@@ -185,6 +185,8 @@ App As appinfo:
         
         // For All_Sampling_Silo
         ClearCollect(col_All_Sampling_Silo, [
+        {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material_Filter", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 

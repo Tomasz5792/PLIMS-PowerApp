@@ -1,6 +1,15 @@
 Screen_Add_Samples As screen:
     Fill: =Colour_Viridor_White
 
+    Unit_Box_Colour As label:
+        Fill: =Color.AliceBlue
+        Height: =29
+        Text: =
+        Width: =383
+        X: =983
+        Y: =109
+        ZIndex: =1
+
     Gallery_Units_3 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Fill: =Color.AliceBlue
@@ -10,10 +19,10 @@ Screen_Add_Samples As screen:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Units_3.Width/Gallery_Units_3.AllItemsCount
-        Width: =Parent.Width-Gallery_Add_Samples.Width
+        Width: =Parent.Width-Gallery_Add_Samples.Width-4
         X: =Gallery_Add_Samples.Width
         Y: =109
-        ZIndex: =5
+        ZIndex: =6
 
         Label5_17 As label:
             Align: =Align.Center
@@ -52,11 +61,14 @@ Screen_Add_Samples As screen:
         Height: =58
         Items: |-
             =[
+            {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
             {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
             {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
             {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
             {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
-            {Test:"Date", Unit:"dd mmm yy", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
+            {Test:"Date", Unit:"dd mmm yy", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
             {Test:"Time", Unit:"hh:mm", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1},
             ]
         LoadingSpinner: =LoadingSpinner.Data
@@ -66,7 +78,7 @@ Screen_Add_Samples As screen:
         Width: =Parent.Width-Gallery_Add_Samples.Width
         X: =Gallery_Add_Samples.Width
         Y: =51
-        ZIndex: =6
+        ZIndex: =7
 
         Label5_16 As label:
             Align: =Align.Center
@@ -265,7 +277,7 @@ Screen_Add_Samples As screen:
         Width: =Parent.Width/5*2.5+1
         WrapCount: =6
         Y: =51
-        ZIndex: =7
+        ZIndex: =8
 
         Label_Sampling_Point_2 As label:
             Align: =Align.Center
@@ -340,7 +352,7 @@ Screen_Add_Samples As screen:
             PaddingTop: =0
             PressedColor: =If(ThisItem.Name="",Color.Transparent,Color.White)
             PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
-            Size: =17
+            Size: =16
             Text: =ThisItem.Text
             Width: |-
                 =If(
@@ -404,7 +416,7 @@ Screen_Add_Samples As screen:
         Text: ="+ Samples"
         Width: =123
         X: =756
-        ZIndex: =8
+        ZIndex: =9
 
     var_selected As label:
         Fill: =RGBA(180, 214, 250, 1)
@@ -463,7 +475,7 @@ Screen_Add_Samples As screen:
             "
         Visible: =false
         X: =266
-        ZIndex: =9
+        ZIndex: =10
 
     "Gallery_Add_Samples_3 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Colour_Viridor_PurpleTint
@@ -621,7 +633,7 @@ Screen_Add_Samples As screen:
             Material: "Flake Bag", 
             'Material_Filter (field_1)': "PET", 
             Sample_Point: "Bagging Station 2005", 
-            Sample_Point_Filter: "PET Flake", 
+            Sample_Point_Filter: "Post Flake Sorter", 
             Specification_Filter: "PET Flake", 
             'Date_&_Time': Now()
             }));
@@ -880,7 +892,7 @@ Screen_Add_Samples As screen:
         Width: =Parent.Width/5*2.5+2
         WrapCount: =4
         Y: =652
-        ZIndex: =10
+        ZIndex: =11
 
         Label_Sampling_Point_5 As label:
             Align: =Align.Center
@@ -903,22 +915,6 @@ Screen_Add_Samples As screen:
             Width: =Parent.Width/4
             ZIndex: =1
 
-    Refresh_Data_6 As icon.CancelBadge:
-        Color: =Color.White
-        Height: =34
-        HoverColor: =Colour_Viridor_Purple
-        Icon: |-
-            =If(var_sampling_point_filter=true,
-            Icon.FilterFlatFilled,
-            Icon.FilterFlat)
-        OnSelect: =Set(var_sampling_point_filter,!var_sampling_point_filter)
-        PressedColor: =Colour_Viridor_GreenTint
-        Tooltip: ="Refresh data."
-        Width: =34
-        X: =218
-        Y: =10
-        ZIndex: =11
-
     Title_Test_2 As group:
         Height: =5
         Width: =5
@@ -936,7 +932,7 @@ Screen_Add_Samples As screen:
             Size: =Text_size_Title
             Text: ="Add Samples"
             Width: =1366
-            ZIndex: =1
+            ZIndex: =2
 
         Button_Back_13 As icon.CancelBadge:
             Color: =Color.White
@@ -949,7 +945,7 @@ Screen_Add_Samples As screen:
             Width: =38
             X: =1322
             Y: =7
-            ZIndex: =2
+            ZIndex: =3
 
         Button_Home_6 As icon.CancelBadge:
             Color: =Color.White
@@ -962,7 +958,7 @@ Screen_Add_Samples As screen:
             Width: =38
             X: =Button_Back_13.X-50
             Y: =Button_Back_13.Y
-            ZIndex: =3
+            ZIndex: =4
 
         Refresh_Data_5 As icon.CancelBadge:
             Color: =Color.White
@@ -976,7 +972,23 @@ Screen_Add_Samples As screen:
             Width: =34
             X: =Button_Back_13.X-50*2
             Y: =10
-            ZIndex: =4
+            ZIndex: =5
+
+    Refresh_Data_6 As icon.CancelBadge:
+        Color: =Color.White
+        Height: =34
+        HoverColor: =Colour_Viridor_Purple
+        Icon: |-
+            =If(var_sampling_point_filter=true,
+            Icon.FilterFlatFilled,
+            Icon.FilterFlat)
+        OnSelect: =Set(var_sampling_point_filter,!var_sampling_point_filter)
+        PressedColor: =Colour_Viridor_GreenTint
+        Tooltip: ="Refresh data."
+        Width: =34
+        X: =218
+        Y: =10
+        ZIndex: =12
 
     Gallery_Test_Results_2 As gallery.galleryVertical:
         DelayItemLoading: =true
@@ -990,7 +1002,7 @@ Screen_Add_Samples As screen:
         Width: =Parent.Width-Gallery_Add_Samples.Width
         X: =Gallery_Add_Samples.Width
         Y: =138
-        ZIndex: =12
+        ZIndex: =13
 
         Label_Test_Sample_Point_2 As label:
             Align: =Align.Center
@@ -1008,8 +1020,9 @@ Screen_Add_Samples As screen:
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            Size: =16
             Text: =ThisItem.'Material_Filter (field_1)'
-            Width: =Gallery_Test_Title_2.Width/Gallery_Test_Title_2.AllItemsCount
+            Width: =Gallery_Test_Title_2.Width/Gallery_Test_Title_2.AllItemsCount*2
             ZIndex: =2
 
         Label_Test_Date_2 As label:
@@ -1023,7 +1036,7 @@ Screen_Add_Samples As screen:
             Size: =Label_Test_Material_Main_2.Size
             Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
             Width: =Label_Test_Material_Main_2.Width
-            X: =Label_Test_Material_Main_2.Width*4
+            X: =Label_Test_Material_Main_2.Width*3
             ZIndex: =6
 
         Label_Test_Time_2 As label:
@@ -1033,8 +1046,8 @@ Screen_Add_Samples As screen:
             OnSelect: =Select(Parent)
             Size: =Label_Test_Material_Main_2.Size
             Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
-            Width: =Label_Test_Material_Main_2.Width
-            X: =Label_Test_Material_Main_2.Width*5
+            Width: =Label_Test_Material_Main_2.Width/2-8
+            X: =Label_Test_Material_Main_2.Width*4
             ZIndex: =7
 
         Label_Test_Sample_Point_3 As label:
@@ -1045,66 +1058,17 @@ Screen_Add_Samples As screen:
             Size: =Label_Test_Material_Main_2.Size
             Text: =ThisItem.Sample_Point
             Width: =Label_Test_Material_Main_2.Width
-            X: =Label_Test_Material_Main_2.Width*3
-            ZIndex: =8
-
-        Label_Test_Sample_Point_4 As label:
-            Align: =Align.Center
-            Height: =54
-            LineHeight: =1
-            OnSelect: =Select(Parent)
-            Size: =Label_Test_Material_Main_2.Size
-            Text: =ThisItem.Sample_Point_Filter
-            Width: =Label_Test_Material_Main_2.Width
             X: =Label_Test_Material_Main_2.Width*2
-            ZIndex: =9
+            ZIndex: =8
 
         Icon1 As icon.Erase:
             Color: =RGBA(255, 0, 0, 1)
             Height: =24
             Icon: =Icon.Trash
             OnSelect: =Remove('Test Results',ThisItem)
+            Visible: =false
             Width: =25
-            X: =655
-            Y: =30
             ZIndex: =10
-
-    Label3 As label:
-        Align: =Align.Center
-        Height: =29
-        Text: ="Filter"
-        Width: =115
-        X: =684
-        Y: =109
-        ZIndex: =13
-
-    Label3_1 As label:
-        Align: =Align.Center
-        Height: =29
-        Text: ="Filter"
-        Width: =115
-        X: =911
-        Y: =109
-        ZIndex: =14
-
-    Label3_2 As label:
-        Align: =Align.Center
-        Height: =29
-        Text: ="Material"
-        Width: =115
-        X: =796
-        Y: =109
-        ZIndex: =15
-
-    Label3_3 As label:
-        Align: =Align.Center
-        Height: =29
-        Size: =10
-        Text: ="Sample Point"
-        Width: =115
-        X: =1026
-        Y: =109
-        ZIndex: =16
 
     Test_Button_add_samples_1 As button:
         Height: =44
@@ -1116,5 +1080,5 @@ Screen_Add_Samples As screen:
         Text: ="+ Empty"
         Width: =123
         X: =892
-        ZIndex: =17
+        ZIndex: =14
 
