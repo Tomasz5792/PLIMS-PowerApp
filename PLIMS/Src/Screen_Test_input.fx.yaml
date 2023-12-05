@@ -1,6 +1,19 @@
 Screen_Test_input As screen:
     Fill: =Colour_Viridor_GreenTint
 
+    Select_Button_Background As label:
+        Align: =TextPosition.Left
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =Colour_Viridor_PurpleTint
+        Font: =Font.'Segoe UI'
+        Height: =109
+        PaddingLeft: =20
+        Size: =Text_size_Title
+        Text: =
+        Width: =1366
+        Y: =51
+        ZIndex: =1
+
     "Gallery_All_Filters As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =RGBA(215, 223, 240, 1)
         Height: =270
@@ -15,7 +28,7 @@ Screen_Test_input As screen:
         WrapCount: =8
         X: =508
         Y: =498
-        ZIndex: =1
+        ZIndex: =2
 
         Label1_7 As label:
             Align: =Align.Center
@@ -44,22 +57,9 @@ Screen_Test_input As screen:
                 0))
             ZIndex: =1
 
-    Select_Button_Background As label:
-        Align: =TextPosition.Left
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =Colour_Viridor_PurpleTint
-        Font: =Font.'Segoe UI'
-        Height: =109
-        PaddingLeft: =20
-        Size: =Text_size_Title
-        Text: =
-        Width: =1366
-        Y: =51
-        ZIndex: =2
-
     "Gallery_Select_Material As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Color.Transparent
-        Height: =56
+        Height: =55
         Items: |+
             =["All","PET","HDPE Natural","HDPE Self Coloured","PP"]
             
@@ -167,7 +167,7 @@ Screen_Test_input As screen:
                 =If(ThisItem.Value=var_material_selected,Colour_Viridor_Purple,
                 If(ThisItem.Value="Verification",Color.Gray,
                 Color.Transparent))
-            Height: =56
+            Height: =Parent.TemplateHeight
             HoverColor: =Colour_Viridor_White
             HoverFill: |
                 =If(ThisItem.Value="",Color.Transparent,Colour_Viridor_Green)
@@ -181,7 +181,7 @@ Screen_Test_input As screen:
             PressedFill: =If(ThisItem.Value="",Color.Transparent,Colour_Viridor_Purple)
             Size: =Text_size_Menu
             Text: =ThisItem.Value
-            Width: =273.2
+            Width: =Parent.TemplateWidth
             Y: |-
                 =If(ThisItem.Value="PP P&G",-30,
                 If(ThisItem.Value="PET Std",-30,
@@ -190,7 +190,7 @@ Screen_Test_input As screen:
 
     "Gallery_Select_Sampling_Point As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
         Fill: =Color.Transparent
-        Height: =54
+        Height: =55
         Items: =["Wash","Flake Bag","Post Flake Sorter","Post Extruder","SSP","Pellet Bag","Sampling Silo"]
         Layout: =Layout.Vertical
         OnSelect: |-
@@ -299,14 +299,14 @@ Screen_Test_input As screen:
         TemplateSize: =54
         Width: =1366
         WrapCount: =7
-        Y: =106
+        Y: =105
         ZIndex: =4
 
         Label_Sampling_Point As label:
             Align: =Align.Center
             Color: =If(Label_Sampling_Point.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
             Fill: =If(ThisItem.Value=var_sample_point_selected,Colour_Viridor_Purple,Color.Transparent)
-            Height: =54
+            Height: =Parent.TemplateHeight+1
             HoverColor: =Colour_Viridor_White
             HoverFill: |
                 =If(ThisItem.Value="",Color.Transparent,Colour_Viridor_Green)
@@ -320,7 +320,7 @@ Screen_Test_input As screen:
             PressedFill: =If(ThisItem.Value="",Color.Transparent,Colour_Viridor_Purple)
             Size: =Text_size_Menu
             Text: =ThisItem.Value
-            Width: =195.14285714285714
+            Width: =Parent.TemplateWidth
             Y: |-
                 =If(ThisItem.Value="PP P&G",-30,
                 If(ThisItem.Value="PET Std",-30,
