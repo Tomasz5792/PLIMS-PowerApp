@@ -1092,7 +1092,7 @@ Screen_Test_input As screen:
         Gallery_Tests_Inner As gallery.galleryHorizontal:
             DelayItemLoading: =true
             Fill: =Color.Transparent
-            Height: =Parent.TemplateHeight
+            Height: =Parent.TemplateHeight+0.5
             Items: |+
                 =Switch(var_filter_selected,
                     "All_All", col_All_All,
