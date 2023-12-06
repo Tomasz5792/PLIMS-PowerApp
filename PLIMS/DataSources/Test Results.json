@@ -136,9 +136,13 @@
       "field_98": "Black_Inclusions_Medium_Result_#",
       "field_99": "Black_Inclusions_Large_#",
       "ID": "ID",
+      "LocationTransferred": "Location_Transferred",
       "Material_Filter": "Material",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
+      "Sample_Silo_Weight_kg": "Sample_Silo_Weight_kg",
+      "Storage_Silo_Batch_Number": "Storage_Silo_Batch_Number",
+      "Storage_Silo_Weight_kg": "Storage_Silo_Weight_kg",
       "Title": "Title"
     },
     "DatasetName": "https://viridor.sharepoint.com/sites/AvonmouthQualityTechs",
