@@ -19,9 +19,7 @@ App As appinfo:
         Set(Text_size,17);Set(Text_size_2,15);Set(Text_size_Menu,20);Set(Text_size_Title,25);Set(Text_size_large,40);Set(Border_Thickness,1.2);
         
         //Variables
-        Set(var_filter_selected,"All_All");  //setting filter
-        Set(var_material_selected,"All");  //setting filter
-        
+        Set(var_filter_selected,"All_All"); Set(var_material_selected,"All"); Set(var_sample_point_selected,Blank()); //setting filter
         
         //Loading Collections
         // For All_All
@@ -731,9 +729,9 @@ App As appinfo:
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1}, 
         {Test:"Bulk Density", Unit:"U_Bulk", Low_Spec:"200", High_Spec:"300", Result:"R_Bulk", Width:1}, 
-        {Test:"Metal", Unit:"U_Metal", Low_Spec:"none", High_Spec:"none", Result:"R_Metal", Width:1},
-        {Test:"Glass", Unit:"U_Glass", Low_Spec:"none", High_Spec:"none", Result:"R_Glass", Width:1},
-        {Test:"PET", Unit:"U_PET", Low_Spec:"none", High_Spec:"none", Result:"R_PET", Width:1},
+        {Test:"Metal", Unit:"U_Metal", Low_Spec:"none", High_Spec:"10", Result:"R_Metal", Width:1},
+        {Test:"Glass", Unit:"U_Glass", Low_Spec:"none", High_Spec:"10", Result:"R_Glass", Width:1},
+        {Test:"PET", Unit:"U_PET", Low_Spec:"none", High_Spec:"0.1", Result:"R_PET", Width:1},
         {Test:"PVC", Unit:"U_PVC", Low_Spec:"none", High_Spec:"none", Result:"R_PVC", Width:1},
         {Test:"pH", Unit:"U_pH", Low_Spec:"none", High_Spec:"none", Result:"R_pH", Width:1},
         //{Test:"Comment", Unit:"U_Comment", Low_Spec:"", High_Spec:"", Result:"R_Comment", Width:1},
@@ -783,11 +781,14 @@ App As appinfo:
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         //{Test:"Sample Point", Unit:"U_Point", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
-        {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
+        {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1}, 
         //{Test:"Batch Number", Unit:"U_Batch", Low_Spec:"", High_Spec:"", Result:"R_Batch", Width:2},
         //{Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Batch / Bag Number", Unit:"U_Bag_Batch", Low_Spec:"", High_Spec:"", Result:"R_Bag_Batch", Width:2},
+        {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
+        {Test:"Storage Silo Batch Number", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Storage_Batch", Width:2},
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"MFI", Unit:"U_MFI", Low_Spec:"13", High_Spec:"20", Result:"R_IV_MFI", Width:1}, 
         {Test:"Limonene", Unit:"U_Limonene", Low_Spec:"none", High_Spec:"20", Result:"R_Limonene", Width:1}, 

@@ -614,7 +614,7 @@ Screen_Test_input As screen:
                 
                     ThisItem.Unit="U_Metal","ppm",
                     ThisItem.Unit="U_Glass","ppm",
-                    ThisItem.Unit="U_PET","ppm",
+                    ThisItem.Unit="U_PET","%",
                     ThisItem.Unit="U_PVC","ppm",
                     ThisItem.Unit="U_Float","Pass/Fail",
                     ThisItem.Unit="U_Float_Small","Pass/
@@ -1019,16 +1019,6 @@ Screen_Test_input As screen:
             Y: =28
             ZIndex: =30
 
-        Label_Bag_Batch_Number As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Unique_No_Batch_Bag
-            Visible: =false
-            Width: =177
-            X: =380
-            Y: =28
-            ZIndex: =31
-
         Label_AA As label:
             Height: =30
             OnSelect: =Select(Parent)
@@ -1037,7 +1027,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =420
             Y: =28
-            ZIndex: =32
+            ZIndex: =31
 
         Label_Limonene As label:
             Height: =30
@@ -1047,7 +1037,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =440
             Y: =28
-            ZIndex: =33
+            ZIndex: =32
 
         Label_L As label:
             Height: =30
@@ -1057,7 +1047,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =460
             Y: =28
-            ZIndex: =34
+            ZIndex: =33
 
         Label_a As label:
             Height: =30
@@ -1067,7 +1057,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =480
             Y: =28
-            ZIndex: =35
+            ZIndex: =34
 
         Label_b As label:
             Height: =30
@@ -1077,7 +1067,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =500
             Y: =28
-            ZIndex: =36
+            ZIndex: =35
 
         Label_Inclusions_Large As label:
             Height: =30
@@ -1088,7 +1078,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =360
             Y: =28
-            ZIndex: =37
+            ZIndex: =36
 
         Label_Inclusions_Medium As label:
             Height: =30
@@ -1099,7 +1089,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =400
             Y: =28
-            ZIndex: =38
+            ZIndex: =37
 
         Label_Pellet_Count_1g As label:
             Height: =30
@@ -1109,7 +1099,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =520
             Y: =28
-            ZIndex: =39
+            ZIndex: =38
 
         Gallery_Tests_Inner As gallery.galleryHorizontal:
             DelayItemLoading: =true
@@ -1161,7 +1151,7 @@ Screen_Test_input As screen:
             TemplatePadding: =0
             TemplateSize: =Gallery_Tests_Inner.Width/Gallery_Tests_Inner.AllItemsCount
             Width: =1366
-            ZIndex: =40
+            ZIndex: =39
 
             Label_Data_1 As label:
                 Align: =Align.Center
@@ -1180,6 +1170,7 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Batch",Label_Batch_Number.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Bag",Label_Bag_Number.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Bag_Batch",Label_Bag_Batch_Number.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Storage_Batch",Label_Storage_Batch_Number.Text="Not Tested"),Colour_Not_Tested,
                     
                     //Tests
                     And(ThisItem.Result="R_Caustic",Label_Caustic.Text="Not Tested"),Colour_Not_Tested,
@@ -1233,6 +1224,7 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Batch",Label_Batch_Number.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Bag",Label_Bag_Number.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Bag_Batch",Label_Bag_Batch_Number.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Storage_Batch",Label_Storage_Batch_Number.Text="Not Tested"),Colour_Not_Tested,
                     
                     //Tests
                     And(ThisItem.Result="R_Caustic",Label_Caustic.Text="Not Tested"),Colour_Not_Tested,
@@ -1306,7 +1298,8 @@ Screen_Test_input As screen:
                     ThisItem.Result="R_Batch",Label_Batch_Number.Text,
                     ThisItem.Result="R_Bag",Label_Bag_Number.Text,
                     ThisItem.Result="R_Bag_Batch",Label_Bag_Batch_Number.Text,
-                    
+                    //Label_Storage_Batch_Number
+                    ThisItem.Result="R_Storage_Batch",Label_Storage_Batch_Number.Text,
                     ThisItem.Result="R_Caustic",Label_Caustic.Text,
                     ThisItem.Result="R_IV",Label_IV_MFI.Text,
                     ThisItem.Result="R_MFI",Label_IV_MFI.Text,
@@ -1353,6 +1346,25 @@ Screen_Test_input As screen:
                     //otherwise
                     Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
                 ZIndex: =1
+
+        Label_Bag_Batch_Number As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Batch_Number
+            Width: =177
+            X: =832
+            Y: =28
+            ZIndex: =40
+
+        Label_Storage_Batch_Number As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Storage_Silo_Batch_Number
+            Visible: =false
+            Width: =177
+            X: =1009
+            Y: =28
+            ZIndex: =41
 
     Label_All_Test_Filter As label:
         Color: =RGBA(255, 255, 255, 1)
