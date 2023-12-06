@@ -1351,6 +1351,7 @@ Screen_Test_input As screen:
             Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Batch_Number
+            Visible: =false
             Width: =177
             X: =832
             Y: =28
