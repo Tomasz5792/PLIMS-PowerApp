@@ -651,7 +651,8 @@ Screen_Add_Samples As screen:
             Comp_Float_Sink_Glass_Result_ppm: "",
             Float_Sink_PET_Result_ppm: "",
             Comp_Float_Sink_PVC_Result_ppm: "",
-            Float_Sink_Pass_Fail: ""
+            Float_Sink_Pass_Fail: "",
+            pH_Result: ""
             }));
             
             If(var_selected_PET_Post_Flake_Sorter, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Post_Flake_Sorter", 
@@ -668,7 +669,8 @@ Screen_Add_Samples As screen:
             Comp_Float_Sink_Glass_Result_ppm: "",
             'Comp_Glass+Inorganic_Result_ppm': "",
             Comp_Float_Sink_PVC_Result_ppm: "",
-            Comp_Pass_Fail: ""
+            Comp_Pass_Fail: "",
+            pH_Result: ""
             }));
             
             If(var_selected_PET_Flake_Bag, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Flake_Bag", 
@@ -687,7 +689,8 @@ Screen_Add_Samples As screen:
             Comp_Float_Sink_Glass_Result_ppm: "",
             'Comp_Glass+Inorganic_Result_ppm': "",
             Comp_Float_Sink_PVC_Result_ppm: "",
-            Comp_Pass_Fail: ""
+            Comp_Pass_Fail: "",
+            pH_Result: ""
             }));
             
             If(var_selected_HDPE_Natural_Hopper_1_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_1_1/2_Test", 
@@ -1036,7 +1039,8 @@ Screen_Add_Samples As screen:
             Lab_a_Result: "",
             Lab_b_Result: "",
             Lab_Result_Pass_Fail: "",
-            Pellet_Count_Result_5g: ""
+            Pellet_Count_Result_5g: "",
+            pH_Result: ""
             }));
             
             If(var_selected_HDPE_Natural_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Sampling_Silo", 
