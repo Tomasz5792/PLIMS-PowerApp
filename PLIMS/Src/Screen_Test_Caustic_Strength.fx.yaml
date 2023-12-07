@@ -167,7 +167,16 @@ Screen_Test_Caustic_Strength As screen:
 
         Label_Caustic_Result As label:
             Align: =Align.Center
-            Fill: =If(ThisItem.'Caustic_Strength_Result_%'="Not Tested",Colour_Not_Tested,Colour_Testing)
+            Fill: |+
+                =If(
+                ThisItem.'Caustic_Strength_Result_%'="Not Tested",Colour_Not_Tested,
+                
+                Value(Label_Caustic_Result.Text)>0.35,Colour_Fail,
+                Value(Label_Caustic_Result.Text)<0.17,Colour_Fail,
+                
+                
+                Colour_Pass)
+                
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
@@ -534,52 +543,52 @@ Screen_Test_Caustic_Strength As screen:
         Text: |-
             =Switch(var_filter_selected,
             
-            "All_All", "0.35",
-            "All_Wash", "0.35",
-            "All_Flake_Bag", "0.35",
-            "All_Post_Flake_Sorter", "0.35",
-            "All_Post_Extruder", "0.35",
-            "All_SSP", "0.35",
-            "All_Pellet_Bag", "0.35",
-            "All_Sampling_Silo", "0.35",
+            "All_All", "0.17",
+            "All_Wash", "0.17",
+            "All_Flake_Bag", "0.17",
+            "All_Post_Flake_Sorter", "0.17",
+            "All_Post_Extruder", "0.17",
+            "All_SSP", "0.17",
+            "All_Pellet_Bag", "0.17",
+            "All_Sampling_Silo", "0.17",
             
-            "PET_All", "0.35",
-            "PET_Wash", "0.35",
-            "PET_Flake_Bag", "0.35",
-            "PET_Post_Flake_Sorter", "0.35",
-            "PET_Post_Extruder", "0.35",
-            "PET_SSP", "0.35",
-            "PET_Pellet_Bag", "0.35",
-            "PET_Sampling_Silo", "0.35",
+            "PET_All", "0.17",
+            "PET_Wash", "0.17",
+            "PET_Flake_Bag", "0.17",
+            "PET_Post_Flake_Sorter", "0.17",
+            "PET_Post_Extruder", "0.17",
+            "PET_SSP", "0.17",
+            "PET_Pellet_Bag", "0.17",
+            "PET_Sampling_Silo", "0.17",
             
-            "HDPE_Nat_All", "0.35",
-            "HDPE_Nat_Wash", "0.35",
-            "HDPE_Nat_Flake_Bag", "0.35",
-            "HDPE_Nat_Post_Flake_Sorter", "0.35",
-            "HDPE_Nat_Post_Extruder", "0.35",
-            "HDPE_Nat_SSP", "0.35",
-            "HDPE_Nat_Pellet_Bag", "0.35",
-            "HDPE_Nat_Sampling_Silo", "0.35",
+            "HDPE_Nat_All", "0.17",
+            "HDPE_Nat_Wash", "0.17",
+            "HDPE_Nat_Flake_Bag", "0.17",
+            "HDPE_Nat_Post_Flake_Sorter", "0.17",
+            "HDPE_Nat_Post_Extruder", "0.17",
+            "HDPE_Nat_SSP", "0.17",
+            "HDPE_Nat_Pellet_Bag", "0.17",
+            "HDPE_Nat_Sampling_Silo", "0.17",
             
-            "HDPE_SC_All", "0.35",
-            "HDPE_SC_Wash", "0.35",
-            "HDPE_SC_Flake_Bag", "0.35",
-            "HDPE_SC_Post_Flake_Sorter", "0.35",
-            "HDPE_SC_Post_Extruder", "0.35",
-            "HDPE_SC_SSP", "0.35",
-            "HDPE_SC_Pellet_Bag", "0.35",
-            "HDPE_SC_Sampling_Silo", "0.35",
+            "HDPE_SC_All", "0.17",
+            "HDPE_SC_Wash", "0.17",
+            "HDPE_SC_Flake_Bag", "0.17",
+            "HDPE_SC_Post_Flake_Sorter", "0.17",
+            "HDPE_SC_Post_Extruder", "0.17",
+            "HDPE_SC_SSP", "0.17",
+            "HDPE_SC_Pellet_Bag", "0.17",
+            "HDPE_SC_Sampling_Silo", "0.17",
             
-            "PP_All", "0.35",
-            "PP_Wash", "0.35",
-            "PP_Flake_Bag", "0.35",
-            "PP_Post_Flake_Sorter", "0.35",
-            "PP_Post_Extruder", "0.35",
-            "PP_SSP", "0.35",
-            "PP_Pellet_Bag", "0.35",
-            "PP_Sampling_Silo", "0.35",
+            "PP_All", "0.17",
+            "PP_Wash", "0.17",
+            "PP_Flake_Bag", "0.17",
+            "PP_Post_Flake_Sorter", "0.17",
+            "PP_Post_Extruder", "0.17",
+            "PP_SSP", "0.17",
+            "PP_Pellet_Bag", "0.17",
+            "PP_Sampling_Silo", "0.17",
                 
-            "0.35"
+            "0.17"
             )
         Width: =151
         X: =760

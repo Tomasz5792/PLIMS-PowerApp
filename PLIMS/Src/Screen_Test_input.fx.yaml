@@ -1234,9 +1234,12 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Ext_IV",Label_Extruder_IV.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_AA",Label_AA.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Limonene",Label_Limonene.Text="Not Tested"),Colour_Not_Tested,
+                    
+                    
                     And(ThisItem.Result="R_GC",Label_GC.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_GC",Label_GC.Text="Pass"),Colour_Pass,
                     And(ThisItem.Result="R_GC",Label_GC.Text="Fail"),Colour_Fail,
+                    
                     And(ThisItem.Result="R_Fines",Label_Fines.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Moisture",Label_Moisture.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Bulk",Label_Bulk_Density.Text="Not Tested"),Colour_Not_Tested,
