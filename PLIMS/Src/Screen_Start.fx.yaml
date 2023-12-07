@@ -131,7 +131,7 @@ Screen_Start As screen:
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_PinkTint
         Height: =151
-        Items: =["Under Construction"]
+        Items: =["Specifications"]
         Layout: =Layout.Vertical
         OnSelect: =Set(Var_Product_Menu_2,ThisItem)
         TemplatePadding: =0
@@ -150,7 +150,7 @@ Screen_Start As screen:
             HoverColor: =Color.White
             HoverFill: =Colour_Viridor_Pink
             OnSelect: =Select(Parent)
-            Size: =30
+            Size: =24
             Text: =ThisItem.Value
             Width: =227.66666666666666
             ZIndex: =1
