@@ -1260,13 +1260,15 @@ Screen_Test_input As screen:
                     
                     //Bulk Density
                     And(ThisItem.Result="R_Bulk",Label_Bulk_Density.Text="Not Tested"),Colour_Not_Tested,
-                    //Bulk Density Flake, Spec: HD Nat & Colour + PP 200 - 300, PET 320 - 400
+                    //Bulk Density Flake
+                    //Spec: HD Nat & Colour + PP 200 - 300
                     And(ThisItem.Result="R_Bulk",
                     Or(Label_Specification.Text="HDPE Natural Flake",Label_Specification.Text="HDPE Self Coloured Flake",Label_Specification.Text="PP Flake"),
                     And(Value(Label_Bulk_Density.Text)>=200,Value(Label_Bulk_Density.Text)<=300)),Colour_Pass,
                     And(ThisItem.Result="R_Bulk",!IsBlank(Label_Bulk_Density),
                     Or(Label_Specification.Text="HDPE Natural Flake",Label_Specification.Text="HDPE Self Coloured Flake",Label_Specification.Text="PP Flake"),
                     Or(Value(Label_Bulk_Density.Text)<200,Value(Label_Bulk_Density.Text)>300)),Colour_Fail,
+                    //Spec: PET 320 - 400
                     And(ThisItem.Result="R_Bulk",
                     Or(Label_Specification.Text="PET Flake",Label_Specification.Text="PET Post Wash Silo"),
                     And(Value(Label_Bulk_Density.Text)>=320,Value(Label_Bulk_Density.Text)<=400)),Colour_Pass,
@@ -1289,7 +1291,12 @@ Screen_Test_input As screen:
                     Or(Label_Specification.Text="PP Pellet non Deo",Label_Specification.Text="PP Pellet Deo"),
                     Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700)),Colour_Fail,
                     //Spec: PET 820 - 920
-                    
+                    And(ThisItem.Result="R_Bulk",
+                    Or(Label_Specification.Text="PET Pellet Std pre-SSP",Label_Specification.Text="PET Pellet Std SSP",Label_Specification.Text="PET Pellet Std"),
+                    And(Value(Label_Bulk_Density.Text)>=450,Value(Label_Bulk_Density.Text)<=700)),Colour_Pass,
+                    And(ThisItem.Result="R_Bulk",!IsBlank(Label_Bulk_Density),
+                    Or(Label_Specification.Text="PET Pellet Std pre-SSP",Label_Specification.Text="PET Pellet Std SSP",Label_Specification.Text="PET Pellet Std"),
+                    Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700)),Colour_Fail,
                     
                     
                     //Material Density
