@@ -1228,6 +1228,11 @@ Screen_Test_input As screen:
                     
                     //Tests
                     And(ThisItem.Result="R_Caustic",Label_Caustic.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Caustic",And(Value(Label_Caustic.Text)<=0.35,Value(Label_Caustic.Text)>=0.17)),Colour_Pass,
+                    And(ThisItem.Result="R_Caustic",Or(Value(Label_Caustic.Text)>0.35,Value(Label_Caustic.Text)<0.17)),Colour_Fail,
+                    
+                    
+                    
                     And(ThisItem.Result="R_IV",Label_IV_MFI.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_MFI",Label_IV_MFI.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_IV_MFI",Label_IV_MFI.Text="Not Tested"),Colour_Not_Tested,
@@ -1369,6 +1374,17 @@ Screen_Test_input As screen:
             X: =1009
             Y: =28
             ZIndex: =41
+
+        Label_Specification As label:
+            Fill: =RGBA(180, 214, 250, 1)
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Specification_Filter
+            Visible: =false
+            Width: =81
+            X: =514
+            Y: =28
+            ZIndex: =42
 
     Label_All_Test_Filter As label:
         Color: =RGBA(255, 255, 255, 1)

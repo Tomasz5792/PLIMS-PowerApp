@@ -171,9 +171,7 @@ Screen_Test_Caustic_Strength As screen:
                 =If(
                 ThisItem.'Caustic_Strength_Result_%'="Not Tested",Colour_Not_Tested,
                 
-                Value(Label_Caustic_Result.Text)>0.35,Colour_Fail,
-                Value(Label_Caustic_Result.Text)<0.17,Colour_Fail,
-                
+                Or(Value(Label_Caustic_Result.Text)>0.35,Value(Label_Caustic_Result.Text)<0.17),Colour_Fail,
                 
                 Colour_Pass)
                 
