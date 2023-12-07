@@ -361,7 +361,7 @@ Screen_Test_Bulk_Density_Flake As screen:
             HoverFill: =Colour_Viridor_Purple
             LineHeight: =0.8
             OnSelect: |+
-                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_10","field_11","field_12"));
+                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_34","field_36","field_37"));
                 //"weight","Result","Comment"
                 
                 //Notify
