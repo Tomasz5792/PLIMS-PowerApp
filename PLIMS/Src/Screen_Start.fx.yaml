@@ -60,13 +60,13 @@ Screen_Start As screen:
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_GreenTint
         Height: =401
-        Items: =["Under Construction","Under Construction"]
+        Items: =["Caustic Strengh","Bulk Density Flake","Bulk Density Pellet"]
         Layout: =Layout.Vertical
         OnSelect: =//If(ThisItem.Value="Add Samples",Navigate(Screen_Create_Sample,ScreenTransition.None));
         TemplatePadding: =0
-        TemplateSize: =Gallery_CoA_Scanner_1.Height/2
+        TemplateSize: =Gallery_CoA_Scanner_1.Height/3
         Width: =683
-        WrapCount: =3
+        WrapCount: =4
         X: =683
         Y: =162
         ZIndex: =3
@@ -76,15 +76,15 @@ Screen_Start As screen:
             BorderStyle: =BorderStyle.None
             Color: =Colour_Viridor_Grey3
             Fill: =Color.Transparent
-            Height: =200.5
+            Height: =Parent.TemplateHeight
             HoverColor: =Color.White
             HoverFill: =Colour_Viridor_Purple
             OnSelect: |+
                 =Select(Parent);
                 
-            Size: =30
+            Size: =24
             Text: =ThisItem.Value
-            Width: =227.66666666666666
+            Width: =Parent.TemplateWidth
             ZIndex: =1
 
     Title_3 As label:
@@ -108,7 +108,7 @@ Screen_Start As screen:
         Height: =54
         PaddingLeft: =20
         Size: =30
-        Text: ="Under Construction"
+        Text: ="Tests"
         Width: =683
         X: =683
         Y: =108
@@ -163,7 +163,7 @@ Screen_Start As screen:
         Height: =54
         PaddingLeft: =20
         Size: =30
-        Text: ="Under Construction"
+        Text: ="Miscellaneous"
         Width: =1366
         Y: =563
         ZIndex: =8
