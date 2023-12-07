@@ -15,7 +15,7 @@ Screen_Test_Caustic_Strength_2 As screen:
         Fill: =Colour_Viridor_GreenTint
         Height: =514
         Items: |-
-            =Filter(
+            =If(var_not_tested_filter,Filter(
             
             Switch(var_filter_selected,
             
@@ -72,6 +72,61 @@ Screen_Test_Caustic_Strength_2 As screen:
                 ,'Test Results'
             )
             ,'Caustic_Strength_Result_%'<>"Not Tested")
+            ,
+            Switch(var_filter_selected,
+            
+            //"All"
+                "All_All", Filter('Test Results',Complete=false),
+                "All_Wash", Filter('Test Results',Sample_Point_Filter="Wash"&&Complete=false),
+                "All_Flake_Bag", Filter('Test Results',Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "All_Post_Flake_Sorter", Filter('Test Results',Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "All_Post_Extruder", Filter('Test Results',Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "All_SSP", Filter('Test Results',Sample_Point_Filter="SSP"&&Complete=false),
+                "All_Pellet_Bag", Filter('Test Results',Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "All_Sampling_Silo", Filter('Test Results',Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"PET"
+                "PET_All", Filter('Test Results','Material_Filter (field_1)'="PET"&&Complete=false),
+                "PET_Wash", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "PET_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "PET_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "PET_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "PET_SSP", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "PET_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "PET_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"HDPE Natural"  
+                "HDPE_Nat_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Complete=false),
+                "HDPE_Nat_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "HDPE_Nat_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "HDPE_Nat_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "HDPE_Nat_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "HDPE_Nat_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "HDPE_Nat_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "HDPE_Nat_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"HDPE Self Coloured" 
+                "HDPE_SC_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Complete=false),
+                "HDPE_SC_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "HDPE_SC_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "HDPE_SC_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "HDPE_SC_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "HDPE_SC_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "HDPE_SC_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "HDPE_SC_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"PP"
+                "PP_All", Filter('Test Results','Material_Filter (field_1)'="PP"&&Complete=false),
+                "PP_Wash", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "PP_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "PP_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "PP_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "PP_SSP", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "PP_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "PP_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Sampling Silo"&&Complete=false)
+                
+                ,'Test Results'
+            ))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
