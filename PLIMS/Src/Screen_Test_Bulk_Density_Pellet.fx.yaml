@@ -172,9 +172,30 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 ThisItem.'Bulk_Density_Result_kg/m3'="Not Tested",Colour_Not_Tested,
                 IsBlank(TextInput_2),Colour_Testing,
                 
-                Or(Value(Label_Result_2.Text)>300,Value(Label_Result_2.Text)<200),Colour_Fail,
+                //Bulk Density Pellet
+                //Spec: HD Nat & Colour 550 - 700
+                And(
+                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
+                And(Value(Label_Result_2.Text)>=550,Value(Label_Result_2.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
+                Or(Value(Label_Result_2.Text)<550,Value(Label_Result_2.Text)>700)),Colour_Fail,
+                //Spec: PP 450 - 700
+                And(
+                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
+                And(Value(Label_Result_2.Text)>=450,Value(Label_Result_2.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
+                Or(Value(Label_Result_2.Text)<450,Value(Label_Result_2.Text)>700)),Colour_Fail,
+                //Spec: PET 820 - 920
+                And(
+                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
+                And(Value(Label_Result_2.Text)>=450,Value(Label_Result_2.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
+                Or(Value(Label_Result_2.Text)<450,Value(Label_Result_2.Text)>700)),Colour_Fail,
                 
-                Colour_Pass)
+                Colour_Testing)
                 
             Height: =54
             OnSelect: =Select(Parent)
