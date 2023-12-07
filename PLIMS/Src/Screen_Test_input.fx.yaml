@@ -1607,8 +1607,13 @@ Screen_Test_input As screen:
             
             //Tests
             ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
+            
+            //Bulk Density
             And(ThisItem.Test="Bulk Density",Or(Label_Material.Text="Flake",Label_Material.Text="Un-sorted Flake",var_sample_point_selected="Flake")),Navigate(Screen_Test_Bulk_Density_Flake,ScreenTransition.None),
             ThisItem.Test="Bulk Density",Navigate(Screen_Test_Bulk_Density_Pellet,ScreenTransition.None),
+            
+            //Float Sink
+            And(Or(ThisItem.Test="Metal",ThisItem.Test="Glass",ThisItem.Test="PET",ThisItem.Test="PVC"),Or(var_material_selected="HDPE Natural",var_material_selected="HDPE Self Coloured",var_material_selected="PP")),Navigate(Screen_Test_Float_Sink,ScreenTransition.None),
             
             Navigate(Screen_Under_Construction,ScreenTransition.None))
         ShowScrollbar: =false
