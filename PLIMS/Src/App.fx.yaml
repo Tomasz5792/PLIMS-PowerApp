@@ -20,6 +20,7 @@ App As appinfo:
         
         //Variables
         Set(var_filter_selected,"All_All"); Set(var_material_selected,"All"); Set(var_sample_point_selected,Blank()); //setting filter
+        Set(var_not_tested_filter,true);//setting not tested filter toggle
         
         //Loading Collections
         // For All_All
