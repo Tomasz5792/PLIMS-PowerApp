@@ -179,7 +179,7 @@ Screen_Test_Bulk_Density_Flake As screen:
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =If(IsBlank(TextInput_1),"",Text(Round(TextInput_1*0.5*4/100,2),"0.00"))
+            Text: =If(IsBlank(TextInput_1),"",Text(Round(TextInput_1/1100*1000,0),"0"))
             Width: =Label_Main_1.Width
             X: =Label_Main_1.Width*5
             ZIndex: =4
@@ -362,7 +362,7 @@ Screen_Test_Bulk_Density_Flake As screen:
             LineHeight: =0.8
             OnSelect: |+
                 =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_10","field_11","field_12"));
-                //"Caustic_Strength_Titration_mL","Caustic_Strength_Result_%","Caustic_Strength_Comment"
+                //"weight","Result","Comment"
                 
                 //Notify
                 Notify("Results Saved",NotificationType.Success,2000);
