@@ -414,6 +414,7 @@ Screen_Add_Samples As screen:
                 Visual_Inspection_Result_Pass_Fail: "Not Tested"
             })
         Text: ="+ Samples"
+        Visible: =false
         Width: =123
         X: =756
         ZIndex: =9
@@ -1318,6 +1319,7 @@ Screen_Add_Samples As screen:
                 'Date_&_Time': Now()
             })
         Text: ="+ Empty"
+        Visible: =false
         Width: =123
         X: =892
         ZIndex: =14
