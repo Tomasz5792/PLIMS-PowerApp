@@ -1273,9 +1273,22 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Bulk",!IsBlank(Label_Bulk_Density),
                     Or(Label_Specification.Text="PET Flake",Label_Specification.Text="PET Post Wash Silo"),
                     Or(Value(Label_Bulk_Density.Text)<320,Value(Label_Bulk_Density.Text)>400)),Colour_Fail,
-                    //Bulk Density Pellet, Spec: HD Nat & Colour 550 - 700, PP 450 - 700, PET 820 - 920
-                    
-                    
+                    //Bulk Density Pellet
+                    //Spec: HD Nat & Colour 550 - 700
+                    And(ThisItem.Result="R_Bulk",
+                    Or(Label_Specification.Text="HDPE Natural Pellet non Deo",Label_Specification.Text="HDPE Natural Pellet Deo",Label_Specification.Text="HDPE Self Coloured Pellet non Deo",Label_Specification.Text="HDPE Self Coloured Pellet Deo"),
+                    And(Value(Label_Bulk_Density.Text)>=550,Value(Label_Bulk_Density.Text)<=700)),Colour_Pass,
+                    And(ThisItem.Result="R_Bulk",!IsBlank(Label_Bulk_Density),
+                    Or(Label_Specification.Text="HDPE Natural Pellet non Deo",Label_Specification.Text="HDPE Natural Pellet Deo",Label_Specification.Text="HDPE Self Coloured Pellet non Deo",Label_Specification.Text="HDPE Self Coloured Pellet Deo"),
+                    Or(Value(Label_Bulk_Density.Text)<550,Value(Label_Bulk_Density.Text)>700)),Colour_Fail,
+                    //Spec: PP 450 - 700
+                    And(ThisItem.Result="R_Bulk",
+                    Or(Label_Specification.Text="PP Pellet non Deo",Label_Specification.Text="PP Pellet Deo"),
+                    And(Value(Label_Bulk_Density.Text)>=450,Value(Label_Bulk_Density.Text)<=700)),Colour_Pass,
+                    And(ThisItem.Result="R_Bulk",!IsBlank(Label_Bulk_Density),
+                    Or(Label_Specification.Text="PP Pellet non Deo",Label_Specification.Text="PP Pellet Deo"),
+                    Or(Value(Label_Bulk_Density.Text)<450,Value(Label_Bulk_Density.Text)>700)),Colour_Fail,
+                    //Spec: PET 820 - 920
                     
                     
                     
