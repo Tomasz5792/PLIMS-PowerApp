@@ -338,7 +338,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ContentLanguage"
+        "ContentLanguage",
+        "MaxTemplateSize"
       ],
       "GalleryTemplateChildName": "galleryTemplate3_3",
       "HasDynamicProperties": false,
@@ -484,6 +485,11 @@
           "Category": "Design",
           "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "MaxTemplateSize",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultGalleryStyle",
@@ -573,7 +579,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ContentLanguage"
+        "ContentLanguage",
+        "MaxTemplateSize"
       ],
       "GalleryTemplateChildName": "galleryTemplate3_2",
       "HasDynamicProperties": false,
@@ -719,6 +726,11 @@
           "Category": "Design",
           "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "MaxTemplateSize",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultGalleryStyle",
@@ -815,7 +827,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ContentLanguage"
+        "ContentLanguage",
+        "MaxTemplateSize"
       ],
       "GalleryTemplateChildName": "galleryTemplate3_6",
       "HasDynamicProperties": false,
@@ -960,6 +973,11 @@
         {
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "MaxTemplateSize",
           "RuleProviderType": "Unknown"
         }
       ],
