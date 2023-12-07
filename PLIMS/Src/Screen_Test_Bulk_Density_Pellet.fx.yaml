@@ -380,8 +380,8 @@ Screen_Test_Bulk_Density_Pellet As screen:
             HoverFill: =Colour_Viridor_Purple
             LineHeight: =0.8
             OnSelect: |+
-                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_34","field_36","field_37"));
-                //"weight","Result","Comment"
+                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_34","field_35","field_36","field_37"));
+                //"base","weight","Result","Comment"
                 
                 //Notify
                 Notify("Results Saved",NotificationType.Success,2000);
@@ -429,55 +429,45 @@ Screen_Test_Bulk_Density_Pellet As screen:
         Text: |-
             =Switch(var_filter_selected,
             
-            "All_All", "200",
-            "All_Wash", "200",
-            "All_Flake_Bag", "200",
-            "All_Post_Flake_Sorter", "200",
-            "All_Post_Extruder", "200",
-            "All_SSP", "200",
-            "All_Pellet_Bag", "200",
-            "All_Sampling_Silo", "200",
+            "All_All", "Multiple",
+            "All_Wash", "N/A",
+            "All_Post_Flake_Sorter", "Multiple",
+            "All_Post_Extruder", "Multiple",
+            "All_SSP", "820",
+            "All_Sampling_Silo", "Multiple",
             
-            "PET_All", "200",
-            "PET_Wash", "200",
-            "PET_Flake_Bag", "200",
-            "PET_Post_Flake_Sorter", "200",
-            "PET_Post_Extruder", "200",
-            "PET_SSP", "200",
-            "PET_Pellet_Bag", "200",
-            "PET_Sampling_Silo", "200",
+            "PET_All", "820",
+            "PET_Wash", "N/A",
+            "PET_Post_Flake_Sorter", "N/A",
+            "PET_Post_Extruder", "820",
+            "PET_SSP", "820",
+            "PET_Sampling_Silo", "820",
             
-            "HDPE_Nat_All", "200",
-            "HDPE_Nat_Wash", "200",
-            "HDPE_Nat_Flake_Bag", "200",
-            "HDPE_Nat_Post_Flake_Sorter", "200",
-            "HDPE_Nat_Post_Extruder", "200",
-            "HDPE_Nat_SSP", "200",
-            "HDPE_Nat_Pellet_Bag", "200",
-            "HDPE_Nat_Sampling_Silo", "200",
+            "HDPE_Nat_All", "450",
+            "HDPE_Nat_Wash", "N/A",
+            "HDPE_Nat_Post_Flake_Sorter", "N/A",
+            "HDPE_Nat_Post_Extruder", "450",
+            "HDPE_Nat_SSP", "N/A",
+            "HDPE_Nat_Sampling_Silo", "450",
             
-            "HDPE_SC_All", "200",
-            "HDPE_SC_Wash", "200",
-            "HDPE_SC_Flake_Bag", "200",
-            "HDPE_SC_Post_Flake_Sorter", "200",
-            "HDPE_SC_Post_Extruder", "200",
-            "HDPE_SC_SSP", "200",
-            "HDPE_SC_Pellet_Bag", "200",
-            "HDPE_SC_Sampling_Silo", "200",
+            "HDPE_SC_All", "450",
+            "HDPE_SC_Wash", "N/A",
+            "HDPE_SC_Post_Flake_Sorter", "N/A",
+            "HDPE_SC_Post_Extruder", "450",
+            "HDPE_SC_SSP", "N/A",
+            "HDPE_SC_Sampling_Silo", "450",
             
-            "PP_All", "200",
-            "PP_Wash", "200",
-            "PP_Flake_Bag", "200",
-            "PP_Post_Flake_Sorter", "200",
-            "PP_Post_Extruder", "200",
-            "PP_SSP", "200",
-            "PP_Pellet_Bag", "200",
-            "PP_Sampling_Silo", "200",
+            "PP_All", "450",
+            "PP_Wash", "N/A",
+            "PP_Post_Flake_Sorter", "N/A",
+            "PP_Post_Extruder", "450",
+            "PP_SSP", "N/A",
+            "PP_Sampling_Silo", "450",
                 
-            "200"
+            "Error"
             )
-        Width: =151
-        X: =760
+        Width: =Label_Main_2.Width
+        X: =Label_Result_2.X
         Y: =168
         ZIndex: =11
 
@@ -555,55 +545,45 @@ Screen_Test_Bulk_Density_Pellet As screen:
         Text: |-
             =Switch(var_filter_selected,
             
-            "All_All", "300",
-            "All_Wash", "300",
-            "All_Flake_Bag", "300",
-            "All_Post_Flake_Sorter", "300",
-            "All_Post_Extruder", "300",
-            "All_SSP", "300",
-            "All_Pellet_Bag", "300",
-            "All_Sampling_Silo", "300",
+            "All_All", "Multiple",
+            "All_Wash", "N/A",
+            "All_Post_Flake_Sorter", "Multiple",
+            "All_Post_Extruder", "Multiple",
+            "All_SSP", "920",
+            "All_Sampling_Silo", "Multiple",
             
-            "PET_All", "300",
-            "PET_Wash", "300",
-            "PET_Flake_Bag", "300",
-            "PET_Post_Flake_Sorter", "300",
-            "PET_Post_Extruder", "300",
-            "PET_SSP", "300",
-            "PET_Pellet_Bag", "300",
-            "PET_Sampling_Silo", "300",
+            "PET_All", "920",
+            "PET_Wash", "N/A",
+            "PET_Post_Flake_Sorter", "N/A",
+            "PET_Post_Extruder", "920",
+            "PET_SSP", "920",
+            "PET_Sampling_Silo", "920",
             
-            "HDPE_Nat_All", "300",
-            "HDPE_Nat_Wash", "300",
-            "HDPE_Nat_Flake_Bag", "300",
-            "HDPE_Nat_Post_Flake_Sorter", "300",
-            "HDPE_Nat_Post_Extruder", "300",
-            "HDPE_Nat_SSP", "300",
-            "HDPE_Nat_Pellet_Bag", "300",
-            "HDPE_Nat_Sampling_Silo", "300",
+            "HDPE_Nat_All", "700",
+            "HDPE_Nat_Wash", "N/A",
+            "HDPE_Nat_Post_Flake_Sorter", "N/A",
+            "HDPE_Nat_Post_Extruder", "700",
+            "HDPE_Nat_SSP", "N/A",
+            "HDPE_Nat_Sampling_Silo", "700",
             
-            "HDPE_SC_All", "300",
-            "HDPE_SC_Wash", "300",
-            "HDPE_SC_Flake_Bag", "300",
-            "HDPE_SC_Post_Flake_Sorter", "300",
-            "HDPE_SC_Post_Extruder", "300",
-            "HDPE_SC_SSP", "300",
-            "HDPE_SC_Pellet_Bag", "300",
-            "HDPE_SC_Sampling_Silo", "300",
+            "HDPE_SC_All", "700",
+            "HDPE_SC_Wash", "N/A",
+            "HDPE_SC_Post_Flake_Sorter", "N/A",
+            "HDPE_SC_Post_Extruder", "700",
+            "HDPE_SC_SSP", "N/A",
+            "HDPE_SC_Sampling_Silo", "700",
             
-            "PP_All", "300",
-            "PP_Wash", "300",
-            "PP_Flake_Bag", "300",
-            "PP_Post_Flake_Sorter", "300",
-            "PP_Post_Extruder", "300",
-            "PP_SSP", "300",
-            "PP_Pellet_Bag", "300",
-            "PP_Sampling_Silo", "300",
+            "PP_All", "700",
+            "PP_Wash", "N/A",
+            "PP_Post_Flake_Sorter", "N/A",
+            "PP_Post_Extruder", "700",
+            "PP_SSP", "N/A",
+            "PP_Sampling_Silo", "700",
                 
-            "300"
+            "Error"
             )
-        Width: =151
-        X: =760
+        Width: =Label_Main_2.Width
+        X: =Label_Result_2.X
         Y: =138
         ZIndex: =12
 
