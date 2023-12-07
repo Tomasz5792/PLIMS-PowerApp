@@ -1285,7 +1285,20 @@ Screen_Test_input As screen:
                     Colour_Viridor_GreenTint)
                 Height: =If(ThisItem.Result="",0,Gallery_Tests_Inner.TemplateHeight)
                 LineHeight: =1
-                OnSelect: =Select(Parent)
+                OnSelect: |-
+                    =If(
+                    ThisItem.Test="","",  
+                    
+                    ThisItem.Test="Material",Navigate(Screen_Test_Information,ScreenTransition.None),
+                    ThisItem.Test="Sample Point",Navigate(Screen_Test_Information,ScreenTransition.None),
+                    ThisItem.Test="Date",Navigate(Screen_Test_Information,ScreenTransition.None),
+                    ThisItem.Test="Time",Navigate(Screen_Test_Information,ScreenTransition.None),
+                    ThisItem.Test="Batch Number",Navigate(Screen_Test_Information,ScreenTransition.None),
+                    ThisItem.Test="Bag Number",Navigate(Screen_Test_Information,ScreenTransition.None),
+                    
+                    ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
+                    
+                    Navigate(Screen_Under_Construction,ScreenTransition.None))
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
