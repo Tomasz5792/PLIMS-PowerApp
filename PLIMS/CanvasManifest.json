@@ -134,8 +134,9 @@
     "Screen_Start",
     "Screen_Add_Samples",
     "Screen_Test_input",
-    "Screen_Test_Caustic_Strength",
     "Screen_Test_Information",
+    "Screen_Test_Caustic_Strength",
+    "Screen_Test_Bulk_Density_Flake",
     "Screen_Under_Construction"
   ]
 }
