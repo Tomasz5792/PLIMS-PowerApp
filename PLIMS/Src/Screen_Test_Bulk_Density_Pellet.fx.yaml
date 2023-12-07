@@ -466,8 +466,8 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 
             "Error"
             )
-        Width: =Label_Main_2.Width
-        X: =Label_Result_2.X
+        Width: =136.6
+        X: =819.6
         Y: =168
         ZIndex: =11
 
@@ -582,8 +582,8 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 
             "Error"
             )
-        Width: =Label_Main_2.Width
-        X: =Label_Result_2.X
+        Width: =136.6
+        X: =819.6
         Y: =138
         ZIndex: =12
 
