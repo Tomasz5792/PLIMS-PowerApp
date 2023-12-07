@@ -1258,9 +1258,9 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Fines",Label_Fines.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Moisture",Label_Moisture.Text="Not Tested"),Colour_Not_Tested,
                     
-                    //Bulk Density Flake, Spec: HD Nat & Colour + PP Spec 200 - 300, PET 320 - 400
+                    //Bulk Density
                     And(ThisItem.Result="R_Bulk",Label_Bulk_Density.Text="Not Tested"),Colour_Not_Tested,
-                    //
+                    //Bulk Density Flake, Spec: HD Nat & Colour + PP 200 - 300, PET 320 - 400
                     And(ThisItem.Result="R_Bulk",
                     Or(Label_Specification.Text="HDPE Natural Flake",Label_Specification.Text="HDPE Self Coloured Flake",Label_Specification.Text="PP Flake"),
                     And(Value(Label_Bulk_Density.Text)>=200,Value(Label_Bulk_Density.Text)<=300)),Colour_Pass,
@@ -1273,7 +1273,13 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Bulk",!IsBlank(Label_Bulk_Density),
                     Or(Label_Specification.Text="PET Flake",Label_Specification.Text="PET Post Wash Silo"),
                     Or(Value(Label_Bulk_Density.Text)<320,Value(Label_Bulk_Density.Text)>400)),Colour_Fail,
+                    //Bulk Density Pellet, Spec: HD Nat & Colour 550 - 700, PP 450 - 700, PET 820 - 920
                     
+                    
+                    
+                    
+                    
+                    //Material Density
                     And(ThisItem.Result="R_Mat_Den",Label_Material_Density.Text="Not Tested"),Colour_Not_Tested,
                     
                     //Composition
