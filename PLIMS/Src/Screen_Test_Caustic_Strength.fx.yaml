@@ -170,6 +170,7 @@ Screen_Test_Caustic_Strength As screen:
             Fill: |+
                 =If(
                 ThisItem.'Caustic_Strength_Result_%'="Not Tested",Colour_Not_Tested,
+                IsBlank(TextInput_Caustic_Titration),Colour_Testing,
                 
                 Or(Value(Label_Caustic_Result.Text)>0.35,Value(Label_Caustic_Result.Text)<0.17),Colour_Fail,
                 

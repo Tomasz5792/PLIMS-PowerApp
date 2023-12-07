@@ -543,6 +543,7 @@ Screen_Test_input As screen:
                 col_Error
             )
         LoadingSpinner: =LoadingSpinner.Data
+        LoadingSpinnerColor: =Colour_Viridor_Purple
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Gallery_Units.Width/Gallery_Units.AllItemsCount
@@ -725,6 +726,16 @@ Screen_Test_input As screen:
         Y: =304
         ZIndex: =12
 
+        Label_Bag_Batch_Number As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Batch_Number
+            Visible: =false
+            Width: =177
+            X: =832
+            Y: =28
+            ZIndex: =1
+
         Label_Material_Filter As label:
             Height: =30
             OnSelect: =Select(Parent)
@@ -732,7 +743,7 @@ Screen_Test_input As screen:
             Visible: =false
             Width: =82
             X: =181
-            ZIndex: =1
+            ZIndex: =2
 
         Label_Filter_Plus_Material As label:
             Height: =30
@@ -741,7 +752,7 @@ Screen_Test_input As screen:
             Visible: =false
             Width: =210
             X: =187
-            ZIndex: =2
+            ZIndex: =3
 
         Label_Material As label:
             Height: =30
@@ -751,7 +762,7 @@ Screen_Test_input As screen:
             Width: =82
             X: =42
             Y: =14
-            ZIndex: =3
+            ZIndex: =4
 
         Label_Sample_Point As label:
             Height: =30
@@ -761,7 +772,7 @@ Screen_Test_input As screen:
             Width: =82
             X: =42
             Y: =28
-            ZIndex: =4
+            ZIndex: =5
 
         Label_Time As label:
             Height: =30
@@ -771,7 +782,7 @@ Screen_Test_input As screen:
             Width: =176
             X: =371
             Y: =28
-            ZIndex: =5
+            ZIndex: =6
 
         Label_Caustic As label:
             Height: =30
@@ -782,7 +793,7 @@ Screen_Test_input As screen:
             Width: =82
             X: =42
             Y: =28
-            ZIndex: =6
+            ZIndex: =7
 
         Label_Comment As label:
             Height: =30
@@ -792,7 +803,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =141
             Y: =28
-            ZIndex: =7
+            ZIndex: =8
 
         Label_Date As label:
             Height: =30
@@ -805,7 +816,7 @@ Screen_Test_input As screen:
             Width: =176
             X: =242
             Y: =28
-            ZIndex: =8
+            ZIndex: =9
 
         Label_Moisture As label:
             Height: =30
@@ -815,7 +826,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =40
             Y: =28
-            ZIndex: =9
+            ZIndex: =10
 
         Label_Bulk_Density As label:
             Height: =30
@@ -825,7 +836,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =60
             Y: =28
-            ZIndex: =10
+            ZIndex: =11
 
         Label_Metal As label:
             Height: =58
@@ -833,7 +844,7 @@ Screen_Test_input As screen:
             Text: =ThisItem.Comp_Float_Sink_Metal_Result_ppm
             Visible: =false
             Width: =80
-            ZIndex: =11
+            ZIndex: =12
 
         Label_Glass As label:
             Height: =30
@@ -843,7 +854,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =80
             Y: =28
-            ZIndex: =12
+            ZIndex: =13
 
         Label_PET As label:
             Height: =30
@@ -853,7 +864,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =100
             Y: =28
-            ZIndex: =13
+            ZIndex: =14
 
         Label_PVC As label:
             Height: =30
@@ -863,7 +874,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =120
             Y: =28
-            ZIndex: =14
+            ZIndex: =15
 
         Label_pH As label:
             Height: =30
@@ -873,7 +884,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =140
             Y: =28
-            ZIndex: =15
+            ZIndex: =16
 
         Label_IV_MFI As label:
             Height: =30
@@ -883,7 +894,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =160
             Y: =28
-            ZIndex: =16
+            ZIndex: =17
 
         Label_Material_Density As label:
             Height: =30
@@ -893,7 +904,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =180
             Y: =28
-            ZIndex: =17
+            ZIndex: =18
 
         Label_Pellet_Count_5g As label:
             Height: =30
@@ -901,7 +912,7 @@ Screen_Test_input As screen:
             Text: =ThisItem.Pellet_Count_Result_5g
             Visible: =false
             Width: =177
-            ZIndex: =18
+            ZIndex: =19
 
         Label_Visual_Inspection As label:
             Height: =30
@@ -909,7 +920,7 @@ Screen_Test_input As screen:
             Text: =ThisItem.Visual_Inspection_Result_Pass_Fail
             Visible: =false
             Width: =177
-            ZIndex: =19
+            ZIndex: =20
 
         Label_Batch_Number As label:
             Height: =30
@@ -919,7 +930,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =240
             Y: =28
-            ZIndex: =20
+            ZIndex: =21
 
         Label_Bag_Number As label:
             Height: =30
@@ -929,7 +940,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =260
             Y: =28
-            ZIndex: =21
+            ZIndex: =22
 
         Label_Extruder_IV As label:
             Height: =30
@@ -938,7 +949,7 @@ Screen_Test_input As screen:
             Visible: =false
             Width: =177
             X: =357
-            ZIndex: =22
+            ZIndex: =23
 
         Label_GC As label:
             Height: =30
@@ -947,7 +958,7 @@ Screen_Test_input As screen:
             Visible: =false
             Width: =177
             X: =91
-            ZIndex: =23
+            ZIndex: =24
 
         Label_Fines As label:
             Height: =30
@@ -957,7 +968,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =200
             Y: =28
-            ZIndex: =24
+            ZIndex: =25
 
         Label_Float_Sink As label:
             Height: =30
@@ -967,7 +978,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =220
             Y: =28
-            ZIndex: =25
+            ZIndex: =26
 
         Label_Composition As label:
             Height: =30
@@ -977,7 +988,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =280
             Y: =28
-            ZIndex: =26
+            ZIndex: =27
 
         Label_Lab As label:
             Height: =30
@@ -987,7 +998,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =300
             Y: =28
-            ZIndex: =27
+            ZIndex: =28
 
         Label_Ext_b As label:
             Height: =30
@@ -997,7 +1008,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =320
             Y: =28
-            ZIndex: =28
+            ZIndex: =29
 
         Label_Inclusions As label:
             Height: =30
@@ -1007,7 +1018,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =340
             Y: =28
-            ZIndex: =29
+            ZIndex: =30
 
         Label_Crystalisation As label:
             Height: =30
@@ -1017,7 +1028,7 @@ Screen_Test_input As screen:
             Width: =33
             X: =127
             Y: =28
-            ZIndex: =30
+            ZIndex: =31
 
         Label_AA As label:
             Height: =30
@@ -1027,7 +1038,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =420
             Y: =28
-            ZIndex: =31
+            ZIndex: =32
 
         Label_Limonene As label:
             Height: =30
@@ -1037,7 +1048,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =440
             Y: =28
-            ZIndex: =32
+            ZIndex: =33
 
         Label_L As label:
             Height: =30
@@ -1047,7 +1058,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =460
             Y: =28
-            ZIndex: =33
+            ZIndex: =34
 
         Label_a As label:
             Height: =30
@@ -1057,7 +1068,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =480
             Y: =28
-            ZIndex: =34
+            ZIndex: =35
 
         Label_b As label:
             Height: =30
@@ -1067,7 +1078,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =500
             Y: =28
-            ZIndex: =35
+            ZIndex: =36
 
         Label_Inclusions_Large As label:
             Height: =30
@@ -1078,7 +1089,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =360
             Y: =28
-            ZIndex: =36
+            ZIndex: =37
 
         Label_Inclusions_Medium As label:
             Height: =30
@@ -1089,7 +1100,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =400
             Y: =28
-            ZIndex: =37
+            ZIndex: =38
 
         Label_Pellet_Count_1g As label:
             Height: =30
@@ -1099,7 +1110,7 @@ Screen_Test_input As screen:
             Width: =177
             X: =520
             Y: =28
-            ZIndex: =38
+            ZIndex: =39
 
         Gallery_Tests_Inner As gallery.galleryHorizontal:
             DelayItemLoading: =true
@@ -1151,7 +1162,7 @@ Screen_Test_input As screen:
             TemplatePadding: =0
             TemplateSize: =Gallery_Tests_Inner.Width/Gallery_Tests_Inner.AllItemsCount
             Width: =1366
-            ZIndex: =39
+            ZIndex: =40
 
             Label_Data_1 As label:
                 Align: =Align.Center
@@ -1296,6 +1307,7 @@ Screen_Test_input As screen:
                     ThisItem.Test="Batch Number",Navigate(Screen_Test_Information,ScreenTransition.None),
                     ThisItem.Test="Bag Number",Navigate(Screen_Test_Information,ScreenTransition.None),
                     
+                    //Tests
                     ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
                     
                     Navigate(Screen_Under_Construction,ScreenTransition.None))
@@ -1365,16 +1377,6 @@ Screen_Test_input As screen:
                     //otherwise
                     Gallery_Tests_Main.TemplateWidth*ThisItem.Width)
                 ZIndex: =1
-
-        Label_Bag_Batch_Number As label:
-            Height: =30
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Batch_Number
-            Visible: =false
-            Width: =177
-            X: =832
-            Y: =28
-            ZIndex: =40
 
         Label_Storage_Batch_Number As label:
             Height: =30
@@ -1564,8 +1566,8 @@ Screen_Test_input As screen:
             
             //Tests
             ThisItem.Test="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
-            ThisItem.Test="Bulk Density",Navigate(Screen_Test_Bulk_Density_Flake,ScreenTransition.None),
-            
+            And(ThisItem.Test="Bulk Density",Or(Label_Material.Text="Flake",Label_Material.Text="Un-sorted Flake")),Navigate(Screen_Test_Bulk_Density_Flake,ScreenTransition.None),
+            //ThisItem.Test="Bulk Density",Navigate(Screen_Test_Bulk_Density_Flake,ScreenTransition.None),
             
             Navigate(Screen_Under_Construction,ScreenTransition.None))
         ShowScrollbar: =false
