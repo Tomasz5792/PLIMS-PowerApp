@@ -143,10 +143,10 @@ Screen_Test_Float_Sink As screen:
                 
                 UpdateIf(col_Test_Updates,ID=ThisItem.ID,{
                 Float_Sink_Weight_g:TextInput_Weight.Text,
-                Comp_Float_Sink_Glass_g:TextInput_Glass.Text,'Float_Sink_PET_Result_%':Label_Result_glass.Text,
+                Comp_Float_Sink_Glass_g:TextInput_Glass.Text,Comp_Float_Sink_Glass_Result_ppm:Label_Result_glass.Text,
                 Comp_Float_Sink_Metal_g:TextInput_metal.Text,Comp_Float_Sink_Metal_Result_ppm:Label_Result_metal.Text,
-                Float_Sink_PET_g:TextInput_pet.Text
-                
+                Float_Sink_PET_g:TextInput_pet.Text,'Float_Sink_PET_Result_%':Label_Result_pet.Text,
+                Float_Sink_Pass_Fail:Label_Result_float_pass_fail.Text,Float_Sink_Comment:TextInput_Float_Comment.Text
                 })
             Text: ="Button"
             Visible: =false
