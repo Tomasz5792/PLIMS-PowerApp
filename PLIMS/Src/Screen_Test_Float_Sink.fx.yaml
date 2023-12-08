@@ -71,7 +71,7 @@ Screen_Test_Float_Sink As screen:
                 
                 ,'Test Results'
             )
-            ,'Bulk_Density_Result_kg/m3'<>"Not Tested")
+            ,'Float_Sink_Pass_Fail'<>"Not Tested")
             ,
             Switch(var_filter_selected,
             
@@ -140,6 +140,10 @@ Screen_Test_Float_Sink As screen:
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =Text_size
             Text: =ThisItem.Sample_Point
             Width: =Label_Main_3.Width*2
@@ -151,9 +155,13 @@ Screen_Test_Float_Sink As screen:
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =Text_size
             Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yyyy")
-            Width: =Label_Main_3.Width
+            Width: =Label_Main_3.Width*1
             X: =Label_Main_3.Width*4
             ZIndex: =2
 
@@ -162,6 +170,10 @@ Screen_Test_Float_Sink As screen:
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =Text_size
             Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
             Width: =Label_Main_3.Width
@@ -170,43 +182,18 @@ Screen_Test_Float_Sink As screen:
 
         Label_Result_3 As label:
             Align: =Align.Center
-            Fill: |+
-                =If(
-                ThisItem.'Bulk_Density_Result_kg/m3'="Not Tested",Colour_Not_Tested,
-                IsBlank(TextInput_4),Colour_Testing,
-                
-                //Bulk Density Pellet
-                //Spec: HD Nat & Colour 550 - 700
-                And(
-                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
-                And(Value(Label_Result_3.Text)>=550,Value(Label_Result_3.Text)<=700)),Colour_Pass,
-                And(
-                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
-                Or(Value(Label_Result_3.Text)<550,Value(Label_Result_3.Text)>700)),Colour_Fail,
-                //Spec: PP 450 - 700
-                And(
-                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
-                And(Value(Label_Result_3.Text)>=450,Value(Label_Result_3.Text)<=700)),Colour_Pass,
-                And(
-                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
-                Or(Value(Label_Result_3.Text)<450,Value(Label_Result_3.Text)>700)),Colour_Fail,
-                //Spec: PET 820 - 920
-                And(
-                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
-                And(Value(Label_Result_3.Text)>=450,Value(Label_Result_3.Text)<=700)),Colour_Pass,
-                And(
-                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
-                Or(Value(Label_Result_3.Text)<450,Value(Label_Result_3.Text)>700)),Colour_Fail,
-                
-                Colour_Testing)
-                
+            Fill: =RGBA(180, 214, 250, 1)
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =Text_size
             Text: =If(IsBlank(TextInput_4),"",Text(Round(TextInput_4/1100*1000,0),"0"))
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*9
+            X: =Label_Main_3.Width*10
             ZIndex: =4
 
         Label_Main_3 As label:
@@ -228,13 +215,17 @@ Screen_Test_Float_Sink As screen:
             LineHeight: =1
             OnChange: =Select(Button_Update_3)
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =Text_size
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*8
+            X: =Label_Main_3.Width*9
             ZIndex: =6
 
         TextInput_Comment_3 As text:
@@ -250,13 +241,17 @@ Screen_Test_Float_Sink As screen:
             Mode: =TextMode.MultiLine
             OnChange: =Select(Button_Update_3)
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =Text_size_2
             Width: =Parent.Width-TextInput_Comment_3.X
-            X: =Label_Main_3.Width*13
+            X: =Label_Main_3.Width*14
             ZIndex: =7
 
         Button_Update_3 As button:
@@ -282,13 +277,17 @@ Screen_Test_Float_Sink As screen:
             LineHeight: =1
             OnChange: =Select(Button_Update_3)
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =Text_size
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*6
+            X: =Label_Main_3.Width*7
             ZIndex: =9
 
         Label_Sample_Point_4 As label:
@@ -296,6 +295,10 @@ Screen_Test_Float_Sink As screen:
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =Text_size
             Text: =ThisItem.'Material_Filter (field_1)'
             Width: =Label_Main_3.Width*2
@@ -305,41 +308,31 @@ Screen_Test_Float_Sink As screen:
             Align: =Align.Center
             Fill: |+
                 =If(
-                ThisItem.'Bulk_Density_Result_kg/m3'="Not Tested",Colour_Not_Tested,
-                IsBlank(TextInput_4),Colour_Testing,
+                ThisItem.'Float_Sink_Pass_Fail'="Not Tested",Colour_Not_Tested,
+                IsBlank(TextInput_5),Colour_Testing,
                 
-                //Bulk Density Pellet
-                //Spec: HD Nat & Colour 550 - 700
+                //Float Sink
+                //Spec: All, none - 10
                 And(
                 Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
                 And(Value(Label_Result_4.Text)>=550,Value(Label_Result_4.Text)<=700)),Colour_Pass,
                 And(
                 Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
                 Or(Value(Label_Result_4.Text)<550,Value(Label_Result_4.Text)>700)),Colour_Fail,
-                //Spec: PP 450 - 700
-                And(
-                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
-                And(Value(Label_Result_4.Text)>=450,Value(Label_Result_4.Text)<=700)),Colour_Pass,
-                And(
-                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
-                Or(Value(Label_Result_4.Text)<450,Value(Label_Result_4.Text)>700)),Colour_Fail,
-                //Spec: PET 820 - 920
-                And(
-                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
-                And(Value(Label_Result_4.Text)>=450,Value(Label_Result_4.Text)<=700)),Colour_Pass,
-                And(
-                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
-                Or(Value(Label_Result_4.Text)<450,Value(Label_Result_4.Text)>700)),Colour_Fail,
                 
                 Colour_Testing)
                 
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =Text_size
             Text: =If(IsBlank(TextInput_4),"",Text(Round(TextInput_4/1100*1000,0),"0"))
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*7
+            X: =Label_Main_3.Width*8
             ZIndex: =11
 
         TextInput_6 As text:
@@ -352,54 +345,33 @@ Screen_Test_Float_Sink As screen:
             LineHeight: =1
             OnChange: =Select(Button_Update_3)
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =Text_size
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*10
+            X: =Label_Main_3.Width*11
             ZIndex: =12
 
         Label_Result_5 As label:
             Align: =Align.Center
-            Fill: |+
-                =If(
-                ThisItem.'Bulk_Density_Result_kg/m3'="Not Tested",Colour_Not_Tested,
-                IsBlank(TextInput_4),Colour_Testing,
-                
-                //Bulk Density Pellet
-                //Spec: HD Nat & Colour 550 - 700
-                And(
-                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
-                And(Value(Label_Result_5.Text)>=550,Value(Label_Result_5.Text)<=700)),Colour_Pass,
-                And(
-                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
-                Or(Value(Label_Result_5.Text)<550,Value(Label_Result_5.Text)>700)),Colour_Fail,
-                //Spec: PP 450 - 700
-                And(
-                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
-                And(Value(Label_Result_5.Text)>=450,Value(Label_Result_5.Text)<=700)),Colour_Pass,
-                And(
-                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
-                Or(Value(Label_Result_5.Text)<450,Value(Label_Result_5.Text)>700)),Colour_Fail,
-                //Spec: PET 820 - 920
-                And(
-                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
-                And(Value(Label_Result_5.Text)>=450,Value(Label_Result_5.Text)<=700)),Colour_Pass,
-                And(
-                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
-                Or(Value(Label_Result_5.Text)<450,Value(Label_Result_5.Text)>700)),Colour_Fail,
-                
-                Colour_Testing)
-                
+            Fill: =RGBA(180, 214, 250, 1)
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =Text_size
             Text: =If(IsBlank(TextInput_4),"",Text(Round(TextInput_4/1100*1000,0),"0"))
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*11
+            X: =Label_Main_3.Width*12
             ZIndex: =13
 
         Label_Result_6 As label:
@@ -408,11 +380,38 @@ Screen_Test_Float_Sink As screen:
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =Text_size
-            Text: =If(IsBlank(TextInput_4),"",Text(Round(TextInput_4/1100*1000,0),"0"))
+            Text: =ThisItem.Float_Sink_Pass_Fail
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*12
+            X: =Label_Main_3.Width*13
             ZIndex: =14
+
+        TextInput_7 As text:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            Default: =ThisItem.Float_Sink_Weight_g
+            Format: =TextFormat.Number
+            Height: =54
+            HoverFill: =Colour_Viridor_PurpleTint
+            LineHeight: =1
+            OnChange: =Select(Button_Update_3)
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =Text_size
+            Width: =Label_Main_3.Width
+            X: =Label_Main_3.Width*6
+            ZIndex: =15
 
         Rectangle1 As rectangle:
             BorderStyle: =BorderStyle.None
@@ -421,7 +420,7 @@ Screen_Test_Float_Sink As screen:
             OnSelect: =Select(Parent)
             Width: =1366
             Y: =53
-            ZIndex: =15
+            ZIndex: =16
 
     Gallery_Units_6 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -479,6 +478,7 @@ Screen_Test_Float_Sink As screen:
             {}, 
             {Test:"Date", Unit:"dd mm yyyy", Width:1}, 
             {Test:"Time", Unit:"hh:mm", Width:1},
+            {Test:"Weight", Unit:"g", Width:1},
             {Test:"Weight of Glass", Unit:"g", Width:1},
             {Test:"Glass", Unit:"ppm", Width:1},
             {Test:"Weight of Metal", Unit:"g", Width:1},
@@ -512,7 +512,7 @@ Screen_Test_Float_Sink As screen:
             PaddingTop: =0
             PressedColor: =Color.White
             PressedFill: =Color.Transparent
-            Size: =18
+            Size: =17
             Text: =ThisItem.Test
             Width: |-
                 =If(
@@ -696,7 +696,7 @@ Screen_Test_Float_Sink As screen:
             "Error"
             )
         Width: =Label_Main_3.Width
-        X: =Label_Main_3.Width*11
+        X: =Label_Upper_Spec_4.Width*12
         Y: =Label_Upper_Spec_2.Y
         ZIndex: =12
 
@@ -749,7 +749,7 @@ Screen_Test_Float_Sink As screen:
             "Error"
             )
         Width: =Label_Main_3.Width
-        X: =Label_Main_3.Width*7
+        X: =Label_Upper_Spec_4.Width*8
         Y: =138
         ZIndex: =13
 
@@ -802,7 +802,7 @@ Screen_Test_Float_Sink As screen:
             "Error"
             )
         Width: =Label_Main_3.Width
-        X: =Label_Main_3.Width*9
+        X: =Label_Upper_Spec_4.Width*10
         Y: =Label_Upper_Spec_2.Y
         ZIndex: =14
 
@@ -855,7 +855,7 @@ Screen_Test_Float_Sink As screen:
             "Error"
             )
         Width: =Label_Main_3.Width
-        X: =Label_Main_3.Width*9
+        X: =Label_Upper_Spec_3.X
         Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
         ZIndex: =15
 
@@ -908,7 +908,7 @@ Screen_Test_Float_Sink As screen:
             "Error"
             )
         Width: =Label_Main_3.Width
-        X: =Label_Main_3.Width*7
+        X: =Label_Upper_Spec_2.X
         Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
         ZIndex: =16
 
@@ -961,7 +961,63 @@ Screen_Test_Float_Sink As screen:
             "Error"
             )
         Width: =Label_Main_3.Width
-        X: =Label_Main_3.Width*11
+        X: =Label_Upper_Spec_1.X
         Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
         ZIndex: =17
+
+    Label_Upper_Spec_4 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="95"
+        Width: =Gallery_Title_3.Width/Gallery_Title_3.AllItemsCount
+        X: =Label_Main_3.Width*6
+        Y: =Label_Upper_Spec_2.Y
+        ZIndex: =18
+
+    Label_Lower_Spec_5 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =Label_Upper_Spec_1.Size
+        Text: ="105"
+        Width: =Label_Main_3.Width
+        X: =Label_Upper_Spec_4.X
+        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+        ZIndex: =19
+
+    Label_Upper_Spec_5 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: ="Pass"
+        Width: =Label_Main_3.Width
+        X: =Label_Upper_Spec_4.Width*13
+        Y: =Label_Upper_Spec_2.Y
+        ZIndex: =20
+
+    Label_Lower_Spec_6 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =Label_Upper_Spec_5.Size
+        Text: ="Fail"
+        Width: =Label_Main_3.Width
+        X: =Label_Upper_Spec_5.X
+        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+        ZIndex: =21
 

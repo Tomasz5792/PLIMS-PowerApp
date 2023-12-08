@@ -5114,6 +5114,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen_Test_Float_Sink.Gallery2_3.TextInput_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen_Test_Float_Sink.Gallery2_3.TextInput_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen_Test_Float_Sink",
+                "type": "Screen_Test_Float_Sink.Gallery2_3.TextInput_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Colour_To_Test"
                 }
               ],
