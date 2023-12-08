@@ -1304,9 +1304,34 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Mat_Den",Label_Material_Density.Text="Not Tested"),Colour_Not_Tested,
                     
                     //Composition
+                    //Metal
                     And(ThisItem.Result="R_Metal",Label_Metal.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Metal",!IsBlank(Label_Metal),
+                    Or(Label_Material_Filter.Text="HDPE Natural",Label_Material_Filter.Text="HDPE Self Coloured",Label_Material_Filter.Text="PP"),
+                    Value(Label_Metal.Text)<=10),Colour_Pass,
+                    And(ThisItem.Result="R_Metal",!IsBlank(Label_Metal),
+                    Or(Label_Material_Filter.Text="HDPE Natural",Label_Material_Filter.Text="HDPE Self Coloured",Label_Material_Filter.Text="PP"),
+                    Value(Label_Metal.Text)>10),Colour_Fail,
+                    
+                    //Glass
                     And(ThisItem.Result="R_Glass",Label_Glass.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_Glass",!IsBlank(Label_Glass),
+                    Or(Label_Material_Filter.Text="HDPE Natural",Label_Material_Filter.Text="HDPE Self Coloured",Label_Material_Filter.Text="PP"),
+                    Value(Label_Glass.Text)<=10),Colour_Pass,
+                    And(ThisItem.Result="R_Glass",!IsBlank(Label_Glass),
+                    Or(Label_Material_Filter.Text="HDPE Natural",Label_Material_Filter.Text="HDPE Self Coloured",Label_Material_Filter.Text="PP"),
+                    Value(Label_Glass.Text)>10),Colour_Fail,
+                    
+                    //PET
                     And(ThisItem.Result="R_PET",Label_PET.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_PET",Label_PET.Text="Not Tested"),Colour_Not_Tested,
+                    And(ThisItem.Result="R_PET",!IsBlank(Label_PET),
+                    Or(Label_Material_Filter.Text="HDPE Natural",Label_Material_Filter.Text="HDPE Self Coloured",Label_Material_Filter.Text="PP"),
+                    Value(Label_PET.Text)<=0.1),Colour_Pass,
+                    And(ThisItem.Result="R_PET",!IsBlank(Label_PET),
+                    Or(Label_Material_Filter.Text="HDPE Natural",Label_Material_Filter.Text="HDPE Self Coloured",Label_Material_Filter.Text="PP"),
+                    Value(Label_PET.Text)>0.1),Colour_Fail,
+                    
                     And(ThisItem.Result="R_PVC",Label_PVC.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Float",Label_Float_Sink.Text="Not Tested"),Colour_Not_Tested,
                     And(ThisItem.Result="R_Float",Label_Float_Sink.Text="Pass"),Colour_Pass,
