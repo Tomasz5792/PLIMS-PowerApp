@@ -331,7 +331,6 @@ Screen_Test_Float_Sink As screen:
             Align: =Align.Center
             Fill: |+
                 =If(
-                
                 //Float Sink
                 //Spec: All, none - 10
                 And(!IsBlank(Label_Result_glass),
@@ -389,7 +388,7 @@ Screen_Test_Float_Sink As screen:
                 =If(
                 
                 //Float Sink
-                //Spec: All, none - 10
+                //Spec: All, none - 0.1
                 And(!IsBlank(Label_Result_pet),
                 Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
                 Value(Label_Result_pet.Text)<=0.1),Colour_Pass,
@@ -445,6 +444,25 @@ Screen_Test_Float_Sink As screen:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
             Default: =ThisItem.Float_Sink_Weight_g
+            Fill: |-
+                =If(
+                //Float Sink
+                //Spec: All, none - 10
+                And(
+                Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
+                And(Value(TextInput_Weight.Text)>=95,Value(TextInput_Weight.Text)<=105)),
+                Colour_Pass,
+                
+                And(!IsBlank(TextInput_Weight),
+                Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
+                Or(Value(TextInput_Weight.Text)<95,Value(TextInput_Weight.Text)>105)),
+                Colour_Fail,
+                
+                ThisItem.Float_Sink_Pass_Fail="Not Tested",Colour_Not_Tested,
+                
+                IsBlank(TextInput_Weight),Colour_Testing,
+                
+                Colour_Testing)
             Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
