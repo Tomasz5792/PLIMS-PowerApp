@@ -138,31 +138,34 @@ Screen_Test_Float_Sink As screen:
         Label_Sample_Point_3 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =ThisItem.Sample_Point
-            Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width
+            Width: =Label_Main_3.Width*2
+            X: =Label_Main_3.Width*2
             ZIndex: =1
 
         Label_Date_3 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
+            Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yyyy")
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*2
+            X: =Label_Main_3.Width*4
             ZIndex: =2
 
         Label_Time_3 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*3
+            X: =Label_Main_3.Width*5
             ZIndex: =3
 
         Label_Result_3 As label:
@@ -198,11 +201,12 @@ Screen_Test_Float_Sink As screen:
                 Colour_Testing)
                 
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =If(IsBlank(TextInput_4),"",Text(Round(TextInput_4/1100*1000,0),"0"))
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*6
+            X: =Label_Main_3.Width*9
             ZIndex: =4
 
         Label_Main_3 As label:
@@ -210,17 +214,18 @@ Screen_Test_Float_Sink As screen:
             Height: =54
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =ThisItem.'Material_Filter (field_1)'
+            Text: =
             Width: =Gallery_Title_3.Width/Gallery_Title_3.AllItemsCount
             ZIndex: =5
 
         TextInput_4 As text:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
-            Default: =ThisItem.Bulk_Density_Weight_g
+            Default: =ThisItem.Comp_Float_Sink_Metal_g
             Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
+            LineHeight: =1
             OnChange: =Select(Button_Update_3)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
@@ -229,18 +234,19 @@ Screen_Test_Float_Sink As screen:
             RadiusTopRight: =0
             Size: =Text_size
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*5
-            ZIndex: =7
+            X: =Label_Main_3.Width*8
+            ZIndex: =6
 
         TextInput_Comment_3 As text:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
-            Default: =ThisItem.Bulk_Density_Comment
+            Default: =ThisItem.Float_Sink_Comment
             EnableSpellCheck: =true
             Height: =54
             HoverColor: =Color.Black
             HoverFill: =Colour_Viridor_PurpleTint
+            LineHeight: =1
             Mode: =TextMode.MultiLine
             OnChange: =Select(Button_Update_3)
             OnSelect: =Select(Parent)
@@ -249,9 +255,9 @@ Screen_Test_Float_Sink As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =Text_size_2
-            Width: =Parent.Width-Label_Main_3.Width*7
-            X: =Label_Main_3.Width*7
-            ZIndex: =8
+            Width: =Parent.Width-TextInput_Comment_3.X
+            X: =Label_Main_3.Width*13
+            ZIndex: =7
 
         Button_Update_3 As button:
             Height: =54
@@ -264,15 +270,16 @@ Screen_Test_Float_Sink As screen:
             Visible: =false
             Width: =48
             X: =1318
-            ZIndex: =10
+            ZIndex: =8
 
         TextInput_5 As text:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
-            Default: =ThisItem.Bulk_Density_Weight_g
+            Default: =ThisItem.Comp_Float_Sink_Glass_g
             Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
+            LineHeight: =1
             OnChange: =Select(Button_Update_3)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
@@ -281,8 +288,140 @@ Screen_Test_Float_Sink As screen:
             RadiusTopRight: =0
             Size: =Text_size
             Width: =Label_Main_3.Width
-            X: =Label_Main_3.Width*4
+            X: =Label_Main_3.Width*6
+            ZIndex: =9
+
+        Label_Sample_Point_4 As label:
+            Align: =Align.Center
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =ThisItem.'Material_Filter (field_1)'
+            Width: =Label_Main_3.Width*2
+            ZIndex: =10
+
+        Label_Result_4 As label:
+            Align: =Align.Center
+            Fill: |+
+                =If(
+                ThisItem.'Bulk_Density_Result_kg/m3'="Not Tested",Colour_Not_Tested,
+                IsBlank(TextInput_4),Colour_Testing,
+                
+                //Bulk Density Pellet
+                //Spec: HD Nat & Colour 550 - 700
+                And(
+                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
+                And(Value(Label_Result_4.Text)>=550,Value(Label_Result_4.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
+                Or(Value(Label_Result_4.Text)<550,Value(Label_Result_4.Text)>700)),Colour_Fail,
+                //Spec: PP 450 - 700
+                And(
+                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
+                And(Value(Label_Result_4.Text)>=450,Value(Label_Result_4.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
+                Or(Value(Label_Result_4.Text)<450,Value(Label_Result_4.Text)>700)),Colour_Fail,
+                //Spec: PET 820 - 920
+                And(
+                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
+                And(Value(Label_Result_4.Text)>=450,Value(Label_Result_4.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
+                Or(Value(Label_Result_4.Text)<450,Value(Label_Result_4.Text)>700)),Colour_Fail,
+                
+                Colour_Testing)
+                
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =If(IsBlank(TextInput_4),"",Text(Round(TextInput_4/1100*1000,0),"0"))
+            Width: =Label_Main_3.Width
+            X: =Label_Main_3.Width*7
             ZIndex: =11
+
+        TextInput_6 As text:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            Default: =ThisItem.Float_Sink_PET_g
+            Format: =TextFormat.Number
+            Height: =54
+            HoverFill: =Colour_Viridor_PurpleTint
+            LineHeight: =1
+            OnChange: =Select(Button_Update_3)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =Text_size
+            Width: =Label_Main_3.Width
+            X: =Label_Main_3.Width*10
+            ZIndex: =12
+
+        Label_Result_5 As label:
+            Align: =Align.Center
+            Fill: |+
+                =If(
+                ThisItem.'Bulk_Density_Result_kg/m3'="Not Tested",Colour_Not_Tested,
+                IsBlank(TextInput_4),Colour_Testing,
+                
+                //Bulk Density Pellet
+                //Spec: HD Nat & Colour 550 - 700
+                And(
+                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
+                And(Value(Label_Result_5.Text)>=550,Value(Label_Result_5.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
+                Or(Value(Label_Result_5.Text)<550,Value(Label_Result_5.Text)>700)),Colour_Fail,
+                //Spec: PP 450 - 700
+                And(
+                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
+                And(Value(Label_Result_5.Text)>=450,Value(Label_Result_5.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="PP Pellet non Deo",ThisItem.Specification_Filter="PP Pellet Deo"),
+                Or(Value(Label_Result_5.Text)<450,Value(Label_Result_5.Text)>700)),Colour_Fail,
+                //Spec: PET 820 - 920
+                And(
+                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
+                And(Value(Label_Result_5.Text)>=450,Value(Label_Result_5.Text)<=700)),Colour_Pass,
+                And(
+                Or(ThisItem.Specification_Filter="PET Pellet Std pre-SSP",ThisItem.Specification_Filter="PET Pellet Std SSP",ThisItem.Specification_Filter="PET Pellet Std"),
+                Or(Value(Label_Result_5.Text)<450,Value(Label_Result_5.Text)>700)),Colour_Fail,
+                
+                Colour_Testing)
+                
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =If(IsBlank(TextInput_4),"",Text(Round(TextInput_4/1100*1000,0),"0"))
+            Width: =Label_Main_3.Width
+            X: =Label_Main_3.Width*11
+            ZIndex: =13
+
+        Label_Result_6 As label:
+            Align: =Align.Center
+            Fill: =RGBA(180, 214, 250, 1)
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =If(IsBlank(TextInput_4),"",Text(Round(TextInput_4/1100*1000,0),"0"))
+            Width: =Label_Main_3.Width
+            X: =Label_Main_3.Width*12
+            ZIndex: =14
+
+        Rectangle1 As rectangle:
+            BorderStyle: =BorderStyle.None
+            Fill: =Colour_Not_Tested
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =1366
+            Y: =53
+            ZIndex: =15
 
     Gallery_Units_6 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -334,13 +473,19 @@ Screen_Test_Float_Sink As screen:
         Height: =58
         Items: |-
             =[
-            {Test:"Material", Unit:"", Width:1}, 
-            {Test:"Sample Point", Unit:"", Width:1}, 
+            {Test:"Material", Unit:"", Width:2}, 
+            {}, 
+            {Test:"Sample Point", Unit:"", Width:2}, 
+            {}, 
             {Test:"Date", Unit:"dd mm yyyy", Width:1}, 
             {Test:"Time", Unit:"hh:mm", Width:1},
-            {Test:"Weight of Base", Unit:"g", Width:1},
-            {Test:"Weight of Base + Sample", Unit:"g", Width:1},
-            {Test:"Bulk Density", Unit:"Kg/m³", Width:1},
+            {Test:"Weight of Glass", Unit:"g", Width:1},
+            {Test:"Glass", Unit:"ppm", Width:1},
+            {Test:"Weight of Metal", Unit:"g", Width:1},
+            {Test:"Metal", Unit:"ppm", Width:1},
+            {Test:"Weight of PET", Unit:"g", Width:1},
+            {Test:"PET", Unit:"%", Width:1},
+            {Test:"Pass / Fail", Unit:"Pass / Fail", Width:1},
             {Test:"Comment", Unit:"",  Width:3}, 
             {}, 
             {}, 
@@ -439,59 +584,6 @@ Screen_Test_Float_Sink As screen:
         Y: =10
         ZIndex: =10
 
-    Label_Bulk_Density_Flake_Lower_Spec_2 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: |-
-            =Switch(var_filter_selected,
-            
-            "All_All", "Multiple",
-            "All_Wash", "N/A",
-            "All_Post_Flake_Sorter", "Multiple",
-            "All_Post_Extruder", "Multiple",
-            "All_SSP", "820",
-            "All_Sampling_Silo", "Multiple",
-            
-            "PET_All", "820",
-            "PET_Wash", "N/A",
-            "PET_Post_Flake_Sorter", "N/A",
-            "PET_Post_Extruder", "820",
-            "PET_SSP", "820",
-            "PET_Sampling_Silo", "820",
-            
-            "HDPE_Nat_All", "450",
-            "HDPE_Nat_Wash", "N/A",
-            "HDPE_Nat_Post_Flake_Sorter", "N/A",
-            "HDPE_Nat_Post_Extruder", "450",
-            "HDPE_Nat_SSP", "N/A",
-            "HDPE_Nat_Sampling_Silo", "450",
-            
-            "HDPE_SC_All", "450",
-            "HDPE_SC_Wash", "N/A",
-            "HDPE_SC_Post_Flake_Sorter", "N/A",
-            "HDPE_SC_Post_Extruder", "450",
-            "HDPE_SC_SSP", "N/A",
-            "HDPE_SC_Sampling_Silo", "450",
-            
-            "PP_All", "450",
-            "PP_Wash", "N/A",
-            "PP_Post_Flake_Sorter", "N/A",
-            "PP_Post_Extruder", "450",
-            "PP_SSP", "N/A",
-            "PP_Sampling_Silo", "450",
-                
-            "Error"
-            )
-        Width: =136.6
-        X: =819.6
-        Y: =168
-        ZIndex: =11
-
     Title_pH_3 As group:
         Height: =5
         Width: =5
@@ -555,7 +647,7 @@ Screen_Test_Float_Sink As screen:
             Y: =10
             ZIndex: =6
 
-    Label_Bulk_Density_Flake_Upper_Spec_2 As label:
+    Label_Upper_Spec_1 As label:
         Align: =Align.Center
         Height: =29
         PaddingBottom: =0
@@ -566,45 +658,310 @@ Screen_Test_Float_Sink As screen:
         Text: |-
             =Switch(var_filter_selected,
             
-            "All_All", "Multiple",
+            "All_All", "0.1",
             "All_Wash", "N/A",
-            "All_Post_Flake_Sorter", "Multiple",
-            "All_Post_Extruder", "Multiple",
-            "All_SSP", "920",
-            "All_Sampling_Silo", "Multiple",
+            "All_Post_Flake_Sorter", "0.1",
+            "All_Post_Extruder", "N/A",
+            "All_SSP", "N/A",
+            "All_Sampling_Silo", "N/A",
             
-            "PET_All", "920",
+            "PET_All", "N/A",
             "PET_Wash", "N/A",
             "PET_Post_Flake_Sorter", "N/A",
-            "PET_Post_Extruder", "920",
-            "PET_SSP", "920",
-            "PET_Sampling_Silo", "920",
+            "PET_Post_Extruder", "N/A",
+            "PET_SSP", "N/A",
+            "PET_Sampling_Silo", "N/A",
             
-            "HDPE_Nat_All", "700",
+            "HDPE_Nat_All", "0.1",
             "HDPE_Nat_Wash", "N/A",
-            "HDPE_Nat_Post_Flake_Sorter", "N/A",
-            "HDPE_Nat_Post_Extruder", "700",
+            "HDPE_Nat_Post_Flake_Sorter", "0.1",
+            "HDPE_Nat_Post_Extruder", "N/A",
             "HDPE_Nat_SSP", "N/A",
-            "HDPE_Nat_Sampling_Silo", "700",
+            "HDPE_Nat_Sampling_Silo", "N/A",
             
-            "HDPE_SC_All", "700",
+            "HDPE_SC_All", "0.1",
             "HDPE_SC_Wash", "N/A",
-            "HDPE_SC_Post_Flake_Sorter", "N/A",
-            "HDPE_SC_Post_Extruder", "700",
+            "HDPE_SC_Post_Flake_Sorter", "0.1",
+            "HDPE_SC_Post_Extruder", "N/A",
             "HDPE_SC_SSP", "N/A",
-            "HDPE_SC_Sampling_Silo", "700",
+            "HDPE_SC_Sampling_Silo", "N/A",
             
-            "PP_All", "700",
+            "PP_All", "0.1",
             "PP_Wash", "N/A",
-            "PP_Post_Flake_Sorter", "N/A",
-            "PP_Post_Extruder", "700",
+            "PP_Post_Flake_Sorter", "0.1",
+            "PP_Post_Extruder", "N/A",
             "PP_SSP", "N/A",
-            "PP_Sampling_Silo", "700",
+            "PP_Sampling_Silo", "N/A",
                 
             "Error"
             )
-        Width: =136.6
-        X: =819.6
-        Y: =138
+        Width: =Label_Main_3.Width
+        X: =Label_Main_3.Width*11
+        Y: =Label_Upper_Spec_2.Y
         ZIndex: =12
+
+    Label_Upper_Spec_2 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: |-
+            =Switch(var_filter_selected,
+            
+            "All_All", "10",
+            "All_Wash", "N/A",
+            "All_Post_Flake_Sorter", "10",
+            "All_Post_Extruder", "N/A",
+            "All_SSP", "N/A",
+            "All_Sampling_Silo", "N/A",
+            
+            "PET_All", "N/A",
+            "PET_Wash", "N/A",
+            "PET_Post_Flake_Sorter", "N/A",
+            "PET_Post_Extruder", "N/A",
+            "PET_SSP", "N/A",
+            "PET_Sampling_Silo", "N/A",
+            
+            "HDPE_Nat_All", "10",
+            "HDPE_Nat_Wash", "N/A",
+            "HDPE_Nat_Post_Flake_Sorter", "10",
+            "HDPE_Nat_Post_Extruder", "N/A",
+            "HDPE_Nat_SSP", "N/A",
+            "HDPE_Nat_Sampling_Silo", "N/A",
+            
+            "HDPE_SC_All", "10",
+            "HDPE_SC_Wash", "N/A",
+            "HDPE_SC_Post_Flake_Sorter", "10",
+            "HDPE_SC_Post_Extruder", "N/A",
+            "HDPE_SC_SSP", "N/A",
+            "HDPE_SC_Sampling_Silo", "N/A",
+            
+            "PP_All", "10",
+            "PP_Wash", "N/A",
+            "PP_Post_Flake_Sorter", "10",
+            "PP_Post_Extruder", "N/A",
+            "PP_SSP", "N/A",
+            "PP_Sampling_Silo", "N/A",
+                
+            "Error"
+            )
+        Width: =Label_Main_3.Width
+        X: =Label_Main_3.Width*7
+        Y: =138
+        ZIndex: =13
+
+    Label_Upper_Spec_3 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: |-
+            =Switch(var_filter_selected,
+            
+            "All_All", "10",
+            "All_Wash", "N/A",
+            "All_Post_Flake_Sorter", "10",
+            "All_Post_Extruder", "N/A",
+            "All_SSP", "N/A",
+            "All_Sampling_Silo", "N/A",
+            
+            "PET_All", "N/A",
+            "PET_Wash", "N/A",
+            "PET_Post_Flake_Sorter", "N/A",
+            "PET_Post_Extruder", "N/A",
+            "PET_SSP", "N/A",
+            "PET_Sampling_Silo", "N/A",
+            
+            "HDPE_Nat_All", "10",
+            "HDPE_Nat_Wash", "N/A",
+            "HDPE_Nat_Post_Flake_Sorter", "10",
+            "HDPE_Nat_Post_Extruder", "N/A",
+            "HDPE_Nat_SSP", "N/A",
+            "HDPE_Nat_Sampling_Silo", "N/A",
+            
+            "HDPE_SC_All", "10",
+            "HDPE_SC_Wash", "N/A",
+            "HDPE_SC_Post_Flake_Sorter", "10",
+            "HDPE_SC_Post_Extruder", "N/A",
+            "HDPE_SC_SSP", "N/A",
+            "HDPE_SC_Sampling_Silo", "N/A",
+            
+            "PP_All", "10",
+            "PP_Wash", "N/A",
+            "PP_Post_Flake_Sorter", "10",
+            "PP_Post_Extruder", "N/A",
+            "PP_SSP", "N/A",
+            "PP_Sampling_Silo", "N/A",
+                
+            "Error"
+            )
+        Width: =Label_Main_3.Width
+        X: =Label_Main_3.Width*9
+        Y: =Label_Upper_Spec_2.Y
+        ZIndex: =14
+
+    Label_Lower_Spec_2 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =Label_Upper_Spec_1.Size
+        Text: |-
+            =Switch(var_filter_selected,
+            
+            "All_All", "none",
+            "All_Wash", "N/A",
+            "All_Post_Flake_Sorter", "none",
+            "All_Post_Extruder", "N/A",
+            "All_SSP", "N/A",
+            "All_Sampling_Silo", "N/A",
+            
+            "PET_All", "N/A",
+            "PET_Wash", "N/A",
+            "PET_Post_Flake_Sorter", "N/A",
+            "PET_Post_Extruder", "N/A",
+            "PET_SSP", "N/A",
+            "PET_Sampling_Silo", "N/A",
+            
+            "HDPE_Nat_All", "none",
+            "HDPE_Nat_Wash", "N/A",
+            "HDPE_Nat_Post_Flake_Sorter", "none",
+            "HDPE_Nat_Post_Extruder", "N/A",
+            "HDPE_Nat_SSP", "N/A",
+            "HDPE_Nat_Sampling_Silo", "N/A",
+            
+            "HDPE_SC_All", "none",
+            "HDPE_SC_Wash", "N/A",
+            "HDPE_SC_Post_Flake_Sorter", "none",
+            "HDPE_SC_Post_Extruder", "N/A",
+            "HDPE_SC_SSP", "N/A",
+            "HDPE_SC_Sampling_Silo", "N/A",
+            
+            "PP_All", "none",
+            "PP_Wash", "N/A",
+            "PP_Post_Flake_Sorter", "none",
+            "PP_Post_Extruder", "N/A",
+            "PP_SSP", "N/A",
+            "PP_Sampling_Silo", "N/A",
+                
+            "Error"
+            )
+        Width: =Label_Main_3.Width
+        X: =Label_Main_3.Width*9
+        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+        ZIndex: =15
+
+    Label_Lower_Spec_3 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =Label_Upper_Spec_1.Size
+        Text: |-
+            =Switch(var_filter_selected,
+            
+            "All_All", "none",
+            "All_Wash", "N/A",
+            "All_Post_Flake_Sorter", "none",
+            "All_Post_Extruder", "N/A",
+            "All_SSP", "N/A",
+            "All_Sampling_Silo", "N/A",
+            
+            "PET_All", "N/A",
+            "PET_Wash", "N/A",
+            "PET_Post_Flake_Sorter", "N/A",
+            "PET_Post_Extruder", "N/A",
+            "PET_SSP", "N/A",
+            "PET_Sampling_Silo", "N/A",
+            
+            "HDPE_Nat_All", "none",
+            "HDPE_Nat_Wash", "N/A",
+            "HDPE_Nat_Post_Flake_Sorter", "none",
+            "HDPE_Nat_Post_Extruder", "N/A",
+            "HDPE_Nat_SSP", "N/A",
+            "HDPE_Nat_Sampling_Silo", "N/A",
+            
+            "HDPE_SC_All", "none",
+            "HDPE_SC_Wash", "N/A",
+            "HDPE_SC_Post_Flake_Sorter", "none",
+            "HDPE_SC_Post_Extruder", "N/A",
+            "HDPE_SC_SSP", "N/A",
+            "HDPE_SC_Sampling_Silo", "N/A",
+            
+            "PP_All", "none",
+            "PP_Wash", "N/A",
+            "PP_Post_Flake_Sorter", "none",
+            "PP_Post_Extruder", "N/A",
+            "PP_SSP", "N/A",
+            "PP_Sampling_Silo", "N/A",
+                
+            "Error"
+            )
+        Width: =Label_Main_3.Width
+        X: =Label_Main_3.Width*7
+        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+        ZIndex: =16
+
+    Label_Lower_Spec_4 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =Label_Upper_Spec_1.Size
+        Text: |-
+            =Switch(var_filter_selected,
+            
+            "All_All", "none",
+            "All_Wash", "N/A",
+            "All_Post_Flake_Sorter", "none",
+            "All_Post_Extruder", "N/A",
+            "All_SSP", "N/A",
+            "All_Sampling_Silo", "N/A",
+            
+            "PET_All", "N/A",
+            "PET_Wash", "N/A",
+            "PET_Post_Flake_Sorter", "N/A",
+            "PET_Post_Extruder", "N/A",
+            "PET_SSP", "N/A",
+            "PET_Sampling_Silo", "N/A",
+            
+            "HDPE_Nat_All", "none",
+            "HDPE_Nat_Wash", "N/A",
+            "HDPE_Nat_Post_Flake_Sorter", "none",
+            "HDPE_Nat_Post_Extruder", "N/A",
+            "HDPE_Nat_SSP", "N/A",
+            "HDPE_Nat_Sampling_Silo", "N/A",
+            
+            "HDPE_SC_All", "none",
+            "HDPE_SC_Wash", "N/A",
+            "HDPE_SC_Post_Flake_Sorter", "none",
+            "HDPE_SC_Post_Extruder", "N/A",
+            "HDPE_SC_SSP", "N/A",
+            "HDPE_SC_Sampling_Silo", "N/A",
+            
+            "PP_All", "none",
+            "PP_Wash", "N/A",
+            "PP_Post_Flake_Sorter", "none",
+            "PP_Post_Extruder", "N/A",
+            "PP_SSP", "N/A",
+            "PP_Sampling_Silo", "N/A",
+                
+            "Error"
+            )
+        Width: =Label_Main_3.Width
+        X: =Label_Main_3.Width*11
+        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+        ZIndex: =17
 

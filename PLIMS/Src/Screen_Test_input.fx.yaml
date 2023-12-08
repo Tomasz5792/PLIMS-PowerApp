@@ -1613,7 +1613,9 @@ Screen_Test_input As screen:
             ThisItem.Test="Bulk Density",Navigate(Screen_Test_Bulk_Density_Pellet,ScreenTransition.None),
             
             //Float Sink
+            ThisItem.Test="Float Sink",Navigate(Screen_Test_Float_Sink,ScreenTransition.None),
             And(Or(ThisItem.Test="Metal",ThisItem.Test="Glass",ThisItem.Test="PET",ThisItem.Test="PVC"),Or(var_material_selected="HDPE Natural",var_material_selected="HDPE Self Coloured",var_material_selected="PP")),Navigate(Screen_Test_Float_Sink,ScreenTransition.None),
+            
             
             Navigate(Screen_Under_Construction,ScreenTransition.None))
         ShowScrollbar: =false
