@@ -74,7 +74,7 @@
       "field_41": "Float_Sink_Weight_g",
       "field_42": "Composition_Weight_g",
       "field_43": "Float_Sink_PET_g",
-      "field_44": "Float_Sink_PET_Result_ppm",
+      "field_44": "Float_Sink_PET_Result_%",
       "field_45": "Comp_White_g",
       "field_46": "Comp_White_Result_ppm",
       "field_47": "Comp_White_Result_%",

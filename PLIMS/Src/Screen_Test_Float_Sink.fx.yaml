@@ -71,7 +71,7 @@ Screen_Test_Float_Sink As screen:
                 
                 ,'Test Results'
             )
-            ,'Float_Sink_Pass_Fail'<>"Not Tested")
+            ,Float_Sink_Pass_Fail<>"Not Tested")
             ,
             Switch(var_filter_selected,
             
@@ -143,7 +143,7 @@ Screen_Test_Float_Sink As screen:
                 
                 UpdateIf(col_Test_Updates,ID=ThisItem.ID,{
                 Float_Sink_Weight_g:TextInput_Weight.Text,
-                Comp_Float_Sink_Glass_g:TextInput_Glass.Text,Float_Sink_PET_Result_ppm:Label_Result_glass.Text,
+                Comp_Float_Sink_Glass_g:TextInput_Glass.Text,'Float_Sink_PET_Result_%':Label_Result_glass.Text,
                 Comp_Float_Sink_Metal_g:TextInput_metal.Text,Comp_Float_Sink_Metal_Result_ppm:Label_Result_metal.Text,
                 Float_Sink_PET_g:TextInput_pet.Text
                 
@@ -314,7 +314,7 @@ Screen_Test_Float_Sink As screen:
             Align: =Align.Center
             Fill: |+
                 =If(
-                ThisItem.'Float_Sink_Pass_Fail'="Not Tested",Colour_Not_Tested,
+                ThisItem.Float_Sink_Pass_Fail="Not Tested",Colour_Not_Tested,
                 IsBlank(TextInput_Glass),Colour_Testing,
                 
                 //Float Sink

@@ -598,7 +598,7 @@ Screen_Add_Samples As screen:
             'Comp_White_Result_%': "",
             Comp_Float_Sink_Metal_Result_ppm: "",
             Comp_Float_Sink_Glass_Result_ppm: "",
-            Float_Sink_PET_Result_ppm: "",
+            'Float_Sink_PET_Result_%': "",
             Comp_Float_Sink_PVC_Result_ppm: "",
             Comp_Pass_Fail: "",
             Float_Sink_Pass_Fail: ""
@@ -617,7 +617,7 @@ Screen_Add_Samples As screen:
             'Comp_White_Result_%': "",
             Comp_Float_Sink_Metal_Result_ppm: "",
             Comp_Float_Sink_Glass_Result_ppm: "",
-            Float_Sink_PET_Result_ppm: "",
+            'Float_Sink_PET_Result_%': "",
             Comp_Float_Sink_PVC_Result_ppm: "",
             Comp_Pass_Fail: "",
             Float_Sink_Pass_Fail: ""
@@ -634,7 +634,7 @@ Screen_Add_Samples As screen:
             'Moisture_Result_%': "",
             Comp_Float_Sink_Metal_Result_ppm: "",
             Comp_Float_Sink_Glass_Result_ppm: "",
-            Float_Sink_PET_Result_ppm: "",
+            'Float_Sink_PET_Result_%': "",
             Comp_Float_Sink_PVC_Result_ppm: "",
             Float_Sink_Pass_Fail: ""
             }));
@@ -650,7 +650,7 @@ Screen_Add_Samples As screen:
             'Moisture_Result_%': "",
             Comp_Float_Sink_Metal_Result_ppm: "",
             Comp_Float_Sink_Glass_Result_ppm: "",
-            Float_Sink_PET_Result_ppm: "",
+            'Float_Sink_PET_Result_%': "",
             Comp_Float_Sink_PVC_Result_ppm: "",
             Float_Sink_Pass_Fail: "",
             pH_Result: ""

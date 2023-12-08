@@ -859,7 +859,7 @@ Screen_Test_input As screen:
         Label_PET As label:
             Height: =30
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Float_Sink_PET_Result_ppm
+            Text: =ThisItem.'Float_Sink_PET_Result_%'
             Visible: =false
             Width: =177
             X: =100
