@@ -60,11 +60,51 @@ Screen_Start As screen:
         BorderColor: =RGBA(0, 18, 107, 0)
         Fill: =Colour_Viridor_GreenTint
         Height: =401
-        Items: =["Caustic Strengh","Bulk Density Flake","Bulk Density Pellet","Float Sink"]
+        Items: |
+            =[
+            {Name:"Caustic Strength",Text:"Caustic Strength"},
+            {Name:"IV MFI",Text:"IV
+            MFI"},
+            {Name:"Extruder",Text:"Extruder"},
+            {Name:"GC",Text:"GC"},
+            {Name:"Fines",Text:"Fines"},
+            {Name:"Moisture",Text:"Moisture"},
+            {Name:"Bulk Density Flake",Text:"Bulk Density Flake"},
+            {Name:"Bulk Density Pellet",Text:"Bulk Density Pellet"},
+            {Name:"Material Density",Text:"Material Density"},
+            {Name:"Float Sink",Text:"Float Sink"},
+            {Name:"Composition",Text:"Compos
+            ition"},
+            {Name:"pH",Text:"pH"},
+            {Name:"Lab Colour",Text:"Lab Colour"},
+            {Name:"Pellet Count",Text:"Pellet Count"},
+            {Name:"Visual Inspection",Text:"Visual Inspection"},
+            {Name:"Inclusions",Text:"Inclusions"}
+            ]
         Layout: =Layout.Vertical
-        OnSelect: =//If(ThisItem.Value="Add Samples",Navigate(Screen_Create_Sample,ScreenTransition.None));
+        OnSelect: |
+            =If(
+            ThisItem.Name="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
+            ThisItem.Name="IV MFI",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Extruder",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="GC",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Fines",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Moisture",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Bulk Density Flake",Navigate(Screen_Test_Bulk_Density_Flake,ScreenTransition.None),
+            ThisItem.Name="Bulk Density Pellet",Navigate(Screen_Test_Bulk_Density_Pellet,ScreenTransition.None),
+            ThisItem.Name="Material Density",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Float Sink",Navigate(Screen_Test_Float_Sink,ScreenTransition.None),
+            ThisItem.Name="Composition",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="pH",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Lab Colour",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Pellet Count",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Visual Inspection",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="Inclusions",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            
+            Navigate(Screen_Under_Construction,ScreenTransition.None)
+            );
         TemplatePadding: =0
-        TemplateSize: =Gallery_CoA_Scanner_1.Height/3
+        TemplateSize: =Gallery_CoA_Scanner_1.Height/4
         Width: =683
         WrapCount: =4
         X: =683
@@ -79,11 +119,12 @@ Screen_Start As screen:
             Height: =Parent.TemplateHeight
             HoverColor: =Color.White
             HoverFill: =Colour_Viridor_Purple
+            LineHeight: =0.9
             OnSelect: |+
                 =Select(Parent);
                 
-            Size: =24
-            Text: =ThisItem.Value
+            Size: =23.5
+            Text: =ThisItem.Text
             Width: =Parent.TemplateWidth
             ZIndex: =1
 
