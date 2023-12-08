@@ -433,8 +433,8 @@ Screen_Test_Float_Sink As screen:
             Size: =Text_size
             Text: |-
                 =If(
-                Or(IsBlank(TextInput_Weight),IsBlank(TextInput_Glass),IsBlank(TextInput_metal),IsBlank(TextInput_pet)),"",
                 Or(Value(Label_Result_glass.Text)>10,Value(Label_Result_metal.Text)>10,Value(Label_Result_pet.Text)>0.1),"Fail",
+                Or(IsBlank(TextInput_Weight),IsBlank(TextInput_Glass),IsBlank(TextInput_metal),IsBlank(TextInput_pet)),"",
                 "Pass")
             Width: =Label_Main_3.Width
             X: =Label_Main_3.Width*13

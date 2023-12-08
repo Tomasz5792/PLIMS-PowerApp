@@ -107,9 +107,12 @@ App As appinfo:
         {Test:"Date", Unit:"U_Date", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
         {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1},
         {Test:"Time", Unit:"U_Time", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1}, 
-        {Test:"IV", Unit:"U_IV", Low_Spec:"Low_IV", High_Spec:"High_IV", Result:"R_IV", Width:1}, 
+        {Test:"IV MFI", Unit:"U_IV_MFI_Small", Low_Spec:"Low_IV_MFI", High_Spec:"High_IV_MFI", Result:"R_IV_MFI", Width:1}, 
         {Test:"Moisture", Unit:"U_Moisture", Low_Spec:"Low_Moisture", High_Spec:"High_Moisture", Result:"R_Moisture", Width:1}, 
         {Test:"Bulk Density", Unit:"U_Bulk", Low_Spec:"Low_Bulk", High_Spec:"High_Bulk", Result:"R_Bulk", Width:1}, 
+        {Test:"Glass", Unit:"U_Glass", Low_Spec:"Low_Glass", High_Spec:"High_Glass", Result:"R_Glass", Width:1},
+        {Test:"Metal", Unit:"U_Metal", Low_Spec:"Low_Metal", High_Spec:"High_Metal", Result:"R_Metal", Width:1},
+        {Test:"White", Unit:"U_White", Low_Spec:"Low_White", High_Spec:"High_White", Result:"R_White", Width:1}, 
         {Test:"Comp osition", Unit:"U_Comp", Low_Spec:"Low_Comp", High_Spec:"High_Comp", Result:"R_Comp", Width:1}, 
         {Test:"pH", Unit:"U_pH", Low_Spec:"Low_pH", High_Spec:"High_pH", Result:"R_pH", Width:1},
         ]);
@@ -448,6 +451,7 @@ App As appinfo:
         {Test:"Glass", Unit:"U_Glass", Low_Spec:"Low_Glass", High_Spec:"High_Glass", Result:"R_Glass", Width:1},
         {Test:"PET", Unit:"U_PET", Low_Spec:"Low_PET", High_Spec:"High_PET", Result:"R_PET", Width:1},
         {Test:"PVC", Unit:"U_PVC", Low_Spec:"Low_PVC", High_Spec:"High_PVC", Result:"R_PVC", Width:1}, 
+        {Test:"White", Unit:"U_White", Low_Spec:"Low_White", High_Spec:"High_White", Result:"R_White", Width:1}, 
         {Test:"Comp osition", Unit:"U_Comp", Low_Spec:"Low_Comp", High_Spec:"High_Comp", Result:"R_Comp", Width:1}, 
         //{Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Comment", Width:1},
         ]);
@@ -733,7 +737,6 @@ App As appinfo:
         {Test:"Metal", Unit:"U_Metal", Low_Spec:"none", High_Spec:"10", Result:"R_Metal", Width:1},
         {Test:"Glass", Unit:"U_Glass", Low_Spec:"none", High_Spec:"10", Result:"R_Glass", Width:1},
         {Test:"PET", Unit:"U_PET", Low_Spec:"none", High_Spec:"0.1", Result:"R_PET", Width:1},
-        {Test:"PVC", Unit:"U_PVC", Low_Spec:"none", High_Spec:"none", Result:"R_PVC", Width:1},
         {Test:"pH", Unit:"U_pH", Low_Spec:"none", High_Spec:"none", Result:"R_pH", Width:1},
         //{Test:"Comment", Unit:"U_Comment", Low_Spec:"", High_Spec:"", Result:"R_Comment", Width:1},
         ]);
