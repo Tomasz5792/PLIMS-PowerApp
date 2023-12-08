@@ -15,7 +15,7 @@ Screen_Test_Bulk_Density_Flake As screen:
         Fill: =Colour_Viridor_GreenTint
         Height: =514
         Items: |-
-            =If(var_not_tested_filter,Filter(
+            =If(var_not_tested_filter,Filter(Filter(
             
             Switch(var_filter_selected,
             
@@ -71,7 +71,7 @@ Screen_Test_Bulk_Density_Flake As screen:
                 
                 ,'Test Results'
             )
-            ,'Bulk_Density_Result_kg/m3'<>"Not Tested")
+            ,'Bulk_Density_Result_kg/m3'<>"Not Tested"),Or(Material="Flake",Material="Un-sorted Flake"))
             ,
             Switch(var_filter_selected,
             
