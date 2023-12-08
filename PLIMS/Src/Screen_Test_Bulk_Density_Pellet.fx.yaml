@@ -15,7 +15,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
         Fill: =Colour_Viridor_GreenTint
         Height: =514
         Items: |-
-            =If(var_not_tested_filter,Filter(
+            =If(var_not_tested_filter,Filter(Filter(
             
             Switch(var_filter_selected,
             
@@ -71,7 +71,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 
                 ,'Test Results'
             )
-            ,'Bulk_Density_Result_kg/m3'<>"Not Tested")
+            ,'Bulk_Density_Result_kg/m3'<>"Not Tested"),Material<>"Flake")
             ,
             Switch(var_filter_selected,
             
@@ -138,31 +138,34 @@ Screen_Test_Bulk_Density_Pellet As screen:
         Label_Sample_Point_2 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =ThisItem.Sample_Point
             Width: =Label_Main_2.Width
-            X: =Label_Main_2.Width
+            X: =Label_Main_2.Width*2
             ZIndex: =1
 
         Label_Date_2 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
             Width: =Label_Main_2.Width
-            X: =Label_Main_2.Width*2
+            X: =Label_Main_2.Width*3
             ZIndex: =2
 
         Label_Time_2 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
             Width: =Label_Main_2.Width
-            X: =Label_Main_2.Width*3
+            X: =Label_Main_2.Width*4
             ZIndex: =3
 
         Label_Result_2 As label:
@@ -198,16 +201,18 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 Colour_Testing)
                 
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =If(IsBlank(TextInput_2),"",Text(Round(TextInput_2/1100*1000,0),"0"))
             Width: =Label_Main_2.Width
-            X: =Label_Main_2.Width*6
+            X: =Label_Main_2.Width*7
             ZIndex: =4
 
         Label_Main_2 As label:
             Align: =Align.Center
             Height: =54
+            LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
             Text: =ThisItem.'Material_Filter (field_1)'
@@ -221,6 +226,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
             Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
+            LineHeight: =1
             OnChange: =Select(Button_Update_2)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
@@ -229,7 +235,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
             RadiusTopRight: =0
             Size: =Text_size
             Width: =Label_Main_2.Width
-            X: =Label_Main_2.Width*5
+            X: =Label_Main_2.Width*6
             ZIndex: =7
 
         TextInput_Comment_2 As text:
@@ -241,6 +247,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
             Height: =54
             HoverColor: =Color.Black
             HoverFill: =Colour_Viridor_PurpleTint
+            LineHeight: =1
             Mode: =TextMode.MultiLine
             OnChange: =Select(Button_Update_2)
             OnSelect: =Select(Parent)
@@ -249,8 +256,8 @@ Screen_Test_Bulk_Density_Pellet As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =Text_size_2
-            Width: =Parent.Width-Label_Main_2.Width*7
-            X: =Label_Main_2.Width*7
+            Width: =Parent.Width-TextInput_Comment_2.X
+            X: =Label_Main_2.Width*8
             ZIndex: =8
 
         Button_Update_2 As button:
@@ -273,6 +280,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
             Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
+            LineHeight: =1
             OnChange: =Select(Button_Update_2)
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =0
@@ -281,8 +289,19 @@ Screen_Test_Bulk_Density_Pellet As screen:
             RadiusTopRight: =0
             Size: =Text_size
             Width: =Label_Main_2.Width
-            X: =Label_Main_2.Width*4
+            X: =Label_Main_2.Width*5
             ZIndex: =11
+
+        Label_Sample_Point_5 As label:
+            Align: =Align.Center
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =ThisItem.Material
+            Width: =Label_Main_2.Width
+            X: =Label_Main_2.Width*1
+            ZIndex: =12
 
     Gallery_Units_5 As gallery.galleryHorizontal:
         DelayItemLoading: =true
@@ -334,6 +353,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
         Height: =58
         Items: |-
             =[
+            {Test:"Polymer", Unit:"", Width:1}, 
             {Test:"Material", Unit:"", Width:1}, 
             {Test:"Sample Point", Unit:"", Width:1}, 
             {Test:"Date", Unit:"dd mm yyyy", Width:1}, 
@@ -446,7 +466,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =15
+        Size: =Label_Bulk_Density_Flake_Upper_Spec_1.Size
         Text: |-
             =Switch(var_filter_selected,
             
@@ -487,8 +507,8 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 
             "Error"
             )
-        Width: =136.6
-        X: =819.6
+        Width: =Label_Bulk_Density_Flake_Upper_Spec_1.Width
+        X: =Label_Bulk_Density_Flake_Upper_Spec_1.X
         Y: =168
         ZIndex: =11
 
@@ -603,8 +623,8 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 
             "Error"
             )
-        Width: =136.6
-        X: =819.6
+        Width: =Gallery_Title_2.Width/Gallery_Title_2.AllItemsCount
+        X: =Gallery_Title_2.Width/Gallery_Title_2.AllItemsCount*7
         Y: =138
         ZIndex: =12
 
