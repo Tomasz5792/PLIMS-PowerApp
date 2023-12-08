@@ -201,7 +201,24 @@ Screen_Test_Float_Sink As screen:
 
         Label_Result_metal As label:
             Align: =Align.Center
-            Fill: =RGBA(180, 214, 250, 1)
+            Fill: |+
+                =If(
+                
+                //Float Sink
+                //Spec: All, none - 10
+                And(!IsBlank(Label_Result_metal),
+                Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
+                Value(Label_Result_metal.Text)<=10),Colour_Pass,
+                And(
+                Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
+                Value(Label_Result_metal.Text)>10),Colour_Fail,
+                
+                ThisItem.Float_Sink_Pass_Fail="Not Tested",Colour_Not_Tested,
+                
+                IsBlank(TextInput_metal),Colour_Testing,
+                
+                Colour_Testing)
+                
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
@@ -314,17 +331,19 @@ Screen_Test_Float_Sink As screen:
             Align: =Align.Center
             Fill: |+
                 =If(
-                ThisItem.Float_Sink_Pass_Fail="Not Tested",Colour_Not_Tested,
-                IsBlank(TextInput_Glass),Colour_Testing,
                 
                 //Float Sink
                 //Spec: All, none - 10
-                And(
+                And(!IsBlank(Label_Result_glass),
                 Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
                 Value(Label_Result_glass.Text)<=10),Colour_Pass,
                 And(
                 Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
                 Value(Label_Result_glass.Text)>10),Colour_Fail,
+                
+                ThisItem.Float_Sink_Pass_Fail="Not Tested",Colour_Not_Tested,
+                
+                IsBlank(TextInput_Glass),Colour_Testing,
                 
                 Colour_Testing)
                 
@@ -366,7 +385,24 @@ Screen_Test_Float_Sink As screen:
 
         Label_Result_pet As label:
             Align: =Align.Center
-            Fill: =RGBA(180, 214, 250, 1)
+            Fill: |+
+                =If(
+                
+                //Float Sink
+                //Spec: All, none - 10
+                And(!IsBlank(Label_Result_pet),
+                Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
+                Value(Label_Result_pet.Text)<=0.1),Colour_Pass,
+                And(
+                Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
+                Value(Label_Result_pet.Text)>0.1),Colour_Fail,
+                
+                ThisItem.Float_Sink_Pass_Fail="Not Tested",Colour_Not_Tested,
+                
+                IsBlank(TextInput_pet),Colour_Testing,
+                
+                Colour_Testing)
+                
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
@@ -382,7 +418,12 @@ Screen_Test_Float_Sink As screen:
 
         Label_Result_float_pass_fail As label:
             Align: =Align.Center
-            Fill: =RGBA(180, 214, 250, 1)
+            Fill: |
+                =If(
+                ThisItem.Float_Sink_Pass_Fail="Not Tested",Colour_Not_Tested,
+                Label_Result_float_pass_fail.Text="Pass",Colour_Pass,
+                Label_Result_float_pass_fail.Text="Fail",Colour_Fail,
+                Colour_Testing)
             Height: =54
             LineHeight: =1
             OnSelect: =Select(Parent)
@@ -712,10 +753,10 @@ Screen_Test_Float_Sink As screen:
                     
                 "Error"
                 )
-            Width: =Label_Main_3.Width
-            X: =Label_Upper_Spec_4.Width*12
+            Width: =Label_Upper_Spec_Main_1.Width
+            X: =Label_Upper_Spec_Main_1.Width*12
             Y: =Label_Upper_Spec_2.Y
-            ZIndex: =12
+            ZIndex: =11
 
         Label_Upper_Spec_2 As label:
             Align: =Align.Center
@@ -765,10 +806,10 @@ Screen_Test_Float_Sink As screen:
                     
                 "Error"
                 )
-            Width: =Label_Main_3.Width
-            X: =Label_Upper_Spec_4.Width*8
+            Width: =Label_Upper_Spec_Main_1.Width
+            X: =Label_Upper_Spec_Main_1.Width*8
             Y: =138
-            ZIndex: =13
+            ZIndex: =12
 
         Label_Upper_Spec_3 As label:
             Align: =Align.Center
@@ -818,10 +859,10 @@ Screen_Test_Float_Sink As screen:
                     
                 "Error"
                 )
-            Width: =Label_Main_3.Width
-            X: =Label_Upper_Spec_4.Width*10
+            Width: =Label_Upper_Spec_Main_1.Width
+            X: =Label_Upper_Spec_Main_1.Width*10
             Y: =Label_Upper_Spec_2.Y
-            ZIndex: =14
+            ZIndex: =13
 
         Label_Lower_Spec_2 As label:
             Align: =Align.Center
@@ -871,10 +912,10 @@ Screen_Test_Float_Sink As screen:
                     
                 "Error"
                 )
-            Width: =Label_Main_3.Width
+            Width: =Label_Upper_Spec_Main_1.Width
             X: =Label_Upper_Spec_3.X
             Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-            ZIndex: =15
+            ZIndex: =14
 
         Label_Lower_Spec_3 As label:
             Align: =Align.Center
@@ -924,10 +965,10 @@ Screen_Test_Float_Sink As screen:
                     
                 "Error"
                 )
-            Width: =Label_Main_3.Width
+            Width: =Label_Upper_Spec_Main_1.Width
             X: =Label_Upper_Spec_2.X
             Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-            ZIndex: =16
+            ZIndex: =15
 
         Label_Lower_Spec_4 As label:
             Align: =Align.Center
@@ -977,24 +1018,10 @@ Screen_Test_Float_Sink As screen:
                     
                 "Error"
                 )
-            Width: =Label_Main_3.Width
+            Width: =Label_Upper_Spec_Main_1.Width
             X: =Label_Upper_Spec_1.X
             Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-            ZIndex: =17
-
-        Label_Upper_Spec_4 As label:
-            Align: =Align.Center
-            Height: =29
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
-            Text: ="95"
-            Width: =Gallery_Title_3.Width/Gallery_Title_3.AllItemsCount
-            X: =Label_Main_3.Width*6
-            Y: =Label_Upper_Spec_2.Y
-            ZIndex: =18
+            ZIndex: =16
 
         Label_Lower_Spec_5 As label:
             Align: =Align.Center
@@ -1005,10 +1032,10 @@ Screen_Test_Float_Sink As screen:
             PaddingTop: =0
             Size: =Label_Upper_Spec_1.Size
             Text: ="105"
-            Width: =Label_Main_3.Width
-            X: =Label_Upper_Spec_4.X
+            Width: =Label_Upper_Spec_Main_1.Width
+            X: =Label_Upper_Spec_Main_1.X
             Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-            ZIndex: =19
+            ZIndex: =17
 
         Label_Upper_Spec_5 As label:
             Align: =Align.Center
@@ -1019,10 +1046,10 @@ Screen_Test_Float_Sink As screen:
             PaddingTop: =0
             Size: =14
             Text: ="Pass"
-            Width: =Label_Main_3.Width
-            X: =Label_Upper_Spec_4.Width*13
+            Width: =Label_Upper_Spec_Main_1.Width
+            X: =Label_Upper_Spec_Main_1.Width*13
             Y: =Label_Upper_Spec_2.Y
-            ZIndex: =20
+            ZIndex: =18
 
         Label_Lower_Spec_6 As label:
             Align: =Align.Center
@@ -1033,8 +1060,22 @@ Screen_Test_Float_Sink As screen:
             PaddingTop: =0
             Size: =Label_Upper_Spec_5.Size
             Text: ="Fail"
-            Width: =Label_Main_3.Width
+            Width: =Label_Upper_Spec_Main_1.Width
             X: =Label_Upper_Spec_5.X
             Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-            ZIndex: =21
+            ZIndex: =19
+
+        Label_Upper_Spec_Main_1 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =14
+            Text: ="95"
+            Width: =Gallery_Title_3.Width/Gallery_Title_3.AllItemsCount
+            X: =Gallery_Title_3.Width/Gallery_Title_3.AllItemsCount*6
+            Y: =Label_Upper_Spec_2.Y
+            ZIndex: =20
 

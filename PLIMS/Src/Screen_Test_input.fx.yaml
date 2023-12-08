@@ -1275,6 +1275,7 @@ Screen_Test_input As screen:
                     And(ThisItem.Result="R_Bulk",!IsBlank(Label_Bulk_Density),
                     Or(Label_Specification.Text="PET Flake",Label_Specification.Text="PET Post Wash Silo"),
                     Or(Value(Label_Bulk_Density.Text)<320,Value(Label_Bulk_Density.Text)>400)),Colour_Fail,
+                    
                     //Bulk Density Pellet
                     //Spec: HD Nat & Colour 550 - 700
                     And(ThisItem.Result="R_Bulk",
