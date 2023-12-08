@@ -71,7 +71,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 
                 ,'Test Results'
             )
-            ,'Bulk_Density_Result_kg/m3'<>"Not Tested"),Material<>"Flake")
+            ,'Bulk_Density_Result_kg/m3'<>"Not Tested"),And(Material<>"Flake",Material<>"Flake Bag",Material<>"Un-sorted Flake"))
             ,
             Switch(var_filter_selected,
             
