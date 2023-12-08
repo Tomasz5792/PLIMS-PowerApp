@@ -320,11 +320,11 @@ Screen_Test_Float_Sink As screen:
                 //Float Sink
                 //Spec: All, none - 10
                 And(
-                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
-                And(Value(Label_Result_glass.Text)>=550,Value(Label_Result_glass.Text)<=700)),Colour_Pass,
+                Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
+                Value(Label_Result_glass.Text)<=10),Colour_Pass,
                 And(
-                Or(ThisItem.Specification_Filter="HDPE Natural Pellet non Deo",ThisItem.Specification_Filter="HDPE Natural Pellet Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet non Deo",ThisItem.Specification_Filter="HDPE Self Coloured Pellet Deo"),
-                Or(Value(Label_Result_glass.Text)<550,Value(Label_Result_glass.Text)>700)),Colour_Fail,
+                Or(ThisItem.'Material_Filter (field_1)'="HDPE Natural",ThisItem.'Material_Filter (field_1)'="HDPE Self Coloured",ThisItem.'Material_Filter (field_1)'="PP"),
+                Value(Label_Result_glass.Text)>10),Colour_Fail,
                 
                 Colour_Testing)
                 
