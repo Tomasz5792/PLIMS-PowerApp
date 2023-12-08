@@ -135,6 +135,25 @@ Screen_Test_Float_Sink As screen:
         Y: =197
         ZIndex: =2
 
+        Button_Update_3 As button:
+            Height: =54
+            OnSelect: |-
+                =If(IsBlank(LookUp(col_Test_Updates,ID=ThisItem.ID)),
+                Collect(col_Test_Updates,ThisItem));
+                
+                UpdateIf(col_Test_Updates,ID=ThisItem.ID,{
+                Float_Sink_Weight_g:TextInput_Weight.Text,
+                Comp_Float_Sink_Glass_g:TextInput_Glass.Text,Float_Sink_PET_Result_ppm:Label_Result_glass.Text,
+                Comp_Float_Sink_Metal_g:TextInput_metal.Text,Comp_Float_Sink_Metal_Result_ppm:Label_Result_metal.Text,
+                Float_Sink_PET_g:TextInput_pet.Text
+                
+                })
+            Text: ="Button"
+            Visible: =false
+            Width: =48
+            X: =1318
+            ZIndex: =1
+
         Label_Sample_Point_3 As label:
             Align: =Align.Center
             Height: =54
@@ -148,7 +167,7 @@ Screen_Test_Float_Sink As screen:
             Text: =ThisItem.Sample_Point
             Width: =Label_Main_3.Width*2
             X: =Label_Main_3.Width*2
-            ZIndex: =1
+            ZIndex: =2
 
         Label_Date_3 As label:
             Align: =Align.Center
@@ -163,7 +182,7 @@ Screen_Test_Float_Sink As screen:
             Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yyyy")
             Width: =Label_Main_3.Width*1
             X: =Label_Main_3.Width*4
-            ZIndex: =2
+            ZIndex: =3
 
         Label_Time_3 As label:
             Align: =Align.Center
@@ -178,7 +197,7 @@ Screen_Test_Float_Sink As screen:
             Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
             Width: =Label_Main_3.Width
             X: =Label_Main_3.Width*5
-            ZIndex: =3
+            ZIndex: =4
 
         Label_Result_metal As label:
             Align: =Align.Center
@@ -194,7 +213,7 @@ Screen_Test_Float_Sink As screen:
             Text: =If(Or(IsBlank(TextInput_Weight),IsBlank(TextInput_metal)),"",Text(Round(TextInput_metal/TextInput_Weight*1000000,0),"0"))
             Width: =Label_Main_3.Width
             X: =Label_Main_3.Width*10
-            ZIndex: =4
+            ZIndex: =5
 
         Label_Main_3 As label:
             Align: =Align.Center
@@ -203,7 +222,7 @@ Screen_Test_Float_Sink As screen:
             Size: =Text_size
             Text: =
             Width: =Gallery_Title_3.Width/Gallery_Title_3.AllItemsCount
-            ZIndex: =5
+            ZIndex: =6
 
         TextInput_metal As text:
             Align: =Align.Center
@@ -226,7 +245,7 @@ Screen_Test_Float_Sink As screen:
             Size: =Text_size
             Width: =Label_Main_3.Width
             X: =Label_Main_3.Width*9
-            ZIndex: =6
+            ZIndex: =7
 
         TextInput_Float_Comment As text:
             Align: =Align.Center
@@ -252,25 +271,6 @@ Screen_Test_Float_Sink As screen:
             Size: =Text_size_2
             Width: =Parent.Width-TextInput_Float_Comment.X
             X: =Label_Main_3.Width*14
-            ZIndex: =7
-
-        Button_Update_3 As button:
-            Height: =54
-            OnSelect: |-
-                =If(IsBlank(LookUp(col_Test_Updates,ID=ThisItem.ID)),
-                Collect(col_Test_Updates,ThisItem));
-                
-                UpdateIf(col_Test_Updates,ID=ThisItem.ID,{
-                Float_Sink_Weight_g:TextInput_Weight.Text,
-                Comp_Float_Sink_Glass_g:TextInput_Glass.Text,Float_Sink_PET_Result_ppm:Label_Result_glass.Text,
-                Comp_Float_Sink_Metal_g:TextInput_metal.Text,Comp_Float_Sink_Metal_Result_ppm:Label_Result_metal.Text,
-                Float_Sink_PET_g:TextInput_pet.Text
-                
-                })
-            Text: ="Button"
-            Visible: =false
-            Width: =48
-            X: =1318
             ZIndex: =8
 
         TextInput_Glass As text:
@@ -574,7 +574,7 @@ Screen_Test_Float_Sink As screen:
             Width: =1366
             ZIndex: =1
 
-    Refresh_Data_12 As icon.CancelBadge:
+    Filter_Toggle_1 As icon.CancelBadge:
         Color: =Color.White
         Height: =34
         HoverColor: =Colour_Viridor_Purple
@@ -653,377 +653,384 @@ Screen_Test_Float_Sink As screen:
             Y: =10
             ZIndex: =6
 
-    Label_Upper_Spec_1 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =14
-        Text: |-
-            =Switch(var_filter_selected,
-            
-            "All_All", "0.1",
-            "All_Wash", "N/A",
-            "All_Post_Flake_Sorter", "0.1",
-            "All_Post_Extruder", "N/A",
-            "All_SSP", "N/A",
-            "All_Sampling_Silo", "N/A",
-            
-            "PET_All", "N/A",
-            "PET_Wash", "N/A",
-            "PET_Post_Flake_Sorter", "N/A",
-            "PET_Post_Extruder", "N/A",
-            "PET_SSP", "N/A",
-            "PET_Sampling_Silo", "N/A",
-            
-            "HDPE_Nat_All", "0.1",
-            "HDPE_Nat_Wash", "N/A",
-            "HDPE_Nat_Post_Flake_Sorter", "0.1",
-            "HDPE_Nat_Post_Extruder", "N/A",
-            "HDPE_Nat_SSP", "N/A",
-            "HDPE_Nat_Sampling_Silo", "N/A",
-            
-            "HDPE_SC_All", "0.1",
-            "HDPE_SC_Wash", "N/A",
-            "HDPE_SC_Post_Flake_Sorter", "0.1",
-            "HDPE_SC_Post_Extruder", "N/A",
-            "HDPE_SC_SSP", "N/A",
-            "HDPE_SC_Sampling_Silo", "N/A",
-            
-            "PP_All", "0.1",
-            "PP_Wash", "N/A",
-            "PP_Post_Flake_Sorter", "0.1",
-            "PP_Post_Extruder", "N/A",
-            "PP_SSP", "N/A",
-            "PP_Sampling_Silo", "N/A",
+    Specs As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =22
+
+        Label_Upper_Spec_1 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =14
+            Text: |-
+                =Switch(var_filter_selected,
                 
-            "Error"
-            )
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_4.Width*12
-        Y: =Label_Upper_Spec_2.Y
-        ZIndex: =12
-
-    Label_Upper_Spec_2 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =14
-        Text: |-
-            =Switch(var_filter_selected,
-            
-            "All_All", "10",
-            "All_Wash", "N/A",
-            "All_Post_Flake_Sorter", "10",
-            "All_Post_Extruder", "N/A",
-            "All_SSP", "N/A",
-            "All_Sampling_Silo", "N/A",
-            
-            "PET_All", "N/A",
-            "PET_Wash", "N/A",
-            "PET_Post_Flake_Sorter", "N/A",
-            "PET_Post_Extruder", "N/A",
-            "PET_SSP", "N/A",
-            "PET_Sampling_Silo", "N/A",
-            
-            "HDPE_Nat_All", "10",
-            "HDPE_Nat_Wash", "N/A",
-            "HDPE_Nat_Post_Flake_Sorter", "10",
-            "HDPE_Nat_Post_Extruder", "N/A",
-            "HDPE_Nat_SSP", "N/A",
-            "HDPE_Nat_Sampling_Silo", "N/A",
-            
-            "HDPE_SC_All", "10",
-            "HDPE_SC_Wash", "N/A",
-            "HDPE_SC_Post_Flake_Sorter", "10",
-            "HDPE_SC_Post_Extruder", "N/A",
-            "HDPE_SC_SSP", "N/A",
-            "HDPE_SC_Sampling_Silo", "N/A",
-            
-            "PP_All", "10",
-            "PP_Wash", "N/A",
-            "PP_Post_Flake_Sorter", "10",
-            "PP_Post_Extruder", "N/A",
-            "PP_SSP", "N/A",
-            "PP_Sampling_Silo", "N/A",
+                "All_All", "0.1",
+                "All_Wash", "N/A",
+                "All_Post_Flake_Sorter", "0.1",
+                "All_Post_Extruder", "N/A",
+                "All_SSP", "N/A",
+                "All_Sampling_Silo", "N/A",
                 
-            "Error"
-            )
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_4.Width*8
-        Y: =138
-        ZIndex: =13
-
-    Label_Upper_Spec_3 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =14
-        Text: |-
-            =Switch(var_filter_selected,
-            
-            "All_All", "10",
-            "All_Wash", "N/A",
-            "All_Post_Flake_Sorter", "10",
-            "All_Post_Extruder", "N/A",
-            "All_SSP", "N/A",
-            "All_Sampling_Silo", "N/A",
-            
-            "PET_All", "N/A",
-            "PET_Wash", "N/A",
-            "PET_Post_Flake_Sorter", "N/A",
-            "PET_Post_Extruder", "N/A",
-            "PET_SSP", "N/A",
-            "PET_Sampling_Silo", "N/A",
-            
-            "HDPE_Nat_All", "10",
-            "HDPE_Nat_Wash", "N/A",
-            "HDPE_Nat_Post_Flake_Sorter", "10",
-            "HDPE_Nat_Post_Extruder", "N/A",
-            "HDPE_Nat_SSP", "N/A",
-            "HDPE_Nat_Sampling_Silo", "N/A",
-            
-            "HDPE_SC_All", "10",
-            "HDPE_SC_Wash", "N/A",
-            "HDPE_SC_Post_Flake_Sorter", "10",
-            "HDPE_SC_Post_Extruder", "N/A",
-            "HDPE_SC_SSP", "N/A",
-            "HDPE_SC_Sampling_Silo", "N/A",
-            
-            "PP_All", "10",
-            "PP_Wash", "N/A",
-            "PP_Post_Flake_Sorter", "10",
-            "PP_Post_Extruder", "N/A",
-            "PP_SSP", "N/A",
-            "PP_Sampling_Silo", "N/A",
+                "PET_All", "N/A",
+                "PET_Wash", "N/A",
+                "PET_Post_Flake_Sorter", "N/A",
+                "PET_Post_Extruder", "N/A",
+                "PET_SSP", "N/A",
+                "PET_Sampling_Silo", "N/A",
                 
-            "Error"
-            )
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_4.Width*10
-        Y: =Label_Upper_Spec_2.Y
-        ZIndex: =14
-
-    Label_Lower_Spec_2 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =Label_Upper_Spec_1.Size
-        Text: |-
-            =Switch(var_filter_selected,
-            
-            "All_All", "none",
-            "All_Wash", "N/A",
-            "All_Post_Flake_Sorter", "none",
-            "All_Post_Extruder", "N/A",
-            "All_SSP", "N/A",
-            "All_Sampling_Silo", "N/A",
-            
-            "PET_All", "N/A",
-            "PET_Wash", "N/A",
-            "PET_Post_Flake_Sorter", "N/A",
-            "PET_Post_Extruder", "N/A",
-            "PET_SSP", "N/A",
-            "PET_Sampling_Silo", "N/A",
-            
-            "HDPE_Nat_All", "none",
-            "HDPE_Nat_Wash", "N/A",
-            "HDPE_Nat_Post_Flake_Sorter", "none",
-            "HDPE_Nat_Post_Extruder", "N/A",
-            "HDPE_Nat_SSP", "N/A",
-            "HDPE_Nat_Sampling_Silo", "N/A",
-            
-            "HDPE_SC_All", "none",
-            "HDPE_SC_Wash", "N/A",
-            "HDPE_SC_Post_Flake_Sorter", "none",
-            "HDPE_SC_Post_Extruder", "N/A",
-            "HDPE_SC_SSP", "N/A",
-            "HDPE_SC_Sampling_Silo", "N/A",
-            
-            "PP_All", "none",
-            "PP_Wash", "N/A",
-            "PP_Post_Flake_Sorter", "none",
-            "PP_Post_Extruder", "N/A",
-            "PP_SSP", "N/A",
-            "PP_Sampling_Silo", "N/A",
+                "HDPE_Nat_All", "0.1",
+                "HDPE_Nat_Wash", "N/A",
+                "HDPE_Nat_Post_Flake_Sorter", "0.1",
+                "HDPE_Nat_Post_Extruder", "N/A",
+                "HDPE_Nat_SSP", "N/A",
+                "HDPE_Nat_Sampling_Silo", "N/A",
                 
-            "Error"
-            )
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_3.X
-        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-        ZIndex: =15
-
-    Label_Lower_Spec_3 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =Label_Upper_Spec_1.Size
-        Text: |-
-            =Switch(var_filter_selected,
-            
-            "All_All", "none",
-            "All_Wash", "N/A",
-            "All_Post_Flake_Sorter", "none",
-            "All_Post_Extruder", "N/A",
-            "All_SSP", "N/A",
-            "All_Sampling_Silo", "N/A",
-            
-            "PET_All", "N/A",
-            "PET_Wash", "N/A",
-            "PET_Post_Flake_Sorter", "N/A",
-            "PET_Post_Extruder", "N/A",
-            "PET_SSP", "N/A",
-            "PET_Sampling_Silo", "N/A",
-            
-            "HDPE_Nat_All", "none",
-            "HDPE_Nat_Wash", "N/A",
-            "HDPE_Nat_Post_Flake_Sorter", "none",
-            "HDPE_Nat_Post_Extruder", "N/A",
-            "HDPE_Nat_SSP", "N/A",
-            "HDPE_Nat_Sampling_Silo", "N/A",
-            
-            "HDPE_SC_All", "none",
-            "HDPE_SC_Wash", "N/A",
-            "HDPE_SC_Post_Flake_Sorter", "none",
-            "HDPE_SC_Post_Extruder", "N/A",
-            "HDPE_SC_SSP", "N/A",
-            "HDPE_SC_Sampling_Silo", "N/A",
-            
-            "PP_All", "none",
-            "PP_Wash", "N/A",
-            "PP_Post_Flake_Sorter", "none",
-            "PP_Post_Extruder", "N/A",
-            "PP_SSP", "N/A",
-            "PP_Sampling_Silo", "N/A",
+                "HDPE_SC_All", "0.1",
+                "HDPE_SC_Wash", "N/A",
+                "HDPE_SC_Post_Flake_Sorter", "0.1",
+                "HDPE_SC_Post_Extruder", "N/A",
+                "HDPE_SC_SSP", "N/A",
+                "HDPE_SC_Sampling_Silo", "N/A",
                 
-            "Error"
-            )
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_2.X
-        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-        ZIndex: =16
+                "PP_All", "0.1",
+                "PP_Wash", "N/A",
+                "PP_Post_Flake_Sorter", "0.1",
+                "PP_Post_Extruder", "N/A",
+                "PP_SSP", "N/A",
+                "PP_Sampling_Silo", "N/A",
+                    
+                "Error"
+                )
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_4.Width*12
+            Y: =Label_Upper_Spec_2.Y
+            ZIndex: =12
 
-    Label_Lower_Spec_4 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =Label_Upper_Spec_1.Size
-        Text: |-
-            =Switch(var_filter_selected,
-            
-            "All_All", "none",
-            "All_Wash", "N/A",
-            "All_Post_Flake_Sorter", "none",
-            "All_Post_Extruder", "N/A",
-            "All_SSP", "N/A",
-            "All_Sampling_Silo", "N/A",
-            
-            "PET_All", "N/A",
-            "PET_Wash", "N/A",
-            "PET_Post_Flake_Sorter", "N/A",
-            "PET_Post_Extruder", "N/A",
-            "PET_SSP", "N/A",
-            "PET_Sampling_Silo", "N/A",
-            
-            "HDPE_Nat_All", "none",
-            "HDPE_Nat_Wash", "N/A",
-            "HDPE_Nat_Post_Flake_Sorter", "none",
-            "HDPE_Nat_Post_Extruder", "N/A",
-            "HDPE_Nat_SSP", "N/A",
-            "HDPE_Nat_Sampling_Silo", "N/A",
-            
-            "HDPE_SC_All", "none",
-            "HDPE_SC_Wash", "N/A",
-            "HDPE_SC_Post_Flake_Sorter", "none",
-            "HDPE_SC_Post_Extruder", "N/A",
-            "HDPE_SC_SSP", "N/A",
-            "HDPE_SC_Sampling_Silo", "N/A",
-            
-            "PP_All", "none",
-            "PP_Wash", "N/A",
-            "PP_Post_Flake_Sorter", "none",
-            "PP_Post_Extruder", "N/A",
-            "PP_SSP", "N/A",
-            "PP_Sampling_Silo", "N/A",
+        Label_Upper_Spec_2 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =14
+            Text: |-
+                =Switch(var_filter_selected,
                 
-            "Error"
-            )
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_1.X
-        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-        ZIndex: =17
+                "All_All", "10",
+                "All_Wash", "N/A",
+                "All_Post_Flake_Sorter", "10",
+                "All_Post_Extruder", "N/A",
+                "All_SSP", "N/A",
+                "All_Sampling_Silo", "N/A",
+                
+                "PET_All", "N/A",
+                "PET_Wash", "N/A",
+                "PET_Post_Flake_Sorter", "N/A",
+                "PET_Post_Extruder", "N/A",
+                "PET_SSP", "N/A",
+                "PET_Sampling_Silo", "N/A",
+                
+                "HDPE_Nat_All", "10",
+                "HDPE_Nat_Wash", "N/A",
+                "HDPE_Nat_Post_Flake_Sorter", "10",
+                "HDPE_Nat_Post_Extruder", "N/A",
+                "HDPE_Nat_SSP", "N/A",
+                "HDPE_Nat_Sampling_Silo", "N/A",
+                
+                "HDPE_SC_All", "10",
+                "HDPE_SC_Wash", "N/A",
+                "HDPE_SC_Post_Flake_Sorter", "10",
+                "HDPE_SC_Post_Extruder", "N/A",
+                "HDPE_SC_SSP", "N/A",
+                "HDPE_SC_Sampling_Silo", "N/A",
+                
+                "PP_All", "10",
+                "PP_Wash", "N/A",
+                "PP_Post_Flake_Sorter", "10",
+                "PP_Post_Extruder", "N/A",
+                "PP_SSP", "N/A",
+                "PP_Sampling_Silo", "N/A",
+                    
+                "Error"
+                )
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_4.Width*8
+            Y: =138
+            ZIndex: =13
 
-    Label_Upper_Spec_4 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =14
-        Text: ="95"
-        Width: =Gallery_Title_3.Width/Gallery_Title_3.AllItemsCount
-        X: =Label_Main_3.Width*6
-        Y: =Label_Upper_Spec_2.Y
-        ZIndex: =18
+        Label_Upper_Spec_3 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =14
+            Text: |-
+                =Switch(var_filter_selected,
+                
+                "All_All", "10",
+                "All_Wash", "N/A",
+                "All_Post_Flake_Sorter", "10",
+                "All_Post_Extruder", "N/A",
+                "All_SSP", "N/A",
+                "All_Sampling_Silo", "N/A",
+                
+                "PET_All", "N/A",
+                "PET_Wash", "N/A",
+                "PET_Post_Flake_Sorter", "N/A",
+                "PET_Post_Extruder", "N/A",
+                "PET_SSP", "N/A",
+                "PET_Sampling_Silo", "N/A",
+                
+                "HDPE_Nat_All", "10",
+                "HDPE_Nat_Wash", "N/A",
+                "HDPE_Nat_Post_Flake_Sorter", "10",
+                "HDPE_Nat_Post_Extruder", "N/A",
+                "HDPE_Nat_SSP", "N/A",
+                "HDPE_Nat_Sampling_Silo", "N/A",
+                
+                "HDPE_SC_All", "10",
+                "HDPE_SC_Wash", "N/A",
+                "HDPE_SC_Post_Flake_Sorter", "10",
+                "HDPE_SC_Post_Extruder", "N/A",
+                "HDPE_SC_SSP", "N/A",
+                "HDPE_SC_Sampling_Silo", "N/A",
+                
+                "PP_All", "10",
+                "PP_Wash", "N/A",
+                "PP_Post_Flake_Sorter", "10",
+                "PP_Post_Extruder", "N/A",
+                "PP_SSP", "N/A",
+                "PP_Sampling_Silo", "N/A",
+                    
+                "Error"
+                )
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_4.Width*10
+            Y: =Label_Upper_Spec_2.Y
+            ZIndex: =14
 
-    Label_Lower_Spec_5 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =Label_Upper_Spec_1.Size
-        Text: ="105"
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_4.X
-        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-        ZIndex: =19
+        Label_Lower_Spec_2 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =Label_Upper_Spec_1.Size
+            Text: |-
+                =Switch(var_filter_selected,
+                
+                "All_All", "none",
+                "All_Wash", "N/A",
+                "All_Post_Flake_Sorter", "none",
+                "All_Post_Extruder", "N/A",
+                "All_SSP", "N/A",
+                "All_Sampling_Silo", "N/A",
+                
+                "PET_All", "N/A",
+                "PET_Wash", "N/A",
+                "PET_Post_Flake_Sorter", "N/A",
+                "PET_Post_Extruder", "N/A",
+                "PET_SSP", "N/A",
+                "PET_Sampling_Silo", "N/A",
+                
+                "HDPE_Nat_All", "none",
+                "HDPE_Nat_Wash", "N/A",
+                "HDPE_Nat_Post_Flake_Sorter", "none",
+                "HDPE_Nat_Post_Extruder", "N/A",
+                "HDPE_Nat_SSP", "N/A",
+                "HDPE_Nat_Sampling_Silo", "N/A",
+                
+                "HDPE_SC_All", "none",
+                "HDPE_SC_Wash", "N/A",
+                "HDPE_SC_Post_Flake_Sorter", "none",
+                "HDPE_SC_Post_Extruder", "N/A",
+                "HDPE_SC_SSP", "N/A",
+                "HDPE_SC_Sampling_Silo", "N/A",
+                
+                "PP_All", "none",
+                "PP_Wash", "N/A",
+                "PP_Post_Flake_Sorter", "none",
+                "PP_Post_Extruder", "N/A",
+                "PP_SSP", "N/A",
+                "PP_Sampling_Silo", "N/A",
+                    
+                "Error"
+                )
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_3.X
+            Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+            ZIndex: =15
 
-    Label_Upper_Spec_5 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =14
-        Text: ="Pass"
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_4.Width*13
-        Y: =Label_Upper_Spec_2.Y
-        ZIndex: =20
+        Label_Lower_Spec_3 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =Label_Upper_Spec_1.Size
+            Text: |-
+                =Switch(var_filter_selected,
+                
+                "All_All", "none",
+                "All_Wash", "N/A",
+                "All_Post_Flake_Sorter", "none",
+                "All_Post_Extruder", "N/A",
+                "All_SSP", "N/A",
+                "All_Sampling_Silo", "N/A",
+                
+                "PET_All", "N/A",
+                "PET_Wash", "N/A",
+                "PET_Post_Flake_Sorter", "N/A",
+                "PET_Post_Extruder", "N/A",
+                "PET_SSP", "N/A",
+                "PET_Sampling_Silo", "N/A",
+                
+                "HDPE_Nat_All", "none",
+                "HDPE_Nat_Wash", "N/A",
+                "HDPE_Nat_Post_Flake_Sorter", "none",
+                "HDPE_Nat_Post_Extruder", "N/A",
+                "HDPE_Nat_SSP", "N/A",
+                "HDPE_Nat_Sampling_Silo", "N/A",
+                
+                "HDPE_SC_All", "none",
+                "HDPE_SC_Wash", "N/A",
+                "HDPE_SC_Post_Flake_Sorter", "none",
+                "HDPE_SC_Post_Extruder", "N/A",
+                "HDPE_SC_SSP", "N/A",
+                "HDPE_SC_Sampling_Silo", "N/A",
+                
+                "PP_All", "none",
+                "PP_Wash", "N/A",
+                "PP_Post_Flake_Sorter", "none",
+                "PP_Post_Extruder", "N/A",
+                "PP_SSP", "N/A",
+                "PP_Sampling_Silo", "N/A",
+                    
+                "Error"
+                )
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_2.X
+            Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+            ZIndex: =16
 
-    Label_Lower_Spec_6 As label:
-        Align: =Align.Center
-        Height: =29
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =Label_Upper_Spec_5.Size
-        Text: ="Fail"
-        Width: =Label_Main_3.Width
-        X: =Label_Upper_Spec_5.X
-        Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
-        ZIndex: =21
+        Label_Lower_Spec_4 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =Label_Upper_Spec_1.Size
+            Text: |-
+                =Switch(var_filter_selected,
+                
+                "All_All", "none",
+                "All_Wash", "N/A",
+                "All_Post_Flake_Sorter", "none",
+                "All_Post_Extruder", "N/A",
+                "All_SSP", "N/A",
+                "All_Sampling_Silo", "N/A",
+                
+                "PET_All", "N/A",
+                "PET_Wash", "N/A",
+                "PET_Post_Flake_Sorter", "N/A",
+                "PET_Post_Extruder", "N/A",
+                "PET_SSP", "N/A",
+                "PET_Sampling_Silo", "N/A",
+                
+                "HDPE_Nat_All", "none",
+                "HDPE_Nat_Wash", "N/A",
+                "HDPE_Nat_Post_Flake_Sorter", "none",
+                "HDPE_Nat_Post_Extruder", "N/A",
+                "HDPE_Nat_SSP", "N/A",
+                "HDPE_Nat_Sampling_Silo", "N/A",
+                
+                "HDPE_SC_All", "none",
+                "HDPE_SC_Wash", "N/A",
+                "HDPE_SC_Post_Flake_Sorter", "none",
+                "HDPE_SC_Post_Extruder", "N/A",
+                "HDPE_SC_SSP", "N/A",
+                "HDPE_SC_Sampling_Silo", "N/A",
+                
+                "PP_All", "none",
+                "PP_Wash", "N/A",
+                "PP_Post_Flake_Sorter", "none",
+                "PP_Post_Extruder", "N/A",
+                "PP_SSP", "N/A",
+                "PP_Sampling_Silo", "N/A",
+                    
+                "Error"
+                )
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_1.X
+            Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+            ZIndex: =17
+
+        Label_Upper_Spec_4 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =14
+            Text: ="95"
+            Width: =Gallery_Title_3.Width/Gallery_Title_3.AllItemsCount
+            X: =Label_Main_3.Width*6
+            Y: =Label_Upper_Spec_2.Y
+            ZIndex: =18
+
+        Label_Lower_Spec_5 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =Label_Upper_Spec_1.Size
+            Text: ="105"
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_4.X
+            Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+            ZIndex: =19
+
+        Label_Upper_Spec_5 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =14
+            Text: ="Pass"
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_4.Width*13
+            Y: =Label_Upper_Spec_2.Y
+            ZIndex: =20
+
+        Label_Lower_Spec_6 As label:
+            Align: =Align.Center
+            Height: =29
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =Label_Upper_Spec_5.Size
+            Text: ="Fail"
+            Width: =Label_Main_3.Width
+            X: =Label_Upper_Spec_5.X
+            Y: =Label_Upper_Spec_2.Y+Label_Upper_Spec_2.Height
+            ZIndex: =21
 
