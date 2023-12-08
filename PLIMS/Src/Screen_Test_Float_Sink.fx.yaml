@@ -391,7 +391,11 @@ Screen_Test_Float_Sink As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =Text_size
-            Text: =ThisItem.Float_Sink_Pass_Fail
+            Text: |-
+                =If(
+                Or(IsBlank(TextInput_Weight),IsBlank(TextInput_Glass),IsBlank(TextInput_metal),IsBlank(TextInput_pet)),"",
+                Or(Value(Label_Result_glass.Text)>10,Value(Label_Result_metal.Text)>10,Value(Label_Result_pet.Text)>0.1),"Fail",
+                "Pass")
             Width: =Label_Main_3.Width
             X: =Label_Main_3.Width*13
             ZIndex: =14
@@ -552,8 +556,8 @@ Screen_Test_Float_Sink As screen:
             HoverFill: =Colour_Viridor_Purple
             LineHeight: =0.8
             OnSelect: |+
-                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_34","field_35","field_36","field_37"));
-                //"base","weight","Result","Comment"
+                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_41","field_51","field_52","field_55","field_56","field_43","field_44","field_63","field_65"));
+                //weight glass_g glass_ppm metal_g metal_ppm pet_g pet_ppm pass_fail comment
                 
                 //Notify
                 Notify("Results Saved",NotificationType.Success,2000);
