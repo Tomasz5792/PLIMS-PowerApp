@@ -476,7 +476,7 @@ Screen_Test_Float_Sink As screen:
             {}, 
             {Test:"Sample Point", Unit:"", Width:2}, 
             {}, 
-            {Test:"Date", Unit:"dd mm yyyy", Width:1}, 
+            {Test:"Date", Unit:"dd mmm yyyy", Width:1}, 
             {Test:"Time", Unit:"hh:mm", Width:1},
             {Test:"Weight", Unit:"g", Width:1},
             {Test:"Weight of Glass", Unit:"g", Width:1},
