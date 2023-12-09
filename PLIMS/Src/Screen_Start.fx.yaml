@@ -85,7 +85,7 @@ Screen_Start As screen:
         OnSelect: |
             =If(
             ThisItem.Name="Caustic Strength",Navigate(Screen_Test_Caustic_Strength,ScreenTransition.None),
-            ThisItem.Name="IV MFI",Navigate(Screen_Under_Construction,ScreenTransition.None),
+            ThisItem.Name="IV MFI",Navigate(Screen_Test_IV_MFI,ScreenTransition.None),
             ThisItem.Name="Extruder",Navigate(Screen_Under_Construction,ScreenTransition.None),
             ThisItem.Name="GC",Navigate(Screen_Under_Construction,ScreenTransition.None),
             ThisItem.Name="Fines",Navigate(Screen_Under_Construction,ScreenTransition.None),
@@ -115,7 +115,25 @@ Screen_Start As screen:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
             Color: =Colour_Viridor_Grey3
-            Fill: =Color.Transparent
+            Fill: |+
+                =If(
+                ThisItem.Name="Extruder",RGBA(100,100,100,0.4),
+                ThisItem.Name="GC",RGBA(100,100,100,0.4),
+                ThisItem.Name="Fines",RGBA(100,100,100,0.4),
+                ThisItem.Name="Moisture",RGBA(100,100,100,0.4),
+                ThisItem.Name="Material Density",RGBA(100,100,100,0.4),
+                ThisItem.Name="Composition",RGBA(100,100,100,0.4),
+                ThisItem.Name="pH",RGBA(100,100,100,0.4),
+                ThisItem.Name="Lab Colour",RGBA(100,100,100,0.4),
+                ThisItem.Name="Pellet Count",RGBA(100,100,100,0.4),
+                ThisItem.Name="Visual Inspection",RGBA(100,100,100,0.4),
+                ThisItem.Name="Inclusions",RGBA(100,100,100,0.4),
+                
+                Color.Transparent
+                )
+                
+                
+                
             Height: =Parent.TemplateHeight
             HoverColor: =Color.White
             HoverFill: =Colour_Viridor_Purple

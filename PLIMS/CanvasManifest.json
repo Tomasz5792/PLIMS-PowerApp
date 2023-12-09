@@ -139,6 +139,7 @@
     "Screen_Test_Bulk_Density_Flake",
     "Screen_Test_Bulk_Density_Pellet",
     "Screen_Test_Float_Sink",
+    "Screen_Test_IV_MFI",
     "Screen_Under_Construction"
   ]
 }

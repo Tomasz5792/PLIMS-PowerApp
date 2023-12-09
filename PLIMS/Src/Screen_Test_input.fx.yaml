@@ -1642,6 +1642,11 @@ Screen_Test_input As screen:
             ThisItem.Test="Float Sink",Navigate(Screen_Test_Float_Sink,ScreenTransition.None),
             And(Or(ThisItem.Test="Metal",ThisItem.Test="Glass",ThisItem.Test="PET",ThisItem.Test="PVC"),Or(var_material_selected="HDPE Natural",var_material_selected="HDPE Self Coloured",var_material_selected="PP")),Navigate(Screen_Test_Float_Sink,ScreenTransition.None),
             
+            //IV MFI
+            ThisItem.Test="IV",Navigate(Screen_Test_IV_MFI,ScreenTransition.None),
+            ThisItem.Test="MFI",Navigate(Screen_Test_IV_MFI,ScreenTransition.None),
+            ThisItem.Test="IV MFI",Navigate(Screen_Test_IV_MFI,ScreenTransition.None),
+            
             
             Navigate(Screen_Under_Construction,ScreenTransition.None))
         ShowScrollbar: =false
