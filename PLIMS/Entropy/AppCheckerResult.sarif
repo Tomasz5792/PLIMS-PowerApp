@@ -4754,19 +4754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_3.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_Base.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_3.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_Base.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_Bulk_Density_Pellet",
-                "type": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_3"
+                "type": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_Base"
               }
             }
           ],
@@ -4784,19 +4784,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_2.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.'TextInput_Base+sample'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_2.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.'TextInput_Base+sample'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_Bulk_Density_Pellet",
-                "type": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.TextInput_2"
+                "type": "Screen_Test_Bulk_Density_Pellet.Gallery2_2.'TextInput_Base+sample'"
               }
             }
           ],

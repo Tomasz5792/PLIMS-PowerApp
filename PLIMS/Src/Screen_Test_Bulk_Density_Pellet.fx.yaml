@@ -173,7 +173,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
             Fill: |+
                 =If(
                 ThisItem.'Bulk_Density_Result_kg/m3'="Not Tested",Colour_Not_Tested,
-                IsBlank(TextInput_2),Colour_Testing,
+                IsBlank('TextInput_Base+sample'),Colour_Testing,
                 
                 //Bulk Density Pellet
                 //Spec: HD Nat & Colour 550 - 700
@@ -204,7 +204,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
             LineHeight: =1
             OnSelect: =Select(Parent)
             Size: =Text_size
-            Text: =If(IsBlank(TextInput_2),"",Text(Round(TextInput_2/1100*1000,0),"0"))
+            Text: =If(Or(IsBlank('TextInput_Base+sample'),IsBlank(TextInput_Base)),"",Text(Round(('TextInput_Base+sample'-TextInput_Base)*1000/400,0),"0"))
             Width: =Label_Main_2.Width
             X: =Label_Main_2.Width*7
             ZIndex: =4
@@ -219,7 +219,7 @@ Screen_Test_Bulk_Density_Pellet As screen:
             Width: =Gallery_Title_2.Width/Gallery_Title_2.AllItemsCount
             ZIndex: =5
 
-        TextInput_2 As text:
+        "'TextInput_Base+sample' As text":
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
             Default: =ThisItem.Bulk_Density_Weight_g
@@ -266,17 +266,17 @@ Screen_Test_Bulk_Density_Pellet As screen:
                 =If(IsBlank(LookUp(col_Test_Updates,ID=ThisItem.ID)),
                 Collect(col_Test_Updates,ThisItem));
                 
-                UpdateIf(col_Test_Updates,ID=ThisItem.ID,{Bulk_Density_Base_g:TextInput_3.Text,Bulk_Density_Weight_g:TextInput_2.Text,'Bulk_Density_Result_kg/m3':Label_Result_2.Text,Bulk_Density_Comment:TextInput_Comment_2.Text})
+                UpdateIf(col_Test_Updates,ID=ThisItem.ID,{Bulk_Density_Base_g:TextInput_Base.Text,Bulk_Density_Weight_g:'TextInput_Base+sample'.Text,'Bulk_Density_Result_kg/m3':Label_Result_2.Text,Bulk_Density_Comment:TextInput_Comment_2.Text})
             Text: ="Button"
             Visible: =false
             Width: =48
             X: =1318
             ZIndex: =10
 
-        TextInput_3 As text:
+        TextInput_Base As text:
             Align: =Align.Center
             BorderStyle: =BorderStyle.None
-            Default: =ThisItem.Bulk_Density_Weight_g
+            Default: =ThisItem.Bulk_Density_Base_g
             Format: =TextFormat.Number
             Height: =54
             HoverFill: =Colour_Viridor_PurpleTint
