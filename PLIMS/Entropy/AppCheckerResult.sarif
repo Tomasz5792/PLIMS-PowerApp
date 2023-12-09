@@ -5564,19 +5564,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Weight_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Weight_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_IV_MFI",
-                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Weight_1"
+                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_1"
               }
             }
           ],
@@ -5594,19 +5594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Glass_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Glass_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_IV_MFI",
-                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Glass_1"
+                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_2"
               }
             }
           ],
@@ -5624,19 +5624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_metal_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_metal_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_IV_MFI",
-                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_metal_1"
+                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_3"
               }
             }
           ],
@@ -5654,49 +5654,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_pet_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_Comment.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_pet_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_Comment.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen_Test_IV_MFI",
-                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_pet_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Float_Comment_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Float_Comment_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen_Test_IV_MFI",
-                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_Float_Comment_1"
+                "type": "Screen_Test_IV_MFI.Gallery2_4.TextInput_IV_MFI_Comment"
               }
             }
           ],
