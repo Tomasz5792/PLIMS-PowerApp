@@ -685,7 +685,46 @@ Screen_Test_IV_MFI As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =Label_Upper_Spec_4.Size
-            Text: ="105"
+            Text: |-
+                =Switch(var_filter_selected,
+                
+                "All_All", "Multiple",
+                "All_Wash", "N/A",
+                "All_Post_Flake_Sorter", "Multiple",
+                "All_Post_Extruder", "Multiple",
+                "All_SSP", "920",
+                "All_Sampling_Silo", "Multiple",
+                
+                "PET_All", "Multiple",
+                "PET_Wash", "N/A",
+                "PET_Post_Flake_Sorter", "0.70", 
+                "PET_Post_Extruder", "0.70", 
+                "PET_SSP", "0.80", 
+                "PET_Sampling_Silo", "0.78",
+                
+                "HDPE_Nat_All", "Multiple",
+                "HDPE_Nat_Wash", "N/A",
+                "HDPE_Nat_Post_Flake_Sorter", "0.50", 
+                "HDPE_Nat_Post_Extruder", "0.40", 
+                "HDPE_Nat_SSP", "N/A",
+                "HDPE_Nat_Sampling_Silo", "0.40", 
+                
+                "HDPE_SC_All", "Multiple",  
+                "HDPE_SC_Wash", "N/A",
+                "HDPE_SC_Post_Flake_Sorter", "0.50",
+                "HDPE_SC_Post_Extruder", "0.40",
+                "HDPE_SC_SSP", "N/A",
+                "HDPE_SC_Sampling_Silo", "0.40",
+                
+                "PP_All", "Multiple", 
+                "PP_Wash", "N/A",
+                "PP_Post_Flake_Sorter", "N/A",
+                "PP_Post_Extruder", "13",
+                "PP_SSP", "N/A",
+                "PP_Sampling_Silo", "13",
+                    
+                "Error"
+                )
             Width: =Label_Upper_Spec_Main_2.Width
             X: =Label_Upper_Spec_Main_2.X
             Y: =Label_Upper_Spec_6.Y+Label_Upper_Spec_6.Height
@@ -699,7 +738,46 @@ Screen_Test_IV_MFI As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =14
-            Text: ="95"
+            Text: |-
+                =Switch(var_filter_selected,
+                
+                "All_All", "Multiple",
+                "All_Wash", "N/A",
+                "All_Post_Flake_Sorter", "Multiple",
+                "All_Post_Extruder", "Multiple",
+                "All_SSP", "920",
+                "All_Sampling_Silo", "Multiple",
+                
+                "PET_All", "Multiple",
+                "PET_Wash", "N/A",
+                "PET_Post_Flake_Sorter", "0.82", //0.70
+                "PET_Post_Extruder", "0.74", //0.70
+                "PET_SSP", "0.84",  //0.80
+                "PET_Sampling_Silo", "0.82",  //0.78
+                
+                "HDPE_Nat_All", "Multiple",
+                "HDPE_Nat_Wash", "N/A",
+                "HDPE_Nat_Post_Flake_Sorter", "0.65",  //0.50
+                "HDPE_Nat_Post_Extruder", "0.55",  //0.40
+                "HDPE_Nat_SSP", "N/A",
+                "HDPE_Nat_Sampling_Silo", "0.55",  //0.40
+                
+                "HDPE_SC_All", "Multiple",  
+                "HDPE_SC_Wash", "N/A",
+                "HDPE_SC_Post_Flake_Sorter", "0.65",  //0.50
+                "HDPE_SC_Post_Extruder", "0.55",  //0.40
+                "HDPE_SC_SSP", "N/A",
+                "HDPE_SC_Sampling_Silo", "0.55",  //0.40
+                
+                "PP_All", "Multiple", 
+                "PP_Wash", "N/A",
+                "PP_Post_Flake_Sorter", "N/A",
+                "PP_Post_Extruder", "20",  //13
+                "PP_SSP", "N/A",
+                "PP_Sampling_Silo", "20",  //13
+                    
+                "Error"
+                )
             Width: =Gallery_Title_4.Width/Gallery_Title_4.AllItemsCount
             X: =Gallery_Title_4.Width/Gallery_Title_4.AllItemsCount*8
             Y: =Label_Upper_Spec_6.Y
