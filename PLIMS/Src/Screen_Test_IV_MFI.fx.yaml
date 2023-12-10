@@ -425,10 +425,10 @@ Screen_Test_IV_MFI As screen:
             {}, 
             {Test:"Date", Unit:"dd mmm yyyy", Width:1}, 
             {Test:"Time", Unit:"hh:mm", Width:1},
-            {Test:"1", Unit:"g", Width:1},
-            {Test:"2", Unit:"g", Width:1},
-            {Test:"3", Unit:"ppm", Width:1},
-            {Test:"Average", Unit:"g", Width:1},
+            {Test:"1", Unit:"Unit_LMI", Width:1},
+            {Test:"2", Unit:"Unit_LMI", Width:1},
+            {Test:"3", Unit:"Unit_LMI", Width:1},
+            {Test:"Average", Unit:"Unit_LMI", Width:1},
             {Test:"Comment", Unit:"",  Width:4}, 
             {}, 
             {}, 
@@ -485,8 +485,8 @@ Screen_Test_IV_MFI As screen:
             HoverFill: =Colour_Viridor_Purple
             LineHeight: =0.8
             OnSelect: |+
-                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_41","field_51","field_52","field_55","field_56","field_43","field_44","field_63","field_65"));
-                //weight glass_g glass_ppm metal_g metal_ppm pet_g pet_ppm pass_fail comment
+                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_13","field_14","field_15","field_16","field_17"));
+                //1 2 3 Average comment
                 
                 //Notify
                 Notify("Results Saved",NotificationType.Success,2000);
