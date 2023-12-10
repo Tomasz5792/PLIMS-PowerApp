@@ -142,7 +142,7 @@ Screen_Test_IV_MFI As screen:
                 Collect(col_Test_Updates,ThisItem));
                 
                 UpdateIf(col_Test_Updates,ID=ThisItem.ID,{
-                Comp_Float_Sink_Glass_g:TextInput_IV_MFI_1.Text,Comp_Float_Sink_Metal_g:TextInput_IV_MFI_2.Text,Float_Sink_PET_g:TextInput_IV_MFI_3.Text,'Float_Sink_PET_Result_%':Text_IV_MFI_Average.Text,Float_Sink_Comment:TextInput_IV_MFI_Comment.Text
+                IV_MFI_1:TextInput_IV_MFI_1.Text,IV_MFI_2:TextInput_IV_MFI_2.Text,IV_MFI_3:TextInput_IV_MFI_3.Text,IV_MFI_Result:Text_IV_MFI_Average.Text,IV_MFI_Comment:TextInput_IV_MFI_Comment.Text
                 })
             Text: ="Button"
             Visible: =false
@@ -341,7 +341,9 @@ Screen_Test_IV_MFI As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =Text_size
-            Text: =If(And(IsBlank(TextInput_IV_MFI_1),IsBlank(TextInput_IV_MFI_2),IsBlank(TextInput_IV_MFI_3)),"",Text(Round(Average(TextInput_IV_MFI_1,TextInput_IV_MFI_2,TextInput_IV_MFI_3),2),"0.00"))
+            Text: |-
+                =If(And(IsBlank(TextInput_IV_MFI_1),IsBlank(TextInput_IV_MFI_2),IsBlank(TextInput_IV_MFI_3)),"",Text(Round(
+                Average(If(IsBlank(TextInput_IV_MFI_1),"",TextInput_IV_MFI_1),If(IsBlank(TextInput_IV_MFI_2),"",TextInput_IV_MFI_2),If(IsBlank(TextInput_IV_MFI_3),"",TextInput_IV_MFI_3)),2),"0.00"))
             Width: =Label_Main_4.Width
             X: =Label_Main_4.Width*11
             ZIndex: =13
