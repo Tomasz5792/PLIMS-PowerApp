@@ -1,0 +1,590 @@
+Screen_Test_Caustic_Strength As screen:
+    Fill: =Colour_Viridor_White
+
+    Label2 As label:
+        BorderStyle: =BorderStyle.None
+        Fill: =Color.Yellow
+        Height: =59
+        Text: =
+        Width: =1366
+        Y: =138
+        ZIndex: =1
+
+    Gallery2 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_GreenTint
+        Height: =514
+        Items: |-
+            =If(var_not_tested_filter,Filter(
+            
+            Switch(var_filter_selected,
+            
+            //"All"
+                "All_All", Filter('Test Results',Complete=false),
+                "All_Wash", Filter('Test Results',Sample_Point_Filter="Wash"&&Complete=false),
+                "All_Flake_Bag", Filter('Test Results',Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "All_Post_Flake_Sorter", Filter('Test Results',Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "All_Post_Extruder", Filter('Test Results',Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "All_SSP", Filter('Test Results',Sample_Point_Filter="SSP"&&Complete=false),
+                "All_Pellet_Bag", Filter('Test Results',Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "All_Sampling_Silo", Filter('Test Results',Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"PET"
+                "PET_All", Filter('Test Results','Material_Filter (field_1)'="PET"&&Complete=false),
+                "PET_Wash", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "PET_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "PET_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "PET_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "PET_SSP", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "PET_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "PET_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"HDPE Natural"  
+                "HDPE_Nat_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Complete=false),
+                "HDPE_Nat_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "HDPE_Nat_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "HDPE_Nat_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "HDPE_Nat_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "HDPE_Nat_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "HDPE_Nat_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "HDPE_Nat_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"HDPE Self Coloured" 
+                "HDPE_SC_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Complete=false),
+                "HDPE_SC_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "HDPE_SC_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "HDPE_SC_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "HDPE_SC_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "HDPE_SC_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "HDPE_SC_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "HDPE_SC_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"PP"
+                "PP_All", Filter('Test Results','Material_Filter (field_1)'="PP"&&Complete=false),
+                "PP_Wash", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "PP_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "PP_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "PP_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "PP_SSP", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "PP_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "PP_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Sampling Silo"&&Complete=false)
+                
+                ,'Test Results'
+            )
+            ,'Caustic_Strength_Result_%'<>"Not Tested")
+            ,
+            Switch(var_filter_selected,
+            
+            //"All"
+                "All_All", Filter('Test Results',Complete=false),
+                "All_Wash", Filter('Test Results',Sample_Point_Filter="Wash"&&Complete=false),
+                "All_Flake_Bag", Filter('Test Results',Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "All_Post_Flake_Sorter", Filter('Test Results',Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "All_Post_Extruder", Filter('Test Results',Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "All_SSP", Filter('Test Results',Sample_Point_Filter="SSP"&&Complete=false),
+                "All_Pellet_Bag", Filter('Test Results',Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "All_Sampling_Silo", Filter('Test Results',Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"PET"
+                "PET_All", Filter('Test Results','Material_Filter (field_1)'="PET"&&Complete=false),
+                "PET_Wash", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "PET_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "PET_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "PET_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "PET_SSP", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "PET_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "PET_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PET"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"HDPE Natural"  
+                "HDPE_Nat_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Complete=false),
+                "HDPE_Nat_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "HDPE_Nat_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "HDPE_Nat_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "HDPE_Nat_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "HDPE_Nat_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "HDPE_Nat_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "HDPE_Nat_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Natural"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"HDPE Self Coloured" 
+                "HDPE_SC_All", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Complete=false),
+                "HDPE_SC_Wash", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "HDPE_SC_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "HDPE_SC_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "HDPE_SC_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "HDPE_SC_SSP", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "HDPE_SC_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "HDPE_SC_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="HDPE Self Coloured"&&Sample_Point_Filter="Sampling Silo"&&Complete=false),
+            
+            //"PP"
+                "PP_All", Filter('Test Results','Material_Filter (field_1)'="PP"&&Complete=false),
+                "PP_Wash", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Wash"&&Complete=false),
+                "PP_Flake_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Flake Bag"&&Complete=false),
+                "PP_Post_Flake_Sorter", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Flake Sorter"&&Complete=false),
+                "PP_Post_Extruder", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Post Extruder"&&Complete=false),
+                "PP_SSP", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="SSP"&&Complete=false),
+                "PP_Pellet_Bag", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Pellet Bag"&&Complete=false),
+                "PP_Sampling_Silo", Filter('Test Results','Material_Filter (field_1)'="PP"&&Sample_Point_Filter="Sampling Silo"&&Complete=false)
+                
+                ,'Test Results'
+            ))
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =54
+        Width: =1366
+        Y: =197
+        ZIndex: =2
+
+        Label_Caustic_Sample_Point As label:
+            Align: =Align.Center
+            Height: =54
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =ThisItem.Sample_Point
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width
+            ZIndex: =1
+
+        Label_Caustic_Date As label:
+            Align: =Align.Center
+            Height: =54
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width*2
+            ZIndex: =2
+
+        Label_Caustic_Time As label:
+            Align: =Align.Center
+            Height: =54
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width*3
+            ZIndex: =3
+
+        Label_Caustic_Result As label:
+            Align: =Align.Center
+            Fill: |+
+                =If(
+                ThisItem.'Caustic_Strength_Result_%'="Not Tested",Colour_Not_Tested,
+                IsBlank(TextInput_Caustic_Titration),Colour_Testing,
+                
+                Or(Value(Label_Caustic_Result.Text)>0.35,Value(Label_Caustic_Result.Text)<0.17),Colour_Fail,
+                
+                Colour_Pass)
+                
+            Height: =54
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =If(IsBlank(TextInput_Caustic_Titration),"",Text(Round(TextInput_Caustic_Titration*0.5*4/100,2),"0.00"))
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width*5
+            ZIndex: =4
+
+        Label_Caustic_Material_Main As label:
+            Align: =Align.Center
+            Height: =54
+            OnSelect: =Select(Parent)
+            Size: =Text_size
+            Text: =ThisItem.'Material_Filter (field_1)'
+            Width: =Gallery_Title_Caustic.Width/Gallery_Title_Caustic.AllItemsCount
+            ZIndex: =5
+
+        TextInput_Caustic_Titration As text:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            Default: =ThisItem.Caustic_Strength_Titration_mL
+            Format: =TextFormat.Number
+            Height: =54
+            HoverFill: =Colour_Viridor_PurpleTint
+            OnChange: =Select(Button_Update_Caustic)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =Text_size
+            Width: =Label_Caustic_Material_Main.Width
+            X: =Label_Caustic_Material_Main.Width*4
+            ZIndex: =7
+
+        TextInput_Caustic_Comment As text:
+            Align: =Align.Center
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Default: =ThisItem.Caustic_Strength_Comment
+            EnableSpellCheck: =true
+            Height: =54
+            HoverColor: =Color.Black
+            HoverFill: =Colour_Viridor_PurpleTint
+            Mode: =TextMode.MultiLine
+            OnChange: =Select(Button_Update_Caustic)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =Text_size_2
+            Width: =456
+            X: =Label_Caustic_Material_Main.Width*6
+            ZIndex: =8
+
+        Button_Update_Caustic As button:
+            Height: =54
+            OnSelect: |-
+                =If(IsBlank(LookUp(col_Test_Updates,ID=ThisItem.ID)),
+                Collect(col_Test_Updates,ThisItem));
+                
+                UpdateIf(col_Test_Updates,ID=ThisItem.ID,{Caustic_Strength_Titration_mL:TextInput_Caustic_Titration.Text,'Caustic_Strength_Result_%':Label_Caustic_Result.Text,Caustic_Strength_Comment:TextInput_Caustic_Comment.Text})
+            Text: ="Button"
+            Visible: =false
+            Width: =48
+            X: =1318
+            ZIndex: =10
+
+    Gallery_Units_1 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Color.AliceBlue
+        Height: =58/2
+        Items: =Gallery_Title_Caustic.AllItems
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Units_1.Width/Gallery_Units_1.AllItemsCount
+        Width: =1366
+        Y: =109
+        ZIndex: =7
+
+        Label5_8 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.Black
+            Height: =If(ThisItem.Test="",0,Gallery_Units_1.TemplateHeight)
+            LineHeight: =0.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.Black
+            PressedFill: =Color.Transparent
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),12,14)
+            Text: |
+                =ThisItem.Unit
+            Width: |-
+                =If(
+                ThisItem.Test="",0,
+                
+                //otherwise
+                Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
+            ZIndex: =1
+
+    Gallery_Title_Caustic As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_Purple
+        Height: =58
+        Items: |-
+            =[
+            {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:1}, 
+            {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:1}, 
+            {Test:"Date", Unit:"dd mm yyyy", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:1}, 
+            {Test:"Time", Unit:"hh:mm", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1},
+            {Test:"Titration", Unit:"mL", Low_Spec:"", High_Spec:"", Result:"", Width:1},
+            {Test:"Caustic Strength", Unit:"% w/w", Low_Spec:"Low_Caustic", High_Spec:"High_Caustic", Result:"R_Caustic", Width:1},
+            {Test:"Comment", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:3}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
+            ]
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Title_Caustic.Width/Gallery_Title_Caustic.AllItemsCount
+        Width: =1366
+        Y: =51
+        ZIndex: =8
+
+        Label5_9 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.White
+            Height: =If(ThisItem.Test="",0,Gallery_Title_Caustic.TemplateHeight)
+            LineHeight: =0.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.White
+            PressedFill: =Color.Transparent
+            Size: =18
+            Text: =ThisItem.Test
+            Width: |-
+                =If(
+                ThisItem.Test="",0,
+                
+                //otherwise
+                Gallery_Title_Caustic.TemplateWidth*ThisItem.Width)
+            ZIndex: =1
+
+    Gallery_Tests_Main_1 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_Green
+        Height: =57
+        Items: =["Save and exit"]
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Tests_Main_1.Width/Gallery_Tests_Main_1.AllItemsCount
+        Width: =1366
+        Y: =711
+        ZIndex: =9
+
+        Label5_11 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.White
+            Height: =57
+            HoverBorderColor: =Color.Transparent
+            HoverFill: =Colour_Viridor_Purple
+            LineHeight: =0.8
+            OnSelect: |+
+                =Patch('Test Results',ShowColumns(col_Test_Updates,"ID","field_10","field_11","field_12"));
+                //"Caustic_Strength_Titration_mL","Caustic_Strength_Result_%","Caustic_Strength_Comment"
+                
+                //Notify
+                Notify("Results Saved",NotificationType.Success,2000);
+                
+                //clear collection
+                Clear(col_Test_Updates);
+                
+                Back();
+                
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.White
+            PressedFill: =Color.Transparent
+            Size: =20
+            Text: =ThisItem.Value
+            Width: =1366
+            ZIndex: =1
+
+    Refresh_Data_7 As icon.CancelBadge:
+        Color: =Color.White
+        Height: =34
+        HoverColor: =Colour_Viridor_Purple
+        Icon: |-
+            =If(var_not_tested_filter=false,
+            Icon.FilterFlatFilled,
+            Icon.FilterFlat)
+        OnSelect: =Set(var_not_tested_filter,!var_not_tested_filter)
+        PressedColor: =Colour_Viridor_GreenTint
+        Tooltip: ="Toggle all tests"
+        Width: =34
+        X: =1175
+        Y: =10
+        ZIndex: =10
+
+    Title_pH As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+        Title_Test_Input_2 As label:
+            Align: =TextPosition.Left
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 155, 62, 100)
+            Font: =Font.'Segoe UI'
+            Height: =51
+            PaddingLeft: =14
+            Size: =Text_size_Title
+            Text: =Concatenate("Caustic Strengh - ",var_material_selected," ",var_sample_point_selected)
+            Width: =1366
+            ZIndex: =3
+
+        Button_Back_11 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.BackArrow
+            OnSelect: |-
+                =Back();
+                Clear(col_Test_Updates);
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Back"
+            Width: =38
+            X: =1322
+            Y: =7
+            ZIndex: =4
+
+        Button_Home_4 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Home
+            OnSelect: |-
+                =Navigate(Screen_Start,ScreenTransition.None);
+                Clear(col_Test_Updates);
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Home"
+            Width: =38
+            X: =Button_Back_11.X-50
+            Y: =Button_Back_11.Y
+            ZIndex: =5
+
+        Refresh_Data_3 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =34
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Reload
+            OnSelect: =Refresh('Test Results')
+            PressedColor: =Colour_Viridor_GreenTint
+            Rotation: =90
+            Tooltip: ="Refresh data"
+            Width: =34
+            X: =Button_Back_11.X-50*2
+            Y: =10
+            ZIndex: =6
+
+    Label_Caustic_Upper_Spec As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =14
+        Text: |-
+            =Switch(var_filter_selected,
+            
+            "All_All", "0.35",
+            "All_Wash", "0.35",
+            "All_Flake_Bag", "0.35",
+            "All_Post_Flake_Sorter", "0.35",
+            "All_Post_Extruder", "0.35",
+            "All_SSP", "0.35",
+            "All_Pellet_Bag", "0.35",
+            "All_Sampling_Silo", "0.35",
+            
+            "PET_All", "0.35",
+            "PET_Wash", "0.35",
+            "PET_Flake_Bag", "0.35",
+            "PET_Post_Flake_Sorter", "0.35",
+            "PET_Post_Extruder", "0.35",
+            "PET_SSP", "0.35",
+            "PET_Pellet_Bag", "0.35",
+            "PET_Sampling_Silo", "0.35",
+            
+            "HDPE_Nat_All", "0.35",
+            "HDPE_Nat_Wash", "0.35",
+            "HDPE_Nat_Flake_Bag", "0.35",
+            "HDPE_Nat_Post_Flake_Sorter", "0.35",
+            "HDPE_Nat_Post_Extruder", "0.35",
+            "HDPE_Nat_SSP", "0.35",
+            "HDPE_Nat_Pellet_Bag", "0.35",
+            "HDPE_Nat_Sampling_Silo", "0.35",
+            
+            "HDPE_SC_All", "0.35",
+            "HDPE_SC_Wash", "0.35",
+            "HDPE_SC_Flake_Bag", "0.35",
+            "HDPE_SC_Post_Flake_Sorter", "0.35",
+            "HDPE_SC_Post_Extruder", "0.35",
+            "HDPE_SC_SSP", "0.35",
+            "HDPE_SC_Pellet_Bag", "0.35",
+            "HDPE_SC_Sampling_Silo", "0.35",
+            
+            "PP_All", "0.35",
+            "PP_Wash", "0.35",
+            "PP_Flake_Bag", "0.35",
+            "PP_Post_Flake_Sorter", "0.35",
+            "PP_Post_Extruder", "0.35",
+            "PP_SSP", "0.35",
+            "PP_Pellet_Bag", "0.35",
+            "PP_Sampling_Silo", "0.35",
+                
+            "0.35"
+            )
+        Width: =151
+        X: =760
+        Y: =138
+        ZIndex: =12
+
+    Label_Caustic_Upper_Spec_1 As label:
+        Align: =Align.Center
+        Height: =29
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =15
+        Text: |-
+            =Switch(var_filter_selected,
+            
+            "All_All", "0.17",
+            "All_Wash", "0.17",
+            "All_Flake_Bag", "0.17",
+            "All_Post_Flake_Sorter", "0.17",
+            "All_Post_Extruder", "0.17",
+            "All_SSP", "0.17",
+            "All_Pellet_Bag", "0.17",
+            "All_Sampling_Silo", "0.17",
+            
+            "PET_All", "0.17",
+            "PET_Wash", "0.17",
+            "PET_Flake_Bag", "0.17",
+            "PET_Post_Flake_Sorter", "0.17",
+            "PET_Post_Extruder", "0.17",
+            "PET_SSP", "0.17",
+            "PET_Pellet_Bag", "0.17",
+            "PET_Sampling_Silo", "0.17",
+            
+            "HDPE_Nat_All", "0.17",
+            "HDPE_Nat_Wash", "0.17",
+            "HDPE_Nat_Flake_Bag", "0.17",
+            "HDPE_Nat_Post_Flake_Sorter", "0.17",
+            "HDPE_Nat_Post_Extruder", "0.17",
+            "HDPE_Nat_SSP", "0.17",
+            "HDPE_Nat_Pellet_Bag", "0.17",
+            "HDPE_Nat_Sampling_Silo", "0.17",
+            
+            "HDPE_SC_All", "0.17",
+            "HDPE_SC_Wash", "0.17",
+            "HDPE_SC_Flake_Bag", "0.17",
+            "HDPE_SC_Post_Flake_Sorter", "0.17",
+            "HDPE_SC_Post_Extruder", "0.17",
+            "HDPE_SC_SSP", "0.17",
+            "HDPE_SC_Pellet_Bag", "0.17",
+            "HDPE_SC_Sampling_Silo", "0.17",
+            
+            "PP_All", "0.17",
+            "PP_Wash", "0.17",
+            "PP_Flake_Bag", "0.17",
+            "PP_Post_Flake_Sorter", "0.17",
+            "PP_Post_Extruder", "0.17",
+            "PP_SSP", "0.17",
+            "PP_Pellet_Bag", "0.17",
+            "PP_Sampling_Silo", "0.17",
+                
+            "0.17"
+            )
+        Width: =151
+        X: =760
+        Y: =168
+        ZIndex: =13
+

@@ -1,0 +1,1326 @@
+Screen_Add_Samples As screen:
+    Fill: =Colour_Viridor_White
+
+    Unit_Box_Colour As label:
+        Fill: =Color.AliceBlue
+        Height: =29
+        Text: =
+        Width: =383
+        X: =983
+        Y: =109
+        ZIndex: =1
+
+    Gallery_Units_3 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Color.AliceBlue
+        Height: =58/2
+        Items: =Gallery_Test_Title_2.AllItems
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Units_3.Width/Gallery_Units_3.AllItemsCount
+        Width: =Parent.Width-Gallery_Add_Samples.Width-4
+        X: =Gallery_Add_Samples.Width
+        Y: =109
+        ZIndex: =6
+
+        Label5_17 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.Black
+            Height: =If(ThisItem.Test="",0,Gallery_Units_3.TemplateHeight)
+            LineHeight: =0.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.Black
+            PressedFill: =Color.Transparent
+            Size: |-
+                =If(Or(
+                var_sample_point_selected=Blank()
+                ,var_sample_point_selected="Post Extruder"
+                ,var_sample_point_selected="Pellet Bag"
+                ,var_sample_point_selected="Sampling Silo"
+                ),12,14)
+            Text: |
+                =ThisItem.Unit
+            Width: |-
+                =If(
+                ThisItem.Test="",0,
+                
+                //otherwise
+                Gallery_Test_Title_2.TemplateWidth*ThisItem.Width)
+            ZIndex: =1
+
+    Gallery_Test_Title_2 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_Purple
+        Height: =58
+        Items: |-
+            =[
+            {Test:"Polymer", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
+            {Test:"Material", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Material", Width:2}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
+            {Test:"Sample Point", Unit:"", Low_Spec:"", High_Spec:"", Result:"R_Point", Width:2}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
+            {Test:"Date", Unit:"dd mmm yy", Low_Spec:"", High_Spec:"", Result:"R_Date", Width:2}, 
+            {Test:"", Unit:"", Low_Spec:"", High_Spec:"", Result:"", Width:1}, 
+            {Test:"Time", Unit:"hh:mm", Low_Spec:"", High_Spec:"", Result:"R_Time", Width:1},
+            ]
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Gallery_Test_Title_2.Width/Gallery_Test_Title_2.AllItemsCount
+        Width: =Parent.Width-Gallery_Add_Samples.Width
+        X: =Gallery_Add_Samples.Width
+        Y: =51
+        ZIndex: =7
+
+        Label5_16 As label:
+            Align: =Align.Center
+            BorderColor: =Color.Transparent
+            BorderThickness: =2
+            Color: =Color.White
+            Height: =If(ThisItem.Test="",0,Gallery_Test_Title_2.TemplateHeight)
+            LineHeight: =0.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.White
+            PressedFill: =Color.Transparent
+            Size: =18
+            Text: =ThisItem.Test
+            Width: |-
+                =If(
+                ThisItem.Test="",0,
+                
+                //otherwise
+                Gallery_Test_Title_2.TemplateWidth*ThisItem.Width)
+            ZIndex: =1
+
+    "Gallery_Add_Samples As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
+        Fill: =Colour_Viridor_PurpleTint
+        Height: =659-58
+        Items: |-
+            =If(var_sampling_point_filter=true,
+            [
+            {Name: "PET Wash A2:304", Text: "PET
+            Wash
+            A2:304", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Wash Other", Text: "PET
+            Wash
+            Other", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Nat Wash BS:302", Text: "HDPE Nat Wash
+            BS:302", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Nat Wash Other", Text: "HDPE Nat Wash
+            Other", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Wash", Text: "HDPE Self Coloured
+            Wash", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Wash", Text: "PP
+            Wash", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Post Wash Silo", Text: "PET
+            Post Wash
+            Silo", Height: 1, Width: 2, Colour: "PET"},{},{Name: "HDPE Natural Hopper 1", Text: "HDPE Natural Hopper 1", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2", Text: "HDPE Natural Hopper 2", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3", Text: "HDPE
+            Self Col. Hopper 3", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4", Text: "PP
+            Hopper 4", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Post Flake Sorter", Text: "PET
+            Post Flake Sorter
+            Silo", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Flake Bag", Text: "PET
+            Flake Bag", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 1 1/2 Test", Text: "Hopper 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2 1/2 Test", Text: "Hopper 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3 1/2 Test", Text: "Hopper 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4 1/2 Test", Text: "Hopper 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Post Extruder", Text: "PET
+            Post Extruder", Height: 1, Width: 2, Colour: "PET"},{},{Name: "HDPE Natural Post Extruder 1", Text: "HDPE
+            Natural
+            Extruder 1", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2", Text: "HDPE
+            Natural
+            Extruder 2", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Post Extruder 3", Text: "HDPE
+            Self Col.
+            Extruder 3", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Post Extruder 4", Text: "PP
+            Extruder 4", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET SSP 1", Text: "PET
+            SSP 1", Height: 1, Width: 1, Colour: "PET"},{Name: "PET SSP 2", Text: "PET
+            SSP 2", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 1 1/2 Test", Text: "Extruder 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2 1/2 Test", Text: "Extruder 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Post Extruder 3 1/2 Test", Text: "Extruder 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Post Extruder 4 1/2 Test", Text: "Extruder 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Pellet Bag Pre-SSP", Text: "PET
+            Pellet Bag
+            Pre-SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Pellet Bag Non-Deo", Text: "HDPE Natural
+            Pellet Bag
+            Non-Deo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Pellet Bag Non-Deo", Text: "HDPE SC Pellet Bag Non-Deo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Pellet Bag Non-Deo", Text: "PP
+            Pellet Bag
+            Non-Deo", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Pellet Bag Post SSP", Text: "PET
+            Pellet Bag
+            Post SSP", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Natural Pellet Bag Deodorised", Text: "HDPE Natural
+            Pellet Bag
+            Deo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Pellet Bag Deodorised", Text: "HDPE SC Pellet Bag Deo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Pellet Bag Deodorised", Text: "PP
+            Pellet Bag
+            Deo", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Sampling Silo", Text: "PET
+            Sampling
+            Silo", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo", Text: "HDPE Nat
+            Sampling Silo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Sampling Silo", Text: "HDPE SC
+            Sampling Silo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Sampling Silo", Text: "PP
+            Sampling Silo", Height: 1, Width: 1, Colour: "PP"},
+            ]
+            ,
+            [
+            {Name: "PET Wash A2:304", Text: "PET
+            Wash
+            A2:304", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Wash Other", Text: "PET
+            Wash
+            Other", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Nat Wash BS:302", Text: "HDPE Nat Wash
+            BS:302", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Nat Wash Other", Text: "HDPE Nat Wash
+            Other", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Wash", Text: "HDPE Self Coloured
+            Wash", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Wash", Text: "PP
+            Wash", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Post Wash Silo", Text: "PET
+            Post Wash
+            Silo", Height: 1, Width: 2, Colour: "PET"},{},{Name: "HDPE Natural Hopper 1", Text: "HDPE Natural Hopper 1", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2", Text: "HDPE Natural Hopper 2", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3", Text: "HDPE
+            Self Col. Hopper 3", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4", Text: "PP
+            Hopper 4", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Post Flake Sorter", Text: "PET
+            Post Flake Sorter
+            Silo", Height: 1, Width: 1, Colour: "PET"},{Name: "PET Flake Bag", Text: "PET
+            Flake Bag", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Hopper 1 1/2 Test", Text: "Hopper 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Hopper 2 1/2 Test", Text: "Hopper 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Hopper 3 1/2 Test", Text: "Hopper 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Hopper 4 1/2 Test", Text: "Hopper 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Post Extruder", Text: "PET
+            Post Extruder", Height: 1, Width: 2, Colour: "PET"},{},{Name: "HDPE Natural Post Extruder 1", Text: "HDPE
+            Natural
+            Extruder 1", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2", Text: "HDPE
+            Natural
+            Extruder 2", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Post Extruder 3", Text: "HDPE
+            Self Col.
+            Extruder 3", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Post Extruder 4", Text: "PP
+            Extruder 4", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET SSP 1", Text: "PET
+            SSP 1", Height: 1, Width: 1, Colour: "PET"},{Name: "PET SSP 2", Text: "PET
+            SSP 2", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Post Extruder 1 1/2 Test", Text: "Extruder 1 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Natural Post Extruder 2 1/2 Test", Text: "Extruder 2 1/2 Test", Height: 1, Width: 1, Colour: "HDPENat"},{Name: "HDPE Self Coloured Post Extruder 3 1/2 Test", Text: "Extruder 3 1/2 Test", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Post Extruder 4 1/2 Test", Text: "Extruder 4 1/2 Test", Height: 1, Width: 1, Colour: "PP"},
+            
+            {Name: "PET Sampling Silo", Text: "PET
+            Sampling
+            Silo", Height: 1, Width: 2, Colour: "PET"},{Name: "", Text: "", Height: 1, Width: 1, Colour: "PET"},{Name: "HDPE Natural Sampling Silo", Text: "HDPE Nat
+            Sampling Silo", Height: 1, Width: 2, Colour: "HDPENat"},{Name: "", Text: "", Height: 1, Width: 1, Colour: ""},{Name: "HDPE Self Coloured Sampling Silo", Text: "HDPE SC
+            Sampling Silo", Height: 1, Width: 1, Colour: "HDPESC"},{Name: "PP Sampling Silo", Text: "PP
+            Sampling Silo", Height: 1, Width: 1, Colour: "PP"},
+            ]
+            )
+        Layout: =Layout.Vertical
+        OnSelect: |+
+            =//if to set clicked value as true for use in add sample If and fill colour if.
+            If(
+            ThisItem.Name = "PET Wash A2:304", Set(var_selected_PET_A2_304, !var_selected_PET_A2_304),
+            ThisItem.Name = "PET Wash Other", Set(var_selected_PET_Wash_Other, !var_selected_PET_Wash_Other),
+            ThisItem.Name = "HDPE Nat Wash BS:302", Set(var_selected_HDPE_Nat_Wash_BS_302, !var_selected_HDPE_Nat_Wash_BS_302),
+            ThisItem.Name = "HDPE Nat Wash Other", Set(var_selected_HDPE_Nat_Wash_Other, !var_selected_HDPE_Nat_Wash_Other),
+            ThisItem.Name = "HDPE Self Coloured Wash", Set(var_selected_HDPE_Self_Coloured_Wash, !var_selected_HDPE_Self_Coloured_Wash),
+            ThisItem.Name = "PP Wash", Set(var_selected_PP_Wash, !var_selected_PP_Wash),
+            ThisItem.Name = "PET Post Wash Silo", Set(var_selected_PET_Post_Wash_Silo, !var_selected_PET_Post_Wash_Silo),
+            ThisItem.Name = "HDPE Natural Hopper 1", Set(var_selected_HDPE_Natural_Hopper_1, !var_selected_HDPE_Natural_Hopper_1),
+            ThisItem.Name = "HDPE Natural Hopper 2", Set(var_selected_HDPE_Natural_Hopper_2, !var_selected_HDPE_Natural_Hopper_2),
+            ThisItem.Name = "HDPE Self Coloured Hopper 3", Set(var_selected_HDPE_Self_Coloured_Hopper_3, !var_selected_HDPE_Self_Coloured_Hopper_3),
+            ThisItem.Name = "PP Hopper 4", Set(var_selected_PP_Hopper_4, !var_selected_PP_Hopper_4),
+            ThisItem.Name = "PET Post Flake Sorter", Set(var_selected_PET_Post_Flake_Sorter, !var_selected_PET_Post_Flake_Sorter),
+            ThisItem.Name = "HDPE Natural Hopper 1 1/2 Test", Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, !var_selected_HDPE_Natural_Hopper_1_1_2_Test),
+            ThisItem.Name = "HDPE Natural Hopper 2 1/2 Test", Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, !var_selected_HDPE_Natural_Hopper_2_1_2_Test),
+            ThisItem.Name = "HDPE Self Coloured Hopper 3 1/2 Test", Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, !var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test),
+            ThisItem.Name = "PP Hopper 4 1/2 Test", Set(var_selected_PP_Hopper_4_1_2_Test, !var_selected_PP_Hopper_4_1_2_Test),
+            ThisItem.Name = "PET Post Extruder", Set(var_selected_PET_Post_Extruder, !var_selected_PET_Post_Extruder),
+            ThisItem.Name = "PET Flake Bag", Set(var_selected_PET_Flake_Bag, !var_selected_PET_Flake_Bag),
+            ThisItem.Name = "HDPE Natural Post Extruder 1", Set(var_selected_HDPE_Natural_Post_Extruder_1, !var_selected_HDPE_Natural_Post_Extruder_1),
+            ThisItem.Name = "HDPE Natural Post Extruder 2", Set(var_selected_HDPE_Natural_Post_Extruder_2, !var_selected_HDPE_Natural_Post_Extruder_2),
+            ThisItem.Name = "HDPE Self Coloured Post Extruder 3", Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, !var_selected_HDPE_Self_Coloured_Post_Extruder_3),
+            ThisItem.Name = "PP Post Extruder 4", Set(var_selected_PP_Post_Extruder_4, !var_selected_PP_Post_Extruder_4),
+            ThisItem.Name = "PET SSP 1", Set(var_selected_PET_SSP_1, !var_selected_PET_SSP_1),
+            ThisItem.Name = "PET SSP 2", Set(var_selected_PET_SSP_2, !var_selected_PET_SSP_2),
+            ThisItem.Name = "HDPE Natural Post Extruder 1 1/2 Test", Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, !var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test),
+            ThisItem.Name = "HDPE Natural Post Extruder 2 1/2 Test", Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, !var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test),
+            ThisItem.Name = "HDPE Self Coloured Post Extruder 3 1/2 Test", Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, !var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test),
+            ThisItem.Name = "PP Post Extruder 4 1/2 Test", Set(var_selected_PP_Post_Extruder_4_1_2_Test, !var_selected_PP_Post_Extruder_4_1_2_Test),
+            ThisItem.Name = "PET Pellet Bag Pre-SSP", Set(var_selected_PET_Pellet_Bag_Pre_SSP, !var_selected_PET_Pellet_Bag_Pre_SSP),
+            ThisItem.Name = "", Set(var_selected_Blank_1, !var_selected_Blank_1),
+            ThisItem.Name = "HDPE Natural Pellet Bag Non-Deo", Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, !var_selected_HDPE_Natural_Pellet_Bag_Non_Deo),
+            ThisItem.Name = "", Set(var_selected_Blank_2, !var_selected_Blank_2),
+            ThisItem.Name = "HDPE Self Coloured Pellet Bag Non-Deo", Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, !var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo),
+            ThisItem.Name = "PP Pellet Bag Non-Deo", Set(var_selected_PP_Pellet_Bag_Non_Deo, !var_selected_PP_Pellet_Bag_Non_Deo),
+            ThisItem.Name = "PET Pellet Bag Post SSP", Set(var_selected_PET_Pellet_Bag_Post_SSP, !var_selected_PET_Pellet_Bag_Post_SSP),
+            ThisItem.Name = "HDPE Natural Pellet Bag Deodorised", Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, !var_selected_HDPE_Natural_Pellet_Bag_Deodorised),
+            ThisItem.Name = "HDPE Self Coloured Pellet Bag Deodorised", Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, !var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised),
+            ThisItem.Name = "PP Pellet Bag Deodorised", Set(var_selected_PP_Pellet_Bag_Deodorised, !var_selected_PP_Pellet_Bag_Deodorised),
+            
+            ThisItem.Name = "PET Sampling Silo", Set(var_selected_PET_Sampling_Silo, !var_selected_PET_Sampling_Silo),
+            ThisItem.Name = "HDPE Natural Sampling Silo", Set(var_selected_HDPE_Natural_Sampling_Silo, !var_selected_HDPE_Natural_Sampling_Silo),
+            ThisItem.Name = "HDPE Natural Sampling Silo", Set(var_selected_HDPE_Natural_Sampling_Silo, !var_selected_HDPE_Natural_Sampling_Silo),
+            ThisItem.Name = "HDPE Self Coloured Sampling Silo", Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, !var_selected_HDPE_Self_Coloured_Sampling_Silo),
+            ThisItem.Name = "PP Sampling Silo", Set(var_selected_PP_Sampling_Silo, !var_selected_PP_Sampling_Silo)
+            
+            
+            
+            )
+            
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: |+
+            =If(var_sampling_point_filter=true,
+            Gallery_Add_Samples.Height/8,
+            Gallery_Add_Samples.Height/6)
+            
+            
+        Width: =Parent.Width/5*2.5+1
+        WrapCount: =6
+        Y: =51
+        ZIndex: =8
+
+        Label_Sampling_Point_2 As label:
+            Align: =Align.Center
+            Color: =If(Label_Sampling_Point_2.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
+            Fill: |+
+                =If(
+                ThisItem.Name = "",Color.Transparent,
+                ThisItem.Name = "PET Wash A2:304" && var_selected_PET_A2_304,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Wash Other" && var_selected_PET_Wash_Other,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Nat Wash BS:302" && var_selected_HDPE_Nat_Wash_BS_302,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Nat Wash Other" && var_selected_HDPE_Nat_Wash_Other,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Wash" && var_selected_HDPE_Self_Coloured_Wash,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Wash" && var_selected_PP_Wash,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Wash Silo" && var_selected_PET_Post_Wash_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Hopper 1" && var_selected_HDPE_Natural_Hopper_1,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Hopper 2" && var_selected_HDPE_Natural_Hopper_2,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Hopper 3" && var_selected_HDPE_Self_Coloured_Hopper_3,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Hopper 4" && var_selected_PP_Hopper_4,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Flake Sorter" && var_selected_PET_Post_Flake_Sorter,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Hopper 1 1/2 Test" && var_selected_HDPE_Natural_Hopper_1_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Hopper 2 1/2 Test" && var_selected_HDPE_Natural_Hopper_2_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Hopper 3 1/2 Test" && var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Hopper 4 1/2 Test" && var_selected_PP_Hopper_4_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Post Extruder" && var_selected_PET_Post_Extruder,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Flake Bag" && var_selected_PET_Flake_Bag,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Post Extruder 1" && var_selected_HDPE_Natural_Post_Extruder_1,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Post Extruder 2" && var_selected_HDPE_Natural_Post_Extruder_2,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Post Extruder 3" && var_selected_HDPE_Self_Coloured_Post_Extruder_3,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Post Extruder 4" && var_selected_PP_Post_Extruder_4,Colour_Viridor_Purple,
+                ThisItem.Name = "PET SSP 1" && var_selected_PET_SSP_1,Colour_Viridor_Purple,
+                ThisItem.Name = "PET SSP 2" && var_selected_PET_SSP_2,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Post Extruder 1 1/2 Test" && var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Post Extruder 2 1/2 Test" && var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Post Extruder 3 1/2 Test" && var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Post Extruder 4 1/2 Test" && var_selected_PP_Post_Extruder_4_1_2_Test,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Pellet Bag Pre-SSP" && var_selected_PET_Pellet_Bag_Pre_SSP,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Pellet Bag Non-Deo" && var_selected_HDPE_Natural_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Pellet Bag Non-Deo" && var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Pellet Bag Non-Deo" && var_selected_PP_Pellet_Bag_Non_Deo,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Pellet Bag Post SSP" && var_selected_PET_Pellet_Bag_Post_SSP,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Pellet Bag Deodorised" && var_selected_HDPE_Natural_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Pellet Bag Deodorised" && var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Pellet Bag Deodorised" && var_selected_PP_Pellet_Bag_Deodorised,Colour_Viridor_Purple,
+                ThisItem.Name = "PET Sampling Silo" && var_selected_PET_Sampling_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Sampling Silo" && var_selected_HDPE_Natural_Sampling_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Natural Sampling Silo" && var_selected_HDPE_Natural_Sampling_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "HDPE Self Coloured Sampling Silo" && var_selected_HDPE_Self_Coloured_Sampling_Silo,Colour_Viridor_Purple,
+                ThisItem.Name = "PP Sampling Silo" && var_selected_PP_Sampling_Silo,Colour_Viridor_Purple,
+                
+                
+                //Background
+                ThisItem.Colour = "PET",Colour_Pellet_PET,
+                ThisItem.Colour = "HDPENat",Colour_Pellet_HDPE_Natural,
+                ThisItem.Colour = "HDPESC",Colour_Pellet_HDPE_Self_Coloured,
+                ThisItem.Colour = "PP",Colour_Pellet_PP,
+                
+                Color.Transparent
+                )
+                
+            Height: |-
+                =If(
+                ThisItem.Name="",0,
+                Gallery_Add_Samples.TemplateHeight+1)
+            HoverColor: =Colour_Viridor_White
+            HoverFill: |
+                =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
+            LineHeight: =0.85
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =If(ThisItem.Name="",Color.Transparent,Color.White)
+            PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
+            Size: =16
+            Text: =ThisItem.Text
+            Width: |-
+                =If(
+                ThisItem.Name="",0,
+                Gallery_Add_Samples.TemplateWidth*ThisItem.Width+1)
+            ZIndex: =1
+
+    Test_Button_add_samples As button:
+        Height: =44
+        OnSelect: |-
+            =Patch('Test Results', Defaults('Test Results'), {
+                Title: "Not Tested",
+                Material: "Not Tested",
+                'Material_Filter (field_1)': "Not Tested",
+                Sample_Point: "Not Tested",
+                Sample_Point_Filter: "Not Tested",
+                Specification_Filter: "Not Tested",
+                'Date_&_Time': Now(),
+                Batch_Number: "Not Tested",
+                Bag_Number: "Not Tested",
+                Unique_No_Batch_Bag: "Not Tested",
+            
+                'Caustic_Strength_Result_%': "Not Tested",
+                IV_MFI_Result: "Not Tested",
+                IV_Extruder_Value_Result: "Not Tested",
+                GC_Acetaldehyde_Result_ppm: "Not Tested",
+                GC_Limonene_Result_ppm: "Not Tested",
+                GC_Benzene_Result_ppm: "Not Tested",
+                GC_Result_Pass_Fail: "Not Tested",
+                'Fines_Result_%': "Not Tested",
+                'Moisture_Result_%': "Not Tested",
+                'Bulk_Density_Result_kg/m3': "Not Tested",
+                'Material_Density_Result_kg/m3': "Not Tested",
+                Comp_White_Result_ppm: "Not Tested",
+                'Comp_White_Result_%': "Not Tested",
+                Comp_Colour_Result_ppm: "Not Tested",
+                'Comp_Colour_Result_%': "Not Tested",
+                'Comp_Colour+White_Result_ppm': "Not Tested",
+                Comp_Float_Sink_Glass_Result_ppm: "Not Tested",
+                'Comp_Glass+Inorganic_Result_ppm': "Not Tested",
+                Comp_Float_Sink_Metal_Result_ppm: "Not Tested",
+                Comp_Float_Sink_PVC_Result_ppm: "Not Tested",
+                Comp_PO_Result_ppm: "Not Tested",
+                Comp_Glue_Result_ppm: "Not Tested",
+                Float_Sink_Pass_Fail: "Not Tested",
+                Comp_Pass_Fail: "Not Tested",
+                pH_Result: "Not Tested",
+                Lab_L_Result: "Not Tested",
+                Lab_a_Result: "Not Tested",
+                Lab_b_Result: "Not Tested",
+                Lab_Result_Pass_Fail: "Not Tested",
+                Extruder_b_Value_Result: "Not Tested",
+                Pellet_Count_Result_1g: "Not Tested",
+                Pellet_Count_Result_5g: "Not Tested",
+                'Black_Inclusions_Medium_Result_#': "Not Tested",
+                'Black_Inclusions_Large_Result_#': "Not Tested",
+                Black_Inclusions_Pass_Fail: "Not Tested",
+                Crystallisation_Result: "Not Tested",
+                Visual_Inspection_Result_Pass_Fail: "Not Tested"
+            })
+        Text: ="+ Samples"
+        Visible: =false
+        Width: =123
+        X: =756
+        ZIndex: =9
+
+    var_selected As label:
+        Fill: =RGBA(180, 214, 250, 1)
+        Text: |-
+            ="
+            var_selected_PET_Wash
+            var_selected_PET_Wash_Other
+            var_selected_HDPE_Nat_Wash_BS_302
+            var_selected_HDPE_Nat_Wash_Other
+            var_selected_HDPE_Self_Coloured_Wash
+            var_selected_PP_Wash
+            var_selected_PET_Post_Wash_Silo_603
+            var_selected_PET_Post_Wash_Silo_604
+            var_selected_HDPE_Natural_Hopper_1
+            var_selected_HDPE_Natural_Hopper_2
+            var_selected_HDPE_Self_Coloured_Hopper_3
+            var_selected_PP_Hopper_4
+            var_selected_PET_Post_Flake_Sorter_705
+            var_selected_PET_Post_Flake_Sorter_706
+            var_selected_HDPE_Natural_Hopper_1_1_2_Test
+            var_selected_HDPE_Natural_Hopper_2_1_2_Test
+            var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test
+            var_selected_PP_Hopper_4_1_2_Test
+            var_selected_PET_Post_Extruder
+            var_selected_PET_Flake_Bag
+            var_selected_HDPE_Natural_Post_Extruder_1
+            var_selected_HDPE_Natural_Post_Extruder_2
+            var_selected_HDPE_Self_Coloured_Post_Extruder_3
+            var_selected_PP_Post_Extruder_4
+            var_selected_PET_SSP_1
+            var_selected_PET_SSP_2
+            var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test
+            var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test
+            var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test
+            var_selected_PP_Post_Extruder_4_1_2_Test
+            var_selected_PET_Pellet_Bag_Pre_SSP
+            var_selected_Blank_1
+            var_selected_HDPE_Natural_Pellet_Bag_Non_Deo
+            var_selected_Blank_2
+            var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo
+            var_selected_PP_Pellet_Bag_Non_Deo
+            var_selected_PET_Pellet_Bag_Post_SSP
+            var_selected_HDPE_Natural_Pellet_Bag_Deodorised
+            var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised
+            var_selected_PP_Pellet_Bag_Deodorised
+            var_selected_PET_Sampling_Silo_5_01
+            var_selected_HDPE_Natural_Sampling_Silo_1_01
+            var_selected_HDPE_Natural_Sampling_Silo_2_01
+            var_selected_HDPE_Self_Coloured_Sampling_Silo_3_01
+            var_selected_PP_Sampling_Silo_4_01
+            var_selected_PET_Sampling_Silo_5_02
+            var_selected_HDPE_Natural_Sampling_Silo_1_02
+            var_selected_HDPE_Natural_Sampling_Silo_2_02
+            var_selected_HDPE_Self_Coloured_Sampling_Silo_3_02
+            var_selected_PP_Sampling_Silo_4_02
+            "
+        Visible: =false
+        X: =266
+        ZIndex: =10
+
+    "Gallery_Add_Samples_3 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver4.0'":
+        Fill: =Colour_Viridor_PurpleTint
+        Height: =116
+        Items: |-
+            =[
+            {Name:"All", Text:"All", Height: 1},
+            {Name:"Full", Text:"Full", Height: 1},
+            {Name:"Half", Text:"Half", Height: 1},
+            {Name:"Add Samples", Text:"Add Samples", Height: 2},
+            {Name:"Wash", Text:"Wash", Height: 1},
+            {},
+            {Name:"Clear", Text:"Clear", Height: 1},
+            {},
+            ]
+        Layout: =Layout.Vertical
+        OnSelect: |-
+            =If(
+            ThisItem.Name="Clear",
+            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, false); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="All",
+            Set(var_selected_PET_A2_304, true); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, true); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, true); Set(var_selected_HDPE_Natural_Hopper_2, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3, true); Set(var_selected_PP_Hopper_4, true); Set(var_selected_PET_Post_Flake_Sorter, true); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, true); Set(var_selected_HDPE_Natural_Post_Extruder_2, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, true); Set(var_selected_PP_Post_Extruder_4, true); Set(var_selected_PET_SSP_1, true); Set(var_selected_PET_SSP_2, true); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="Full",
+            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, true); Set(var_selected_HDPE_Natural_Hopper_2, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3, true); Set(var_selected_PP_Hopper_4, true); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, true); Set(var_selected_HDPE_Natural_Post_Extruder_2, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, true); Set(var_selected_PP_Post_Extruder_4, true); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="Half",
+            Set(var_selected_PET_A2_304, false); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, false); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, true); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, true); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, true); Set(var_selected_PP_Hopper_4_1_2_Test, true); Set(var_selected_PET_Post_Extruder, true); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, true); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, true); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, true); Set(var_selected_PP_Post_Extruder_4_1_2_Test, true); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="Wash",
+            Set(var_selected_PET_A2_304, true); Set(var_selected_PET_Wash_Other, false); Set(var_selected_HDPE_Nat_Wash_BS_302, true); Set(var_selected_HDPE_Nat_Wash_Other, false); Set(var_selected_HDPE_Self_Coloured_Wash, false); Set(var_selected_PP_Wash, false); Set(var_selected_PET_Post_Wash_Silo, false); Set(var_selected_HDPE_Natural_Hopper_1, false); Set(var_selected_HDPE_Natural_Hopper_2, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3, false); Set(var_selected_PP_Hopper_4, false); Set(var_selected_PET_Post_Flake_Sorter, false); Set(var_selected_HDPE_Natural_Hopper_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Hopper_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, false); Set(var_selected_PP_Hopper_4_1_2_Test, false); Set(var_selected_PET_Post_Extruder, false); Set(var_selected_PET_Flake_Bag, false); Set(var_selected_HDPE_Natural_Post_Extruder_1, false); Set(var_selected_HDPE_Natural_Post_Extruder_2, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3, false); Set(var_selected_PP_Post_Extruder_4, false); Set(var_selected_PET_SSP_1, false); Set(var_selected_PET_SSP_2, false); Set(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, false); Set(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, false); Set(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, false); Set(var_selected_PP_Post_Extruder_4_1_2_Test, false); Set(var_selected_PET_Pellet_Bag_Pre_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, false); Set(var_selected_PP_Pellet_Bag_Non_Deo, false); Set(var_selected_PET_Pellet_Bag_Post_SSP, false); Set(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, false); Set(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, false); Set(var_selected_PP_Pellet_Bag_Deodorised, false); Set(var_selected_PET_Sampling_Silo, false); Set(var_selected_HDPE_Natural_Sampling_Silo, false); Set(var_selected_HDPE_Self_Coloured_Sampling_Silo, false); Set(var_selected_PP_Sampling_Silo, false);,
+            
+            ThisItem.Name="Add Samples",
+            
+            //Wash water
+            
+            If(var_selected_PET_A2_304, Patch('Test Results', Defaults('Test Results'), {Title: "PET_A2_304", 
+            Material: "Wash Water", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "A2 304", 
+            Sample_Point_Filter: "Wash", 
+            Specification_Filter: "PET Wash", 
+            'Date_&_Time': Now(),
+            'Caustic_Strength_Result_%': ""
+            }));
+            
+            If(var_selected_PET_Wash_Other, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Wash_Other", 
+            Material: "Wash Water", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "See Comment", 
+            Sample_Point_Filter: "Wash", 
+            Specification_Filter: "PET Wash", 
+            'Date_&_Time': Now(),
+            'Caustic_Strength_Result_%': ""
+            }));
+            
+            If(var_selected_HDPE_Nat_Wash_BS_302, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Nat_Wash_BS_302", 
+            Material: "Wash Water", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "BS 302", 
+            Sample_Point_Filter: "Wash", 
+            Specification_Filter: "HDPE Natural Wash", 
+            'Date_&_Time': Now(), 
+            'Caustic_Strength_Result_%': ""
+            }));
+            
+            If(var_selected_HDPE_Nat_Wash_Other, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Nat_Wash_Other", 
+            Material: "Wash Water", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "See Comment", 
+            Sample_Point_Filter: "Wash", 
+            Specification_Filter: "HDPE Natural Wash", 
+            'Date_&_Time': Now(), 
+            'Caustic_Strength_Result_%': ""
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Wash, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Wash", 
+            Material: "Wash Water", 
+            'Material_Filter (field_1)': "HDPE Self Coloured", 
+            Sample_Point: "See Comment", 
+            Sample_Point_Filter: "Wash", 
+            Specification_Filter: "HDPE Self Coloured Wash", 
+            'Date_&_Time': Now(), 
+            'Caustic_Strength_Result_%': ""
+            }));
+            
+            If(var_selected_PP_Wash, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Wash", 
+            Material: "Wash Water", 
+            'Material_Filter (field_1)': "PP", 
+            Sample_Point: "See Comment", 
+            Sample_Point_Filter: "Wash", 
+            Specification_Filter: "PP Wash", 
+            'Date_&_Time': Now(),
+            'Caustic_Strength_Result_%': ""
+            }));
+            
+            //Flake
+            
+            If(var_selected_PET_Post_Wash_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Post_Wash_Silo", 
+            Material: "Un-sorted Flake", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "PET Post Wash Silo", 
+            'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_HDPE_Natural_Hopper_1, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_1", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "Hopper 1", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "HDPE Natural Flake", 
+            'Date_&_Time': Now(),
+            IV_MFI_Result: "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Moisture_Result_%': "",
+            'Comp_White_Result_%': "",
+            Comp_Float_Sink_Metal_Result_ppm: "",
+            Comp_Float_Sink_Glass_Result_ppm: "",
+            'Float_Sink_PET_Result_%': "",
+            Comp_Float_Sink_PVC_Result_ppm: "",
+            Comp_Pass_Fail: "",
+            Float_Sink_Pass_Fail: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Hopper_2, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_2", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "Hopper 2", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "HDPE Natural Flake", 
+            'Date_&_Time': Now(),
+            IV_MFI_Result: "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Moisture_Result_%': "",
+            'Comp_White_Result_%': "",
+            Comp_Float_Sink_Metal_Result_ppm: "",
+            Comp_Float_Sink_Glass_Result_ppm: "",
+            'Float_Sink_PET_Result_%': "",
+            Comp_Float_Sink_PVC_Result_ppm: "",
+            Comp_Pass_Fail: "",
+            Float_Sink_Pass_Fail: ""
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Hopper_3, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Hopper_3", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "HDPE Self Coloured", 
+            Sample_Point: "Hopper 3", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "HDPE Self Coloured Flake", 
+            'Date_&_Time': Now(),
+            'Bulk_Density_Result_kg/m3': "",
+            'Moisture_Result_%': "",
+            Comp_Float_Sink_Metal_Result_ppm: "",
+            Comp_Float_Sink_Glass_Result_ppm: "",
+            'Float_Sink_PET_Result_%': "",
+            Comp_Float_Sink_PVC_Result_ppm: "",
+            Float_Sink_Pass_Fail: ""
+            }));
+            
+            If(var_selected_PP_Hopper_4, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Hopper_4", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "PP", 
+            Sample_Point: "Hopper 4", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "PP Flake", 
+            'Date_&_Time': Now(),
+            'Bulk_Density_Result_kg/m3': "",
+            'Moisture_Result_%': "",
+            Comp_Float_Sink_Metal_Result_ppm: "",
+            Comp_Float_Sink_Glass_Result_ppm: "",
+            'Float_Sink_PET_Result_%': "",
+            Comp_Float_Sink_PVC_Result_ppm: "",
+            Float_Sink_Pass_Fail: "",
+            pH_Result: ""
+            }));
+            
+            If(var_selected_PET_Post_Flake_Sorter, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Post_Flake_Sorter", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "PET Flake", 
+            'Date_&_Time': Now(),
+            'Bulk_Density_Result_kg/m3': "",
+            'Moisture_Result_%': "",
+            'Comp_Colour+White_Result_ppm': "",
+            Comp_Float_Sink_Metal_Result_ppm: "",
+            Comp_Float_Sink_Glass_Result_ppm: "",
+            'Comp_Glass+Inorganic_Result_ppm': "",
+            Comp_Float_Sink_PVC_Result_ppm: "",
+            Comp_Pass_Fail: "",
+            pH_Result: ""
+            }));
+            
+            If(var_selected_PET_Flake_Bag, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Flake_Bag", 
+            Material: "Flake Bag", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "Bagging 2005", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "PET Flake", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Moisture_Result_%': "",
+            'Comp_Colour+White_Result_ppm': "",
+            Comp_Float_Sink_Metal_Result_ppm: "",
+            Comp_Float_Sink_Glass_Result_ppm: "",
+            'Comp_Glass+Inorganic_Result_ppm': "",
+            Comp_Float_Sink_PVC_Result_ppm: "",
+            Comp_Pass_Fail: "",
+            pH_Result: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Hopper_1_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_1_1/2_Test", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "Hopper 1", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "HDPE Natural Flake", 
+            'Date_&_Time': Now(),
+            'Moisture_Result_%': ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Hopper_2_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Hopper_2_1/2_Test", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "Hopper 2", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "HDPE Natural Flake", 
+            'Date_&_Time': Now(),
+            'Moisture_Result_%': ""
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Hopper_3_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Hopper_3_1/2_Test", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "HDPE Self Coloured", 
+            Sample_Point: "Hopper 3", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "HDPE Self Coloured Flake", 
+            'Date_&_Time': Now()
+            }));
+            
+            If(var_selected_PP_Hopper_4_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Hopper_4_1/2_Test", 
+            Material: "Flake", 
+            'Material_Filter (field_1)': "PP", 
+            Sample_Point: "Hopper 4", 
+            Sample_Point_Filter: "Post Flake Sorter", 
+            Specification_Filter: "PP Flake", 
+            'Date_&_Time': Now()
+            }));
+            
+            //Pellets
+            
+            If(var_selected_PET_Post_Extruder, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Post_Extruder", 
+            Material: "Pellet Std pre-SSP", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "Post Extruder", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "PET Pellet Std pre-SSP", 
+            'Date_&_Time': Now(),
+            IV_MFI_Result: "",
+            IV_Extruder_Value_Result: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            Extruder_b_Value_Result: "",
+            Pellet_Count_Result_1g: "",
+            Pellet_Count_Result_5g: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Post_Extruder_1, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Post_Extruder_1", 
+            Material: "Pellet non Deo", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "Post Extruder 1", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "HDPE Natural Pellet non Deo", 
+            'Date_&_Time': Now(),
+            'Moisture_Result_%': "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Material_Density_Result_kg/m3': "",
+            IV_MFI_Result: "",
+            Visual_Inspection_Result_Pass_Fail: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            Pellet_Count_Result_5g: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Post_Extruder_2, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Post_Extruder_2", 
+            Material: "Pellet non Deo", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "Post Extruder 2", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "HDPE Natural Pellet non Deo", 
+            'Date_&_Time': Now(),
+            'Moisture_Result_%': "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Material_Density_Result_kg/m3': "",
+            IV_MFI_Result: "",
+            Visual_Inspection_Result_Pass_Fail: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            Pellet_Count_Result_5g: ""
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Post_Extruder_3, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Post_Extruder_3", 
+            Material: "Pellet non Deo", 
+            'Material_Filter (field_1)': "HDPE Self Coloured", 
+            Sample_Point: "Post Extruder 3", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "HDPE Self Coloured Pellet non Deo", 
+            'Date_&_Time': Now(),
+            'Moisture_Result_%': "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Material_Density_Result_kg/m3': "",
+            IV_MFI_Result: "",
+            Visual_Inspection_Result_Pass_Fail: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            Pellet_Count_Result_5g: ""
+            }));
+            
+            If(var_selected_PP_Post_Extruder_4, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Post_Extruder_4", 
+            Material: "Pellet non Deo", 
+            'Material_Filter (field_1)': "PP", 
+            Sample_Point: "Post Extruder 3", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "PP Pellet non Deo", 
+            'Date_&_Time': Now(),
+            'Moisture_Result_%': "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Material_Density_Result_kg/m3': "",
+            IV_MFI_Result: "",
+            Visual_Inspection_Result_Pass_Fail: "",
+            Pellet_Count_Result_5g: ""
+            }));
+            
+            If(var_selected_PET_SSP_1, Patch('Test Results', Defaults('Test Results'), {Title: "PET_SSP_1", 
+            Material: "Pellet Std", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "SSP 1", 
+            Sample_Point_Filter: "SSP", 
+            Specification_Filter: "PET Pellet Std SSP", 
+            'Date_&_Time': Now(),
+            IV_MFI_Result: "",
+            Pellet_Count_Result_1g: "",
+            Pellet_Count_Result_5g: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: ""
+            }));
+            
+            If(var_selected_PET_SSP_2, Patch('Test Results', Defaults('Test Results'), {Title: "PET_SSP_2", 
+            Material: "Pellet Std", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "SSP 2", 
+            Sample_Point_Filter: "SSP", 
+            Specification_Filter: "PET Pellet Std SSP", 
+            'Date_&_Time': Now(),
+            IV_MFI_Result: "",
+            Pellet_Count_Result_1g: "",
+            Pellet_Count_Result_5g: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Post_Extruder_1_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Post_Extruder_1_1/2_Test", 
+            Material: "Pellet non Deo", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "Post Extruder 1", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "HDPE Natural Pellet non Deo", 
+            'Date_&_Time': Now(),
+            Pellet_Count_Result_5g: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Post_Extruder_2_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Post_Extruder_2_1/2_Test", 
+            Material: "Pellet non Deo", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "Post Extruder 2", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "HDPE Natural Pellet non Deo", 
+            'Date_&_Time': Now(),
+            Pellet_Count_Result_5g: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: ""
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Post_Extruder_3_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Post_Extruder_3_1/2_Test", 
+            Material: "Pellet non Deo", 
+            'Material_Filter (field_1)': "HDPE Self Coloured", 
+            Sample_Point: "Post Extruder 3", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "HDPE Self Coloured Pellet non Deo", 
+            'Date_&_Time': Now(),
+            Pellet_Count_Result_5g: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: ""
+            }));
+            
+            If(var_selected_PP_Post_Extruder_4_1_2_Test, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Post_Extruder_4_1/2_Test", 
+            Material: "Pellet non Deo", 
+            'Material_Filter (field_1)': "PP", 
+            Sample_Point: "Post Extruder 3", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "PP Pellet non Deo", 
+            'Date_&_Time': Now(),
+            Visual_Inspection_Result_Pass_Fail: "",
+            Pellet_Count_Result_1g: ""
+            }));
+            
+            //Pellet Bags
+            
+            If(var_selected_PET_Pellet_Bag_Pre_SSP, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Pellet_Bag_Pre_SSP", 
+            Material: "Pellet pre-SSP Bag", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "PET Pellet Std", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Pellet_Bag_Non_Deo", 
+            Material: "Pellet non Deo Bag", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "HDPE Natural Pellet non Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: ""
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Pellet_Bag_Non_Deo", 
+            Material: "Pellet non Deo Bag", 
+            'Material_Filter (field_1)': "HDPE Self Coloured", 
+            Sample_Point: "Bagging 2008", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "HDPE Self Coloured Pellet non Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: ""
+            }));
+            
+            If(var_selected_PP_Pellet_Bag_Non_Deo, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Pellet_Bag_Non_Deo", 
+            Material: "Pellet non Deo Bag", 
+            'Material_Filter (field_1)': "PP", 
+            Sample_Point: "Bagging 2009", 
+            Sample_Point_Filter: "Post Extruder", 
+            Specification_Filter: "PP Pellet non Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: ""
+            }));
+            
+            If(var_selected_PET_Pellet_Bag_Post_SSP, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Pellet_Bag_Post_SSP", 
+            Material: "Pellet Std Bag", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Sampling Silo", 
+            Specification_Filter: "PET Pellet Std", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Pellet_Bag_Deodorised", 
+            Material: "Pellet Deo Bag", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Sampling Silo", 
+            Specification_Filter: "HDPE Natural Pellet Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: ""
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Pellet_Bag_Deodorised", 
+            Material: "Pellet Deo Bag", 
+            'Material_Filter (field_1)': "HDPE Self Coloured", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Sampling Silo", 
+            Specification_Filter: "HDPE Self Coloured Pellet Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: ""
+            }));
+            
+            If(var_selected_PP_Pellet_Bag_Deodorised, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Pellet_Bag_Deodorised", 
+            Material: "Pellet Deo Bag", 
+            'Material_Filter (field_1)': "PP", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Sampling Silo", 
+            Specification_Filter: "PP Pellet Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Bag_Number: ""
+            }));
+            
+            //Sampling Silos
+            
+            If(var_selected_PET_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "PET_Sampling_Silo", 
+            Material: "Pellet Std", 
+            'Material_Filter (field_1)': "PET", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Sampling Silo", 
+            Specification_Filter: "PET Pellet Std", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Location_Transferred: "",
+            Storage_Silo_Batch_Number: "",
+            Sample_Silo_Weight_kg: "",
+            Storage_Silo_Weight_kg: "",
+            GC_Limonene_Result_ppm: "",
+            'Moisture_Result_%': "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Material_Density_Result_kg/m3': "",
+            IV_MFI_Result: "",
+            Visual_Inspection_Result_Pass_Fail: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            Pellet_Count_Result_5g: "",
+            pH_Result: ""
+            }));
+            
+            If(var_selected_HDPE_Natural_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Natural_Sampling_Silo", 
+            Material: "Pellet Deo", 
+            'Material_Filter (field_1)': "HDPE Natural", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Sampling Silo", 
+            Specification_Filter: "HDPE Natural Pellet Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Location_Transferred: "",
+            Storage_Silo_Batch_Number: "",
+            Sample_Silo_Weight_kg: "",
+            Storage_Silo_Weight_kg: "",
+            GC_Limonene_Result_ppm: "",
+            'Moisture_Result_%': "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Material_Density_Result_kg/m3': "",
+            IV_MFI_Result: "",
+            Visual_Inspection_Result_Pass_Fail: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            Pellet_Count_Result_5g: ""
+            }));
+            
+            If(var_selected_HDPE_Self_Coloured_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "HDPE_Self_Coloured_Sampling_Silo", 
+            Material: "Pellet Deo", 
+            'Material_Filter (field_1)': "HDPE Self Coloured", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Sampling Silo", 
+            Specification_Filter: "HDPE Self Coloured Pellet Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Location_Transferred: "",
+            Storage_Silo_Batch_Number: "",
+            Sample_Silo_Weight_kg: "",
+            Storage_Silo_Weight_kg: "",
+            GC_Limonene_Result_ppm: "",
+            'Moisture_Result_%': "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Material_Density_Result_kg/m3': "",
+            IV_MFI_Result: "",
+            Visual_Inspection_Result_Pass_Fail: "",
+            'Black_Inclusions_Medium_Result_#': "",
+            'Black_Inclusions_Large_Result_#': "",
+            Black_Inclusions_Pass_Fail: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            Pellet_Count_Result_5g: ""
+            }));
+            
+            If(var_selected_PP_Sampling_Silo, Patch('Test Results', Defaults('Test Results'), {Title: "PP_Sampling_Silo", 
+            Material: "Pellet Deo", 
+            'Material_Filter (field_1)': "PP", 
+            Sample_Point: "", 
+            Sample_Point_Filter: "Sampling Silo", 
+            Specification_Filter: "PP Pellet Deo", 
+            'Date_&_Time': Now(),
+            Batch_Number: "",
+            Location_Transferred: "",
+            Storage_Silo_Batch_Number: "",
+            Sample_Silo_Weight_kg: "",
+            Storage_Silo_Weight_kg: "",
+            GC_Limonene_Result_ppm: "",
+            'Moisture_Result_%': "",
+            'Bulk_Density_Result_kg/m3': "",
+            'Material_Density_Result_kg/m3': "",
+            IV_MFI_Result: "",
+            Visual_Inspection_Result_Pass_Fail: "",
+            Lab_L_Result: "",
+            Lab_a_Result: "",
+            Lab_b_Result: "",
+            Lab_Result_Pass_Fail: "",
+            Pellet_Count_Result_1g: "",
+            Pellet_Count_Result_5g: ""
+            }));
+            
+            )
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =58
+        Width: =Parent.Width/5*2.5+2
+        WrapCount: =4
+        Y: =652
+        ZIndex: =11
+
+        Label_Sampling_Point_5 As label:
+            Align: =Align.Center
+            Color: =If(Label_Sampling_Point_5.Fill=Colour_Viridor_Purple,Color.White,Color.Black)
+            Fill: =If(ThisItem.Name="Add Samples",Colour_Viridor_Purple,Colour_Viridor_GreenTint)
+            Height: =58*ThisItem.Height
+            HoverColor: =Colour_Viridor_White
+            HoverFill: |
+                =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Green)
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =If(ThisItem.Text="",Color.Transparent,Color.White)
+            PressedFill: =If(ThisItem.Name="",Color.Transparent,Colour_Viridor_Purple)
+            Size: =18
+            Text: =ThisItem.Text
+            Width: =Parent.Width/4
+            ZIndex: =1
+
+    Title_Test_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+        Title_Test_Input_4 As label:
+            Align: =TextPosition.Left
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 155, 62, 100)
+            Font: =Font.'Segoe UI'
+            Height: =51
+            PaddingLeft: =14
+            Size: =Text_size_Title
+            Text: ="Add Samples"
+            Width: =1366
+            ZIndex: =2
+
+        Button_Back_13 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.BackArrow
+            OnSelect: =Back()
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Back"
+            Width: =38
+            X: =1322
+            Y: =7
+            ZIndex: =3
+
+        Button_Home_6 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =38
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Home
+            OnSelect: =Navigate(Screen_Start,ScreenTransition.None);
+            PressedColor: =Colour_Viridor_GreenTint
+            Tooltip: ="Home"
+            Width: =38
+            X: =Button_Back_13.X-50
+            Y: =Button_Back_13.Y
+            ZIndex: =4
+
+        Refresh_Data_5 As icon.CancelBadge:
+            Color: =Color.White
+            Height: =34
+            HoverColor: =Colour_Viridor_Purple
+            Icon: =Icon.Reload
+            OnSelect: =Refresh('Test Results')
+            PressedColor: =Colour_Viridor_GreenTint
+            Rotation: =90
+            Tooltip: ="Refresh data."
+            Width: =34
+            X: =Button_Back_13.X-50*2
+            Y: =10
+            ZIndex: =5
+
+    Refresh_Data_6 As icon.CancelBadge:
+        Color: =Color.White
+        Height: =34
+        HoverColor: =Colour_Viridor_Purple
+        Icon: |-
+            =If(var_sampling_point_filter=true,
+            Icon.FilterFlatFilled,
+            Icon.FilterFlat)
+        OnSelect: =Set(var_sampling_point_filter,!var_sampling_point_filter)
+        PressedColor: =Colour_Viridor_GreenTint
+        Tooltip: ="Refresh data."
+        Width: =34
+        X: =218
+        Y: =10
+        ZIndex: =12
+
+    Gallery_Test_Results_2 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Fill: =Colour_Viridor_GreenTint
+        Height: =630
+        Items: =Filter('Test Results',Complete=false)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =54
+        Width: =Parent.Width-Gallery_Add_Samples.Width
+        X: =Gallery_Add_Samples.Width
+        Y: =138
+        ZIndex: =13
+
+        Label_Test_Sample_Point_2 As label:
+            Align: =Align.Center
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =Label_Test_Material_Main_2.Size
+            Text: =ThisItem.Material
+            Width: =Label_Test_Material_Main_2.Width
+            X: =Label_Test_Material_Main_2.Width
+            ZIndex: =1
+
+        Label_Test_Material_Main_2 As label:
+            Align: =Align.Center
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: =ThisItem.'Material_Filter (field_1)'
+            Width: =Gallery_Test_Title_2.Width/Gallery_Test_Title_2.AllItemsCount*2
+            ZIndex: =2
+
+        Label_Test_Date_2 As label:
+            Align: =Align.Center
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingTop: =0
+            Size: =Label_Test_Material_Main_2.Size
+            Text: =Text(DateValue(ThisItem.'Date_&_Time', "en-GB"), "dd mmm yy")
+            Width: =Label_Test_Material_Main_2.Width
+            X: =Label_Test_Material_Main_2.Width*3
+            ZIndex: =6
+
+        Label_Test_Time_2 As label:
+            Align: =Align.Center
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =Label_Test_Material_Main_2.Size
+            Text: =TimeValue(ThisItem.'Date_&_Time',"en-GB")
+            Width: =Label_Test_Material_Main_2.Width/2-8
+            X: =Label_Test_Material_Main_2.Width*4
+            ZIndex: =7
+
+        Label_Test_Sample_Point_3 As label:
+            Align: =Align.Center
+            Height: =54
+            LineHeight: =1
+            OnSelect: =Select(Parent)
+            Size: =Label_Test_Material_Main_2.Size
+            Text: =ThisItem.Sample_Point
+            Width: =Label_Test_Material_Main_2.Width
+            X: =Label_Test_Material_Main_2.Width*2
+            ZIndex: =8
+
+        Icon1 As icon.Erase:
+            Color: =RGBA(255, 0, 0, 1)
+            Height: =24
+            Icon: =Icon.Trash
+            OnSelect: =Remove('Test Results',ThisItem)
+            Visible: =false
+            Width: =25
+            ZIndex: =10
+
+    Test_Button_add_samples_1 As button:
+        Height: =44
+        OnSelect: |-
+            =Patch('Test Results', Defaults('Test Results'), {
+                Title: "Title",
+                'Date_&_Time': Now()
+            })
+        Text: ="+ Empty"
+        Visible: =false
+        Width: =123
+        X: =892
+        ZIndex: =14
+

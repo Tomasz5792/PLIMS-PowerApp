@@ -1,0 +1,58 @@
+{
+  "0710b7fd-091c-4334-953f-c692b65a8149": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://viridor.sharepoint.com/sites/AvonmouthQualityTechs": {
+        "dataSources": {
+          "Test Results": {
+            "tableName": "330d2595-b391-42f1-a8fd-c5d68edae005"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Test Results"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0710b7fd-091c-4334-953f-c692b65a8149"
+  },
+  "d1ea80bf-1ad3-47c3-a3f4-abf1be99ed07": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1658/1.0.1658.3452/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "groups%252F7c8b8e69-c408-4055-aa6f-97fad6415a6f,b%2521WEuMByJ03kGfjOq-5g8-GqSjVSFLhUNAnrrmMZlIAHovPYHyg_1JQbpHdXhrRHTa,015G5YRC2P2FWJ7CVZJ5EL2PBRDKL7JQUY": {
+        "dataSources": {
+          "Table_Specifications": {
+            "tableName": "{45486548-5BEF-4C3A-A739-9E98A29323B1}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Table_Specifications"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d1ea80bf-1ad3-47c3-a3f4-abf1be99ed07"
+  }
+}
